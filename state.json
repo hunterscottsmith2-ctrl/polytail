@@ -10,25 +10,25 @@
    "first_seen": "2026-11-14T20:29+00:00",
    "outcome": "Bilibili Gaming",
    "title": "LoL: Bilibili Gaming vs Gen.G (BO5) - Worlds Playoffs",
-   "wallets": 6
+   "wallets": 7
   },
   "0x7e18117f745b5c9ccfd1efec23d30c828fc086a0f70cb546b8cd308bb94a16e3|0": {
    "first_seen": "2026-11-14T21:00+00:00",
    "outcome": "Tennessee",
    "title": "Tennessee vs. Texas A&M",
-   "wallets": 5
-  },
-  "0x7e18117f745b5c9ccfd1efec23d30c828fc086a0f70cb546b8cd308bb94a16e3|1": {
-   "first_seen": "2026-11-14T20:29+00:00",
-   "outcome": "Texas A&M",
-   "title": "Tennessee vs. Texas A&M",
    "wallets": 6
   },
-  "0xd89caa6e08266e51834d64b67e4d8148d1f421c94bf8e6978008d695400059ad|0": {
-   "first_seen": "2026-11-14T21:00+00:00",
-   "outcome": "Bilibili Gaming",
-   "title": "LoL: Bilibili Gaming vs Gen.G - Game 2 Winner",
+  "0xc2c371b13e8982caa1fb9a04106609f61e95290b89291021c1c2168fa2121d11|0": {
+   "first_seen": "2026-11-14T21:38+00:00",
+   "outcome": "Washington",
+   "title": "Washington vs. Michigan State",
    "wallets": 4
+  },
+  "0xd89caa6e08266e51834d64b67e4d8148d1f421c94bf8e6978008d695400059ad|1": {
+   "first_seen": "2026-11-14T21:38+00:00",
+   "outcome": "Gen.G",
+   "title": "LoL: Bilibili Gaming vs Gen.G - Game 2 Winner",
+   "wallets": 7
   }
  }
 }
