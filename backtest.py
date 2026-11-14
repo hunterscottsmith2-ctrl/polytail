@@ -42,7 +42,7 @@ CATEGORY = os.environ.get("BT_CATEGORY", "overall") or "overall"   # "overall" o
 SPORTS = CATEGORY == "sports"   # sports: only game markets, signals before kickoff
 POOL_BOARDS = [("ALL", "PNL"), ("MONTH", "PNL"), ("ALL", "VOLUME"), ("MONTH", "VOLUME")]
 
-MAX_TRADES_PER_WALLET = 30_000   # more than this = bot / market maker, skip
+MAX_TRADES_PER_WALLET = int(os.environ.get("BT_MAX_TRADES", 50_000))   # more = bot / market maker, skip
 MIN_TRAIN_MARKETS = 15           # wallet needs this many settled markets in training
 MIN_TRAIN_ROI = 0.05             # ...and at least +5% return on money bet
 MIN_TRAIN_PNL = 5_000            # ...and at least $5K profit
@@ -211,7 +211,7 @@ def passes(s):
 
 # ---------------------------------------------------------------- sharpness (CLV)
 CLV_MIN_COST = 500         # only measure bets of at least $500
-CLV_PER_WALLET = 30        # most recent N markets per wallet per window (keeps API calls sane)
+CLV_PER_WALLET = int(os.environ.get("BT_CLV_PER_WALLET", 100))  # most recent N markets per wallet per window
 CLV_MIN_BETS = 20          # need this many measured bets to judge a wallet
 CLV_MIN_MEAN = 0.01        # beat the close by 1c+ on average...
 CLV_MIN_T = 2.0            # ...consistently (t-stat), not from a couple of lucky moves
@@ -392,15 +392,16 @@ def main():
         send_telegram("PolyTail backtest: couldn't load the leaderboard. Try again later.")
         sys.exit(1)
 
+    from concurrent.futures import ThreadPoolExecutor
     trades_by_wallet, bots = {}, 0
-    for i, w in enumerate(pool, 1):
-        tr = wallet_trades(w, start, now, now)
-        if tr is None:
-            bots += 1
-        elif tr:
-            trades_by_wallet[w] = tr
-        if i % 25 == 0:
-            log(f"  trades pulled for {i}/{len(pool)} wallets")
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        for i, (w, tr) in enumerate(zip(pool, ex.map(lambda w: wallet_trades(w, start, now, now), pool)), 1):
+            if tr is None:
+                bots += 1
+            elif tr:
+                trades_by_wallet[w] = tr
+            if i % 25 == 0:
+                log(f"  trades pulled for {i}/{len(pool)} wallets")
     log(f"Usable wallets: {len(trades_by_wallet)} (skipped {bots} bot-like)")
 
     res_cache = cache_get("resolutions_v2.json") or {}
