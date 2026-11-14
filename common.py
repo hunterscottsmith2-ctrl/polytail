@@ -26,14 +26,55 @@ def get_json(path, params, base=DATA_API, retries=4):
                 body = body["data"]
             return body
         except urllib.error.HTTPError as e:
-            if e.code == 400:  # bad params / past offset cap — retrying won't help
+            if e.code in (400, 404, 410):  # bad params / retired route — retrying won't help
+                print(f"  ! {e.code} on {url}: {e.read()[:200]!r}", file=sys.stderr)
                 return []
-            wait = int(e.headers.get("Retry-After") or 0) if e.code == 429 else 0
+            wait = int(e.headers.get("Retry-After") or 0) if e.code in (429, 503) else 0
             time.sleep(max(wait, 2 * (attempt + 1)))
         except Exception:  # noqa: BLE001
             time.sleep(2 * (attempt + 1))
     print(f"  ! giving up on {url}", file=sys.stderr)
     return []
+
+
+def get_pages(path, params, base=DATA_API, max_rows=None, max_pages=200):
+    """Follow Data API v2 cursor pagination. Returns (rows, complete)."""
+    rows, cursor = [], None
+    for _ in range(max_pages):
+        p = dict(params)
+        if cursor:
+            p["cursor"] = cursor
+        body = get_json_raw(path, p, base=base)
+        if not isinstance(body, dict):
+            return rows, False
+        rows.extend(body.get("data") or [])
+        cursor = (body.get("pagination") or {}).get("next_cursor")
+        if not cursor:
+            return rows, True
+        if max_rows and len(rows) >= max_rows:
+            return rows, False
+        time.sleep(0.1)
+    return rows, False
+
+
+def get_json_raw(path, params, base=DATA_API, retries=4):
+    """Like get_json but keeps the {data, pagination} envelope."""
+    url = f"{base}{path}?{urllib.parse.urlencode(params, doseq=True)}"
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.loads(r.read().decode())
+        except urllib.error.HTTPError as e:
+            if e.code in (400, 404, 410):
+                print(f"  ! {e.code} on {url}: {e.read()[:200]!r}", file=sys.stderr)
+                return None
+            wait = int(e.headers.get("Retry-After") or 0) if e.code in (429, 503) else 0
+            time.sleep(max(wait, 2 * (attempt + 1)))
+        except Exception:  # noqa: BLE001
+            time.sleep(2 * (attempt + 1))
+    print(f"  ! giving up on {url}", file=sys.stderr)
+    return None
 
 
 def num(x, default=0.0):

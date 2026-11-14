@@ -76,39 +76,36 @@ def scored_wallets(cfg):
 def leaderboard_wallets(cfg):
     wallets = {}
     for period in cfg["LEADERBOARD_PERIODS"]:
-        for offset in range(0, cfg["LEADERBOARD_DEPTH"], 50):
-            rows = get_json("/v1/leaderboard", {
-                "category": "OVERALL", "timePeriod": period,
-                "orderBy": "PNL", "limit": 50, "offset": offset,
-            }) or []
-            for row in rows:
-                w = (row.get("proxyWallet") or "").lower()
-                pnl, vol = num(row.get("pnl")), num(row.get("vol"))
-                if not w or pnl < cfg["MIN_PNL"]:
-                    continue
-                if vol > 0 and pnl / vol < cfg["MIN_PNL_TO_VOLUME"]:
-                    continue
-                if w not in wallets or pnl > wallets[w]["pnl"]:
-                    wallets[w] = {"name": row.get("userName") or w[:8], "pnl": pnl}
-            if len(rows) < 50:
-                break
+        rows = get_json("/v2/leaderboard", {
+            "category": "overall", "time_period": period.lower(),
+            "sort_by": "PNL", "limit": cfg["LEADERBOARD_DEPTH"],
+        }) or []
+        for row in rows:
+            w = (row.get("user_id") or "").lower()
+            pnl, vol = num(row.get("pnl")), num(row.get("volume"))
+            if not w or pnl < cfg["MIN_PNL"]:
+                continue
+            if vol > 0 and pnl / vol < cfg["MIN_PNL_TO_VOLUME"]:
+                continue
+            if w not in wallets or pnl > wallets[w]["pnl"]:
+                wallets[w] = {"name": row.get("user_name") or w[:8], "pnl": pnl}
     return wallets
 
 
 # ---------------------------------------------------------------- positions
 def open_positions(wallet, cfg):
-    rows = get_json("/positions", {
-        "user": wallet, "sizeThreshold": 1, "limit": 500,
-        "sortBy": "CURRENT", "sortDirection": "DESC",
+    rows = get_json("/v2/positions", {
+        "user": wallet, "status": "OPEN", "limit": 500,
+        "sort_by": "CURRENT_VALUE", "sort_direction": "DESC",
     }) or []
     out, now = [], time.time()
     for p in rows:
-        if p.get("redeemable"):
+        if p.get("redeemable") or int(num(p.get("outcome_index"), 999)) == 999:
             continue
-        value, price = num(p.get("currentValue")), num(p.get("curPrice"))
+        value, price = num(p.get("current_value")), num(p.get("current_price"))
         if value < cfg["MIN_POSITION_USD"] or not (cfg["MIN_PRICE"] <= price <= cfg["MAX_PRICE"]):
             continue
-        end = p.get("endDate")
+        end = p.get("end_date")
         if end:
             try:
                 end_dt = datetime.fromisoformat(end.replace("Z", "+00:00"))
@@ -126,21 +123,21 @@ def find_consensus(wallets, positions_by_wallet, cfg):
     groups = {}
     for w, positions in positions_by_wallet.items():
         for p in positions:
-            key = f"{p.get('conditionId')}|{p.get('outcomeIndex')}"
+            key = f"{p.get('condition_id')}|{p.get('outcome_index')}"
             g = groups.setdefault(key, {
                 "key": key,
                 "title": p.get("title") or "Unknown market",
                 "outcome": p.get("outcome") or "?",
-                "event_slug": p.get("eventSlug") or p.get("slug") or "",
-                "condition_id": p.get("conditionId"),
-                "outcome_index": p.get("outcomeIndex"),
-                "price": num(p.get("curPrice")),
-                "end_date": (p.get("endDate") or "")[:10],
+                "event_slug": p.get("event_slug") or p.get("slug") or "",
+                "condition_id": p.get("condition_id"),
+                "outcome_index": p.get("outcome_index"),
+                "price": num(p.get("current_price")),
+                "end_date": (p.get("end_date") or "")[:10],
                 "holders": [],
             })
             g["holders"].append({
                 "wallet": w, "name": wallets[w]["name"], "trader_pnl": wallets[w]["pnl"],
-                "value": num(p.get("currentValue")), "avg_price": num(p.get("avgPrice")),
+                "value": num(p.get("current_value")), "avg_price": num(p.get("avg_price")),
             })
 
     signals = []

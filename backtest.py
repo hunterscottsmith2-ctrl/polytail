@@ -32,13 +32,13 @@ import time
 from collections import defaultdict
 from datetime import datetime, timezone
 
-from common import get_json, market_resolutions, money, num, send_telegram
+from common import get_json, get_pages, market_resolutions, money, num, send_telegram
 
 # ---------------------------------------------------------------- settings
 LOOKBACK_DAYS = int(os.environ.get("BT_LOOKBACK_DAYS", 240))
 TEST_DAYS = int(os.environ.get("BT_TEST_DAYS", 90))
 POOL_DEPTH = int(os.environ.get("BT_POOL_DEPTH", 100))   # per leaderboard
-POOL_BOARDS = [("ALL", "PNL"), ("MONTH", "PNL"), ("ALL", "VOL"), ("MONTH", "VOL")]
+POOL_BOARDS = [("ALL", "PNL"), ("MONTH", "PNL"), ("ALL", "VOLUME"), ("MONTH", "VOLUME")]
 
 MAX_TRADES_PER_WALLET = 30_000   # more than this = bot / market maker, skip
 MIN_TRAIN_MARKETS = 15           # wallet needs this many settled markets in training
@@ -54,7 +54,6 @@ TAKER_FEE = 0.01                 # 1% haircut on each bet
 MAX_PRICE_LOOKUPS = 4_000
 MIN_SIGNALS_FOR_VERDICT = 30
 
-CLOB_API = "https://clob.polymarket.com"
 CACHE_DIR = os.environ.get("BT_CACHE", "cache")
 OUT_DIR = os.environ.get("POLYTAIL_RESULTS", "results")
 WALLETS_FILE = os.environ.get("POLYTAIL_WALLETS", "wallets.json")
@@ -85,62 +84,62 @@ def cache_put(name, obj):
 def wallet_pool():
     pool = {}
     for period, order in POOL_BOARDS:
-        for offset in range(0, POOL_DEPTH, 50):
-            rows = get_json("/v1/leaderboard", {"category": "OVERALL", "timePeriod": period,
-                                                "orderBy": order, "limit": 50,
-                                                "offset": offset}) or []
-            for r in rows:
-                w = (r.get("proxyWallet") or "").lower()
-                if w:
-                    pool.setdefault(w, {"name": r.get("userName") or w[:8]})
-            if len(rows) < 50:
-                break
+        rows = get_json("/v2/leaderboard", {"category": "overall", "time_period": period.lower(),
+                                            "sort_by": order, "limit": POOL_DEPTH}) or []
+        for r in rows:
+            w = (r.get("user_id") or "").lower()
+            if w:
+                pool.setdefault(w, {"name": r.get("user_name") or w[:8]})
     return pool
 
 
+def _trade_row(wallet, t):
+    idx = int(num(t.get("outcome_index"), -1))
+    return {
+        "wallet": wallet, "ts": num(t.get("timestamp")), "side": t.get("side"),
+        "cid": t.get("condition_id"), "idx": -1 if idx == 999 else idx,
+        "asset": t.get("token_id"), "size": num(t.get("size")),
+        "price": num(t.get("price")), "title": t.get("title") or "",
+        "outcome": t.get("outcome") or "", "slug": t.get("event_slug") or "",
+        "tx": t.get("transaction_hash"),
+    }
+
+
+def _fetch_trades(wallet, start, end):
+    rows, complete = get_pages("/v2/trades", {
+        "user": wallet, "start": int(start), "end": int(end),
+        "taker_only": "false", "limit": 1000,
+    }, max_rows=MAX_TRADES_PER_WALLET + 1)
+    if not complete and len(rows) > MAX_TRADES_PER_WALLET:
+        return None  # bot / market maker
+    return [_trade_row(wallet, t) for t in rows]
+
+
 def wallet_trades(wallet, start, end, now):
-    """All of a wallet's fills (maker + taker) between start and end, oldest first."""
-    trades, seen = [], set()
-    win_start = (start // WINDOW) * WINDOW
-    while win_start < end:
-        win_end = win_start + WINDOW
-        name = f"trades_{wallet}_{int(win_start)}.json"
-        rows = cache_get(name) if win_end < now - DAY else None
-        if rows is None:
-            rows = []
-            for offset in range(0, 10_001, 5_000):
-                page = get_json("/trades", {"user": wallet, "start": int(win_start),
-                                            "end": int(win_end), "limit": 5_000,
-                                            "offset": offset, "takerOnly": "false"}) or []
-                rows.extend(page)
-                if len(page) < 5_000:
-                    break
-                if offset == 10_000:
-                    return None  # >15K fills in a month: bot / market maker
-                time.sleep(0.1)
-            if win_end < now - DAY:
-                cache_put(name, rows)
-        for t in rows:
-            k = (t.get("transactionHash"), t.get("asset"), t.get("side"),
-                 t.get("size"), t.get("price"), t.get("timestamp"))
-            if k in seen:
-                continue
-            seen.add(k)
-            ts = num(t.get("timestamp"))
-            if start <= ts < end:
-                trades.append({
-                    "wallet": wallet, "ts": ts, "side": t.get("side"),
-                    "cid": t.get("conditionId"), "idx": int(num(t.get("outcomeIndex"), -1)),
-                    "asset": t.get("asset"), "size": num(t.get("size")),
-                    "price": num(t.get("price")), "title": t.get("title") or "",
-                    "outcome": t.get("outcome") or "", "slug": t.get("eventSlug") or "",
-                })
-        if len(trades) > MAX_TRADES_PER_WALLET:
+    """All of a wallet's fills (maker + taker) between start and end, oldest first.
+    Cached per wallet; later runs only download what's new."""
+    name = f"trades_{wallet}.json"
+    cached = cache_get(name)
+    if cached and cached.get("start", 1e18) <= start:
+        new = _fetch_trades(wallet, cached["end"] - DAY, end)
+        if new is None:
             return None
-        win_start = win_end
-        time.sleep(0.1)
-    trades.sort(key=lambda t: t["ts"])
-    return trades
+        trades = cached["trades"] + new
+    else:
+        trades = _fetch_trades(wallet, start, end)
+        if trades is None:
+            return None
+    seen, out = set(), []
+    for t in trades:
+        k = (t["tx"], t["asset"], t["side"], t["size"], t["price"], t["ts"])
+        if k not in seen and start <= t["ts"] < end:
+            seen.add(k)
+            out.append(t)
+    if len(out) > MAX_TRADES_PER_WALLET:
+        return None
+    out.sort(key=lambda t: t["ts"])
+    cache_put(name, {"start": start, "end": now, "trades": out})
+    return out
 
 
 def price_after(asset, ts, lookups):
@@ -151,12 +150,9 @@ def price_after(asset, ts, lookups):
     if lookups["count"] >= MAX_PRICE_LOOKUPS:
         return None
     lookups["count"] += 1
-    target = ts + DELAY_MINUTES * 60
-    body = get_json("/prices-history", {"market": asset, "startTs": int(target),
-                                        "endTs": int(target + 6 * 3600), "fidelity": 1},
-                    base=CLOB_API)
-    hist = body.get("history", []) if isinstance(body, dict) else []
-    p = num(hist[0].get("p"), None) if hist else None
+    rows = get_json("/v2/prices-history", {"token_id": asset,
+                                           "as_of": int(ts + DELAY_MINUTES * 60)}) or []
+    p = num(rows[0].get("price"), None) if rows and isinstance(rows, list) else None
     lookups["cache"][key] = p
     return p
 
