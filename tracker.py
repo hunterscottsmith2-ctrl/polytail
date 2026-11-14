@@ -252,10 +252,11 @@ def main():
         print("No wallets returned — API may be down. Exiting without changes.")
         return
 
-    positions = {}
-    for w in wallets:
-        positions[w] = open_positions(w, cfg)
-        time.sleep(0.15)
+    # Check wallets in parallel so a scan finishes in under a minute
+    # (GitHub bills each run rounded up to the minute).
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        positions = dict(zip(wallets, pool.map(lambda w: open_positions(w, cfg), list(wallets))))
 
     signals = find_consensus(wallets, positions, cfg)
     print(f"{len(signals)} consensus signals")
