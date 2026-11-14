@@ -12,11 +12,29 @@
    "title": "Will Ko Chih-en win the next Kaohsiung Mayor election?",
    "wallets": 3
   },
+  "0x1e5564c1a2a6839cc2780a889437c63786a2c2ec5e95569b710ee659a3e8baa2|1": {
+   "first_seen": "2026-11-14T16:55+00:00",
+   "outcome": "No",
+   "title": "Will Bitcoin dip to $40,000 by December 31, 2026?",
+   "wallets": 3
+  },
+  "0x2053d8515f1b8cbeea4ccdb56e60e89c2617e43a8660d95166b8e71d27865277|0": {
+   "first_seen": "2026-11-14T16:56+00:00",
+   "outcome": "Yes",
+   "title": "Will Marco Rubio win the 2028 US Presidential Election?",
+   "wallets": 3
+  },
   "0x21ad31a46bfaa51650766eff6dc69c866959e32d965ffb116020e37694b6317d|0": {
    "first_seen": "2026-11-14T15:21+00:00",
    "outcome": "Yes",
    "title": "Will Marco Rubio win the 2028 Republican presidential nomination?",
    "wallets": 4
+  },
+  "0x22c3138b1886ba78fd272173a26ce81b508bd09e5027fc231d4dc15c8b524312|0": {
+   "first_seen": "2026-11-14T16:56+00:00",
+   "outcome": "Yes",
+   "title": "Will Anthropic IPO by November 19, 2026?",
+   "wallets": 3
   },
   "0x2d858f0a25a61dfde6485f3d8e75aed397bed616c3e458b66e10e642fb2f9759|1": {
    "first_seen": "2026-11-14T16:18+00:00",
@@ -120,6 +138,18 @@
    "title": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
    "wallets": 8
   },
+  "0x8afa174c7b8a579f058e94b58af32d6eea8c5cfe5e214ca735c2f3bcc6ba78af|0": {
+   "first_seen": "2026-11-14T16:56+00:00",
+   "outcome": "Yes",
+   "title": "Will Real Madrid win the 2026-27 LALIGA Championship?",
+   "wallets": 3
+  },
+  "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3|1": {
+   "first_seen": "2026-11-14T16:56+00:00",
+   "outcome": "No",
+   "title": "Will Puma Shen win the next Taipei Mayor election?",
+   "wallets": 3
+  },
   "0x94f240d042917cabd55f0bcbcac7d4d2accd4436773bf91596f76572cac643cb|0": {
    "first_seen": "2026-11-14T16:18+00:00",
    "outcome": "Yes",
@@ -138,16 +168,22 @@
    "title": "Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?",
    "wallets": 4
   },
-  "0xacb33346b59a2a3770e2391b7d1b0e77d8dcdcf840a66f5fa01d28db43c4e369|1": {
-   "first_seen": "2026-11-14T16:18+00:00",
+  "0xc45ab97bfa9d0ca06d54d1756d174ce33b090d3d5e1b404679c186a9836564c6|1": {
+   "first_seen": "2026-11-14T16:56+00:00",
    "outcome": "No",
-   "title": "Will Ethereum dip to $1,000 by December 31, 2026?",
+   "title": "Will Ethereum hit $3k by December 31, 2026?",
    "wallets": 3
   },
   "0xc4c41407dd3e1be7fae485778117cd12832edebb652609cd34ba8eb60b817ee2|0": {
    "first_seen": "2026-11-14T15:40+00:00",
    "outcome": "Yes",
    "title": "Will Ethereum dip to $1,750 by December 31, 2026?",
+   "wallets": 3
+  },
+  "0xc8cfc009e5ef7798f16727298e98712da56877f3c78d0bd1a69992c91371ef69|0": {
+   "first_seen": "2026-11-14T16:55+00:00",
+   "outcome": "Josh Hokit",
+   "title": "UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card)",
    "wallets": 3
   },
   "0xd594753a5d2b4d3b9e65cdd06c3cbb0645d70be7626fad94774f45560b150d23|1": {
@@ -166,12 +202,6 @@
    "first_seen": "2026-11-14T15:40+00:00",
    "outcome": "Yes",
    "title": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-   "wallets": 3
-  },
-  "0xf10d87e5a4e46d435aa7f6b57e2cc305262145b2b78626808899e38c1ed90052|0": {
-   "first_seen": "2026-11-14T16:18+00:00",
-   "outcome": "Yes",
-   "title": "Will Bitcoin dip to $65,000 in November?",
    "wallets": 3
   },
   "0xfe28d93c0729d1e099a0359caaf1277e4e6560034c2e3900d65921515f467282|1": {
