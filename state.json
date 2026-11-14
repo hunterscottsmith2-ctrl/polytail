@@ -96,12 +96,6 @@
    "title": "Will Jon Ossoff win the 2028 Democratic presidential nomination?",
    "wallets": 3
   },
-  "0x766996108017c3b6452c23db79ab1c714d8d9d9da846a4c316f5e047754a229d|1": {
-   "first_seen": "2026-11-14T15:40+00:00",
-   "outcome": "No",
-   "title": "Will Ethereum dip to $1,250 by December 31, 2026?",
-   "wallets": 3
-  },
   "0x79b7408f02df2eba4034ca4c06ddf17b8dbeacc5adbe8595969e7573912c4e3b|1": {
    "first_seen": "2026-11-14T15:40+00:00",
    "outcome": "No",
@@ -167,18 +161,6 @@
    "outcome": "Yes",
    "title": "Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?",
    "wallets": 4
-  },
-  "0xc45ab97bfa9d0ca06d54d1756d174ce33b090d3d5e1b404679c186a9836564c6|1": {
-   "first_seen": "2026-11-14T16:56+00:00",
-   "outcome": "No",
-   "title": "Will Ethereum hit $3k by December 31, 2026?",
-   "wallets": 3
-  },
-  "0xc4c41407dd3e1be7fae485778117cd12832edebb652609cd34ba8eb60b817ee2|0": {
-   "first_seen": "2026-11-14T15:40+00:00",
-   "outcome": "Yes",
-   "title": "Will Ethereum dip to $1,750 by December 31, 2026?",
-   "wallets": 3
   },
   "0xc8cfc009e5ef7798f16727298e98712da56877f3c78d0bd1a69992c91371ef69|0": {
    "first_seen": "2026-11-14T16:55+00:00",
