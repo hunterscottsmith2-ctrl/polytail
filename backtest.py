@@ -58,7 +58,7 @@ MIN_SIGNALS_FOR_VERDICT = 30
 
 CACHE_DIR = os.environ.get("BT_CACHE", "cache")
 OUT_DIR = os.environ.get("POLYTAIL_RESULTS", "results" if not SPORTS else "results/sports")
-WALLETS_FILE = os.environ.get("POLYTAIL_WALLETS", "wallets.json" if not SPORTS else "wallets_sports.json")
+SHARP_FILE = "wallets_sharp.json" if not SPORTS else "wallets_sports_sharp.json"
 DAY = 86400
 WINDOW = 30 * DAY
 
@@ -209,6 +209,89 @@ def passes(s):
             and s["pnl"] >= MIN_TRAIN_PNL)
 
 
+# ---------------------------------------------------------------- sharpness (CLV)
+CLV_MIN_COST = 500         # only measure bets of at least $500
+CLV_PER_WALLET = 30        # most recent N markets per wallet per window (keeps API calls sane)
+CLV_MIN_BETS = 20          # need this many measured bets to judge a wallet
+CLV_MIN_MEAN = 0.01        # beat the close by 1c+ on average...
+CLV_MIN_T = 2.0            # ...consistently (t-stat), not from a couple of lucky moves
+
+
+def clv_ref_time(entry_ts, info):
+    """The 'closing' moment we compare a bet against."""
+    if info.get("sport") and info.get("game_start") and entry_ts < info["game_start"]:
+        return info["game_start"] - 60              # sports: last price before kickoff
+    ref = entry_ts + 86400                           # other markets: price a day later
+    if info.get("resolved_at"):
+        ref = min(ref, info["resolved_at"] - 3600)   # never peek at the settled price
+    return ref if ref > entry_ts else None
+
+
+def clv_jobs(trades, res, before):
+    """One job per (market, side) the wallet bought before `before`: avg entry vs. close."""
+    per = {}
+    for t in trades:
+        if t["side"] != "BUY" or t["idx"] < 0 or not t["asset"]:
+            continue
+        info = res.get(t["cid"])
+        if not info:
+            continue
+        k = (t["cid"], t["idx"])
+        j = per.setdefault(k, {"asset": t["asset"], "first": t["ts"], "cost": 0.0,
+                               "shares": 0.0, "info": info})
+        ref = clv_ref_time(j["first"], info)
+        if ref is None or t["ts"] >= ref:
+            continue                                 # only buys made before the close
+        j["cost"] += t["size"] * t["price"]
+        j["shares"] += t["size"]
+    out = []
+    for k, j in per.items():
+        ref = clv_ref_time(j["first"], j["info"])
+        if ref is None or ref >= before or j["cost"] < CLV_MIN_COST or not j["shares"]:
+            continue
+        out.append({"key": k, "asset": j["asset"], "ref": ref, "cost": j["cost"],
+                    "entry": j["cost"] / j["shares"]})
+    out.sort(key=lambda j: -j["ref"])
+    return out[:CLV_PER_WALLET]
+
+
+def fetch_close_prices(jobs, cache):
+    """Fill job['close'] from price history (parallel, cached)."""
+    from concurrent.futures import ThreadPoolExecutor
+
+    def key(j):
+        return f"{j['asset']}_{int(j['ref'] // 300)}"
+
+    todo = list({key(j): j for j in jobs if key(j) not in cache}.values())
+
+    def fetch(j):
+        rows = get_json("/v2/prices-history", {"token_id": j["asset"], "as_of": int(j["ref"])}) or []
+        return key(j), (num(rows[0].get("price"), None) if rows and isinstance(rows, list) else None)
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        for i, (k, p) in enumerate(pool.map(fetch, todo), 1):
+            cache[k] = p
+            if i % 1000 == 0:
+                log(f"  closing prices fetched: {i}/{len(todo)}")
+    for j in jobs:
+        j["close"] = cache.get(key(j))
+
+
+def clv_score(jobs):
+    xs = [(j["close"] - j["entry"], j["cost"]) for j in jobs if j.get("close") is not None]
+    n = len(xs)
+    if n < 2:
+        return {"clv_n": n, "clv_mean": 0.0, "clv_beat": 0.0, "clv_t": 0.0}
+    mean = sum(d for d, _ in xs) / n
+    sd = math.sqrt(sum((d - mean) ** 2 for d, _ in xs) / (n - 1)) or 1e-9
+    return {"clv_n": n, "clv_mean": mean, "clv_beat": sum(d > 0 for d, _ in xs) / n,
+            "clv_t": mean / (sd / math.sqrt(n))}
+
+
+def is_sharp(s):
+    return s["clv_n"] >= CLV_MIN_BETS and s["clv_mean"] >= CLV_MIN_MEAN and s["clv_t"] >= CLV_MIN_T
+
+
 # ---------------------------------------------------------------- replay
 def replay(all_trades, wallet_set, n_needed, min_pos, cutoff):
     """Walk trades in time order; emit a signal when n_needed wallets hold the same side."""
@@ -327,10 +410,23 @@ def main():
     selected = {w for w, s in scores.items() if passes(s)}
     log(f"Selected {len(selected)} wallets from training window")
 
-    all_trades = sorted((t for tr in trades_by_wallet.values() for t in tr), key=lambda t: t["ts"])
+    # Sharpness: does each wallet beat the closing price? Training-window bets only for
+    # the test (no peeking); a second pass over all bets builds the live sharp list.
     lookups = {"cache": cache_get("prices.json") or {}, "count": 0}
+    train_jobs = {w: clv_jobs(tr, res, cutoff) for w, tr in trades_by_wallet.items()}
+    live_jobs = {w: clv_jobs(tr, res, now) for w, tr in trades_by_wallet.items()}
+    all_jobs = [j for js in list(train_jobs.values()) + list(live_jobs.values()) for j in js]
+    log(f"Measuring closing-line value on {len(all_jobs)} bets")
+    fetch_close_prices(all_jobs, lookups["cache"])
+    cache_put("prices.json", lookups["cache"])
+    for w in scores:
+        scores[w].update(clv_score(train_jobs[w]))
+    sharp = {w for w, s in scores.items() if is_sharp(s)}
+    log(f"Sharp by CLV (training window): {len(sharp)} wallets")
 
-    sets = {"scored": selected, "whole pool": set(trades_by_wallet)}
+    all_trades = sorted((t for tr in trades_by_wallet.values() for t in tr), key=lambda t: t["ts"])
+
+    sets = {"sharp (CLV)": sharp, "scored": selected, "whole pool": set(trades_by_wallet)}
     table, sig_rows = [], []
     for set_name, wset in sets.items():
         for n in N_GRID:
@@ -358,6 +454,15 @@ def main():
     scoring_helps = bool(scored_main and pool_main and scored_main["settled"] >= 10
                          and scored_main["mean_roi"] > pool_main["mean_roi"])
 
+    def best_of(name):
+        rows = [r for r in table if r["wallets"] == name and ok(r)]
+        return max(rows, key=lambda r: r["mean_roi"]) if rows else None
+
+    sharp_best, pool_best = best_of("sharp (CLV)"), best_of("whole pool")
+    sharp_helps = bool(sharp_best and sharp_best["ci_low"] == sharp_best["ci_low"]
+                       and sharp_best["ci_low"] > 0
+                       and (not pool_best or sharp_best["mean_roi"] > pool_best["mean_roi"]))
+
     if best:
         verdict = (f"✅ Edge found: {best['wallets']} wallets, N={best['N']}, min ${best['min_pos']:,}"
                    f" → {pct(best['mean_roi'])} per bet over {best['settled']} settled bets"
@@ -375,12 +480,15 @@ def main():
         w.writerows(sig_rows)
     with open(os.path.join(OUT_DIR, "wallet_scores.csv"), "w", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["wallet", "name", "selected", "markets", "cost", "pnl", "roi",
-                    "market_win_rate", "months_positive"])
-        for wal, s in sorted(scores.items(), key=lambda kv: -kv[1]["pnl"]):
-            w.writerow([wal, pool[wal]["name"], wal in selected, s["markets"], round(s["cost"]),
-                        round(s["pnl"]), round(s["roi"], 4), round(s["market_win_rate"], 3),
-                        s["months_positive"]])
+        w.writerow(["wallet", "name", "sharp_clv", "selected", "markets", "cost", "pnl", "roi",
+                    "market_win_rate", "months_positive", "clv_bets", "clv_avg_cents",
+                    "clv_beat_rate", "clv_t"])
+        for wal, s in sorted(scores.items(), key=lambda kv: -kv[1]["clv_t"]):
+            w.writerow([wal, pool[wal]["name"], wal in sharp, wal in selected, s["markets"],
+                        round(s["cost"]), round(s["pnl"]), round(s["roi"], 4),
+                        round(s["market_win_rate"], 3), s["months_positive"], s["clv_n"],
+                        round(s["clv_mean"] * 100, 2), round(s["clv_beat"], 3),
+                        round(s["clv_t"], 2)])
 
     lines = [
         f"# PolyTail backtest report ({CATEGORY})",
@@ -394,8 +502,16 @@ def main():
         f"Bets placed at the price {DELAY_MINUTES} min after the signal, minus a "
         f"{TAKER_FEE:.0%} fee. A random bet at market price averages about -1% "
         "after that fee, so that's the bar to beat.",
-        f"Scoring wallets {'beat' if scoring_helps else 'did NOT beat'} using the whole "
+        f"Profit-scored wallets {'beat' if scoring_helps else 'did NOT beat'} the whole "
         "pool (N=3, $1K).",
+        f"**Sharp wallets (closing-line value):** {len(sharp)} wallets beat the closing price "
+        f"consistently in training ({CLV_MIN_BETS}+ bets, avg {CLV_MIN_MEAN*100:.0f}¢+, t≥{CLV_MIN_T:g}). "
+        + (f"Best sharp setting: N={sharp_best['N']}, ${sharp_best['min_pos']:,} → "
+           f"{pct(sharp_best['mean_roi'])}/bet over {sharp_best['settled']} bets. "
+           if sharp_best else "Too few sharp signals to judge (need 30+ settled). ")
+        + (f"Whole pool best: {pct(pool_best['mean_roi'])}/bet. " if pool_best else "")
+        + ("**Following sharps beat following the pool.**" if sharp_helps
+           else "Following sharps did NOT clearly beat the pool."),
         "",
         "| Wallets | N | Min $ | Signals | Settled | Win rate | Avg price | Mean ROI | 90% range | $100/bet total |",
         "|---|---|---|---|---|---|---|---|---|---|",
@@ -426,22 +542,29 @@ def main():
     with open(os.path.join(OUT_DIR, "backtest_report.md"), "w") as f:
         f.write(report)
 
-    # Live watchlist: re-score on all settled data (through today), only if scoring helped.
-    if scoring_helps:
-        live = {w: score_wallet(tr, res, now) for w, tr in trades_by_wallet.items()}
-        keep = sorted((w for w, s in live.items() if passes(s)), key=lambda w: -live[w]["pnl"])
-        with open(WALLETS_FILE, "w") as f:
-            json.dump({"generated_at": now, "wallets": [
-                {"wallet": w, "name": pool[w]["name"], "pnl": round(live[w]["pnl"]),
-                 "roi": round(live[w]["roi"], 4), "markets": live[w]["markets"]} for w in keep]},
-                f, indent=1)
-        log(f"Wrote {WALLETS_FILE} with {len(keep)} wallets")
+    # Candidate sharp watchlist, scored on ALL bets through today. Saved for review only —
+    # the live bots don't use it until it's renamed/activated with Hunter's OK.
+    live_clv = {w: clv_score(js) for w, js in live_jobs.items()}
+    keep = sorted((w for w, s in live_clv.items() if is_sharp(s)), key=lambda w: -live_clv[w]["clv_t"])
+    with open(SHARP_FILE, "w") as f:
+        json.dump({"generated_at": now, "beat_pool_in_backtest": sharp_helps,
+                   "best_setting": ({"MIN_WALLETS_AGREEING": sharp_best["N"],
+                                     "MIN_POSITION_USD": sharp_best["min_pos"]} if sharp_best else None),
+                   "wallets": [{"wallet": w, "name": pool[w]["name"],
+                                "pnl": round(scores[w]["pnl"]),
+                                "clv_avg_cents": round(live_clv[w]["clv_mean"] * 100, 2),
+                                "clv_beat_rate": round(live_clv[w]["clv_beat"], 3),
+                                "clv_bets": live_clv[w]["clv_n"]} for w in keep]},
+                  f, indent=1)
+    log(f"Wrote {SHARP_FILE} with {len(keep)} sharp wallets (not active)")
 
     tg = [f"<b>🧪 PolyTail backtest done ({CATEGORY})</b>", verdict.replace("**", ""), ""]
+    tg.append(f"Sharp wallets (beat the close): {len(sharp)}")
     for r in table:
-        if r["wallets"] == "scored" and r["min_pos"] == 1_000:
-            tg.append(f"N={r['N']}: {r['settled']} bets, {r['win_rate']:.0%} wins, "
-                      f"{pct(r['mean_roi'])}/bet")
+        if r["wallets"] == "sharp (CLV)" and r["N"] in (2, 3, 4):
+            tg.append(f"Sharps N={r['N']} ${r['min_pos']:,}: {r['settled']} bets, "
+                      f"{r['win_rate']:.0%} wins, {pct(r['mean_roi'])}/bet")
+    tg.append("✅ Sharps beat the big-money pool" if sharp_helps else "Sharps did not clearly beat the pool")
     tg.append(f"\nFull report: {OUT_DIR}/backtest_report.md in your repo")
     send_telegram("\n".join(tg))
     print(report)
