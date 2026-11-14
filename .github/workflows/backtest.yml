@@ -1,0 +1,59 @@
+name: PolyTail backtest
+
+on:
+  workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: "Total days of history (training + test)"
+        default: "240"
+      test_days:
+        description: "Most recent days held out for testing"
+        default: "90"
+      pool_depth:
+        description: "Wallets to pull from each leaderboard (multiples of 50)"
+        default: "100"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: polytail-backtest
+  cancel-in-progress: false
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Restore download cache
+        uses: actions/cache@v4
+        with:
+          path: cache
+          key: polytail-cache-${{ github.run_id }}
+          restore-keys: polytail-cache-
+
+      - name: Run backtest
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BT_LOOKBACK_DAYS: ${{ inputs.lookback_days }}
+          BT_TEST_DAYS: ${{ inputs.test_days }}
+          BT_POOL_DEPTH: ${{ inputs.pool_depth }}
+        run: python backtest.py
+
+      - name: Save results to the repo
+        if: always()
+        run: |
+          git config user.name "polytail-bot"
+          git config user.email "polytail-bot@users.noreply.github.com"
+          [ -d results ] && git add results
+          [ -f wallets.json ] && git add wallets.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Backtest results"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          exit 1
