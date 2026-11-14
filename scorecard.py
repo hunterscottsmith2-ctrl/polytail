@@ -15,6 +15,10 @@ from common import market_resolutions, money, num, send_telegram
 
 LOG_FILE = os.environ.get("POLYTAIL_LOG", "signals_log.csv")
 OUT_DIR = os.environ.get("POLYTAIL_RESULTS", "results")
+LABEL = os.environ.get("SCORECARD_LABEL", "PolyTail")
+FILE_TAG = os.environ.get("SCORECARD_TAG", "scorecard")
+# Only alerts at/after this time count toward the test (rule changes reset it).
+SINCE = os.environ.get("SCORECARD_SINCE", "")
 STAKE = 100          # pretend bet per alert, $
 TAKER_FEE = 0.01     # haircut for fees/slippage (1% of stake)
 
@@ -65,24 +69,34 @@ def summarize(graded):
 
 def main():
     if not os.path.exists(LOG_FILE):
-        send_telegram("<b>PolyTail scorecard</b>\nNo alerts logged yet.")
+        send_telegram(f"<b>{LABEL} scorecard</b>\nNo alerts logged yet.")
         return
     with open(LOG_FILE) as f:
         rows = [r for r in csv.DictReader(f) if r.get("kind") == "new"]
     graded = grade(rows)
-    lines = summarize(graded)
+    current = [g for g in graded if not SINCE or g["alerted_at"] >= SINCE]
+    old = [g for g in graded if SINCE and g["alerted_at"] < SINCE]
+    lines = summarize(current)
+    if SINCE:
+        lines.insert(0, f"(Counting alerts since {SINCE[:16].replace('T', ' ')} UTC — current rules)")
+    if old:
+        done = [g for g in old if g["result"] != "pending"]
+        p = sum(num(g["profit"]) for g in done)
+        lines.append(f"\nOlder-rule alerts (not counted): {len(done)} settled, "
+                     + (f"{p / (STAKE * len(done)):+.1%} per bet" if done else "none settled yet"))
 
     os.makedirs(OUT_DIR, exist_ok=True)
-    with open(os.path.join(OUT_DIR, "scorecard.csv"), "w", newline="") as f:
-        fields = list(graded[0].keys()) if graded else ["result"]
+    with open(os.path.join(OUT_DIR, f"{FILE_TAG}.csv"), "w", newline="") as f:
+        fields = list(graded[0].keys()) + ["counted"] if graded else ["result"]
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
-        w.writerows(graded)
+        for g in graded:
+            w.writerow({**g, "counted": g in current})
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    with open(os.path.join(OUT_DIR, "scorecard.md"), "w") as f:
-        f.write(f"# PolyTail live scorecard ({stamp})\n\n" + "\n".join(lines) + "\n")
+    with open(os.path.join(OUT_DIR, f"{FILE_TAG}.md"), "w") as f:
+        f.write(f"# {LABEL} live scorecard ({stamp})\n\n" + "\n".join(lines) + "\n")
 
-    send_telegram("<b>📊 PolyTail weekly scorecard</b>\n" + "\n".join(lines))
+    send_telegram(f"<b>📊 {LABEL} weekly scorecard</b>\n" + "\n".join(lines))
     print("\n".join(lines))
 
 

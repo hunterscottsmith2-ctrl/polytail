@@ -113,6 +113,25 @@ def _json_list(v):
         return []
 
 
+def _sport_fields(m):
+    """Game markets (moneyline / spread / total) carry a market type and a kickoff time."""
+    return {"sport": bool(m.get("sportsMarketType")),
+            "game_start": parse_time(m.get("gameStartTime"))}
+
+
+def market_info(condition_ids):
+    """Sports info for open (or any) markets: {cid: {"sport": bool, "game_start": epoch|None}}."""
+    out, ids = {}, [c for c in dict.fromkeys(condition_ids) if c]
+    for i in range(0, len(ids), 25):
+        rows = get_json("/markets", {"condition_ids": ids[i:i + 25], "limit": 100},
+                        base=GAMMA_API) or []
+        for m in rows:
+            if m.get("conditionId"):
+                out[m["conditionId"]] = _sport_fields(m)
+        time.sleep(0.1)
+    return out
+
+
 def market_resolutions(condition_ids, cache=None):
     """
     Look up final results for markets.
@@ -143,6 +162,7 @@ def market_resolutions(condition_ids, cache=None):
                 "resolved_at": parse_time(m.get("closedTime")) or parse_time(m.get("endDate")),
                 "outcomes": _json_list(m.get("outcomes")),
                 "title": m.get("question") or "",
+                **_sport_fields(m),
             }
         for cid in batch:  # remember misses this run so we don't re-ask
             cache.setdefault(cid, None)

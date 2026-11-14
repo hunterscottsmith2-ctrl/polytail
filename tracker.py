@@ -20,11 +20,21 @@ import os
 import time
 from datetime import datetime, timezone
 
-from common import get_json, money, num, send_telegram
+from common import get_json, market_info, money, num, send_telegram
+
+# Two independent tests run from this file:
+#   main   (default)               — all markets, overall leaderboards
+#   sports (POLYTAIL_PROFILE=sports) — game markets only, sports leaderboards,
+#                                     pre-kickoff only, its own log/state/settings
+PROFILE = os.environ.get("POLYTAIL_PROFILE", "main")
+SUFFIX = "" if PROFILE == "main" else f"_{PROFILE}"
 
 # ---------------------------------------------------------------- settings
 # Defaults. Any key in settings.json overrides these (handy after a backtest).
 SETTINGS = {
+    "CATEGORY": "sports" if PROFILE == "sports" else "overall",
+    "SPORTS_GAMES_ONLY": PROFILE == "sports",   # only moneyline/spread/total markets, pre-kickoff
+    "LABEL": "🏈 SPORTS: " if PROFILE == "sports" else "",
     # Watchlist = same pool the backtest tested: profit AND volume boards.
     "LEADERBOARDS": [["ALL", "PNL"], ["MONTH", "PNL"], ["ALL", "VOLUME"], ["MONTH", "VOLUME"]],
     "LEADERBOARD_DEPTH": 100,
@@ -43,10 +53,10 @@ SETTINGS = {
     "WALLETS_FILE_MAX_AGE_DAYS": 21, # ignore wallets.json if older than this
 }
 
-STATE_FILE = os.environ.get("POLYTAIL_STATE", "state.json")
-LOG_FILE = os.environ.get("POLYTAIL_LOG", "signals_log.csv")
-SETTINGS_FILE = os.environ.get("POLYTAIL_SETTINGS", "settings.json")
-WALLETS_FILE = os.environ.get("POLYTAIL_WALLETS", "wallets.json")
+STATE_FILE = os.environ.get("POLYTAIL_STATE", f"state{SUFFIX}.json")
+LOG_FILE = os.environ.get("POLYTAIL_LOG", "signals_log.csv" if not SUFFIX else f"signals{SUFFIX}.csv")
+SETTINGS_FILE = os.environ.get("POLYTAIL_SETTINGS", f"settings{SUFFIX}.json")
+WALLETS_FILE = os.environ.get("POLYTAIL_WALLETS", f"wallets{SUFFIX}.json")
 
 LOG_FIELDS = ["alerted_at", "kind", "key", "condition_id", "outcome_index", "outcome",
               "title", "event_slug", "price", "avg_entry", "wallets", "total_value",
@@ -83,7 +93,7 @@ def leaderboard_wallets(cfg):
     wallets = {}
     for period, board in cfg["LEADERBOARDS"]:
         rows = get_json("/v2/leaderboard", {
-            "category": "overall", "time_period": period.lower(),
+            "category": cfg["CATEGORY"], "time_period": period.lower(),
             "sort_by": board, "limit": cfg["LEADERBOARD_DEPTH"],
         }) or []
         for row in rows:
@@ -169,6 +179,15 @@ def find_consensus(wallets, positions_by_wallet, cfg):
             continue  # price already ran past their entry
         signals.append(g)
 
+    if cfg["SPORTS_GAMES_ONLY"] and signals:
+        info = market_info([s["condition_id"] for s in signals])
+        now = time.time()
+        signals = [s for s in signals
+                   if info.get(s["condition_id"], {}).get("sport")
+                   and (info[s["condition_id"]].get("game_start") or 0) > now]
+        for s in signals:
+            s["game_start"] = info[s["condition_id"]]["game_start"]
+
     by_market = {}
     for g in groups.values():
         by_market.setdefault(g["condition_id"], []).append(g)
@@ -214,7 +233,7 @@ def log_signal(s, kind):
 def format_alert(s, is_upgrade):
     head = "📈 MORE TOP TRADERS JOINED" if is_upgrade else "🐋 TOP TRADERS AGREE"
     lines = [
-        f"<b>{head}</b>",
+        f"<b>{html.escape(LABEL)}{head}</b>",
         f"<b>{html.escape(s['title'])}</b>",
         f"Side: <b>{html.escape(s['outcome'])}</b> @ {s['price']*100:.0f}¢ now"
         f" (their avg entry {s['avg_entry']*100:.0f}¢)",
@@ -225,7 +244,10 @@ def format_alert(s, is_upgrade):
         lines.append(f"Consensus formed {mins // 60}h {mins % 60}m ago")
     if s["opposing_wallets"]:
         lines.append(f"⚠️ {s['opposing_wallets']} top wallet(s) on the other side")
-    if s["end_date"]:
+    if s.get("game_start"):
+        mins = int((s["game_start"] - time.time()) / 60)
+        lines.append(f"Kickoff in {mins // 60}h {mins % 60}m")
+    elif s["end_date"]:
         lines.append(f"Ends: {s['end_date']}")
     lines.append("")
     for h in s["holders"][:6]:
@@ -238,8 +260,14 @@ def format_alert(s, is_upgrade):
     return "\n".join(lines)
 
 
+LABEL = ""
+
+
 def main():
+    global LABEL
     cfg = load_settings()
+    LABEL = cfg["LABEL"]
+    print(f"Profile: {PROFILE}")
     state = load_state()
     alerted = state.setdefault("alerted", {})
 

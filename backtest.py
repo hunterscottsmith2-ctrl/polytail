@@ -38,6 +38,8 @@ from common import get_json, get_pages, market_resolutions, money, num, send_tel
 LOOKBACK_DAYS = int(os.environ.get("BT_LOOKBACK_DAYS", 240))
 TEST_DAYS = int(os.environ.get("BT_TEST_DAYS", 90))
 POOL_DEPTH = int(os.environ.get("BT_POOL_DEPTH", 100))   # per leaderboard
+CATEGORY = os.environ.get("BT_CATEGORY", "overall") or "overall"   # "overall" or "sports"
+SPORTS = CATEGORY == "sports"   # sports: only game markets, signals before kickoff
 POOL_BOARDS = [("ALL", "PNL"), ("MONTH", "PNL"), ("ALL", "VOLUME"), ("MONTH", "VOLUME")]
 
 MAX_TRADES_PER_WALLET = 30_000   # more than this = bot / market maker, skip
@@ -55,8 +57,8 @@ MAX_PRICE_LOOKUPS = 4_000
 MIN_SIGNALS_FOR_VERDICT = 30
 
 CACHE_DIR = os.environ.get("BT_CACHE", "cache")
-OUT_DIR = os.environ.get("POLYTAIL_RESULTS", "results")
-WALLETS_FILE = os.environ.get("POLYTAIL_WALLETS", "wallets.json")
+OUT_DIR = os.environ.get("POLYTAIL_RESULTS", "results" if not SPORTS else "results/sports")
+WALLETS_FILE = os.environ.get("POLYTAIL_WALLETS", "wallets.json" if not SPORTS else "wallets_sports.json")
 DAY = 86400
 WINDOW = 30 * DAY
 
@@ -84,7 +86,7 @@ def cache_put(name, obj):
 def wallet_pool():
     pool = {}
     for period, order in POOL_BOARDS:
-        rows = get_json("/v2/leaderboard", {"category": "overall", "time_period": period.lower(),
+        rows = get_json("/v2/leaderboard", {"category": CATEGORY, "time_period": period.lower(),
                                             "sort_by": order, "limit": POOL_DEPTH}) or []
         for r in rows:
             w = (r.get("user_id") or "").lower()
@@ -252,6 +254,9 @@ def evaluate(signals, res, lookups):
     rows = []
     for s in signals:
         info = res.get(s["cid"])
+        if SPORTS and not (info and info.get("sport") and info.get("game_start")
+                           and s["ts"] < info["game_start"]):
+            continue  # sports test: only pre-kickoff signals on game markets
         delayed = price_after(s["asset"], s["ts"], lookups) if s["asset"] else None
         entry = delayed if delayed else min(s["trigger_price"] + SLIPPAGE, 0.99)
         row = dict(s, entry=round(entry, 4), price_source="history" if delayed else "trigger+1¢")
@@ -310,11 +315,11 @@ def main():
             log(f"  trades pulled for {i}/{len(pool)} wallets")
     log(f"Usable wallets: {len(trades_by_wallet)} (skipped {bots} bot-like)")
 
-    res_cache = cache_get("resolutions.json") or {}
+    res_cache = cache_get("resolutions_v2.json") or {}
     all_cids = {t["cid"] for tr in trades_by_wallet.values() for t in tr}
     log(f"Looking up results for {len(all_cids)} markets")
     res = market_resolutions(list(all_cids), cache=res_cache)
-    cache_put("resolutions.json", {k: v for k, v in res_cache.items() if v})
+    cache_put("resolutions_v2.json", {k: v for k, v in res_cache.items() if v})
     log(f"{len(res)} markets settled")
 
     # Score wallets on training data only.
@@ -378,7 +383,7 @@ def main():
                         s["months_positive"]])
 
     lines = [
-        "# PolyTail backtest report",
+        f"# PolyTail backtest report ({CATEGORY})",
         f"Run {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC. Training window "
         f"{LOOKBACK_DAYS - TEST_DAYS} days, test window {TEST_DAYS} days.",
         f"Wallet pool {len(pool)}, usable {len(trades_by_wallet)}, bot-like skipped {bots}, "
@@ -432,12 +437,12 @@ def main():
                 f, indent=1)
         log(f"Wrote {WALLETS_FILE} with {len(keep)} wallets")
 
-    tg = ["<b>🧪 PolyTail backtest done</b>", verdict.replace("**", ""), ""]
+    tg = [f"<b>🧪 PolyTail backtest done ({CATEGORY})</b>", verdict.replace("**", ""), ""]
     for r in table:
         if r["wallets"] == "scored" and r["min_pos"] == 1_000:
             tg.append(f"N={r['N']}: {r['settled']} bets, {r['win_rate']:.0%} wins, "
                       f"{pct(r['mean_roi'])}/bet")
-    tg.append("\nFull report: results/backtest_report.md in your repo")
+    tg.append(f"\nFull report: {OUT_DIR}/backtest_report.md in your repo")
     send_telegram("\n".join(tg))
     print(report)
 
