@@ -288,6 +288,11 @@ def clv_score(jobs):
             "clv_t": mean / (sd / math.sqrt(n))}
 
 
+def is_profitable(s):
+    """Real winnings on settled markets: $5K+ profit and a positive return."""
+    return s["markets"] >= 10 and s["pnl"] >= MIN_TRAIN_PNL and s["roi"] > 0
+
+
 def is_sharp(s):
     return s["clv_n"] >= CLV_MIN_BETS and s["clv_mean"] >= CLV_MIN_MEAN and s["clv_t"] >= CLV_MIN_T
 
@@ -423,10 +428,12 @@ def main():
         scores[w].update(clv_score(train_jobs[w]))
     sharp = {w for w, s in scores.items() if is_sharp(s)}
     log(f"Sharp by CLV (training window): {len(sharp)} wallets")
+    proven = {w for w in sharp if is_profitable(scores[w])}
+    log(f"Proven (sharp AND profitable): {len(proven)} wallets")
 
     all_trades = sorted((t for tr in trades_by_wallet.values() for t in tr), key=lambda t: t["ts"])
 
-    sets = {"sharp (CLV)": sharp, "scored": selected, "whole pool": set(trades_by_wallet)}
+    sets = {"proven (profit+CLV)": proven, "sharp (CLV)": sharp, "scored": selected, "whole pool": set(trades_by_wallet)}
     table, sig_rows = [], []
     for set_name, wset in sets.items():
         for n in N_GRID:
@@ -437,7 +444,7 @@ def main():
                 table.append({"wallets": set_name, "N": n, "min_pos": mp, **st})
                 for r in rows:
                     sig_rows.append({"wallet_set": set_name, "N": n, "min_pos": mp, **r})
-                log(f"  {set_name:10} N={n} min ${mp:>5}: {st['settled']:4} settled, "
+                log(f"  {set_name:18} N={n} min ${mp:>5}: {st['settled']:4} settled, "
                     f"mean {pct(st['mean_roi'])}")
     cache_put("prices.json", lookups["cache"])
 
@@ -462,6 +469,10 @@ def main():
     sharp_helps = bool(sharp_best and sharp_best["ci_low"] == sharp_best["ci_low"]
                        and sharp_best["ci_low"] > 0
                        and (not pool_best or sharp_best["mean_roi"] > pool_best["mean_roi"]))
+    proven_best = best_of("proven (profit+CLV)")
+    proven_helps = bool(proven_best and proven_best["ci_low"] == proven_best["ci_low"]
+                        and proven_best["ci_low"] > 0
+                        and (not pool_best or proven_best["mean_roi"] > pool_best["mean_roi"]))
 
     if best:
         verdict = (f"✅ Edge found: {best['wallets']} wallets, N={best['N']}, min ${best['min_pos']:,}"
@@ -512,6 +523,11 @@ def main():
         + (f"Whole pool best: {pct(pool_best['mean_roi'])}/bet. " if pool_best else "")
         + ("**Following sharps beat following the pool.**" if sharp_helps
            else "Following sharps did NOT clearly beat the pool."),
+        f"**Proven winners (profitable AND beat the close):** {len(proven)} wallets. "
+        + (f"Best: N={proven_best['N']}, ${proven_best['min_pos']:,} → "
+           f"{pct(proven_best['mean_roi'])}/bet over {proven_best['settled']} bets. "
+           if proven_best else "Too few signals to judge (need 30+ settled). ")
+        + ("**Beat the pool.**" if proven_helps else "Did NOT clearly beat the pool."),
         "",
         "| Wallets | N | Min $ | Signals | Settled | Win rate | Avg price | Mean ROI | 90% range | $100/bet total |",
         "|---|---|---|---|---|---|---|---|---|---|",
@@ -546,12 +562,18 @@ def main():
     # the live bots don't use it until it's renamed/activated with Hunter's OK.
     live_clv = {w: clv_score(js) for w, js in live_jobs.items()}
     keep = sorted((w for w, s in live_clv.items() if is_sharp(s)), key=lambda w: -live_clv[w]["clv_t"])
+    live_profit = {w: score_wallet(trades_by_wallet[w], res, now) for w in keep}
     with open(SHARP_FILE, "w") as f:
         json.dump({"generated_at": now, "beat_pool_in_backtest": sharp_helps,
+                   "proven_beat_pool_in_backtest": proven_helps,
+                   "proven_best_setting": ({"MIN_WALLETS_AGREEING": proven_best["N"],
+                                            "MIN_POSITION_USD": proven_best["min_pos"]}
+                                           if proven_best else None),
                    "best_setting": ({"MIN_WALLETS_AGREEING": sharp_best["N"],
                                      "MIN_POSITION_USD": sharp_best["min_pos"]} if sharp_best else None),
                    "wallets": [{"wallet": w, "name": pool[w]["name"],
-                                "pnl": round(scores[w]["pnl"]),
+                                "pnl": round(live_profit[w]["pnl"]),
+                                "proven": is_profitable(live_profit[w]),
                                 "clv_avg_cents": round(live_clv[w]["clv_mean"] * 100, 2),
                                 "clv_beat_rate": round(live_clv[w]["clv_beat"], 3),
                                 "clv_bets": live_clv[w]["clv_n"]} for w in keep]},
@@ -565,6 +587,12 @@ def main():
             tg.append(f"Sharps N={r['N']} ${r['min_pos']:,}: {r['settled']} bets, "
                       f"{r['win_rate']:.0%} wins, {pct(r['mean_roi'])}/bet")
     tg.append("✅ Sharps beat the big-money pool" if sharp_helps else "Sharps did not clearly beat the pool")
+    tg.append(f"\nProven winners (profit + beat the close): {len(proven)}")
+    for r in table:
+        if r["wallets"] == "proven (profit+CLV)" and r["N"] in (2, 3):
+            tg.append(f"Proven N={r['N']} ${r['min_pos']:,}: {r['settled']} bets, "
+                      f"{r['win_rate']:.0%} wins, {pct(r['mean_roi'])}/bet")
+    tg.append("✅ Proven winners beat the pool" if proven_helps else "Proven winners did not clearly beat the pool")
     tg.append(f"\nFull report: {OUT_DIR}/backtest_report.md in your repo")
     send_telegram("\n".join(tg))
     print(report)
