@@ -1,0 +1,64 @@
+{
+ "alerted": {
+  "0x0fcfcfc35d71424c0693c717d2e3bc9b8992910835d124d80cd2f01498f1d3dc|1": {
+   "first_seen": "2026-11-14T15:21+00:00",
+   "outcome": "No",
+   "title": "Pete Hegseth out as Secretary of Defense by December 31?",
+   "wallets": 6
+  },
+  "0x21ad31a46bfaa51650766eff6dc69c866959e32d965ffb116020e37694b6317d|0": {
+   "first_seen": "2026-11-14T15:21+00:00",
+   "outcome": "Yes",
+   "title": "Will Marco Rubio win the 2028 Republican presidential nomination?",
+   "wallets": 4
+  },
+  "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846|1": {
+   "first_seen": "2026-11-14T15:21+00:00",
+   "outcome": "No",
+   "title": "Will the U.S. invade Iran before 2027?",
+   "wallets": 5
+  },
+  "0x61600d487069f99e775307a0655c1a79f26e4fc6d8d1ba66790c64d78d0beba2|0": {
+   "first_seen": "2026-11-14T15:21+00:00",
+   "outcome": "Yes",
+   "title": "Will Jon Ossoff win the 2028 US Presidential Election?",
+   "wallets": 5
+  },
+  "0x67f3f8d0a0ecdfc008c99650284a4674388a8c3029b0eb7ca0abd65dde8d996f|0": {
+   "first_seen": "2026-11-14T15:21+00:00",
+   "outcome": "Yes",
+   "title": "Will Nicol\u00e1s Maduro be the leader of Venezuela end of 2026?",
+   "wallets": 4
+  },
+  "0x7ad403c3508f8e3912940fd1a913f227591145ca0614074208e0b962d5fcc422|0": {
+   "first_seen": "2026-11-14T15:21+00:00",
+   "outcome": "Yes",
+   "title": "Will JD Vance win the 2028 US Presidential Election?",
+   "wallets": 6
+  },
+  "0x7ad403c3508f8e3912940fd1a913f227591145ca0614074208e0b962d5fcc422|1": {
+   "first_seen": "2026-11-14T15:21+00:00",
+   "outcome": "No",
+   "title": "Will JD Vance win the 2028 US Presidential Election?",
+   "wallets": 7
+  },
+  "0x8126317d621047fb13d508a2651eecc8d38305904671822a62309c5aabd353aa|0": {
+   "first_seen": "2026-11-14T15:21+00:00",
+   "outcome": "Yes",
+   "title": "Will Marine Le Pen win the 2027 French presidential election?",
+   "wallets": 7
+  },
+  "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8|0": {
+   "first_seen": "2026-11-14T15:21+00:00",
+   "outcome": "Yes",
+   "title": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+   "wallets": 8
+  },
+  "0xd594753a5d2b4d3b9e65cdd06c3cbb0645d70be7626fad94774f45560b150d23|1": {
+   "first_seen": "2026-11-14T15:21+00:00",
+   "outcome": "No",
+   "title": "Will Anthropic's valuation hit (HIGH) $3.0T by December 31?",
+   "wallets": 4
+  }
+ }
+}
