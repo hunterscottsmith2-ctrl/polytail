@@ -6,12 +6,6 @@
    "title": "Pete Hegseth out as Secretary of Defense by December 31?",
    "wallets": 6
   },
-  "0x133b51a6851a2ee619e841693c0f75f3c3fdc8d75d69eadd3f0c0fe9105c50ee|1": {
-   "first_seen": "2026-11-14T16:18+00:00",
-   "outcome": "No",
-   "title": "Will Ko Chih-en win the next Kaohsiung Mayor election?",
-   "wallets": 3
-  },
   "0x1e5564c1a2a6839cc2780a889437c63786a2c2ec5e95569b710ee659a3e8baa2|1": {
    "first_seen": "2026-11-14T16:55+00:00",
    "outcome": "No",
@@ -173,6 +167,18 @@
    "outcome": "Yes",
    "title": "Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?",
    "wallets": 4
+  },
+  "0xacb33346b59a2a3770e2391b7d1b0e77d8dcdcf840a66f5fa01d28db43c4e369|1": {
+   "first_seen": "2026-11-14T19:53+00:00",
+   "outcome": "No",
+   "title": "Will Ethereum dip to $1,000 by December 31, 2026?",
+   "wallets": 3
+  },
+  "0xae9826277177e60ff95ac6c149da01956a9d341650c1cfede6a9e5efb8704dba|0": {
+   "first_seen": "2026-11-14T19:53+00:00",
+   "outcome": "Gen.G",
+   "title": "Game Handicap: GEN (-1.5) vs Bilibili Gaming (+1.5)",
+   "wallets": 3
   },
   "0xbddb7c7946f22cd2c0fd059473c4cd0b3458e901bfa581afccdae0058ae25380|1": {
    "first_seen": "2026-11-14T19:16+00:00",
