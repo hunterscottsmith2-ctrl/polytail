@@ -1,0 +1,22 @@
+{
+ "alerted": {
+  "0x0998f4a258f3a3440db42ce507da813b3f66917609f8a9c434db9771f433a6fe|0": {
+   "first_seen": "2026-11-14T21:23+00:00",
+   "outcome": "Nets",
+   "title": "Nets vs. Grizzlies",
+   "wallets": 4
+  },
+  "0xc6fc98d58f9edab5a95cb2bb703bd466428bd57c1185d7c4c3e4f7a8adb54b2f|0": {
+   "first_seen": "2026-11-14T21:23+00:00",
+   "outcome": "Grizzlies",
+   "title": "Spread: Grizzlies (-2.5)",
+   "wallets": 4
+  },
+  "0xcb18d42e96cc137fdd15527e9faf1dc86a7904f98f6189a6bb016f8bc9b1b35d|0": {
+   "first_seen": "2026-11-14T21:23+00:00",
+   "outcome": "Over",
+   "title": "Nuggets vs. Pelicans: O/U 235.5",
+   "wallets": 4
+  }
+ }
+}
