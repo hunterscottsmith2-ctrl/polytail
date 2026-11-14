@@ -6,11 +6,41 @@
    "title": "Pete Hegseth out as Secretary of Defense by December 31?",
    "wallets": 6
   },
+  "0x133b51a6851a2ee619e841693c0f75f3c3fdc8d75d69eadd3f0c0fe9105c50ee|1": {
+   "first_seen": "2026-11-14T16:18+00:00",
+   "outcome": "No",
+   "title": "Will Ko Chih-en win the next Kaohsiung Mayor election?",
+   "wallets": 3
+  },
   "0x21ad31a46bfaa51650766eff6dc69c866959e32d965ffb116020e37694b6317d|0": {
    "first_seen": "2026-11-14T15:21+00:00",
    "outcome": "Yes",
    "title": "Will Marco Rubio win the 2028 Republican presidential nomination?",
    "wallets": 4
+  },
+  "0x2d858f0a25a61dfde6485f3d8e75aed397bed616c3e458b66e10e642fb2f9759|1": {
+   "first_seen": "2026-11-14T16:18+00:00",
+   "outcome": "No",
+   "title": "Pete Hegseth out as Secretary of Defense by November 30?",
+   "wallets": 3
+  },
+  "0x2dcbc71a3f8108936e768b503d565fbda7a644b2a0bd9ed45f74982a2bb11fba|0": {
+   "first_seen": "2026-11-14T16:18+00:00",
+   "outcome": "Yes",
+   "title": "Israel x Iran ceasefire continues through November 30?",
+   "wallets": 3
+  },
+  "0x4151c750147143b2f7f362727e1ffb453dc0c0af82e50d46d644e4e484c7e85d|0": {
+   "first_seen": "2026-11-14T16:18+00:00",
+   "outcome": "Yes",
+   "title": "Will Ethereum dip to $1,800 in November?",
+   "wallets": 3
+  },
+  "0x46ca741da4abd7ffa993f59ac65bfe83de43ae027accac71d263a493e44064e7|1": {
+   "first_seen": "2026-11-14T16:18+00:00",
+   "outcome": "No",
+   "title": "US announces end of Iranian blockade by December 31, 2026?",
+   "wallets": 3
   },
   "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846|1": {
    "first_seen": "2026-11-14T15:21+00:00",
@@ -90,11 +120,29 @@
    "title": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
    "wallets": 8
   },
+  "0x94f240d042917cabd55f0bcbcac7d4d2accd4436773bf91596f76572cac643cb|0": {
+   "first_seen": "2026-11-14T16:18+00:00",
+   "outcome": "Yes",
+   "title": "Will Google have the best AI model at the end of December 2026?",
+   "wallets": 3
+  },
+  "0x9b786700f51dc9540f016267a69245616f53e93563de3fc5a1ac3a16f66310c4|1": {
+   "first_seen": "2026-11-14T16:18+00:00",
+   "outcome": "No",
+   "title": "Jensen Huang divorce by December 31, 2026?",
+   "wallets": 3
+  },
   "0xa5f8a44504de30fa36fff2406b2b27b3d15476ed50448e4fc3ead4861d8a5e3e|0": {
    "first_seen": "2026-11-14T15:40+00:00",
    "outcome": "Yes",
    "title": "Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?",
    "wallets": 4
+  },
+  "0xacb33346b59a2a3770e2391b7d1b0e77d8dcdcf840a66f5fa01d28db43c4e369|1": {
+   "first_seen": "2026-11-14T16:18+00:00",
+   "outcome": "No",
+   "title": "Will Ethereum dip to $1,000 by December 31, 2026?",
+   "wallets": 3
   },
   "0xc4c41407dd3e1be7fae485778117cd12832edebb652609cd34ba8eb60b817ee2|0": {
    "first_seen": "2026-11-14T15:40+00:00",
@@ -118,6 +166,18 @@
    "first_seen": "2026-11-14T15:40+00:00",
    "outcome": "Yes",
    "title": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
+   "wallets": 3
+  },
+  "0xf10d87e5a4e46d435aa7f6b57e2cc305262145b2b78626808899e38c1ed90052|0": {
+   "first_seen": "2026-11-14T16:18+00:00",
+   "outcome": "Yes",
+   "title": "Will Bitcoin dip to $65,000 in November?",
+   "wallets": 3
+  },
+  "0xfe28d93c0729d1e099a0359caaf1277e4e6560034c2e3900d65921515f467282|1": {
+   "first_seen": "2026-11-14T16:18+00:00",
+   "outcome": "No",
+   "title": "Will there be no new be CEO of NVIDIA by December 31, 2028?",
    "wallets": 3
   }
  }
