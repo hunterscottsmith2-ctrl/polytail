@@ -3,6 +3,11 @@ name: PolyTail backtest
 on:
   workflow_dispatch:
     inputs:
+      category:
+        description: "Which test: overall (all markets) or sports (game markets only)"
+        type: choice
+        options: [overall, sports]
+        default: overall
       lookback_days:
         description: "Total days of history (training + test)"
         default: "240"
@@ -17,7 +22,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: polytail-backtest
+  group: polytail-backtest-${{ inputs.category }}
   cancel-in-progress: false
 
 jobs:
@@ -44,6 +49,7 @@ jobs:
           BT_LOOKBACK_DAYS: ${{ inputs.lookback_days }}
           BT_TEST_DAYS: ${{ inputs.test_days }}
           BT_POOL_DEPTH: ${{ inputs.pool_depth }}
+          BT_CATEGORY: ${{ inputs.category }}
         run: python backtest.py
 
       - name: Save results to the repo
@@ -52,7 +58,7 @@ jobs:
           git config user.name "polytail-bot"
           git config user.email "polytail-bot@users.noreply.github.com"
           [ -d results ] && git add results
-          [ -f wallets.json ] && git add wallets.json
+          for f in wallets.json wallets_sports.json; do [ -f "$f" ] && git add "$f"; done
           git diff --cached --quiet && exit 0
           git commit -m "Backtest results"
           for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
