@@ -1,10 +1,10 @@
 {
  "alerted": {
-  "0x134e5143254278e5df6f0ffcf9502845fa935923b86c56fd627508552240a959|0": {
-   "first_seen": "2026-11-14T20:24+00:00",
-   "outcome": "Bilibili Gaming",
-   "title": "LoL: Bilibili Gaming vs Gen.G - Game 1 Winner",
-   "wallets": 7
+  "0x0998f4a258f3a3440db42ce507da813b3f66917609f8a9c434db9771f433a6fe|0": {
+   "first_seen": "2026-11-14T21:00+00:00",
+   "outcome": "Nets",
+   "title": "Nets vs. Grizzlies",
+   "wallets": 4
   },
   "0x41f94101d57bf028eff62f2cc3714adb79722553dc59c1676071459c0b009e45|0": {
    "first_seen": "2026-11-14T20:29+00:00",
@@ -12,16 +12,22 @@
    "title": "LoL: Bilibili Gaming vs Gen.G (BO5) - Worlds Playoffs",
    "wallets": 6
   },
+  "0x7e18117f745b5c9ccfd1efec23d30c828fc086a0f70cb546b8cd308bb94a16e3|0": {
+   "first_seen": "2026-11-14T21:00+00:00",
+   "outcome": "Tennessee",
+   "title": "Tennessee vs. Texas A&M",
+   "wallets": 5
+  },
   "0x7e18117f745b5c9ccfd1efec23d30c828fc086a0f70cb546b8cd308bb94a16e3|1": {
    "first_seen": "2026-11-14T20:29+00:00",
    "outcome": "Texas A&M",
    "title": "Tennessee vs. Texas A&M",
-   "wallets": 5
+   "wallets": 6
   },
-  "0x93af6e2437b372c5e76f92554251e2a808a0b9a91f49dfe1b5c51c68d607b354|0": {
-   "first_seen": "2026-11-14T20:29+00:00",
-   "outcome": "Yes",
-   "title": "Will Portugal win on 2026-11-14?",
+  "0xd89caa6e08266e51834d64b67e4d8148d1f421c94bf8e6978008d695400059ad|0": {
+   "first_seen": "2026-11-14T21:00+00:00",
+   "outcome": "Bilibili Gaming",
+   "title": "LoL: Bilibili Gaming vs Gen.G - Game 2 Winner",
    "wallets": 4
   }
  }
