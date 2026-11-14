@@ -4,12 +4,18 @@
    "first_seen": "2026-11-14T21:00+00:00",
    "outcome": "Nets",
    "title": "Nets vs. Grizzlies",
-   "wallets": 4
+   "wallets": 5
   },
-  "0x0f00a8afc4935b92d7e33d8369c9a14a206afdf3ec24ae43736ce6c568af8c4e|1": {
-   "first_seen": "2026-11-14T22:49+00:00",
-   "outcome": "Indiana",
-   "title": "USC vs. Indiana",
+  "0x74261eede43e69782e24e75d96b7e425778113069351e494eb7471a6ef35686f|0": {
+   "first_seen": "2026-11-14T23:20+00:00",
+   "outcome": "Bilibili Gaming",
+   "title": "LoL: Bilibili Gaming vs Gen.G - Game 4 Winner",
+   "wallets": 5
+  },
+  "0x74261eede43e69782e24e75d96b7e425778113069351e494eb7471a6ef35686f|1": {
+   "first_seen": "2026-11-14T23:20+00:00",
+   "outcome": "Gen.G",
+   "title": "LoL: Bilibili Gaming vs Gen.G - Game 4 Winner",
    "wallets": 4
   },
   "0xc2c371b13e8982caa1fb9a04106609f61e95290b89291021c1c2168fa2121d11|0": {
@@ -17,6 +23,12 @@
    "outcome": "Washington",
    "title": "Washington vs. Michigan State",
    "wallets": 6
+  },
+  "0xc2c371b13e8982caa1fb9a04106609f61e95290b89291021c1c2168fa2121d11|1": {
+   "first_seen": "2026-11-14T23:20+00:00",
+   "outcome": "Michigan State",
+   "title": "Washington vs. Michigan State",
+   "wallets": 5
   }
  }
 }
