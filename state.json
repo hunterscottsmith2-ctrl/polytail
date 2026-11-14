@@ -1,243 +1,27 @@
 {
  "alerted": {
-  "0x0fcfcfc35d71424c0693c717d2e3bc9b8992910835d124d80cd2f01498f1d3dc|1": {
-   "first_seen": "2026-11-14T15:21+00:00",
-   "outcome": "No",
-   "title": "Pete Hegseth out as Secretary of Defense by December 31?",
-   "wallets": 6
-  },
   "0x134e5143254278e5df6f0ffcf9502845fa935923b86c56fd627508552240a959|0": {
    "first_seen": "2026-11-14T20:24+00:00",
    "outcome": "Bilibili Gaming",
    "title": "LoL: Bilibili Gaming vs Gen.G - Game 1 Winner",
    "wallets": 7
   },
-  "0x1e5564c1a2a6839cc2780a889437c63786a2c2ec5e95569b710ee659a3e8baa2|1": {
-   "first_seen": "2026-11-14T16:55+00:00",
-   "outcome": "No",
-   "title": "Will Bitcoin dip to $40,000 by December 31, 2026?",
-   "wallets": 3
-  },
-  "0x2053d8515f1b8cbeea4ccdb56e60e89c2617e43a8660d95166b8e71d27865277|0": {
-   "first_seen": "2026-11-14T16:56+00:00",
-   "outcome": "Yes",
-   "title": "Will Marco Rubio win the 2028 US Presidential Election?",
-   "wallets": 3
-  },
-  "0x21ad31a46bfaa51650766eff6dc69c866959e32d965ffb116020e37694b6317d|0": {
-   "first_seen": "2026-11-14T15:21+00:00",
-   "outcome": "Yes",
-   "title": "Will Marco Rubio win the 2028 Republican presidential nomination?",
-   "wallets": 4
-  },
-  "0x22c3138b1886ba78fd272173a26ce81b508bd09e5027fc231d4dc15c8b524312|0": {
-   "first_seen": "2026-11-14T16:56+00:00",
-   "outcome": "Yes",
-   "title": "Will Anthropic IPO by November 19, 2026?",
-   "wallets": 3
-  },
-  "0x2d858f0a25a61dfde6485f3d8e75aed397bed616c3e458b66e10e642fb2f9759|1": {
-   "first_seen": "2026-11-14T16:18+00:00",
-   "outcome": "No",
-   "title": "Pete Hegseth out as Secretary of Defense by November 30?",
-   "wallets": 3
-  },
-  "0x2dcbc71a3f8108936e768b503d565fbda7a644b2a0bd9ed45f74982a2bb11fba|0": {
-   "first_seen": "2026-11-14T16:18+00:00",
-   "outcome": "Yes",
-   "title": "Israel x Iran ceasefire continues through November 30?",
-   "wallets": 3
-  },
-  "0x4151c750147143b2f7f362727e1ffb453dc0c0af82e50d46d644e4e484c7e85d|0": {
-   "first_seen": "2026-11-14T16:18+00:00",
-   "outcome": "Yes",
-   "title": "Will Ethereum dip to $1,800 in November?",
-   "wallets": 4
-  },
-  "0x41f94101d57bf028eff62f2cc3714adb79722553dc59c1676071459c0b009e45|1": {
-   "first_seen": "2026-11-14T19:16+00:00",
-   "outcome": "Gen.G",
+  "0x41f94101d57bf028eff62f2cc3714adb79722553dc59c1676071459c0b009e45|0": {
+   "first_seen": "2026-11-14T20:29+00:00",
+   "outcome": "Bilibili Gaming",
    "title": "LoL: Bilibili Gaming vs Gen.G (BO5) - Worlds Playoffs",
-   "wallets": 4
-  },
-  "0x46ca741da4abd7ffa993f59ac65bfe83de43ae027accac71d263a493e44064e7|1": {
-   "first_seen": "2026-11-14T16:18+00:00",
-   "outcome": "No",
-   "title": "US announces end of Iranian blockade by December 31, 2026?",
-   "wallets": 3
-  },
-  "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846|1": {
-   "first_seen": "2026-11-14T15:21+00:00",
-   "outcome": "No",
-   "title": "Will the U.S. invade Iran before 2027?",
-   "wallets": 5
-  },
-  "0x61600d487069f99e775307a0655c1a79f26e4fc6d8d1ba66790c64d78d0beba2|0": {
-   "first_seen": "2026-11-14T15:21+00:00",
-   "outcome": "Yes",
-   "title": "Will Jon Ossoff win the 2028 US Presidential Election?",
-   "wallets": 5
-  },
-  "0x61600d487069f99e775307a0655c1a79f26e4fc6d8d1ba66790c64d78d0beba2|1": {
-   "first_seen": "2026-11-14T15:40+00:00",
-   "outcome": "No",
-   "title": "Will Jon Ossoff win the 2028 US Presidential Election?",
-   "wallets": 3
-  },
-  "0x67f3f8d0a0ecdfc008c99650284a4674388a8c3029b0eb7ca0abd65dde8d996f|0": {
-   "first_seen": "2026-11-14T15:21+00:00",
-   "outcome": "Yes",
-   "title": "Will Nicol\u00e1s Maduro be the leader of Venezuela end of 2026?",
-   "wallets": 4
-  },
-  "0x6b0d8ed1f588b7ea3f6e55d799bf818431751c1dc6f015c18e3c62174978f756|1": {
-   "first_seen": "2026-11-14T15:40+00:00",
-   "outcome": "No",
-   "title": "Jensen Huang divorce by March 31, 2027?",
-   "wallets": 4
-  },
-  "0x74dba1ce1ae9dd535414e85f2d9ab5ea32c0fb1acc9b7130b67e6d91217e24e1|0": {
-   "first_seen": "2026-11-14T15:40+00:00",
-   "outcome": "Yes",
-   "title": "Will Jon Ossoff win the 2028 Democratic presidential nomination?",
-   "wallets": 3
-  },
-  "0x766996108017c3b6452c23db79ab1c714d8d9d9da846a4c316f5e047754a229d|1": {
-   "first_seen": "2026-11-14T18:29+00:00",
-   "outcome": "No",
-   "title": "Will Ethereum dip to $1,250 by December 31, 2026?",
-   "wallets": 3
-  },
-  "0x79b7408f02df2eba4034ca4c06ddf17b8dbeacc5adbe8595969e7573912c4e3b|1": {
-   "first_seen": "2026-11-14T15:40+00:00",
-   "outcome": "No",
-   "title": "US-Iran Final Nuclear Deal by December 31, 2026?",
-   "wallets": 3
-  },
-  "0x7ad403c3508f8e3912940fd1a913f227591145ca0614074208e0b962d5fcc422|0": {
-   "first_seen": "2026-11-14T15:21+00:00",
-   "outcome": "Yes",
-   "title": "Will JD Vance win the 2028 US Presidential Election?",
    "wallets": 6
   },
-  "0x7ad403c3508f8e3912940fd1a913f227591145ca0614074208e0b962d5fcc422|1": {
-   "first_seen": "2026-11-14T15:21+00:00",
-   "outcome": "No",
-   "title": "Will JD Vance win the 2028 US Presidential Election?",
-   "wallets": 7
+  "0x7e18117f745b5c9ccfd1efec23d30c828fc086a0f70cb546b8cd308bb94a16e3|1": {
+   "first_seen": "2026-11-14T20:29+00:00",
+   "outcome": "Texas A&M",
+   "title": "Tennessee vs. Texas A&M",
+   "wallets": 5
   },
-  "0x800376dc64e4e2376a495ed0df4a789192256c821bb4d1452acdd5931bca2fa5|0": {
-   "first_seen": "2026-11-14T15:40+00:00",
+  "0x93af6e2437b372c5e76f92554251e2a808a0b9a91f49dfe1b5c51c68d607b354|0": {
+   "first_seen": "2026-11-14T20:29+00:00",
    "outcome": "Yes",
-   "title": "Will Anthropic's market cap be less than $1.25T at market close on IPO day?",
-   "wallets": 4
-  },
-  "0x8126317d621047fb13d508a2651eecc8d38305904671822a62309c5aabd353aa|0": {
-   "first_seen": "2026-11-14T15:21+00:00",
-   "outcome": "Yes",
-   "title": "Will Marine Le Pen win the 2027 French presidential election?",
-   "wallets": 7
-  },
-  "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8|0": {
-   "first_seen": "2026-11-14T15:21+00:00",
-   "outcome": "Yes",
-   "title": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
-   "wallets": 8
-  },
-  "0x8afa174c7b8a579f058e94b58af32d6eea8c5cfe5e214ca735c2f3bcc6ba78af|0": {
-   "first_seen": "2026-11-14T16:56+00:00",
-   "outcome": "Yes",
-   "title": "Will Real Madrid win the 2026-27 LALIGA Championship?",
-   "wallets": 3
-  },
-  "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3|1": {
-   "first_seen": "2026-11-14T16:56+00:00",
-   "outcome": "No",
-   "title": "Will Puma Shen win the next Taipei Mayor election?",
-   "wallets": 3
-  },
-  "0x94f240d042917cabd55f0bcbcac7d4d2accd4436773bf91596f76572cac643cb|0": {
-   "first_seen": "2026-11-14T16:18+00:00",
-   "outcome": "Yes",
-   "title": "Will Google have the best AI model at the end of December 2026?",
-   "wallets": 3
-  },
-  "0x9b786700f51dc9540f016267a69245616f53e93563de3fc5a1ac3a16f66310c4|1": {
-   "first_seen": "2026-11-14T16:18+00:00",
-   "outcome": "No",
-   "title": "Jensen Huang divorce by December 31, 2026?",
-   "wallets": 3
-  },
-  "0xa5f8a44504de30fa36fff2406b2b27b3d15476ed50448e4fc3ead4861d8a5e3e|0": {
-   "first_seen": "2026-11-14T15:40+00:00",
-   "outcome": "Yes",
-   "title": "Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?",
-   "wallets": 4
-  },
-  "0xacb33346b59a2a3770e2391b7d1b0e77d8dcdcf840a66f5fa01d28db43c4e369|1": {
-   "first_seen": "2026-11-14T19:53+00:00",
-   "outcome": "No",
-   "title": "Will Ethereum dip to $1,000 by December 31, 2026?",
-   "wallets": 3
-  },
-  "0xae9826277177e60ff95ac6c149da01956a9d341650c1cfede6a9e5efb8704dba|0": {
-   "first_seen": "2026-11-14T19:53+00:00",
-   "outcome": "Gen.G",
-   "title": "Game Handicap: GEN (-1.5) vs Bilibili Gaming (+1.5)",
-   "wallets": 3
-  },
-  "0xbddb7c7946f22cd2c0fd059473c4cd0b3458e901bfa581afccdae0058ae25380|1": {
-   "first_seen": "2026-11-14T19:16+00:00",
-   "outcome": "Kayla Harrison",
-   "title": "UFC 334: Amanda Nunes vs. Kayla Harrison (Women's Bantamweight, Main Card)",
-   "wallets": 3
-  },
-  "0xc45ab97bfa9d0ca06d54d1756d174ce33b090d3d5e1b404679c186a9836564c6|1": {
-   "first_seen": "2026-11-14T18:29+00:00",
-   "outcome": "No",
-   "title": "Will Ethereum hit $3k by December 31, 2026?",
-   "wallets": 3
-  },
-  "0xc4c41407dd3e1be7fae485778117cd12832edebb652609cd34ba8eb60b817ee2|0": {
-   "first_seen": "2026-11-14T18:29+00:00",
-   "outcome": "Yes",
-   "title": "Will Ethereum dip to $1,750 by December 31, 2026?",
-   "wallets": 3
-  },
-  "0xc8cfc009e5ef7798f16727298e98712da56877f3c78d0bd1a69992c91371ef69|0": {
-   "first_seen": "2026-11-14T16:55+00:00",
-   "outcome": "Josh Hokit",
-   "title": "UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card)",
-   "wallets": 3
-  },
-  "0xd594753a5d2b4d3b9e65cdd06c3cbb0645d70be7626fad94774f45560b150d23|1": {
-   "first_seen": "2026-11-14T15:21+00:00",
-   "outcome": "No",
-   "title": "Will Anthropic's valuation hit (HIGH) $3.0T by December 31?",
-   "wallets": 4
-  },
-  "0xdc7c8ada1b8d28300cdc783578e8754d2570a3da067965be15bba638cb94f83a|1": {
-   "first_seen": "2026-11-14T15:40+00:00",
-   "outcome": "No",
-   "title": "Will Anthropic's valuation hit (HIGH) $2.5T by December 31?",
-   "wallets": 4
-  },
-  "0xe96dbaceb816e80063bec945a76ac915cba4341bdf1ef704f722bfc9054aad09|1": {
-   "first_seen": "2026-11-14T20:24+00:00",
-   "outcome": "No",
-   "title": "Will Anthropic have the highest IPO Market Cap 2026?",
-   "wallets": 3
-  },
-  "0xf02d8d72bb96d84090d4f7d63e7837afb94f8d061e7a2cca8cf21732150e8815|0": {
-   "first_seen": "2026-11-14T15:40+00:00",
-   "outcome": "Yes",
-   "title": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
-   "wallets": 3
-  },
-  "0xfe28d93c0729d1e099a0359caaf1277e4e6560034c2e3900d65921515f467282|1": {
-   "first_seen": "2026-11-14T16:18+00:00",
-   "outcome": "No",
-   "title": "Will there be no new be CEO of NVIDIA by December 31, 2028?",
+   "title": "Will Portugal win on 2026-11-14?",
    "wallets": 4
   }
  }
