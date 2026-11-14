@@ -24,11 +24,41 @@
    "title": "Will Jon Ossoff win the 2028 US Presidential Election?",
    "wallets": 5
   },
+  "0x61600d487069f99e775307a0655c1a79f26e4fc6d8d1ba66790c64d78d0beba2|1": {
+   "first_seen": "2026-11-14T15:40+00:00",
+   "outcome": "No",
+   "title": "Will Jon Ossoff win the 2028 US Presidential Election?",
+   "wallets": 3
+  },
   "0x67f3f8d0a0ecdfc008c99650284a4674388a8c3029b0eb7ca0abd65dde8d996f|0": {
    "first_seen": "2026-11-14T15:21+00:00",
    "outcome": "Yes",
    "title": "Will Nicol\u00e1s Maduro be the leader of Venezuela end of 2026?",
    "wallets": 4
+  },
+  "0x6b0d8ed1f588b7ea3f6e55d799bf818431751c1dc6f015c18e3c62174978f756|1": {
+   "first_seen": "2026-11-14T15:40+00:00",
+   "outcome": "No",
+   "title": "Jensen Huang divorce by March 31, 2027?",
+   "wallets": 4
+  },
+  "0x74dba1ce1ae9dd535414e85f2d9ab5ea32c0fb1acc9b7130b67e6d91217e24e1|0": {
+   "first_seen": "2026-11-14T15:40+00:00",
+   "outcome": "Yes",
+   "title": "Will Jon Ossoff win the 2028 Democratic presidential nomination?",
+   "wallets": 3
+  },
+  "0x766996108017c3b6452c23db79ab1c714d8d9d9da846a4c316f5e047754a229d|1": {
+   "first_seen": "2026-11-14T15:40+00:00",
+   "outcome": "No",
+   "title": "Will Ethereum dip to $1,250 by December 31, 2026?",
+   "wallets": 3
+  },
+  "0x79b7408f02df2eba4034ca4c06ddf17b8dbeacc5adbe8595969e7573912c4e3b|1": {
+   "first_seen": "2026-11-14T15:40+00:00",
+   "outcome": "No",
+   "title": "US-Iran Final Nuclear Deal by December 31, 2026?",
+   "wallets": 3
   },
   "0x7ad403c3508f8e3912940fd1a913f227591145ca0614074208e0b962d5fcc422|0": {
    "first_seen": "2026-11-14T15:21+00:00",
@@ -42,6 +72,12 @@
    "title": "Will JD Vance win the 2028 US Presidential Election?",
    "wallets": 7
   },
+  "0x800376dc64e4e2376a495ed0df4a789192256c821bb4d1452acdd5931bca2fa5|0": {
+   "first_seen": "2026-11-14T15:40+00:00",
+   "outcome": "Yes",
+   "title": "Will Anthropic's market cap be less than $1.25T at market close on IPO day?",
+   "wallets": 4
+  },
   "0x8126317d621047fb13d508a2651eecc8d38305904671822a62309c5aabd353aa|0": {
    "first_seen": "2026-11-14T15:21+00:00",
    "outcome": "Yes",
@@ -54,11 +90,35 @@
    "title": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
    "wallets": 8
   },
+  "0xa5f8a44504de30fa36fff2406b2b27b3d15476ed50448e4fc3ead4861d8a5e3e|0": {
+   "first_seen": "2026-11-14T15:40+00:00",
+   "outcome": "Yes",
+   "title": "Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?",
+   "wallets": 4
+  },
+  "0xc4c41407dd3e1be7fae485778117cd12832edebb652609cd34ba8eb60b817ee2|0": {
+   "first_seen": "2026-11-14T15:40+00:00",
+   "outcome": "Yes",
+   "title": "Will Ethereum dip to $1,750 by December 31, 2026?",
+   "wallets": 3
+  },
   "0xd594753a5d2b4d3b9e65cdd06c3cbb0645d70be7626fad94774f45560b150d23|1": {
    "first_seen": "2026-11-14T15:21+00:00",
    "outcome": "No",
    "title": "Will Anthropic's valuation hit (HIGH) $3.0T by December 31?",
    "wallets": 4
+  },
+  "0xdc7c8ada1b8d28300cdc783578e8754d2570a3da067965be15bba638cb94f83a|1": {
+   "first_seen": "2026-11-14T15:40+00:00",
+   "outcome": "No",
+   "title": "Will Anthropic's valuation hit (HIGH) $2.5T by December 31?",
+   "wallets": 4
+  },
+  "0xf02d8d72bb96d84090d4f7d63e7837afb94f8d061e7a2cca8cf21732150e8815|0": {
+   "first_seen": "2026-11-14T15:40+00:00",
+   "outcome": "Yes",
+   "title": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?",
+   "wallets": 3
   }
  }
 }
