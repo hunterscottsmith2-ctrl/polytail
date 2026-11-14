@@ -1,0 +1,40 @@
+name: PolyTail sports scan
+
+on:
+  schedule:
+    - cron: "5-59/10 * * * *"   # every 10 minutes, offset 5 min from the main scan
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: polytail-sports
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Scan sports wallets and send alerts
+        env:
+          POLYTAIL_PROFILE: sports
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python tracker.py
+
+      - name: Save alert history and signal log
+        run: |
+          git config user.name "polytail-bot"
+          git config user.email "polytail-bot@users.noreply.github.com"
+          for f in state_sports.json signals_sports.csv; do [ -f "$f" ] && git add "$f"; done
+          git diff --cached --quiet && exit 0
+          git commit -m "Update sports alert state"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          exit 1
