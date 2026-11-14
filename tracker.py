@@ -25,14 +25,20 @@ from common import get_json, money, num, send_telegram
 # ---------------------------------------------------------------- settings
 # Defaults. Any key in settings.json overrides these (handy after a backtest).
 SETTINGS = {
-    "LEADERBOARD_PERIODS": ["MONTH", "ALL"],  # fallback watchlist source
+    # Watchlist = same pool the backtest tested: profit AND volume boards.
+    "LEADERBOARDS": [["ALL", "PNL"], ["MONTH", "PNL"], ["ALL", "VOLUME"], ["MONTH", "VOLUME"]],
     "LEADERBOARD_DEPTH": 100,
-    "MIN_PNL": 50_000,               # wallet must be up at least this much ($)
-    "MIN_PNL_TO_VOLUME": 0.02,       # profit / volume >= 2% -> drops market makers
-    "MIN_POSITION_USD": 1_000,       # ignore small positions
+    "MIN_PNL": -1e12,                # no profit floor (backtest pool had none)
+    "MIN_PNL_TO_VOLUME": -1.0,       # no margin floor
+    # Backtest best setting (Nov 14): 4+ wallets, $5K+ each, under 60c.
+    "MIN_POSITION_USD": 5_000,       # each wallet must hold at least this much
     "MIN_PRICE": 0.05,               # skip near-dead outcomes
-    "MAX_PRICE": 0.95,               # skip near-certain outcomes
-    "MIN_WALLETS_AGREEING": 3,       # how many watched wallets must share the bet
+    "MAX_PRICE": 0.60,               # 60c+ was break-even in the backtest
+    "MIN_WALLETS_AGREEING": 4,
+    # Freshness filters
+    "FRESH_HOURS": 24,               # consensus must have formed within this window
+    "MAX_RUNUP": 0.05,               # skip if price is >5c above their avg entry
+    "MAX_DAYS_TO_END": 30,           # skip markets ending more than 30 days out
     "MAX_ALERTS_PER_RUN": 10,
     "WALLETS_FILE_MAX_AGE_DAYS": 21, # ignore wallets.json if older than this
 }
@@ -75,10 +81,10 @@ def scored_wallets(cfg):
 
 def leaderboard_wallets(cfg):
     wallets = {}
-    for period in cfg["LEADERBOARD_PERIODS"]:
+    for period, board in cfg["LEADERBOARDS"]:
         rows = get_json("/v2/leaderboard", {
             "category": "overall", "time_period": period.lower(),
-            "sort_by": "PNL", "limit": cfg["LEADERBOARD_DEPTH"],
+            "sort_by": board, "limit": cfg["LEADERBOARD_DEPTH"],
         }) or []
         for row in rows:
             w = (row.get("user_id") or "").lower()
@@ -111,7 +117,10 @@ def open_positions(wallet, cfg):
                 end_dt = datetime.fromisoformat(end.replace("Z", "+00:00"))
                 if end_dt.tzinfo is None:
                     end_dt = end_dt.replace(tzinfo=timezone.utc)
-                if end_dt.timestamp() < now:
+                # end_date is a calendar day; allow the whole day to play out
+                if end_dt.timestamp() + 86400 < now:
+                    continue
+                if end_dt.timestamp() > now + cfg["MAX_DAYS_TO_END"] * 86400:
                     continue
             except ValueError:
                 pass
@@ -138,6 +147,7 @@ def find_consensus(wallets, positions_by_wallet, cfg):
             g["holders"].append({
                 "wallet": w, "name": wallets[w]["name"], "trader_pnl": wallets[w]["pnl"],
                 "value": num(p.get("current_value")), "avg_price": num(p.get("avg_price")),
+                "entered": num(p.get("first_entry_at")),
             })
 
     signals = []
@@ -149,6 +159,14 @@ def find_consensus(wallets, positions_by_wallet, cfg):
         shares = sum(h["value"] / g["price"] for h in g["holders"]) if g["price"] else 0
         cost = sum(h["value"] / g["price"] * h["avg_price"] for h in g["holders"]) if g["price"] else 0
         g["avg_entry"] = cost / shares if shares else 0
+        # When did the consensus form? = when the Nth wallet first got in.
+        entries = sorted(h["entered"] for h in g["holders"] if h["entered"])
+        n = cfg["MIN_WALLETS_AGREEING"]
+        g["formed_at"] = entries[n - 1] if len(entries) >= n else 0
+        if g["formed_at"] and time.time() - g["formed_at"] > cfg["FRESH_HOURS"] * 3600:
+            continue  # old consensus — the move has likely happened
+        if g["price"] - g["avg_entry"] > cfg["MAX_RUNUP"]:
+            continue  # price already ran past their entry
         signals.append(g)
 
     by_market = {}
@@ -202,6 +220,9 @@ def format_alert(s, is_upgrade):
         f" (their avg entry {s['avg_entry']*100:.0f}¢)",
         f"{len(s['holders'])} top wallets, {money(s['total_value'])} combined",
     ]
+    if s.get("formed_at"):
+        mins = max(0, int((time.time() - s["formed_at"]) / 60))
+        lines.append(f"Consensus formed {mins // 60}h {mins % 60}m ago")
     if s["opposing_wallets"]:
         lines.append(f"⚠️ {s['opposing_wallets']} top wallet(s) on the other side")
     if s["end_date"]:
