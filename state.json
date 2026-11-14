@@ -54,6 +54,12 @@
    "title": "Will Ethereum dip to $1,800 in November?",
    "wallets": 4
   },
+  "0x41f94101d57bf028eff62f2cc3714adb79722553dc59c1676071459c0b009e45|1": {
+   "first_seen": "2026-11-14T19:16+00:00",
+   "outcome": "Gen.G",
+   "title": "LoL: Bilibili Gaming vs Gen.G (BO5) - Worlds Playoffs",
+   "wallets": 3
+  },
   "0x46ca741da4abd7ffa993f59ac65bfe83de43ae027accac71d263a493e44064e7|1": {
    "first_seen": "2026-11-14T16:18+00:00",
    "outcome": "No",
@@ -168,6 +174,12 @@
    "title": "Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?",
    "wallets": 4
   },
+  "0xbddb7c7946f22cd2c0fd059473c4cd0b3458e901bfa581afccdae0058ae25380|1": {
+   "first_seen": "2026-11-14T19:16+00:00",
+   "outcome": "Kayla Harrison",
+   "title": "UFC 334: Amanda Nunes vs. Kayla Harrison (Women's Bantamweight, Main Card)",
+   "wallets": 3
+  },
   "0xc45ab97bfa9d0ca06d54d1756d174ce33b090d3d5e1b404679c186a9836564c6|1": {
    "first_seen": "2026-11-14T18:29+00:00",
    "outcome": "No",
@@ -208,7 +220,7 @@
    "first_seen": "2026-11-14T16:18+00:00",
    "outcome": "No",
    "title": "Will there be no new be CEO of NVIDIA by December 31, 2028?",
-   "wallets": 3
+   "wallets": 4
   }
  }
 }
