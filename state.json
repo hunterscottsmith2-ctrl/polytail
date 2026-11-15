@@ -6,12 +6,6 @@
    "title": "Spread: Chiefs (-3.5)",
    "wallets": 8
   },
-  "0x1b5bc5e25aec9f7548c2b3c4413ba14c6bc66165360f4d67d84c8b1fb4fde9c4|1": {
-   "first_seen": "2026-11-15T19:16+00:00",
-   "outcome": "Eliakim Coulibaly",
-   "title": "Metz: Filippo Moroni vs Eliakim Coulibaly",
-   "wallets": 7
-  },
   "0x1d5ff8b0c2a7a10f7502d0484533808ccfaa9c65de11a18e1115a1b08aad8dae|1": {
    "first_seen": "2026-11-15T11:41+00:00",
    "outcome": "Falcons",
@@ -22,12 +16,6 @@
    "first_seen": "2026-11-15T19:17+00:00",
    "outcome": "Over",
    "title": "France vs. T\u00fcrkiye: O/U 3.5",
-   "wallets": 4
-  },
-  "0x5223c4725e1b98444a422c0f53dba751a1ee933757d10ca8d9be5f79dea60956|1": {
-   "first_seen": "2026-11-15T19:17+00:00",
-   "outcome": "No",
-   "title": "Will Spain win on 2026-11-15?",
    "wallets": 4
   },
   "0x5353ebf28dbed44ab26aa48514de7927ca28fd17e7dccdf2633593effed86f9b|0": {
@@ -46,12 +34,6 @@
    "first_seen": "2026-11-15T19:17+00:00",
    "outcome": "France",
    "title": "Spread: France (-2.5)",
-   "wallets": 4
-  },
-  "0x6939f2859abf4a29b7e4587d96b0f2ff88597ffdcafae357af8435b083289f19|0": {
-   "first_seen": "2026-11-15T19:16+00:00",
-   "outcome": "Pacers",
-   "title": "Pacers vs. 76ers",
    "wallets": 5
   },
   "0x851e0c5fc2bd239af2ff1fde68825e3afcdef1ee3427972bd4fd23e3ebd348bb|1": {
@@ -76,7 +58,7 @@
    "first_seen": "2026-11-15T18:30+00:00",
    "outcome": "Jets",
    "title": "Bills vs. Jets",
-   "wallets": 4
+   "wallets": 5
   },
   "0xbe96c8be240c94a4b97b458fcbd173b43a8046c34ea80434451533abb8c7f989|1": {
    "first_seen": "2026-11-15T19:17+00:00",
@@ -88,7 +70,7 @@
    "first_seen": "2026-11-15T17:20+00:00",
    "outcome": "Saints",
    "title": "Panthers vs. Saints",
-   "wallets": 12
+   "wallets": 16
   },
   "0xe10e72af1e0a1fdbd4d3544a61d0fb5142ffe28529138a3dcad6a3ea0e93d056|1": {
    "first_seen": "2026-11-15T14:54+00:00",
