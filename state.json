@@ -1,5 +1,11 @@
 {
  "alerted": {
+  "0x06f886f42d9095870772d8366e5ad0552fab67dbcfdaa3b7745fced823f74ebe|0": {
+   "first_seen": "2026-11-15T15:27+00:00",
+   "outcome": "Over",
+   "title": "Patriots vs. Lions: O/U 50.5",
+   "wallets": 5
+  },
   "0x1d5ff8b0c2a7a10f7502d0484533808ccfaa9c65de11a18e1115a1b08aad8dae|1": {
    "first_seen": "2026-11-15T11:41+00:00",
    "outcome": "Falcons",
@@ -10,6 +16,12 @@
    "first_seen": "2026-11-15T05:19+00:00",
    "outcome": "Vikings",
    "title": "Vikings vs. Packers",
+   "wallets": 7
+  },
+  "0x8d432ea906196f359e5b1a3dda5a706a2db4621f672ada9a4b39c5bf9e20fd75|1": {
+   "first_seen": "2026-11-15T15:27+00:00",
+   "outcome": "Packers",
+   "title": "Vikings vs. Packers",
    "wallets": 5
   },
   "0xe10e72af1e0a1fdbd4d3544a61d0fb5142ffe28529138a3dcad6a3ea0e93d056|1": {
@@ -18,11 +30,11 @@
    "title": "49ers vs. Cowboys",
    "wallets": 4
   },
-  "0xe5911fe31ff6ada47f633e9cc21c8edfb3d1be97d580ebffe01d7e953f440a9c|1": {
-   "first_seen": "2026-11-15T00:28+00:00",
+  "0xecbfaf9f3950fe3bb70053492cb4d6714bec94a488680ac59ff544e939ce78ba|0": {
+   "first_seen": "2026-11-15T15:27+00:00",
    "outcome": "Patriots",
-   "title": "Spread: Lions (-2.5)",
-   "wallets": 8
+   "title": "Patriots vs. Lions",
+   "wallets": 7
   }
  }
 }
