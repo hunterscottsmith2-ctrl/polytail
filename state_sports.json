@@ -1,34 +1,10 @@
 {
  "alerted": {
-  "0x0998f4a258f3a3440db42ce507da813b3f66917609f8a9c434db9771f433a6fe|0": {
-   "first_seen": "2026-11-14T21:23+00:00",
-   "outcome": "Nets",
-   "title": "Nets vs. Grizzlies",
-   "wallets": 7
-  },
-  "0x743b58d306cb6bf88903bb914fd2723b78843a733fe7c4fd5941fdb78f8503f7|0": {
-   "first_seen": "2026-11-15T00:13+00:00",
-   "outcome": "Grizzlies",
-   "title": "Spread: Grizzlies (-4.5)",
+  "0xe5911fe31ff6ada47f633e9cc21c8edfb3d1be97d580ebffe01d7e953f440a9c|1": {
+   "first_seen": "2026-11-15T01:14+00:00",
+   "outcome": "Patriots",
+   "title": "Spread: Lions (-2.5)",
    "wallets": 4
-  },
-  "0x743b58d306cb6bf88903bb914fd2723b78843a733fe7c4fd5941fdb78f8503f7|1": {
-   "first_seen": "2026-11-15T00:13+00:00",
-   "outcome": "Nets",
-   "title": "Spread: Grizzlies (-4.5)",
-   "wallets": 5
-  },
-  "0x93a388a80192937b6e0a6d87a9cbe575b0a8bc4c18fc96f29fcf677b34af4cfb|1": {
-   "first_seen": "2026-11-15T00:13+00:00",
-   "outcome": "Cavaliers",
-   "title": "Mavericks vs. Cavaliers",
-   "wallets": 4
-  },
-  "0xc6fc98d58f9edab5a95cb2bb703bd466428bd57c1185d7c4c3e4f7a8adb54b2f|1": {
-   "first_seen": "2026-11-14T23:40+00:00",
-   "outcome": "Nets",
-   "title": "Spread: Grizzlies (-2.5)",
-   "wallets": 5
   }
  }
 }
