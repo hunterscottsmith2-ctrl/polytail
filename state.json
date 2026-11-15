@@ -1,5 +1,11 @@
 {
  "alerted": {
+  "0x06f886f42d9095870772d8366e5ad0552fab67dbcfdaa3b7745fced823f74ebe|0": {
+   "first_seen": "2026-11-15T14:13+00:00",
+   "outcome": "Over",
+   "title": "Patriots vs. Lions: O/U 50.5",
+   "wallets": 4
+  },
   "0x1d5ff8b0c2a7a10f7502d0484533808ccfaa9c65de11a18e1115a1b08aad8dae|1": {
    "first_seen": "2026-11-15T11:41+00:00",
    "outcome": "Falcons",
@@ -16,7 +22,13 @@
    "first_seen": "2026-11-15T00:28+00:00",
    "outcome": "Patriots",
    "title": "Spread: Lions (-2.5)",
-   "wallets": 6
+   "wallets": 8
+  },
+  "0xecbfaf9f3950fe3bb70053492cb4d6714bec94a488680ac59ff544e939ce78ba|0": {
+   "first_seen": "2026-11-15T14:13+00:00",
+   "outcome": "Patriots",
+   "title": "Patriots vs. Lions",
+   "wallets": 7
   }
  }
 }
