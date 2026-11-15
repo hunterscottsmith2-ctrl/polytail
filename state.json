@@ -1,21 +1,21 @@
 {
  "alerted": {
+  "0x73444f2ecf4789a828543c397d64eef0148451bd74c1a07bc886ac19e029e1c8|0": {
+   "first_seen": "2026-11-15T06:09+00:00",
+   "outcome": "Utah",
+   "title": "Utah vs. Arizona",
+   "wallets": 10
+  },
   "0x73444f2ecf4789a828543c397d64eef0148451bd74c1a07bc886ac19e029e1c8|1": {
    "first_seen": "2026-11-15T05:19+00:00",
    "outcome": "Arizona",
    "title": "Utah vs. Arizona",
-   "wallets": 5
+   "wallets": 9
   },
   "0x8d432ea906196f359e5b1a3dda5a706a2db4621f672ada9a4b39c5bf9e20fd75|0": {
    "first_seen": "2026-11-15T05:19+00:00",
    "outcome": "Vikings",
    "title": "Vikings vs. Packers",
-   "wallets": 4
-  },
-  "0x98b9683409ea52806472dd104bad1dbf6e36ce4c9f63d3a354653e68656a6723|1": {
-   "first_seen": "2026-11-15T05:19+00:00",
-   "outcome": "Oklahoma State",
-   "title": "Texas Tech vs. Oklahoma State",
    "wallets": 4
   },
   "0xe5911fe31ff6ada47f633e9cc21c8edfb3d1be97d580ebffe01d7e953f440a9c|1": {
