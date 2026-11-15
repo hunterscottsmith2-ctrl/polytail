@@ -1,11 +1,5 @@
 {
  "alerted": {
-  "0x73444f2ecf4789a828543c397d64eef0148451bd74c1a07bc886ac19e029e1c8|1": {
-   "first_seen": "2026-11-15T05:19+00:00",
-   "outcome": "Arizona",
-   "title": "Utah vs. Arizona",
-   "wallets": 11
-  },
   "0x8d432ea906196f359e5b1a3dda5a706a2db4621f672ada9a4b39c5bf9e20fd75|0": {
    "first_seen": "2026-11-15T05:19+00:00",
    "outcome": "Vikings",
