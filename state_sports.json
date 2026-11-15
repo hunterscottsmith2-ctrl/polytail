@@ -6,12 +6,6 @@
    "title": "Patriots vs. Lions: O/U 50.5",
    "wallets": 4
   },
-  "0x06f886f42d9095870772d8366e5ad0552fab67dbcfdaa3b7745fced823f74ebe|1": {
-   "first_seen": "2026-11-15T10:27+00:00",
-   "outcome": "Under",
-   "title": "Patriots vs. Lions: O/U 50.5",
-   "wallets": 4
-  },
   "0x1d5ff8b0c2a7a10f7502d0484533808ccfaa9c65de11a18e1115a1b08aad8dae|1": {
    "first_seen": "2026-11-15T11:13+00:00",
    "outcome": "Falcons",
@@ -29,6 +23,12 @@
    "outcome": "Patriots",
    "title": "Spread: Lions (-2.5)",
    "wallets": 6
+  },
+  "0xecbfaf9f3950fe3bb70053492cb4d6714bec94a488680ac59ff544e939ce78ba|1": {
+   "first_seen": "2026-11-15T12:25+00:00",
+   "outcome": "Lions",
+   "title": "Patriots vs. Lions",
+   "wallets": 4
   }
  }
 }
