@@ -1,8 +1,26 @@
 {
  "alerted": {
+  "0x06f67392f0d498f3da5f99865201253d34646f45339818447288c8055f899e02|0": {
+   "first_seen": "2026-11-15T17:20+00:00",
+   "outcome": "Chiefs",
+   "title": "Spread: Chiefs (-3.5)",
+   "wallets": 4
+  },
+  "0x06f67392f0d498f3da5f99865201253d34646f45339818447288c8055f899e02|1": {
+   "first_seen": "2026-11-15T17:20+00:00",
+   "outcome": "Falcons",
+   "title": "Spread: Chiefs (-3.5)",
+   "wallets": 4
+  },
   "0x06f886f42d9095870772d8366e5ad0552fab67dbcfdaa3b7745fced823f74ebe|0": {
    "first_seen": "2026-11-15T15:27+00:00",
    "outcome": "Over",
+   "title": "Patriots vs. Lions: O/U 50.5",
+   "wallets": 6
+  },
+  "0x06f886f42d9095870772d8366e5ad0552fab67dbcfdaa3b7745fced823f74ebe|1": {
+   "first_seen": "2026-11-15T17:20+00:00",
+   "outcome": "Under",
    "title": "Patriots vs. Lions: O/U 50.5",
    "wallets": 5
   },
@@ -11,6 +29,24 @@
    "outcome": "Falcons",
    "title": "Chiefs vs. Falcons",
    "wallets": 7
+  },
+  "0x70fb7404fa510ff5178452a3a631d334d59c223ed1d43784f4dad58c9d94646c|1": {
+   "first_seen": "2026-11-15T17:20+00:00",
+   "outcome": "Vikings",
+   "title": "Spread: Packers (-2.5)",
+   "wallets": 6
+  },
+  "0x7e6e585f0553bb1d6676427dbda7d9ce3d18dee85a3ae37da12dbf670d0574e9|1": {
+   "first_seen": "2026-11-15T17:20+00:00",
+   "outcome": "Under",
+   "title": "Patriots vs. Lions: O/U 48.5",
+   "wallets": 4
+  },
+  "0x851e0c5fc2bd239af2ff1fde68825e3afcdef1ee3427972bd4fd23e3ebd348bb|1": {
+   "first_seen": "2026-11-15T17:20+00:00",
+   "outcome": "Oregon Ducks",
+   "title": "Pepperdine Waves vs. Oregon Ducks",
+   "wallets": 4
   },
   "0x8d432ea906196f359e5b1a3dda5a706a2db4621f672ada9a4b39c5bf9e20fd75|0": {
    "first_seen": "2026-11-15T05:19+00:00",
@@ -23,6 +59,18 @@
    "outcome": "Packers",
    "title": "Vikings vs. Packers",
    "wallets": 9
+  },
+  "0xc7db52dccbf7f07ec89a8380323d87a7dc996baac7b916fddfe838016a2eaeeb|0": {
+   "first_seen": "2026-11-15T17:20+00:00",
+   "outcome": "Panthers",
+   "title": "Panthers vs. Saints",
+   "wallets": 5
+  },
+  "0xc7db52dccbf7f07ec89a8380323d87a7dc996baac7b916fddfe838016a2eaeeb|1": {
+   "first_seen": "2026-11-15T17:20+00:00",
+   "outcome": "Saints",
+   "title": "Panthers vs. Saints",
+   "wallets": 8
   },
   "0xe10e72af1e0a1fdbd4d3544a61d0fb5142ffe28529138a3dcad6a3ea0e93d056|1": {
    "first_seen": "2026-11-15T14:54+00:00",
