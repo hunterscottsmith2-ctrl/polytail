@@ -6,23 +6,29 @@
    "title": "Nets vs. Grizzlies",
    "wallets": 7
   },
+  "0x743b58d306cb6bf88903bb914fd2723b78843a733fe7c4fd5941fdb78f8503f7|0": {
+   "first_seen": "2026-11-15T00:13+00:00",
+   "outcome": "Grizzlies",
+   "title": "Spread: Grizzlies (-4.5)",
+   "wallets": 4
+  },
+  "0x743b58d306cb6bf88903bb914fd2723b78843a733fe7c4fd5941fdb78f8503f7|1": {
+   "first_seen": "2026-11-15T00:13+00:00",
+   "outcome": "Nets",
+   "title": "Spread: Grizzlies (-4.5)",
+   "wallets": 5
+  },
+  "0x93a388a80192937b6e0a6d87a9cbe575b0a8bc4c18fc96f29fcf677b34af4cfb|1": {
+   "first_seen": "2026-11-15T00:13+00:00",
+   "outcome": "Cavaliers",
+   "title": "Mavericks vs. Cavaliers",
+   "wallets": 4
+  },
   "0xc6fc98d58f9edab5a95cb2bb703bd466428bd57c1185d7c4c3e4f7a8adb54b2f|1": {
    "first_seen": "2026-11-14T23:40+00:00",
    "outcome": "Nets",
    "title": "Spread: Grizzlies (-2.5)",
    "wallets": 5
-  },
-  "0xcb18d42e96cc137fdd15527e9faf1dc86a7904f98f6189a6bb016f8bc9b1b35d|0": {
-   "first_seen": "2026-11-14T21:23+00:00",
-   "outcome": "Over",
-   "title": "Nuggets vs. Pelicans: O/U 235.5",
-   "wallets": 4
-  },
-  "0xf92621b8786635e34e8e8e3009a0fea75c453efd69679d46c68922f3e6418e2a|1": {
-   "first_seen": "2026-11-14T23:40+00:00",
-   "outcome": "Nets",
-   "title": "Spread: Grizzlies (-3.5)",
-   "wallets": 4
   }
  }
 }
