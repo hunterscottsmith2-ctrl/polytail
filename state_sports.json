@@ -1,17 +1,5 @@
 {
  "alerted": {
-  "0x5353ebf28dbed44ab26aa48514de7927ca28fd17e7dccdf2633593effed86f9b|0": {
-   "first_seen": "2026-11-15T19:26+00:00",
-   "outcome": "49ers",
-   "title": "Spread: 49ers (-3.5)",
-   "wallets": 9
-  },
-  "0x5353ebf28dbed44ab26aa48514de7927ca28fd17e7dccdf2633593effed86f9b|1": {
-   "first_seen": "2026-11-15T21:19+00:00",
-   "outcome": "Cowboys",
-   "title": "Spread: 49ers (-3.5)",
-   "wallets": 4
-  },
   "0x851e0c5fc2bd239af2ff1fde68825e3afcdef1ee3427972bd4fd23e3ebd348bb|1": {
    "first_seen": "2026-11-15T17:23+00:00",
    "outcome": "Oregon Ducks",
@@ -30,11 +18,11 @@
    "title": "Spread: Spurs (-16.5)",
    "wallets": 4
   },
-  "0xe10e72af1e0a1fdbd4d3544a61d0fb5142ffe28529138a3dcad6a3ea0e93d056|1": {
-   "first_seen": "2026-11-15T18:37+00:00",
-   "outcome": "Cowboys",
-   "title": "49ers vs. Cowboys",
-   "wallets": 5
+  "0xee19747f7bbef1a4fc1322dc7d4c674ba14276baeeaec41b51612bd96be908f2|0": {
+   "first_seen": "2026-11-15T21:56+00:00",
+   "outcome": "Celtics",
+   "title": "Spread: Celtics (-13.5)",
+   "wallets": 4
   },
   "0xee19747f7bbef1a4fc1322dc7d4c674ba14276baeeaec41b51612bd96be908f2|1": {
    "first_seen": "2026-11-15T18:37+00:00",
