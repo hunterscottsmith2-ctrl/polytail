@@ -1,16 +1,3 @@
 {
- "alerted": {
-  "0x939ba835c7ddb9af60fd885cf0389c0374332c525ea9f8fa8e7f0aceeeb111e5|0": {
-   "first_seen": "2026-11-15T21:19+00:00",
-   "outcome": "Celtics",
-   "title": "Spread: Celtics (-14.5)",
-   "wallets": 5
-  },
-  "0xee19747f7bbef1a4fc1322dc7d4c674ba14276baeeaec41b51612bd96be908f2|1": {
-   "first_seen": "2026-11-15T18:37+00:00",
-   "outcome": "Mavericks",
-   "title": "Spread: Celtics (-13.5)",
-   "wallets": 5
-  }
- }
+ "alerted": {}
 }
