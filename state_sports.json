@@ -1,22 +1,40 @@
 {
  "alerted": {
+  "0x06f67392f0d498f3da5f99865201253d34646f45339818447288c8055f899e02|0": {
+   "first_seen": "2026-11-15T17:55+00:00",
+   "outcome": "Chiefs",
+   "title": "Spread: Chiefs (-3.5)",
+   "wallets": 4
+  },
   "0x06f67392f0d498f3da5f99865201253d34646f45339818447288c8055f899e02|1": {
    "first_seen": "2026-11-15T17:23+00:00",
    "outcome": "Falcons",
    "title": "Spread: Chiefs (-3.5)",
+   "wallets": 9
+  },
+  "0x0c40c3fbc461f28139268799ec9464d3731b7e989c854c4c58db368230a57822|1": {
+   "first_seen": "2026-11-15T17:55+00:00",
+   "outcome": "Under",
+   "title": "Texans vs. Browns: O/U 40.5",
    "wallets": 4
   },
   "0x1d5ff8b0c2a7a10f7502d0484533808ccfaa9c65de11a18e1115a1b08aad8dae|1": {
    "first_seen": "2026-11-15T11:13+00:00",
    "outcome": "Falcons",
    "title": "Chiefs vs. Falcons",
-   "wallets": 8
+   "wallets": 13
+  },
+  "0x591c6c4eefb2438bf273b62fe2cf321fd584cced0593921aa734e4225c1a404d|1": {
+   "first_seen": "2026-11-15T17:55+00:00",
+   "outcome": "Browns",
+   "title": "Spread: Texans (-4.5)",
+   "wallets": 4
   },
   "0x70fb7404fa510ff5178452a3a631d334d59c223ed1d43784f4dad58c9d94646c|0": {
    "first_seen": "2026-11-15T17:23+00:00",
    "outcome": "Packers",
    "title": "Spread: Packers (-2.5)",
-   "wallets": 4
+   "wallets": 5
   },
   "0x70fb7404fa510ff5178452a3a631d334d59c223ed1d43784f4dad58c9d94646c|1": {
    "first_seen": "2026-11-15T17:23+00:00",
@@ -46,7 +64,7 @@
    "first_seen": "2026-11-15T17:23+00:00",
    "outcome": "Jaguars",
    "title": "Spread: Jaguars (-10.5)",
-   "wallets": 5
+   "wallets": 6
   },
   "0xb270e47243545807d3376068d57b8a4cb3323c85691388c3b5c7db0a9f56e786|1": {
    "first_seen": "2026-11-15T17:23+00:00",
@@ -54,17 +72,17 @@
    "title": "Spread: Jaguars (-10.5)",
    "wallets": 4
   },
-  "0xc7db52dccbf7f07ec89a8380323d87a7dc996baac7b916fddfe838016a2eaeeb|0": {
-   "first_seen": "2026-11-15T16:51+00:00",
-   "outcome": "Panthers",
-   "title": "Panthers vs. Saints",
-   "wallets": 4
-  },
   "0xc7db52dccbf7f07ec89a8380323d87a7dc996baac7b916fddfe838016a2eaeeb|1": {
    "first_seen": "2026-11-15T16:51+00:00",
    "outcome": "Saints",
    "title": "Panthers vs. Saints",
-   "wallets": 9
+   "wallets": 15
+  },
+  "0xe1740cfee21ee6c5c9e40a8fe9020d4766a2d14194fd09881ddf91681300d43f|0": {
+   "first_seen": "2026-11-15T17:55+00:00",
+   "outcome": "76ers",
+   "title": "Spread: 76ers (-7.5)",
+   "wallets": 4
   }
  }
 }
