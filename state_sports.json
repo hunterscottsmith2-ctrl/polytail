@@ -4,13 +4,19 @@
    "first_seen": "2026-11-15T11:13+00:00",
    "outcome": "Falcons",
    "title": "Chiefs vs. Falcons",
-   "wallets": 7
+   "wallets": 8
   },
   "0x8d432ea906196f359e5b1a3dda5a706a2db4621f672ada9a4b39c5bf9e20fd75|0": {
    "first_seen": "2026-11-15T05:30+00:00",
    "outcome": "Vikings",
    "title": "Vikings vs. Packers",
    "wallets": 7
+  },
+  "0x8d432ea906196f359e5b1a3dda5a706a2db4621f672ada9a4b39c5bf9e20fd75|1": {
+   "first_seen": "2026-11-15T16:14+00:00",
+   "outcome": "Packers",
+   "title": "Vikings vs. Packers",
+   "wallets": 5
   }
  }
 }
