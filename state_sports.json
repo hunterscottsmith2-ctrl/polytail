@@ -1,5 +1,17 @@
 {
  "alerted": {
+  "0x06f886f42d9095870772d8366e5ad0552fab67dbcfdaa3b7745fced823f74ebe|0": {
+   "first_seen": "2026-11-15T10:27+00:00",
+   "outcome": "Over",
+   "title": "Patriots vs. Lions: O/U 50.5",
+   "wallets": 4
+  },
+  "0x06f886f42d9095870772d8366e5ad0552fab67dbcfdaa3b7745fced823f74ebe|1": {
+   "first_seen": "2026-11-15T10:27+00:00",
+   "outcome": "Under",
+   "title": "Patriots vs. Lions: O/U 50.5",
+   "wallets": 4
+  },
   "0x8d432ea906196f359e5b1a3dda5a706a2db4621f672ada9a4b39c5bf9e20fd75|0": {
    "first_seen": "2026-11-15T05:30+00:00",
    "outcome": "Vikings",
