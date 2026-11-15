@@ -1,63 +1,56 @@
 # PolyTail backtest report (overall)
-Run 2026-11-14 23:14 UTC. Training window 150 days, test window 90 days.
-Wallet pool 310, usable 116, bot-like skipped 157, selected by training score 25.
+Run 2026-11-15 00:47 UTC. Training window 150 days, test window 90 days.
+Wallet pool 308, usable 135, bot-like skipped 135, selected by training score 32.
 
-**Verdict:** ✅ Edge found: whole pool wallets, N=5, min $5,000 → +26.9% per bet over 54 settled bets (90% range +1.0% to +54.9%).
+**Verdict:** ❌ No setting showed a reliable edge (needs 30+ settled bets with the whole 90% range above zero). Don't bet real money on these alerts yet.
 
 Bets placed at the price 15 min after the signal, minus a 1% fee. A random bet at market price averages about -1% after that fee, so that's the bar to beat.
-Profit-scored wallets did NOT beat the whole pool (N=3, $1K).
-**Sharp wallets (closing-line value):** 2 wallets beat the closing price consistently in training (20+ bets, avg 1¢+, t≥2). Too few sharp signals to judge (need 30+ settled). Whole pool best: +26.9%/bet. Following sharps did NOT clearly beat the pool.
-**Proven winners (profitable AND beat the close):** 2 wallets. Too few signals to judge (need 30+ settled). Did NOT clearly beat the pool.
+Profit-scored wallets beat the whole pool (N=3, $1K).
+**Sharp wallets (closing-line value):** 5 wallets beat the closing price consistently in training (20+ bets, avg 1¢+, t≥2). Too few sharp signals to judge (need 30+ settled). Whole pool best: +6.9%/bet. Following sharps did NOT clearly beat the pool.
+**Proven winners (profitable AND beat the close):** 4 wallets. Too few signals to judge (need 30+ settled). Did NOT clearly beat the pool.
 
 | Wallets | N | Min $ | Signals | Settled | Win rate | Avg price | Mean ROI | 90% range | $100/bet total |
 |---|---|---|---|---|---|---|---|---|---|
-| proven (profit+CLV) | 1 | 1,000 | 15 | 14 | 64% | 66¢ | -2.9% | -36.7% to +35.1% | -$41 |
-| proven (profit+CLV) | 1 | 5,000 | 4 | 3 | 100% | 92¢ | +8.0% | n/a to n/a | $24 |
-| proven (profit+CLV) | 2 | 1,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
-| proven (profit+CLV) | 2 | 5,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
+| proven (profit+CLV) | 1 | 1,000 | 408 | 294 | 57% | 58¢ | -1.4% | -11.7% to +9.2% | -$398 |
+| proven (profit+CLV) | 1 | 5,000 | 289 | 225 | 58% | 58¢ | +1.6% | -10.3% to +13.4% | $349 |
+| proven (profit+CLV) | 2 | 1,000 | 4 | 4 | 75% | 81¢ | -14.3% | n/a to n/a | -$57 |
+| proven (profit+CLV) | 2 | 5,000 | 3 | 3 | 100% | 89¢ | +11.3% | n/a to n/a | $34 |
 | proven (profit+CLV) | 3 | 1,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
 | proven (profit+CLV) | 3 | 5,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
 | proven (profit+CLV) | 4 | 1,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
 | proven (profit+CLV) | 4 | 5,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
 | proven (profit+CLV) | 5 | 1,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
 | proven (profit+CLV) | 5 | 5,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
-| sharp (CLV) | 1 | 1,000 | 15 | 14 | 64% | 66¢ | -2.9% | -36.7% to +35.1% | -$41 |
-| sharp (CLV) | 1 | 5,000 | 4 | 3 | 100% | 92¢ | +8.0% | n/a to n/a | $24 |
-| sharp (CLV) | 2 | 1,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
-| sharp (CLV) | 2 | 5,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
+| sharp (CLV) | 1 | 1,000 | 1863 | 1706 | 56% | 54¢ | +3.7% | -0.4% to +7.9% | $6K |
+| sharp (CLV) | 1 | 5,000 | 705 | 633 | 59% | 58¢ | +1.8% | -4.6% to +8.0% | $1K |
+| sharp (CLV) | 2 | 1,000 | 14 | 14 | 50% | 58¢ | -17.9% | -57.2% to +26.5% | -$251 |
+| sharp (CLV) | 2 | 5,000 | 10 | 10 | 70% | 61¢ | +17.3% | -32.9% to +69.6% | $173 |
 | sharp (CLV) | 3 | 1,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
 | sharp (CLV) | 3 | 5,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
 | sharp (CLV) | 4 | 1,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
 | sharp (CLV) | 4 | 5,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
 | sharp (CLV) | 5 | 1,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
 | sharp (CLV) | 5 | 5,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
-| scored | 1 | 1,000 | 2514 | 2187 | 53% | 52¢ | +2.9% | -1.5% to +7.0% | $6K |
-| scored | 1 | 5,000 | 1635 | 1470 | 55% | 53¢ | +3.7% | -1.3% to +8.6% | $6K |
-| scored | 2 | 1,000 | 192 | 160 | 54% | 52¢ | +3.4% | -13.8% to +22.4% | $543 |
-| scored | 2 | 5,000 | 112 | 91 | 56% | 53¢ | +14.2% | -10.7% to +44.6% | $1K |
-| scored | 3 | 1,000 | 26 | 20 | 50% | 53¢ | -11.5% | -48.0% to +29.5% | -$230 |
-| scored | 3 | 5,000 | 16 | 11 | 45% | 61¢ | -37.2% | -74.8% to +1.2% | -$409 |
-| scored | 4 | 1,000 | 4 | 4 | 75% | 71¢ | +15.6% | n/a to n/a | $63 |
-| scored | 4 | 5,000 | 2 | 2 | 100% | 87¢ | +14.0% | n/a to n/a | $28 |
-| scored | 5 | 1,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
-| scored | 5 | 5,000 | 0 | 0 | 0% | 0¢ | +0.0% | n/a to n/a | $0 |
-| whole pool | 1 | 1,000 | 15278 | 12616 | 53% | 52¢ | +1.8% | +0.0% to +3.6% | $23K |
-| whole pool | 1 | 5,000 | 9307 | 7518 | 54% | 53¢ | +1.5% | -0.5% to +3.7% | $12K |
-| whole pool | 2 | 1,000 | 2558 | 2046 | 55% | 53¢ | +4.2% | -0.0% to +8.5% | $9K |
-| whole pool | 2 | 5,000 | 1555 | 1297 | 58% | 55¢ | +3.0% | -1.7% to +7.6% | $4K |
-| whole pool | 3 | 1,000 | 837 | 614 | 58% | 56¢ | +0.0% | -6.6% to +6.7% | $21 |
-| whole pool | 3 | 5,000 | 459 | 364 | 61% | 57¢ | +7.3% | -1.9% to +16.2% | $3K |
-| whole pool | 4 | 1,000 | 349 | 235 | 60% | 57¢ | +2.6% | -10.3% to +16.4% | $613 |
-| whole pool | 4 | 5,000 | 166 | 124 | 69% | 61¢ | +21.0% | +1.4% to +44.3% | $3K |
-| whole pool | 5 | 1,000 | 199 | 112 | 65% | 61¢ | +9.2% | -7.1% to +25.8% | $1K |
-| whole pool | 5 | 5,000 | 82 | 54 | 70% | 61¢ | +26.9% | +1.0% to +54.9% | $1K |
-
-## Best setting by entry price
-| Price | Bets | Mean ROI |
-|---|---|---|
-| under 30¢ | 9 | +50.6% |
-| 30–60¢ | 15 | +75.9% |
-| 60¢+ | 30 | -4.7% |
+| scored | 1 | 1,000 | 5319 | 4659 | 52% | 51¢ | +2.9% | -0.1% to +5.7% | $13K |
+| scored | 1 | 5,000 | 3763 | 3432 | 53% | 52¢ | +1.5% | -1.7% to +4.8% | $5K |
+| scored | 2 | 1,000 | 616 | 537 | 50% | 50¢ | +1.1% | -7.4% to +10.6% | $589 |
+| scored | 2 | 5,000 | 404 | 369 | 51% | 52¢ | +0.1% | -10.2% to +10.2% | $42 |
+| scored | 3 | 1,000 | 110 | 95 | 56% | 53¢ | +2.5% | -15.0% to +20.5% | $239 |
+| scored | 3 | 5,000 | 75 | 63 | 54% | 57¢ | -8.0% | -28.3% to +12.3% | -$501 |
+| scored | 4 | 1,000 | 27 | 21 | 48% | 48¢ | +37.1% | -44.4% to +155.0% | $779 |
+| scored | 4 | 5,000 | 17 | 12 | 42% | 47¢ | +67.7% | -68.9% to +274.4% | $813 |
+| scored | 5 | 1,000 | 8 | 6 | 50% | 46¢ | +2.6% | -78.3% to +83.5% | $16 |
+| scored | 5 | 5,000 | 4 | 3 | 67% | 56¢ | -0.6% | n/a to n/a | -$2 |
+| whole pool | 1 | 1,000 | 20705 | 17614 | 53% | 53¢ | +1.1% | -0.3% to +2.5% | $19K |
+| whole pool | 1 | 5,000 | 12433 | 10529 | 54% | 53¢ | +1.2% | -0.6% to +2.9% | $13K |
+| whole pool | 2 | 1,000 | 5113 | 4391 | 55% | 54¢ | +1.4% | -1.3% to +4.1% | $6K |
+| whole pool | 2 | 5,000 | 2800 | 2475 | 55% | 54¢ | +1.0% | -2.4% to +4.4% | $3K |
+| whole pool | 3 | 1,000 | 2181 | 1832 | 57% | 56¢ | -0.2% | -4.3% to +3.6% | -$458 |
+| whole pool | 3 | 5,000 | 1053 | 928 | 58% | 56¢ | +0.9% | -4.9% to +6.7% | $791 |
+| whole pool | 4 | 1,000 | 1150 | 932 | 59% | 57¢ | +0.0% | -5.0% to +5.2% | $47 |
+| whole pool | 4 | 5,000 | 468 | 389 | 61% | 58¢ | +4.1% | -4.0% to +12.7% | $2K |
+| whole pool | 5 | 1,000 | 535 | 413 | 59% | 57¢ | +0.5% | -7.3% to +9.3% | $209 |
+| whole pool | 5 | 5,000 | 194 | 154 | 63% | 59¢ | +6.9% | -6.3% to +20.8% | $1K |
 
 ## Caveats
 - The wallet pool comes from today's leaderboards, which partly reflect test-window profits. The volume boards and training-only scoring reduce this, but results may still be a bit optimistic.
