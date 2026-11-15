@@ -1,23 +1,5 @@
 {
  "alerted": {
-  "0x0998f4a258f3a3440db42ce507da813b3f66917609f8a9c434db9771f433a6fe|0": {
-   "first_seen": "2026-11-14T21:00+00:00",
-   "outcome": "Nets",
-   "title": "Nets vs. Grizzlies",
-   "wallets": 5
-  },
-  "0x40a187afde69ab388504806d46277cae42743044e86fc13f401242cc51c55987|0": {
-   "first_seen": "2026-11-15T01:41+00:00",
-   "outcome": "Pistons",
-   "title": "Pistons vs. Heat",
-   "wallets": 4
-  },
-  "0x743b58d306cb6bf88903bb914fd2723b78843a733fe7c4fd5941fdb78f8503f7|1": {
-   "first_seen": "2026-11-15T00:28+00:00",
-   "outcome": "Nets",
-   "title": "Spread: Grizzlies (-4.5)",
-   "wallets": 5
-  },
   "0x8d432ea906196f359e5b1a3dda5a706a2db4621f672ada9a4b39c5bf9e20fd75|0": {
    "first_seen": "2026-11-15T02:33+00:00",
    "outcome": "Vikings",
