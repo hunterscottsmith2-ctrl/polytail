@@ -1,16 +1,16 @@
 {
  "alerted": {
-  "0x1e046c9ac977fa80032f1351be289f4d4ddfe230bc490dfd8878e44a37e24511|1": {
-   "first_seen": "2026-11-15T08:55+00:00",
-   "outcome": "FURIA",
-   "title": "Counter-Strike: Spirit vs FURIA - Map 1 Winner",
+  "0x39de59b17ae7796446fb25276d94826e9b1c0b1ce9d50d660f43cbe4b3c692b9|0": {
+   "first_seen": "2026-11-15T09:34+00:00",
+   "outcome": "Spirit",
+   "title": "Counter-Strike: Spirit vs FURIA - Map 2 Winner",
    "wallets": 4
   },
   "0x662a09ac7a32e3458056c358ac394fd823e12aa19037d4407744628ab839f978|0": {
    "first_seen": "2026-11-15T08:55+00:00",
    "outcome": "Spirit",
    "title": "Counter-Strike: Spirit vs FURIA (BO5) - BLAST Rivals Playoffs",
-   "wallets": 4
+   "wallets": 7
   },
   "0x8d432ea906196f359e5b1a3dda5a706a2db4621f672ada9a4b39c5bf9e20fd75|0": {
    "first_seen": "2026-11-15T05:19+00:00",
