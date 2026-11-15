@@ -1,15 +1,63 @@
 {
  "alerted": {
+  "0x430e274ba25e9fc67c949d8d9a0f26fdc3df66736723a4fea82c75a649950f13|0": {
+   "first_seen": "2026-11-15T19:26+00:00",
+   "outcome": "Over",
+   "title": "France vs. T\u00fcrkiye: O/U 3.5",
+   "wallets": 4
+  },
+  "0x5223c4725e1b98444a422c0f53dba751a1ee933757d10ca8d9be5f79dea60956|0": {
+   "first_seen": "2026-11-15T19:26+00:00",
+   "outcome": "Yes",
+   "title": "Will Spain win on 2026-11-15?",
+   "wallets": 4
+  },
+  "0x5223c4725e1b98444a422c0f53dba751a1ee933757d10ca8d9be5f79dea60956|1": {
+   "first_seen": "2026-11-15T19:26+00:00",
+   "outcome": "No",
+   "title": "Will Spain win on 2026-11-15?",
+   "wallets": 6
+  },
+  "0x5353ebf28dbed44ab26aa48514de7927ca28fd17e7dccdf2633593effed86f9b|0": {
+   "first_seen": "2026-11-15T19:26+00:00",
+   "outcome": "49ers",
+   "title": "Spread: 49ers (-3.5)",
+   "wallets": 6
+  },
+  "0x5de3a6db267ff8ba8ff70d7ec4e6e0e4ea234b94f52374cc3ef5a742a494c9cf|0": {
+   "first_seen": "2026-11-15T19:26+00:00",
+   "outcome": "France",
+   "title": "Spread: France (-2.5)",
+   "wallets": 6
+  },
   "0x851e0c5fc2bd239af2ff1fde68825e3afcdef1ee3427972bd4fd23e3ebd348bb|1": {
    "first_seen": "2026-11-15T17:23+00:00",
    "outcome": "Oregon Ducks",
    "title": "Pepperdine Waves vs. Oregon Ducks",
    "wallets": 4
   },
+  "0xbe96c8be240c94a4b97b458fcbd173b43a8046c34ea80434451533abb8c7f989|0": {
+   "first_seen": "2026-11-15T19:26+00:00",
+   "outcome": "Yes",
+   "title": "Will Belgium win on 2026-11-15?",
+   "wallets": 4
+  },
+  "0xbe96c8be240c94a4b97b458fcbd173b43a8046c34ea80434451533abb8c7f989|1": {
+   "first_seen": "2026-11-15T19:26+00:00",
+   "outcome": "No",
+   "title": "Will Belgium win on 2026-11-15?",
+   "wallets": 5
+  },
   "0xe10e72af1e0a1fdbd4d3544a61d0fb5142ffe28529138a3dcad6a3ea0e93d056|1": {
    "first_seen": "2026-11-15T18:37+00:00",
    "outcome": "Cowboys",
    "title": "49ers vs. Cowboys",
+   "wallets": 4
+  },
+  "0xee19747f7bbef1a4fc1322dc7d4c674ba14276baeeaec41b51612bd96be908f2|0": {
+   "first_seen": "2026-11-15T19:26+00:00",
+   "outcome": "Celtics",
+   "title": "Spread: Celtics (-13.5)",
    "wallets": 4
   },
   "0xee19747f7bbef1a4fc1322dc7d4c674ba14276baeeaec41b51612bd96be908f2|1": {
