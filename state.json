@@ -6,12 +6,6 @@
    "title": "Nets vs. Grizzlies",
    "wallets": 5
   },
-  "0x0f62dc300a92cd186c26c29c101b51e00aab6c69227a60260e27f366fe1de76c|0": {
-   "first_seen": "2026-11-15T01:41+00:00",
-   "outcome": "Texas",
-   "title": "Texas vs. LSU",
-   "wallets": 4
-  },
   "0x40a187afde69ab388504806d46277cae42743044e86fc13f401242cc51c55987|0": {
    "first_seen": "2026-11-15T01:41+00:00",
    "outcome": "Pistons",
@@ -24,17 +18,17 @@
    "title": "Spread: Grizzlies (-4.5)",
    "wallets": 5
   },
-  "0x93a388a80192937b6e0a6d87a9cbe575b0a8bc4c18fc96f29fcf677b34af4cfb|0": {
-   "first_seen": "2026-11-15T01:41+00:00",
-   "outcome": "Mavericks",
-   "title": "Mavericks vs. Cavaliers",
-   "wallets": 5
+  "0x8d432ea906196f359e5b1a3dda5a706a2db4621f672ada9a4b39c5bf9e20fd75|0": {
+   "first_seen": "2026-11-15T02:33+00:00",
+   "outcome": "Vikings",
+   "title": "Vikings vs. Packers",
+   "wallets": 4
   },
   "0xe5911fe31ff6ada47f633e9cc21c8edfb3d1be97d580ebffe01d7e953f440a9c|1": {
    "first_seen": "2026-11-15T00:28+00:00",
    "outcome": "Patriots",
    "title": "Spread: Lions (-2.5)",
-   "wallets": 4
+   "wallets": 5
   }
  }
 }
