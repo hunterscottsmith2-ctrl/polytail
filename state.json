@@ -1,10 +1,10 @@
 {
  "alerted": {
-  "0x39de59b17ae7796446fb25276d94826e9b1c0b1ce9d50d660f43cbe4b3c692b9|0": {
-   "first_seen": "2026-11-15T09:34+00:00",
+  "0x12a549199dc0b1f4f221ae600c1fb02e7f5cdc1e27c3394683dc4d47c8238ecf|0": {
+   "first_seen": "2026-11-15T10:20+00:00",
    "outcome": "Spirit",
-   "title": "Counter-Strike: Spirit vs FURIA - Map 2 Winner",
-   "wallets": 4
+   "title": "Counter-Strike: Spirit vs FURIA - Map 3 Winner",
+   "wallets": 5
   },
   "0x662a09ac7a32e3458056c358ac394fd823e12aa19037d4407744628ab839f978|0": {
    "first_seen": "2026-11-15T08:55+00:00",
