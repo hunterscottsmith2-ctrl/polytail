@@ -1,5 +1,11 @@
 {
  "alerted": {
+  "0x1d5ff8b0c2a7a10f7502d0484533808ccfaa9c65de11a18e1115a1b08aad8dae|1": {
+   "first_seen": "2026-11-15T11:41+00:00",
+   "outcome": "Falcons",
+   "title": "Chiefs vs. Falcons",
+   "wallets": 5
+  },
   "0x8d432ea906196f359e5b1a3dda5a706a2db4621f672ada9a4b39c5bf9e20fd75|0": {
    "first_seen": "2026-11-15T05:19+00:00",
    "outcome": "Vikings",
@@ -10,7 +16,7 @@
    "first_seen": "2026-11-15T00:28+00:00",
    "outcome": "Patriots",
    "title": "Spread: Lions (-2.5)",
-   "wallets": 5
+   "wallets": 6
   }
  }
 }
