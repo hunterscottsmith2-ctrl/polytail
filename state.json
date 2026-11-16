@@ -10,43 +10,19 @@
    "first_seen": "2026-11-15T23:32+00:00",
    "outcome": "Rockets",
    "title": "Spread: Rockets (-8.5)",
-   "wallets": 4
+   "wallets": 6
   },
   "0x471ca55dc350d5c5577522943c9155a2e4ed3c1939510ca3cc5ea2b49e1dc856|1": {
    "first_seen": "2026-11-15T23:32+00:00",
    "outcome": "Wizards",
    "title": "Spread: Rockets (-8.5)",
-   "wallets": 4
+   "wallets": 7
   },
-  "0x5353ebf28dbed44ab26aa48514de7927ca28fd17e7dccdf2633593effed86f9b|1": {
-   "first_seen": "2026-11-15T19:17+00:00",
-   "outcome": "Cowboys",
-   "title": "Spread: 49ers (-3.5)",
+  "0xd5a79507297a1421ee13d97bf8677873d0c90d65e6e269a9e47170001f3c6734|1": {
+   "first_seen": "2026-11-16T00:24+00:00",
+   "outcome": "Steelers",
+   "title": "Spread: Bengals (-3.5)",
    "wallets": 5
-  },
-  "0x851e0c5fc2bd239af2ff1fde68825e3afcdef1ee3427972bd4fd23e3ebd348bb|1": {
-   "first_seen": "2026-11-15T17:20+00:00",
-   "outcome": "Oregon Ducks",
-   "title": "Pepperdine Waves vs. Oregon Ducks",
-   "wallets": 4
-  },
-  "0xc088b8e98815d7a3bedfc2eafde8009b039a560a645ef336d48566bf14606da1|0": {
-   "first_seen": "2026-11-15T21:39+00:00",
-   "outcome": "Hornets",
-   "title": "Hornets vs. Clippers",
-   "wallets": 10
-  },
-  "0xc088b8e98815d7a3bedfc2eafde8009b039a560a645ef336d48566bf14606da1|1": {
-   "first_seen": "2026-11-15T22:16+00:00",
-   "outcome": "Clippers",
-   "title": "Hornets vs. Clippers",
-   "wallets": 9
-  },
-  "0xe10e72af1e0a1fdbd4d3544a61d0fb5142ffe28529138a3dcad6a3ea0e93d056|1": {
-   "first_seen": "2026-11-15T14:54+00:00",
-   "outcome": "Cowboys",
-   "title": "49ers vs. Cowboys",
-   "wallets": 11
   }
  }
 }
