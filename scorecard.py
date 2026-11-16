@@ -60,7 +60,18 @@ def group_line(items):
             f"won {wins / len(done):.0%} (break-even ~{breakeven:.0%}) | "
             f"{money(profit)} ({profit / (STAKE * len(done)):+.1%} per bet)")
     if len(done) >= GOAL:
-        line += " ✅ enough data" if profit > 0 else " ❌ enough data, losing"
+        # 90% range for profit per bet; only call it an edge if the whole range is above zero
+        r = [num(g["profit"]) / STAKE for g in done]
+        mean = sum(r) / len(r)
+        sd = (sum((x - mean) ** 2 for x in r) / (len(r) - 1)) ** 0.5
+        low, high = mean - 1.645 * sd / len(r) ** 0.5, mean + 1.645 * sd / len(r) ** 0.5
+        rng = f" [90% range {low:+.0%} to {high:+.0%}]"
+        if low > 0:
+            line += rng + " ✅ edge looks real"
+        elif high < 0:
+            line += rng + " ❌ losing"
+        else:
+            line += rng + " ⚠️ could be luck"
     return line
 
 def summarize(graded):
