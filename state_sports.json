@@ -1,10 +1,3 @@
 {
- "alerted": {
-  "0xd5a79507297a1421ee13d97bf8677873d0c90d65e6e269a9e47170001f3c6734|0": {
-   "first_seen": "2026-11-16T00:39+00:00",
-   "outcome": "Bengals",
-   "title": "Spread: Bengals (-3.5)",
-   "wallets": 5
-  }
- }
+ "alerted": {}
 }
