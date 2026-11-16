@@ -205,17 +205,11 @@ def pct(p):
     return f"{100 * p:.1f}%" if p >= 0.001 else "<0.1%"
 
 def upcoming_event(now):
-    """Next event that hasn't finished, with its field (empty if not posted yet)."""
-    for back in range(0, 3):
-        day = (now - timedelta(days=back)).strftime("%Y%m%d")
-        body = get_json(f"{SCOREBOARD}?dates={day}")
-        for e in body.get("events") or []:
-            if e.get("status", {}).get("type", {}).get("state") == "pre":
-                return e
+    """Next event that hasn't started yet (or started < 18h ago), with its field (empty if not posted)."""
     body = get_json(SCOREBOARD)
     cal = ((body.get("leagues") or [{}])[0]).get("calendar") or []
-    for item in cal:
-        if parse_date(item["endDate"]) >= now - timedelta(hours=12):
+    for item in sorted(cal, key=lambda x: x["startDate"]):
+        if parse_date(item["startDate"]) >= now - timedelta(hours=18):
             start = parse_date(item["startDate"])
             got = get_json(f"{SCOREBOARD}?dates={start.strftime('%Y%m%d')}")
             for e in got.get("events") or []:
