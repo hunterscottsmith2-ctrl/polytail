@@ -4,6 +4,9 @@ PolyTail scorecard — grades every alert the live bot has sent.
 For each alert in signals_log.csv, once its market settles, it works out what
 $100 bet at the alert price would have returned. Sends a summary to Telegram
 and writes results/scorecard.md + results/scorecard.csv.
+
+Alerts are also tracked as separate groups by how many wallets agreed
+(3, 4, 5+), each with its own record and progress toward GOAL settled bets.
 """
 
 import csv
@@ -21,13 +24,18 @@ FILE_TAG = os.environ.get("SCORECARD_TAG", "scorecard")
 SINCE = os.environ.get("SCORECARD_SINCE", "")
 STAKE = 100          # pretend bet per alert, $
 TAKER_FEE = 0.01     # haircut for fees/slippage (1% of stake)
+GOAL = 30            # settled bets a group needs before its results mean much
 
+def wallet_group(row):
+    n = int(num(row.get("wallets"), 0))
+    return "5+" if n >= 5 else str(n)
 
 def grade(rows):
     res = market_resolutions([r["condition_id"] for r in rows])
     graded = []
     for r in rows:
         out = dict(r)
+        out["group"] = wallet_group(r)
         price = num(r["price"])
         info = res.get(r["condition_id"])
         idx = int(num(r["outcome_index"], -1))
@@ -40,6 +48,20 @@ def grade(rows):
         graded.append(out)
     return graded
 
+def group_line(items):
+    done = [g for g in items if g["result"] != "pending"]
+    open_n = len(items) - len(done)
+    if not done:
+        return f"0/{GOAL} settled, {open_n} open"
+    wins = sum(g["result"] == "win" for g in done)
+    profit = sum(num(g["profit"]) for g in done)
+    breakeven = sum(num(g["price"]) for g in done) / len(done)
+    line = (f"{len(done)}/{GOAL} settled, {open_n} open | "
+            f"won {wins / len(done):.0%} (break-even ~{breakeven:.0%}) | "
+            f"{money(profit)} ({profit / (STAKE * len(done)):+.1%} per bet)")
+    if len(done) >= GOAL:
+        line += " ✅ enough data" if profit > 0 else " ❌ enough data, losing"
+    return line
 
 def summarize(graded):
     done = [g for g in graded if g["result"] != "pending"]
@@ -56,16 +78,14 @@ def summarize(graded):
             f"Avg price paid: {sum(num(g['price']) for g in done) / len(done) * 100:.0f}¢"
             " (break-even win rate ≈ that number)",
         ]
-        by_n = defaultdict(list)
-        for g in done:
-            n = int(num(g["wallets"]))
-            by_n["5+" if n >= 5 else str(n)].append(num(g["profit"]))
-        lines.append("\nBy number of wallets agreeing:")
-        for k in sorted(by_n):
-            v = by_n[k]
-            lines.append(f"  {k}: {len(v)} bets, {sum(v) / (STAKE * len(v)):+.1%} per bet")
+    by_group = defaultdict(list)
+    for g in graded:
+        by_group[g["group"]].append(g)
+    if by_group:
+        lines.append(f"\nTracked separately by wallets agreeing (need {GOAL} settled each):")
+        for k in sorted(by_group):
+            lines.append(f"  {k} wallets: {group_line(by_group[k])}")
     return lines
-
 
 def main():
     if not os.path.exists(LOG_FILE):
@@ -98,7 +118,6 @@ def main():
 
     send_telegram(f"<b>📊 {LABEL} weekly scorecard</b>\n" + "\n".join(lines))
     print("\n".join(lines))
-
 
 if __name__ == "__main__":
     main()
