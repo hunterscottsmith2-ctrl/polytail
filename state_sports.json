@@ -1,34 +1,3 @@
 {
- "alerted": {
-  "0xb44a09508b392d0e447bff2f3ce2d15eafc0a3644452240be056642340bdce0f|1": {
-   "first_seen": "2026-11-16T18:32+00:00",
-   "outcome": "Under",
-   "title": "Switzerland vs. Scotland: O/U 2.5",
-   "wallets": 8
-  },
-  "0xc6793dd33bc6e019c2b3779a818b572bc3381e3e2851012fed4cd093503c7165|1": {
-   "first_seen": "2026-11-16T19:32+00:00",
-   "outcome": "No",
-   "title": "Will Germany win on 2026-11-16?",
-   "wallets": 6
-  },
-  "0xcd30d3b0d6c621fa6514dd6dc754393c9e2d32dc2483c7aaa8552d8e674484bd|0": {
-   "first_seen": "2026-11-16T19:32+00:00",
-   "outcome": "Over",
-   "title": "Germany vs. Netherlands: O/U 3.5",
-   "wallets": 4
-  },
-  "0xcd30d3b0d6c621fa6514dd6dc754393c9e2d32dc2483c7aaa8552d8e674484bd|1": {
-   "first_seen": "2026-11-16T19:32+00:00",
-   "outcome": "Under",
-   "title": "Germany vs. Netherlands: O/U 3.5",
-   "wallets": 5
-  },
-  "0xcd92ea954ec13d0a002bbdf98dfca25555cca521fc5b6debd2754da011baa082|1": {
-   "first_seen": "2026-11-16T19:32+00:00",
-   "outcome": "No",
-   "title": "Will Switzerland win on 2026-11-16?",
-   "wallets": 5
-  }
- }
+ "alerted": {}
 }
