@@ -1,3 +1,10 @@
 {
- "alerted": {}
+ "alerted": {
+  "0x0b4ee1b5c983929dfa1bb8c7180a7328bcfa603d73559073894420732abf68c4|0": {
+   "first_seen": "2026-11-16T16:26+00:00",
+   "outcome": "Ilya Ivashka",
+   "title": "Helsinki: Ilya Ivashka vs Toby Samuel",
+   "wallets": 5
+  }
+ }
 }
