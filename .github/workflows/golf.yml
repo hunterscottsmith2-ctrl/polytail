@@ -1,0 +1,48 @@
+name: Golf model
+
+on:
+  schedule:
+    - cron: "23 18 * * 3"    # Wednesdays ~1:23pm Eastern (field + tee times posted)
+    - cron: "41 10 * * 4"    # Thursdays ~5:41am Eastern (final run before tee-off)
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "predict = this week's event, backtest = grade on past events"
+        default: predict
+        type: choice
+        options: [predict, backtest]
+
+permissions:
+  contents: write
+
+jobs:
+  golf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run golf model
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ "${{ github.event.inputs.mode }}" = "backtest" ]; then
+            python golf/model.py --backtest
+          else
+            python golf/model.py
+          fi
+
+      - name: Save results
+        if: always()
+        run: |
+          git config user.name "polytail-bot"
+          git config user.email "polytail-bot@users.noreply.github.com"
+          [ -d golf/results ] && git add golf/results
+          git diff --cached --quiet && exit 0
+          git commit -m "Golf model results"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          exit 1
