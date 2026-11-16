@@ -1,0 +1,61 @@
+name: PolyTail live (every 3 min)
+
+# GitHub delays frequent cron schedules by 40-170 min on free repos, so instead this
+# job stays running and scans every 3 minutes for ~5h45m, then starts its own
+# next run. The hourly schedule below is only a backup in case the chain breaks.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: polytail-live
+  cancel-in-progress: false
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      SEND_ALERTS: "0"          # early sharp-wallet test stays silent until proven
+      INTERVAL_SEC: "180"
+      RUN_FOR_MIN: "345"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Scan every 3 minutes
+        run: |
+          git config user.name "polytail-bot"
+          git config user.email "polytail-bot@users.noreply.github.com"
+          end=$(( $(date +%s) + RUN_FOR_MIN * 60 ))
+          while [ "$(date +%s)" -lt "$end" ]; do
+            started=$(date +%s)
+            git pull --rebase -X theirs -q || true
+            timeout 150 python tracker.py || echo "main scan failed"
+            POLYTAIL_PROFILE=sports timeout 150 python tracker.py || echo "sports scan failed"
+            timeout 150 python early.py || echo "early scan failed"
+            for f in state.json signals_log.csv state_sports.json signals_sports.csv \
+                     state_early.json signals_early.csv; do
+              [ -f "$f" ] && git add "$f"
+            done
+            if ! git diff --cached --quiet; then
+              git commit -qm "Live scan update"
+              for i in 1 2 3; do git pull --rebase -X theirs -q && git push -q && break; sleep 5; done
+            fi
+            sleep $(( INTERVAL_SEC - ($(date +%s) - started) > 10 ? INTERVAL_SEC - ($(date +%s) - started) : 10 ))
+          done
+
+      - name: Start the next run
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run polytail-live.yml --ref main
