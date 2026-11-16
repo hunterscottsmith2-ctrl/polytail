@@ -1,5 +1,11 @@
 {
  "alerted": {
+  "0x2bf6919f44095864c77f4b3967376c33c74ffbd9dda7d87f00490950517b08d7|0": {
+   "first_seen": "2026-11-16T23:16+00:00",
+   "outcome": "Valeriya Strakhova",
+   "title": "Colina: Valeriya Strakhova vs Anastasia Tikhonova",
+   "wallets": 4
+  },
   "0x33999aab460016318088ddeea485def253b78f0c2cdf034362c11d52f8f06082|1": {
    "first_seen": "2026-11-16T23:13+00:00",
    "outcome": "Chargers",
