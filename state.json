@@ -1,10 +1,3 @@
 {
- "alerted": {
-  "0xcd30d3b0d6c621fa6514dd6dc754393c9e2d32dc2483c7aaa8552d8e674484bd|0": {
-   "first_seen": "2026-11-16T21:02+00:00",
-   "outcome": "Over",
-   "title": "Germany vs. Netherlands: O/U 3.5",
-   "wallets": 4
-  }
- }
+ "alerted": {}
 }
