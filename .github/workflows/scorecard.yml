@@ -35,6 +35,16 @@ jobs:
           SCORECARD_TAG: scorecard_sports
         run: python scorecard.py
 
+      - name: Grade early sharp-wallet test
+        if: always()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          POLYTAIL_LOG: signals_early.csv
+          SCORECARD_LABEL: "🎯 PolyTail Early (sharp wallets)"
+          SCORECARD_TAG: scorecard_early
+        run: python scorecard.py
+
       - name: Save scorecard
         if: always()
         run: |
