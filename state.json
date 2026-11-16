@@ -1,10 +1,22 @@
 {
  "alerted": {
+  "0x33999aab460016318088ddeea485def253b78f0c2cdf034362c11d52f8f06082|1": {
+   "first_seen": "2026-11-16T23:13+00:00",
+   "outcome": "Chargers",
+   "title": "Spread: Ravens (-4.5)",
+   "wallets": 4
+  },
   "0xc60598366a8358b18c8f9d81e2aa4bcb9ebd672fe4879b8026800ffcccd7c48b|1": {
    "first_seen": "2026-11-16T21:37+00:00",
    "outcome": "Heat",
    "title": "Rockets vs. Heat",
    "wallets": 6
+  },
+  "0xdb926ddf31fc0b34a6902b9760454d8e4f23316ab137973db2a6ae6522bd1848|1": {
+   "first_seen": "2026-11-16T23:13+00:00",
+   "outcome": "Wizards",
+   "title": "Spread: Grizzlies (-3.5)",
+   "wallets": 4
   }
  }
 }
