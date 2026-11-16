@@ -1,28 +1,10 @@
 {
  "alerted": {
-  "0x039e2090242866bd16938dec0a7aade1726797c59bd943cf28237202add60dc8|1": {
-   "first_seen": "2026-11-15T23:54+00:00",
-   "outcome": "Under",
-   "title": "Rockets vs. Wizards: O/U 223.5",
-   "wallets": 5
-  },
-  "0x471ca55dc350d5c5577522943c9155a2e4ed3c1939510ca3cc5ea2b49e1dc856|0": {
-   "first_seen": "2026-11-15T23:54+00:00",
-   "outcome": "Rockets",
-   "title": "Spread: Rockets (-8.5)",
-   "wallets": 4
-  },
-  "0x471ca55dc350d5c5577522943c9155a2e4ed3c1939510ca3cc5ea2b49e1dc856|1": {
-   "first_seen": "2026-11-15T23:54+00:00",
-   "outcome": "Wizards",
-   "title": "Spread: Rockets (-8.5)",
-   "wallets": 7
-  },
-  "0xd5a79507297a1421ee13d97bf8677873d0c90d65e6e269a9e47170001f3c6734|1": {
-   "first_seen": "2026-11-15T23:54+00:00",
-   "outcome": "Steelers",
+  "0xd5a79507297a1421ee13d97bf8677873d0c90d65e6e269a9e47170001f3c6734|0": {
+   "first_seen": "2026-11-16T00:39+00:00",
+   "outcome": "Bengals",
    "title": "Spread: Bengals (-3.5)",
-   "wallets": 4
+   "wallets": 5
   }
  }
 }
