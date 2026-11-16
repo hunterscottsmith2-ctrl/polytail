@@ -1,22 +1,10 @@
 {
  "alerted": {
-  "0x2c4bc1dc34eaa1cb08943f536d4ce630384f3e93e028f6fa7a20933438334853|0": {
-   "first_seen": "2026-11-16T01:52+00:00",
-   "outcome": "Steelers",
-   "title": "Steelers vs. Bengals",
-   "wallets": 6
-  },
-  "0x40ea206d301428cc8ae90fe8a1a84220959464446df96b7bdde7370c2fa0454d|1": {
-   "first_seen": "2026-11-16T01:52+00:00",
-   "outcome": "Steelers",
-   "title": "Spread: Bengals (-4.5)",
-   "wallets": 5
-  },
-  "0xd5a79507297a1421ee13d97bf8677873d0c90d65e6e269a9e47170001f3c6734|1": {
-   "first_seen": "2026-11-16T00:24+00:00",
-   "outcome": "Steelers",
-   "title": "Spread: Bengals (-3.5)",
-   "wallets": 5
+  "0xeac55f6b5b08aa8d44a02b747867f0d299cb25255d0ae1c06b6502d6a15de783|0": {
+   "first_seen": "2026-11-16T02:43+00:00",
+   "outcome": "Thunder",
+   "title": "Spread: Thunder (-12.5)",
+   "wallets": 4
   }
  }
 }
