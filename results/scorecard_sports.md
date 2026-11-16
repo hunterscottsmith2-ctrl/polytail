@@ -1,10 +1,10 @@
-# 🏈 PolyTail Sports live scorecard (2026-11-15)
+# 🏈 PolyTail Sports live scorecard (2026-11-16)
 
-Alerts graded: 9 settled, 8 still open
-Win rate: 33%
-Profit if you bet $100 on each: -$75 (-8.4% per bet)
-Avg price paid: 45¢ (break-even win rate ≈ that number)
+Alerts graded: 48 settled, 1 still open
+Win rate: 46%
+Profit if you bet $100 on each: -$237 (-4.9% per bet)
+Avg price paid: 49¢ (break-even win rate ≈ that number)
 
-By number of wallets agreeing:
-  4: 6 bets, +38.0% per bet
-  5+: 3 bets, -101.0% per bet
+Tracked separately by wallets agreeing (need 30 settled each):
+  4 wallets: 31/30 settled, 1 open | won 52% (break-even ~49%) | $295 (+9.5% per bet) ✅ enough data
+  5+ wallets: 17/30 settled, 0 open | won 35% (break-even ~48%) | -$532 (-31.3% per bet)
