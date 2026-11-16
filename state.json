@@ -1,3 +1,10 @@
 {
- "alerted": {}
+ "alerted": {
+  "0xb44a09508b392d0e447bff2f3ce2d15eafc0a3644452240be056642340bdce0f|1": {
+   "first_seen": "2026-11-16T18:29+00:00",
+   "outcome": "Under",
+   "title": "Switzerland vs. Scotland: O/U 2.5",
+   "wallets": 4
+  }
+ }
 }
