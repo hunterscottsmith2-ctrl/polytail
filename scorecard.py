@@ -28,6 +28,7 @@ STAKE = 100          # pretend bet per alert, $
 FEE_RATE = float(os.environ.get("SCORECARD_FEE_RATE", 0.04))
 _stem = os.path.basename(LOG_FILE).replace("signals_log", "fills").replace("signals", "fills")
 FILLS_FILE = os.environ.get("POLYTAIL_FILLS", os.path.join(os.path.dirname(LOG_FILE), _stem))
+BOOKS_FILE = os.environ.get("POLYTAIL_BOOKS", FILLS_FILE.replace("fills", "books"))
 GOAL = 30            # settled bets a group needs before its results mean much
 
 def wallet_group(row):
@@ -50,13 +51,27 @@ def load_fills():
     return out
 
 
+def load_books():
+    """{(key, alerted_at): (best decimal odds, book name)} from the sportsbook price log."""
+    out = {}
+    try:
+        with open(BOOKS_FILE) as f:
+            for r in csv.DictReader(f):
+                d, k = num(r.get("decimal"), 0), (r["key"], r["alerted_at"])
+                if d > 1 and d > out.get(k, (0, ""))[0]:
+                    out[k] = (d, r.get("book", ""))
+    except FileNotFoundError:
+        pass
+    return out
+
+
 def profit_at(payout, price):
     return round(STAKE * (payout / price - 1) - STAKE * taker_fee(price, FEE_RATE), 2)
 
 
 def grade(rows):
     res = market_resolutions([r["condition_id"] for r in rows])
-    fills = load_fills()
+    fills, books = load_fills(), load_books()
     graded = []
     for r in rows:
         out = dict(r)
@@ -66,7 +81,9 @@ def grade(rows):
         idx = int(num(r["outcome_index"], -1))
         q = fills.get((r["key"], r["alerted_at"]), {})
         out["ask_price"], out["later_price"] = q.get("now", ""), q.get("later", "")
-        out["profit_ask"] = out["profit_later"] = ""
+        out["profit_ask"] = out["profit_later"] = out["profit_book"] = ""
+        dec, out["book"] = books.get((r["key"], r["alerted_at"]), (0, ""))
+        out["book_decimal"] = dec or ""
         if info and 0 <= idx < len(info["values"]) and price > 0:
             payout = info["values"][idx]
             out["result"] = "win" if payout >= 0.99 else "loss" if payout <= 0.01 else "void"
@@ -75,6 +92,9 @@ def grade(rows):
                 out["profit_ask"] = profit_at(payout, q["now"])
             if q.get("later"):
                 out["profit_later"] = profit_at(payout, q["later"])
+            if dec:   # sportsbook: win pays the odds, loss loses the stake, a push returns it
+                out["profit_book"] = round(STAKE * (dec - 1) if payout >= 0.99
+                                           else -STAKE if payout <= 0.01 else 0.0, 2)
         else:
             out["result"], out["profit"] = "pending", ""
         graded.append(out)
@@ -122,7 +142,8 @@ def summarize(graded):
             " (break-even win rate ≈ that number)",
         ]
     for col, label in [("profit_ask", "the real ask when the alert fired"),
-                       ("profit_later", "the real ask a few minutes later (what you'd get)")]:
+                       ("profit_later", "the real ask a few minutes later (what you'd get)"),
+                       ("profit_book", "the best DraftKings/FanDuel price for the same bet")]:
         priced = [g for g in done if g[col] != ""]
         if priced:
             same = sum(num(g["profit"]) for g in priced) / (STAKE * len(priced))

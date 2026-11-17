@@ -23,6 +23,7 @@ jobs:
     env:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}   # optional: sportsbook price comparison
       SEND_ALERTS: "0"          # early sharp-wallet test stays silent until proven
       INTERVAL_SEC: "180"
       RUN_FOR_MIN: "345"
@@ -45,7 +46,8 @@ jobs:
             timeout 150 python early.py || echo "early scan failed"
             for f in state.json signals_log.csv state_sports.json signals_sports.csv \
                      state_early.json signals_early.csv \
-                     fills.csv fills_sports.csv fills_early.csv; do
+                     fills.csv fills_sports.csv fills_early.csv \
+                     books.csv books_sports.csv books_early.csv; do
               [ -f "$f" ] && git add "$f"
             done
             if ! git diff --cached --quiet; then

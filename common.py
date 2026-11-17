@@ -2,6 +2,7 @@
 
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -274,3 +275,122 @@ def run_rechecks(state, path, min_age=120, max_age=1800):
         elif age <= max_age:
             log_fill(path, r["key"], r["alerted_at"], r["ts"], r["token"])
     state["recheck"] = keep
+
+
+# ---------------------------------------------------------------- sportsbook odds
+# Optional: with an ODDS_API_KEY secret (free key from the-odds-api.com), each alert on a
+# game market also records what DraftKings / FanDuel are offering for the same bet.
+ODDS_API = "https://api.the-odds-api.com"
+ODDS_BOOKS = os.environ.get("ODDS_BOOKS", "draftkings,fanduel")
+ODDS_MIN_CREDITS = 25   # stop asking when the month's free quota is nearly used up
+SPORT_KEYS = {"nba": "basketball_nba", "nfl": "americanfootball_nfl", "nhl": "icehockey_nhl",
+              "mlb": "baseball_mlb", "cfb": "americanfootball_ncaaf", "cbb": "basketball_ncaab",
+              "wnba": "basketball_wnba"}
+BOOK_FIELDS = ["alerted_at", "key", "book", "decimal", "american", "implied"]
+_odds_cache, _odds_left = {}, [None]
+
+
+def _odds_events(sport, market):
+    """Upcoming games with odds for one sport + bet type. One API credit, cached per run."""
+    key = os.environ.get("ODDS_API_KEY")
+    if not key:
+        return []
+    if (sport, market) in _odds_cache:
+        return _odds_cache[(sport, market)]
+    events = []
+    if _odds_left[0] is None or _odds_left[0] >= ODDS_MIN_CREDITS:
+        url = f"{ODDS_API}/v4/sports/{sport}/odds?" + urllib.parse.urlencode(
+            {"apiKey": key, "bookmakers": ODDS_BOOKS, "markets": market, "oddsFormat": "decimal"})
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                left = r.headers.get("x-requests-remaining")
+                _odds_left[0] = int(float(left)) if left else None
+                events = json.loads(r.read().decode())
+        except Exception as e:  # noqa: BLE001  (never print the URL: it contains the key)
+            print(f"  ! sportsbook odds lookup failed ({sport}/{market}): {type(e).__name__}",
+                  file=sys.stderr)
+    _odds_cache[(sport, market)] = events if isinstance(events, list) else []
+    return _odds_cache[(sport, market)]
+
+
+def _same_team(a, b):
+    """'Celtics' matches 'Boston Celtics'; 'Nets' does not match 'Charlotte Hornets'."""
+    a, b = (a or "").strip().lower(), (b or "").strip().lower()
+    if not a or not b:
+        return False
+    return a == b or b.endswith(" " + a) or b.startswith(a + " ") \
+        or a.endswith(" " + b) or a.startswith(b + " ")
+
+
+def _bet_spec(title, outcome):
+    """(bet type, line, team names) for a Polymarket game market, or None if it isn't one
+    a sportsbook offers in the same form."""
+    t = title or ""
+    m = re.match(r"\s*Spread:\s*(.+?)\s*\(([-+]?\d+(?:\.\d+)?)\)", t)
+    if m:
+        fav, line = m.group(1), float(m.group(2))
+        if _same_team(outcome, fav):
+            return "spreads", line, [fav]
+        return "spreads", -line, [fav, outcome]
+    m = re.search(r"O/U\s*(\d+(?:\.\d+)?)", t)
+    if m:
+        teams = re.split(r"\s+vs\.?\s+", t.split(":")[0].strip())
+        return ("totals", float(m.group(1)), teams) if len(teams) == 2 else None
+    teams = re.split(r"\s+vs\.?\s+", t.strip())
+    if len(teams) == 2 and ":" not in t and "?" not in t:
+        return "h2h", None, teams
+    return None
+
+
+def american(decimal):
+    return f"+{round((decimal - 1) * 100)}" if decimal >= 2 else f"-{round(100 / (decimal - 1))}"
+
+
+def book_quote(title, outcome, slug, game_start=None):
+    """Sportsbook prices for the same bet, best first:
+    [{"book": "DraftKings", "decimal": 1.91}, ...]. Empty if no key, not a supported league,
+    or the book's line isn't the same number (a -8.5 spread is not compared with -9)."""
+    sport = SPORT_KEYS.get((slug or "").split("-")[0].lower())
+    spec = _bet_spec(title, outcome)
+    if not sport or not spec:
+        return []
+    market, point, teams = spec
+    out = []
+    for ev in _odds_events(sport, market):
+        names = [ev.get("home_team") or "", ev.get("away_team") or ""]
+        if not all(any(_same_team(t, n) for n in names) for t in teams):
+            continue
+        start = parse_time(ev.get("commence_time"))
+        if game_start and start and abs(start - game_start) > 18 * 3600:
+            continue
+        for b in ev.get("bookmakers") or []:
+            for mk in b.get("markets") or []:
+                if mk.get("key") != market:
+                    continue
+                for o in mk.get("outcomes") or []:
+                    name = o.get("name") or ""
+                    hit = (name.lower() == (outcome or "").lower() if market == "totals"
+                           else _same_team(outcome, name))
+                    if hit and num(o.get("price")) > 1 and (
+                            point is None or abs(num(o.get("point"), 1e9) - point) < 0.01):
+                        out.append({"book": b.get("title") or b.get("key") or "?",
+                                    "decimal": num(o.get("price"))})
+        break
+    return sorted(out, key=lambda q: -q["decimal"])
+
+
+def log_books(path, key, alerted_at, quotes):
+    """Append the sportsbook prices for one alert (nothing written if there are none)."""
+    if not quotes:
+        return
+    import csv
+    new_file = not os.path.exists(path)
+    with open(path, "a", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=BOOK_FIELDS)
+        if new_file:
+            w.writeheader()
+        for q in quotes:
+            w.writerow({"alerted_at": alerted_at, "key": key, "book": q["book"],
+                        "decimal": round(q["decimal"], 3), "american": american(q["decimal"]),
+                        "implied": round(1 / q["decimal"], 4)})
