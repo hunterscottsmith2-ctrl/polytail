@@ -14,7 +14,7 @@ import os
 from collections import defaultdict
 from datetime import datetime, timezone
 
-from common import market_resolutions, money, num, send_telegram
+from common import market_resolutions, money, num, send_telegram, taker_fee
 
 LOG_FILE = os.environ.get("POLYTAIL_LOG", "signals_log.csv")
 OUT_DIR = os.environ.get("POLYTAIL_RESULTS", "results")
@@ -23,15 +23,40 @@ FILE_TAG = os.environ.get("SCORECARD_TAG", "scorecard")
 # Only alerts at/after this time count toward the test (rule changes reset it).
 SINCE = os.environ.get("SCORECARD_SINCE", "")
 STAKE = 100          # pretend bet per alert, $
-TAKER_FEE = 0.01     # haircut for fees/slippage (1% of stake)
+# Polymarket taker fee rate: fee = stake x rate x (1 - price). Sports 0.03, politics/finance
+# 0.04, crypto 0.07 (global site, Fee Structure V2). 0.04 is a slightly cautious default.
+FEE_RATE = float(os.environ.get("SCORECARD_FEE_RATE", 0.04))
+_stem = os.path.basename(LOG_FILE).replace("signals_log", "fills").replace("signals", "fills")
+FILLS_FILE = os.environ.get("POLYTAIL_FILLS", os.path.join(os.path.dirname(LOG_FILE), _stem))
 GOAL = 30            # settled bets a group needs before its results mean much
 
 def wallet_group(row):
     n = int(num(row.get("wallets"), 0))
     return "5+" if n >= 5 else str(n)
 
+def load_fills():
+    """{(key, alerted_at): {"now": fill price at alert, "later": fill price 2+ min after}}"""
+    out = {}
+    try:
+        with open(FILLS_FILE) as f:
+            for r in csv.DictReader(f):
+                p = num(r.get("fill_100"), 0)
+                if p <= 0 or num(r.get("filled_usd"), 0) < STAKE * 0.99:
+                    continue  # no book, or not even $100 for sale
+                slot = "now" if num(r.get("secs_after"), 0) < 60 else "later"
+                out.setdefault((r["key"], r["alerted_at"]), {}).setdefault(slot, p)
+    except FileNotFoundError:
+        pass
+    return out
+
+
+def profit_at(payout, price):
+    return round(STAKE * (payout / price - 1) - STAKE * taker_fee(price, FEE_RATE), 2)
+
+
 def grade(rows):
     res = market_resolutions([r["condition_id"] for r in rows])
+    fills = load_fills()
     graded = []
     for r in rows:
         out = dict(r)
@@ -39,10 +64,17 @@ def grade(rows):
         price = num(r["price"])
         info = res.get(r["condition_id"])
         idx = int(num(r["outcome_index"], -1))
+        q = fills.get((r["key"], r["alerted_at"]), {})
+        out["ask_price"], out["later_price"] = q.get("now", ""), q.get("later", "")
+        out["profit_ask"] = out["profit_later"] = ""
         if info and 0 <= idx < len(info["values"]) and price > 0:
             payout = info["values"][idx]
             out["result"] = "win" if payout >= 0.99 else "loss" if payout <= 0.01 else "void"
-            out["profit"] = round(STAKE * (payout / price - 1) - STAKE * TAKER_FEE, 2)
+            out["profit"] = profit_at(payout, price)
+            if q.get("now"):
+                out["profit_ask"] = profit_at(payout, q["now"])
+            if q.get("later"):
+                out["profit_later"] = profit_at(payout, q["later"])
         else:
             out["result"], out["profit"] = "pending", ""
         graded.append(out)
@@ -89,6 +121,14 @@ def summarize(graded):
             f"Avg price paid: {sum(num(g['price']) for g in done) / len(done) * 100:.0f}¢"
             " (break-even win rate ≈ that number)",
         ]
+    for col, label in [("profit_ask", "the real ask when the alert fired"),
+                       ("profit_later", "the real ask a few minutes later (what you'd get)")]:
+        priced = [g for g in done if g[col] != ""]
+        if priced:
+            same = sum(num(g["profit"]) for g in priced) / (STAKE * len(priced))
+            real = sum(num(g[col]) for g in priced) / (STAKE * len(priced))
+            lines.append(f"At {label}: {real:+.1%} per bet over {len(priced)} bets"
+                         f" (same bets at the alert's quoted price: {same:+.1%})")
     by_group = defaultdict(list)
     for g in graded:
         by_group[g["group"]].append(g)
@@ -103,7 +143,13 @@ def main():
         send_telegram(f"<b>{LABEL} scorecard</b>\nNo alerts logged yet.")
         return
     with open(LOG_FILE) as f:
-        rows = [r for r in csv.DictReader(f) if r.get("kind") == "new"]
+        rows, seen = [], set()
+        for r in csv.DictReader(f):
+            # one bet per market side (per rule period, so a rules reset still counts it)
+            k = (r["key"], bool(SINCE) and r["alerted_at"] >= SINCE)
+            if r.get("kind") == "new" and k not in seen:
+                seen.add(k)
+                rows.append(r)
     graded = grade(rows)
     current = [g for g in graded if not SINCE or g["alerted_at"] >= SINCE]
     old = [g for g in graded if SINCE and g["alerted_at"] < SINCE]
