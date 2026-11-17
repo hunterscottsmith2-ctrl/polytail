@@ -18,12 +18,6 @@
    "title": "Spread: 76ers (-5.5)",
    "wallets": 4
   },
-  "0x81facc9948195e1264f93cce78dab7d64ef077be45b3e9db75f07cb94d1e5f91|1": {
-   "first_seen": "2026-11-16T23:46+00:00",
-   "outcome": "Heat",
-   "title": "Spread: Rockets (-2.5)",
-   "wallets": 6
-  },
   "0xa4205ef4d7859ca4bbfbe3bf42454f854489c4187133b895d17a21175d4d668b|1": {
    "first_seen": "2026-11-16T23:43+00:00",
    "outcome": "Pelicans",
@@ -47,18 +41,6 @@
    "outcome": "Grizzlies",
    "title": "Grizzlies vs. Wizards",
    "wallets": 7
-  },
-  "0xda52f043efb851b20aa8132a0a2476f9b6ce3db631ac5ac17b083f3d4e0b1bf4|1": {
-   "first_seen": "2026-11-17T00:01+00:00",
-   "outcome": "Wizards",
-   "title": "Grizzlies vs. Wizards",
-   "wallets": 10
-  },
-  "0xdb926ddf31fc0b34a6902b9760454d8e4f23316ab137973db2a6ae6522bd1848|1": {
-   "first_seen": "2026-11-16T23:13+00:00",
-   "outcome": "Wizards",
-   "title": "Spread: Grizzlies (-3.5)",
-   "wallets": 5
   }
  }
 }
