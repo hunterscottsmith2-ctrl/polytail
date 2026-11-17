@@ -20,7 +20,8 @@ import os
 import time
 from datetime import datetime, timezone
 
-from common import get_json, market_info, money, num, send_telegram
+from common import (get_json, log_fill, market_info, money, num, queue_recheck, run_rechecks,
+                    send_telegram)
 
 # Two independent tests run from this file:
 #   main   (default)               — all markets, overall leaderboards
@@ -45,9 +46,13 @@ SETTINGS = {
     "MIN_PRICE": 0.05,               # skip near-dead outcomes
     "MAX_PRICE": 0.60,               # 60c+ was break-even in the backtest
     "MIN_WALLETS_AGREEING": 4,
+    "MIN_NET_WALLETS": 3,            # agreeing wallets minus wallets on the other side
     # Freshness filters
-    "FRESH_HOURS": 24,               # consensus must have formed within this window
+    "FRESH_HOURS": 2,                # the Nth wallet must have got in within this window
     "MAX_RUNUP": 0.05,               # skip if price is >5c above their avg entry
+    "MAX_DROP": 0.03,                # skip if price is >3c BELOW their avg entry (falling knife)
+    "SKIP_STARTED_GAMES": True,      # never alert on a game that has kicked off
+    "REALERT_AFTER_HOURS": 12,       # a signal that disappears can't re-alert sooner than this
     "MAX_DAYS_TO_END": 30,           # skip markets ending more than 30 days out
     "MAX_ALERTS_PER_RUN": 10,
     "WALLETS_FILE_MAX_AGE_DAYS": 21, # ignore wallets.json if older than this
@@ -57,6 +62,8 @@ STATE_FILE = os.environ.get("POLYTAIL_STATE", f"state{SUFFIX}.json")
 LOG_FILE = os.environ.get("POLYTAIL_LOG", "signals_log.csv" if not SUFFIX else f"signals{SUFFIX}.csv")
 SETTINGS_FILE = os.environ.get("POLYTAIL_SETTINGS", f"settings{SUFFIX}.json")
 WALLETS_FILE = os.environ.get("POLYTAIL_WALLETS", f"wallets{SUFFIX}.json")
+POOL_FILE = f"wallets{SUFFIX}_pool.json"   # non-bot wallets, written by backtest.py
+FILLS_FILE = os.environ.get("POLYTAIL_FILLS", f"fills{SUFFIX}.csv")
 
 LOG_FIELDS = ["alerted_at", "kind", "key", "condition_id", "outcome_index", "outcome",
               "title", "event_slug", "price", "avg_entry", "wallets", "total_value",
@@ -105,6 +112,15 @@ def leaderboard_wallets(cfg):
                 continue
             if w not in wallets or pnl > wallets[w]["pnl"]:
                 wallets[w] = {"name": row.get("user_name") or w[:8], "pnl": pnl}
+    # Drop the bot / market-maker wallets the backtest excluded, if it has told us which.
+    try:
+        with open(POOL_FILE) as f:
+            pool = json.load(f)
+        if (time.time() - num(pool.get("generated_at"))) / 86400 <= cfg["WALLETS_FILE_MAX_AGE_DAYS"]:
+            ok = set(pool.get("wallets", []))
+            wallets = {w: v for w, v in wallets.items() if w in ok}
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
     return wallets
 
 
@@ -118,8 +134,9 @@ def open_positions(wallet, cfg):
     for p in rows:
         if p.get("redeemable") or int(num(p.get("outcome_index"), 999)) == 999:
             continue
-        value, price = num(p.get("current_value")), num(p.get("current_price"))
-        if value < cfg["MIN_POSITION_USD"] or not (cfg["MIN_PRICE"] <= price <= cfg["MAX_PRICE"]):
+        # No price filter here: the other side of a market has to stay visible so
+        # opposing wallets are counted. The price range is applied per signal instead.
+        if num(p.get("current_value")) < cfg["MIN_POSITION_USD"]:
             continue
         end = p.get("end_date")
         if end:
@@ -139,9 +156,14 @@ def open_positions(wallet, cfg):
 
 
 def find_consensus(wallets, positions_by_wallet, cfg):
-    groups = {}
+    groups, now = {}, time.time()
     for w, positions in positions_by_wallet.items():
+        sides = {}
         for p in positions:
+            sides.setdefault(p.get("condition_id"), set()).add(p.get("outcome_index"))
+        for p in positions:
+            if len(sides[p.get("condition_id")]) > 1:
+                continue  # holds both sides of this market: hedged or market-making, not a view
             key = f"{p.get('condition_id')}|{p.get('outcome_index')}"
             g = groups.setdefault(key, {
                 "key": key,
@@ -150,6 +172,7 @@ def find_consensus(wallets, positions_by_wallet, cfg):
                 "event_slug": p.get("event_slug") or p.get("slug") or "",
                 "condition_id": p.get("condition_id"),
                 "outcome_index": p.get("outcome_index"),
+                "token_id": p.get("token_id"),
                 "price": num(p.get("current_price")),
                 "end_date": (p.get("end_date") or "")[:10],
                 "holders": [],
@@ -160,10 +183,20 @@ def find_consensus(wallets, positions_by_wallet, cfg):
                 "entered": num(p.get("first_entry_at")),
             })
 
+    by_market = {}
+    for g in groups.values():
+        by_market.setdefault(g["condition_id"], []).append(g)
+
     signals = []
     for g in groups.values():
         if len(g["holders"]) < cfg["MIN_WALLETS_AGREEING"]:
             continue
+        if not (cfg["MIN_PRICE"] <= g["price"] <= cfg["MAX_PRICE"]):
+            continue
+        g["opposing_wallets"] = sum(len(o["holders"]) for o in by_market[g["condition_id"]]
+                                    if o["key"] != g["key"])
+        if len(g["holders"]) - g["opposing_wallets"] < cfg["MIN_NET_WALLETS"]:
+            continue  # the watched wallets are split on this market
         g["holders"].sort(key=lambda h: h["value"], reverse=True)
         g["total_value"] = sum(h["value"] for h in g["holders"])
         shares = sum(h["value"] / g["price"] for h in g["holders"]) if g["price"] else 0
@@ -173,27 +206,26 @@ def find_consensus(wallets, positions_by_wallet, cfg):
         entries = sorted(h["entered"] for h in g["holders"] if h["entered"])
         n = cfg["MIN_WALLETS_AGREEING"]
         g["formed_at"] = entries[n - 1] if len(entries) >= n else 0
-        if g["formed_at"] and time.time() - g["formed_at"] > cfg["FRESH_HOURS"] * 3600:
-            continue  # old consensus — the move has likely happened
+        if not g["formed_at"] or now - g["formed_at"] > cfg["FRESH_HOURS"] * 3600:
+            continue  # old (or undatable) consensus — the move has likely happened
         if g["price"] - g["avg_entry"] > cfg["MAX_RUNUP"]:
             continue  # price already ran past their entry
+        if g["avg_entry"] - g["price"] > cfg["MAX_DROP"]:
+            continue  # price has fallen well below their entry — they're losing, don't chase
         signals.append(g)
 
-    if cfg["SPORTS_GAMES_ONLY"] and signals:
+    if signals and (cfg["SPORTS_GAMES_ONLY"] or cfg["SKIP_STARTED_GAMES"]):
         info = market_info([s["condition_id"] for s in signals])
-        now = time.time()
-        signals = [s for s in signals
-                   if info.get(s["condition_id"], {}).get("sport")
-                   and (info[s["condition_id"]].get("game_start") or 0) > now]
+        if cfg["SPORTS_GAMES_ONLY"]:
+            signals = [s for s in signals
+                       if info.get(s["condition_id"], {}).get("sport")
+                       and (info[s["condition_id"]].get("game_start") or 0) > now]
+        else:
+            signals = [s for s in signals
+                       if not info.get(s["condition_id"], {}).get("game_start")
+                       or info[s["condition_id"]]["game_start"] > now]
         for s in signals:
-            s["game_start"] = info[s["condition_id"]]["game_start"]
-
-    by_market = {}
-    for g in groups.values():
-        by_market.setdefault(g["condition_id"], []).append(g)
-    for s in signals:
-        s["opposing_wallets"] = sum(len(g["holders"]) for g in by_market[s["condition_id"]]
-                                    if g["key"] != s["key"])
+            s["game_start"] = info.get(s["condition_id"], {}).get("game_start")
 
     signals.sort(key=lambda s: (len(s["holders"]), s["total_value"]), reverse=True)
     return signals
@@ -214,13 +246,15 @@ def save_state(state):
 
 
 def log_signal(s, kind):
+    """Log the alert; returns its timestamp string (the key the fills file joins on)."""
+    stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
     new_file = not os.path.exists(LOG_FILE)
     with open(LOG_FILE, "a", newline="") as f:
         w = csv.DictWriter(f, fieldnames=LOG_FIELDS)
         if new_file:
             w.writeheader()
         w.writerow({
-            "alerted_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "alerted_at": stamp,
             "kind": kind, "key": s["key"], "condition_id": s["condition_id"],
             "outcome_index": s["outcome_index"], "outcome": s["outcome"], "title": s["title"],
             "event_slug": s["event_slug"], "price": round(s["price"], 4),
@@ -228,6 +262,7 @@ def log_signal(s, kind):
             "total_value": round(s["total_value"], 2),
             "opposing_wallets": s["opposing_wallets"], "end_date": s["end_date"],
         })
+    return stamp
 
 
 def format_alert(s, is_upgrade):
@@ -270,6 +305,7 @@ def main():
     print(f"Profile: {PROFILE}")
     state = load_state()
     alerted = state.setdefault("alerted", {})
+    run_rechecks(state, FILLS_FILE)   # what could you really buy at, a few minutes after each alert?
 
     wallets = scored_wallets(cfg)
     source = "backtest-scored wallets.json"
@@ -293,11 +329,16 @@ def main():
     for s in signals:
         live_keys.add(s["key"])
         prev = alerted.get(s["key"])
+        if prev:
+            prev.pop("gone_at", None)
         is_upgrade = prev is not None and len(s["holders"]) > prev["wallets"]
         if not (prev is None or is_upgrade) or sent >= cfg["MAX_ALERTS_PER_RUN"]:
             continue
         if send_telegram(format_alert(s, is_upgrade)):
-            log_signal(s, "upgrade" if is_upgrade else "new")
+            stamp = log_signal(s, "upgrade" if is_upgrade else "new")
+            if not is_upgrade:
+                log_fill(FILLS_FILE, s["key"], stamp, time.time(), s.get("token_id"), s["price"])
+                queue_recheck(state, s["key"], stamp, s.get("token_id"))
             alerted[s["key"]] = {
                 "wallets": len(s["holders"]), "title": s["title"], "outcome": s["outcome"],
                 "first_seen": (prev or {}).get(
@@ -305,9 +346,14 @@ def main():
             }
             sent += 1
 
-    for k in list(alerted):  # forget dissolved signals so they can re-alert later
+    # A signal that drops out (price blip, API hiccup) is remembered for a while, so the
+    # same bet isn't sent and graded again as a brand-new alert minutes later.
+    now = time.time()
+    for k in list(alerted):
         if k not in live_keys:
-            del alerted[k]
+            gone = alerted[k].setdefault("gone_at", now)
+            if now - gone > cfg["REALERT_AFTER_HOURS"] * 3600:
+                del alerted[k]
 
     save_state(state)
     print(f"Sent {sent} alert(s)")

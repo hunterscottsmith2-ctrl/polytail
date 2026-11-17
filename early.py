@@ -1,16 +1,18 @@
 """
 PolyTail Early — copy PROVEN sharp wallets the moment they bet, not after a crowd forms.
 
-Watchlist: wallets_sharp.json (made by backtest.py): wallets that are profitable on
-settled markets AND consistently beat the closing price. In the Nov 15 backtest,
-tailing single sharp wallets right after their entry was the best setting found
-(+3.7% per bet over 1,706 bets, 90% range -0.4% to +7.9%) — promising, not proven.
+Watchlist: the "proven" wallets in wallets_sharp.json (made by backtest.py): profitable
+on settled markets AND beat the closing price, scored on all data through the backtest
+date. NOTE: this exact list has never been tested out of sample. The +3.7%/bet figure
+from the Nov 15 backtest (1,706 bets, 90% range -0.4% to +7.9%) was for a different
+group (5 wallets picked on training data only); the closest tested group to this list
+returned -1.4%/bet over 294 bets. Treat this as an open experiment, not a proven edge.
 
 Every run:
   1. Pull each watched wallet's recent BUY fills.
   2. A wallet putting $1K+ into one side of a market = a signal.
-  3. Keep it only if you can still get roughly their price (current price at most
-     2 cents above their average entry), the price is 5-95 cents, the market ends
+  3. Keep it only if you can still get roughly their price (the order book's ask to buy
+     $100 is at most 2 cents above their average entry), the price is 5-95 cents, the market ends
      within 30 days, and (for games) it hasn't kicked off yet.
   4. Log it to signals_early.csv so scorecard.py grades it. Telegram alerts are OFF
      until the test proves itself (set SEND_ALERTS=1 in the workflow to turn them on).
@@ -27,11 +29,13 @@ from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
-from common import GAMMA_API, get_pages, get_json, money, num, parse_time, send_telegram
+from common import (GAMMA_API, ask_quote, get_pages, get_json, log_fill, money, num, parse_time,
+                    queue_recheck, run_rechecks, send_telegram)
 
 WALLETS_FILE = os.environ.get("POLYTAIL_WALLETS", "wallets_sharp.json")
 STATE_FILE = "state_early.json"
 LOG_FILE = "signals_early.csv"
+FILLS_FILE = "fills_early.csv"
 SEND_ALERTS = os.environ.get("SEND_ALERTS", "0") == "1"
 
 MIN_BUY_USD = 1_000        # backtest: $1K setting beat $5K for single sharp wallets
@@ -86,6 +90,7 @@ def main():
     now = time.time()
     state = load_json(STATE_FILE, {"seen": {}, "last_run": 0})
     seen = state.setdefault("seen", {})
+    run_rechecks(state, FILLS_FILE)   # price a few minutes after earlier signals
     start = max(state.get("last_run", 0) - 300, now - LOOKBACK_MIN * 60)
 
     wallets = watchlist()
@@ -121,7 +126,9 @@ def main():
         if not m or m["closed"] or idx >= len(m["prices"]):
             reason = "closed/unknown"
         else:
-            price = m["prices"][idx]
+            # Real cost to buy $100 now; the Gamma price can lag and is not the ask.
+            q = ask_quote(t.get("token_id"))
+            price = q["fill"] if q else m["prices"][idx]
             if not (MIN_PRICE <= price <= MAX_PRICE):
                 reason = "price out of range"
             elif price - avg > MAX_RUNUP:
@@ -136,7 +143,8 @@ def main():
         s = signals.setdefault(key, {
             "key": key, "condition_id": cid, "outcome_index": idx,
             "outcome": t.get("outcome") or "?", "title": t.get("title") or "?",
-            "event_slug": t.get("event_slug") or "", "price": m["prices"][idx],
+            "event_slug": t.get("event_slug") or "", "price": price,
+            "token_id": t.get("token_id"),
             "end_date": datetime.fromtimestamp(m["end"], timezone.utc).strftime("%Y-%m-%d")
             if m["end"] else "", "holders": [], "game_start": m["start"]})
         s["holders"].append({"name": wallets[w].get("name", w[:8])[:24], "cost": a["cost"],
@@ -151,8 +159,11 @@ def main():
         for s in sorted(signals.values(), key=lambda s: -sum(h["cost"] for h in s["holders"])):
             cost = sum(h["cost"] for h in s["holders"])
             avg = sum(h["avg"] * h["cost"] for h in s["holders"]) / cost
+            stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
+            log_fill(FILLS_FILE, s["key"], stamp, time.time(), s["token_id"], s["price"])
+            queue_recheck(state, s["key"], stamp, s["token_id"])
             wr.writerow({
-                "alerted_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                "alerted_at": stamp,
                 "kind": "new", "key": s["key"], "condition_id": s["condition_id"],
                 "outcome_index": s["outcome_index"], "outcome": s["outcome"], "title": s["title"],
                 "event_slug": s["event_slug"], "price": round(s["price"], 4),

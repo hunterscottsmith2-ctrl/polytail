@@ -32,7 +32,7 @@ jobs:
         run: |
           git config user.name "polytail-bot"
           git config user.email "polytail-bot@users.noreply.github.com"
-          for f in state.json signals_log.csv; do [ -f "$f" ] && git add "$f"; done
+          for f in state.json signals_log.csv fills.csv; do [ -f "$f" ] && git add "$f"; done
           git diff --cached --quiet && exit 0
           git commit -m "Update alert state"
           for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
