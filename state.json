@@ -6,12 +6,6 @@
    "title": "Spread: Ravens (-4.5)",
    "wallets": 5
   },
-  "0x4beba8709f36c7fe7022777e61cc32846176821f308a4690262d9a3a7516cb1e|1": {
-   "first_seen": "2026-11-17T00:58+00:00",
-   "outcome": "Nets",
-   "title": "Spread: 76ers (-5.5)",
-   "wallets": 4
-  },
   "0x651f52936b2119794ceb56335c2131816880e31e2f0f112d7f68fb059200cea5|0": {
    "first_seen": "2026-11-17T00:55+00:00",
    "outcome": "Warriors",
@@ -22,7 +16,7 @@
    "first_seen": "2026-11-17T00:49+00:00",
    "outcome": "Pelicans",
    "title": "Spread: Warriors (-3.5)",
-   "wallets": 5
+   "wallets": 7
   },
   "0x6eb81f3d9c16eef9c2d5e074537a31a50fd0d4410e43458208010cd111a70791|1": {
    "first_seen": "2026-11-17T00:58+00:00",
@@ -34,7 +28,7 @@
    "first_seen": "2026-11-16T23:43+00:00",
    "outcome": "Pelicans",
    "title": "Warriors vs. Pelicans",
-   "wallets": 8
+   "wallets": 9
   },
   "0xc60598366a8358b18c8f9d81e2aa4bcb9ebd672fe4879b8026800ffcccd7c48b|0": {
    "first_seen": "2026-11-16T23:46+00:00",
@@ -42,16 +36,16 @@
    "title": "Rockets vs. Heat",
    "wallets": 6
   },
-  "0xda52f043efb851b20aa8132a0a2476f9b6ce3db631ac5ac17b083f3d4e0b1bf4|1": {
-   "first_seen": "2026-11-17T00:58+00:00",
-   "outcome": "Wizards",
+  "0xda52f043efb851b20aa8132a0a2476f9b6ce3db631ac5ac17b083f3d4e0b1bf4|0": {
+   "first_seen": "2026-11-17T01:01+00:00",
+   "outcome": "Grizzlies",
    "title": "Grizzlies vs. Wizards",
-   "wallets": 9
+   "wallets": 7
   },
-  "0xdb926ddf31fc0b34a6902b9760454d8e4f23316ab137973db2a6ae6522bd1848|1": {
-   "first_seen": "2026-11-17T00:58+00:00",
-   "outcome": "Wizards",
-   "title": "Spread: Grizzlies (-3.5)",
+  "0xe579bd7f0e99a4f7a2eb6c0a885e1ed8cbfa3d274d8009244d0acc508de7a460|0": {
+   "first_seen": "2026-11-17T01:01+00:00",
+   "outcome": "Chargers",
+   "title": "Chargers vs. Ravens",
    "wallets": 4
   }
  }

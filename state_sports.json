@@ -6,23 +6,11 @@
    "title": "Spread: Ravens (-4.5)",
    "wallets": 5
   },
-  "0x651f52936b2119794ceb56335c2131816880e31e2f0f112d7f68fb059200cea5|0": {
-   "first_seen": "2026-11-17T00:55+00:00",
-   "outcome": "Warriors",
-   "title": "Spread: Warriors (-3.5)",
+  "0xe579bd7f0e99a4f7a2eb6c0a885e1ed8cbfa3d274d8009244d0acc508de7a460|0": {
+   "first_seen": "2026-11-17T01:01+00:00",
+   "outcome": "Chargers",
+   "title": "Chargers vs. Ravens",
    "wallets": 4
-  },
-  "0x651f52936b2119794ceb56335c2131816880e31e2f0f112d7f68fb059200cea5|1": {
-   "first_seen": "2026-11-17T00:55+00:00",
-   "outcome": "Pelicans",
-   "title": "Spread: Warriors (-3.5)",
-   "wallets": 7
-  },
-  "0xa4205ef4d7859ca4bbfbe3bf42454f854489c4187133b895d17a21175d4d668b|1": {
-   "first_seen": "2026-11-16T23:43+00:00",
-   "outcome": "Pelicans",
-   "title": "Warriors vs. Pelicans",
-   "wallets": 9
   }
  }
 }
