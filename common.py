@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 
 DATA_API = "https://data-api.polymarket.com"
 GAMMA_API = "https://gamma-api.polymarket.com"
+CLOB_API = "https://clob.polymarket.com"
 USER_AGENT = "polytail/2.0"
 
 
@@ -199,3 +200,77 @@ def money(x):
     if x >= 1e3:
         return f"{sign}${x/1e3:.0f}K"
     return f"{sign}${x:.0f}"
+
+
+# ---------------------------------------------------------------- real prices & fees
+def taker_fee(price, rate):
+    """Polymarket taker fee as a fraction of dollars staked.
+    Fee = shares x rate x price x (1 - price); stake = shares x price; so fee/stake = rate x (1 - price)."""
+    return rate * (1 - price)
+
+
+def ask_quote(token_id, usd=100):
+    """What buying costs right now, from the live order book.
+    Returns {"ask": best ask, "fill": average price to buy `usd` worth, "filled_usd": $ actually
+    available} or None if there is no book / nothing for sale."""
+    if not token_id:
+        return None
+    body = get_json_raw("/book", {"token_id": token_id}, base=CLOB_API, retries=2)
+    if not isinstance(body, dict):
+        return None
+    asks = sorted((num(a.get("price")), num(a.get("size"))) for a in body.get("asks") or []
+                  if num(a.get("price")) > 0 and num(a.get("size")) > 0)
+    if not asks:
+        return None
+    spent = shares = 0.0
+    for p, size in asks:
+        take = min(size, (usd - spent) / p)
+        spent += take * p
+        shares += take
+        if spent >= usd - 1e-9:
+            break
+    return {"ask": asks[0][0], "fill": spent / shares, "filled_usd": spent}
+
+
+FILL_FIELDS = ["alerted_at", "key", "checked_at", "secs_after", "mark", "ask", "fill_100",
+               "filled_usd"]
+
+
+def log_fill(path, key, alerted_at, alerted_ts, token_id, mark=""):
+    """Append one order-book quote for an alert to the fills file (blank prices if no book)."""
+    import csv
+    q = ask_quote(token_id) or {}
+    new_file = not os.path.exists(path)
+    with open(path, "a", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=FILL_FIELDS)
+        if new_file:
+            w.writeheader()
+        w.writerow({
+            "alerted_at": alerted_at, "key": key,
+            "checked_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "secs_after": int(time.time() - alerted_ts), "mark": mark,
+            "ask": round(q["ask"], 4) if q else "",
+            "fill_100": round(q["fill"], 4) if q else "",
+            "filled_usd": round(q["filled_usd"], 2) if q else "",
+        })
+    return q or None
+
+
+def queue_recheck(state, key, alerted_at, token_id):
+    """Remember an alert so a later scan can log what the price was a few minutes on."""
+    if token_id:
+        state.setdefault("recheck", []).append(
+            {"key": key, "alerted_at": alerted_at, "ts": time.time(), "token": token_id})
+
+
+def run_rechecks(state, path, min_age=120, max_age=1800):
+    """Log a second quote for alerts sent at least `min_age` seconds ago (the price you'd
+    realistically get after seeing the alert). Drops anything older than `max_age`."""
+    keep, now = [], time.time()
+    for r in state.get("recheck", []):
+        age = now - r["ts"]
+        if age < min_age:
+            keep.append(r)
+        elif age <= max_age:
+            log_fill(path, r["key"], r["alerted_at"], r["ts"], r["token"])
+    state["recheck"] = keep
