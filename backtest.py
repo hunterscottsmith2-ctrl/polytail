@@ -32,7 +32,8 @@ import time
 from collections import defaultdict
 from datetime import datetime, timezone
 
-from common import get_json, get_pages, market_resolutions, money, num, send_telegram
+from common import (get_json, get_pages, market_resolutions, money, num, send_telegram,
+                    taker_fee)
 
 # ---------------------------------------------------------------- settings
 LOOKBACK_DAYS = int(os.environ.get("BT_LOOKBACK_DAYS", 240))
@@ -52,13 +53,16 @@ MIN_POS_GRID = [1_000, 5_000]    # $ each wallet must have in the position
 MIN_PRICE, MAX_PRICE = 0.05, 0.95
 DELAY_MINUTES = 15               # you see the alert & bet this long after
 SLIPPAGE = 0.01                  # used if no price history is available
-TAKER_FEE = 0.01                 # 1% haircut on each bet
-MAX_PRICE_LOOKUPS = 4_000
+# Polymarket taker fee: stake x rate x (1 - price). Sports 0.03; 0.04 covers politics/finance.
+FEE_RATE = float(os.environ.get("BT_FEE_RATE", 0.03 if SPORTS else 0.04))
+# New price lookups per run. Results are cached between runs, so coverage keeps growing.
+MAX_PRICE_LOOKUPS = int(os.environ.get("BT_MAX_PRICE_LOOKUPS", 30_000))
 MIN_SIGNALS_FOR_VERDICT = 30
 
 CACHE_DIR = os.environ.get("BT_CACHE", "cache")
 OUT_DIR = os.environ.get("POLYTAIL_RESULTS", "results" if not SPORTS else "results/sports")
 SHARP_FILE = "wallets_sharp.json" if not SPORTS else "wallets_sports_sharp.json"
+POOL_FILE = "wallets_pool.json" if not SPORTS else "wallets_sports_pool.json"   # read by tracker.py
 DAY = 86400
 WINDOW = 30 * DAY
 
@@ -146,7 +150,7 @@ def wallet_trades(wallet, start, end, now):
 
 def price_after(asset, ts, lookups):
     """Market price DELAY_MINUTES after ts, from Polymarket's price history."""
-    key = f"{asset}_{int(ts // 300)}"
+    key = f"d{DELAY_MINUTES}_{asset}_{int(ts // 300)}"   # own namespace: CLV closing prices share this cache
     if key in lookups["cache"]:
         return lookups["cache"][key]
     if lookups["count"] >= MAX_PRICE_LOOKUPS:
@@ -283,9 +287,9 @@ def clv_score(jobs):
     if n < 2:
         return {"clv_n": n, "clv_mean": 0.0, "clv_beat": 0.0, "clv_t": 0.0}
     mean = sum(d for d, _ in xs) / n
-    sd = math.sqrt(sum((d - mean) ** 2 for d, _ in xs) / (n - 1)) or 1e-9
+    sd = math.sqrt(sum((d - mean) ** 2 for d, _ in xs) / (n - 1))
     return {"clv_n": n, "clv_mean": mean, "clv_beat": sum(d > 0 for d, _ in xs) / n,
-            "clv_t": mean / (sd / math.sqrt(n))}
+            "clv_t": mean / (sd / math.sqrt(n)) if sd > 1e-9 else 0.0}
 
 
 def is_profitable(s):
@@ -355,7 +359,7 @@ def evaluate(signals, res, lookups):
         else:
             payout = info["values"][s["idx"]]
             row.update(status="settled", payout=payout,
-                       roi=round(payout / entry - 1 - TAKER_FEE, 4))
+                       roi=round(payout / entry - 1 - taker_fee(entry, FEE_RATE), 4))
         rows.append(row)
     return rows
 
@@ -403,6 +407,8 @@ def main():
             if i % 25 == 0:
                 log(f"  trades pulled for {i}/{len(pool)} wallets")
     log(f"Usable wallets: {len(trades_by_wallet)} (skipped {bots} bot-like)")
+    with open(POOL_FILE, "w") as f:   # lets the live tracker skip the same bot-like wallets
+        json.dump({"generated_at": now, "wallets": sorted(trades_by_wallet)}, f, indent=0)
 
     res_cache = cache_get("resolutions_v2.json") or {}
     all_cids = {t["cid"] for tr in trades_by_wallet.values() for t in tr}
@@ -511,9 +517,11 @@ def main():
         "",
         f"**Verdict:** {verdict}",
         "",
-        f"Bets placed at the price {DELAY_MINUTES} min after the signal, minus a "
-        f"{TAKER_FEE:.0%} fee. A random bet at market price averages about -1% "
-        "after that fee, so that's the bar to beat.",
+        f"Bets placed at the price {DELAY_MINUTES} min after the signal where price history was "
+        f"available ({sum(r.get('price_source') == 'history' for r in sig_rows)} of {len(sig_rows)} "
+        "rows; the rest use the wallet's own fill price +1¢, which is optimistic), minus "
+        f"Polymarket's taker fee ({FEE_RATE:.0%} x (1 - price), about {FEE_RATE / 2:.1%} of a 50¢ bet). "
+        "The bid/ask spread is NOT included, so real results would be roughly 1-2% per bet worse.",
         f"Profit-scored wallets {'beat' if scoring_helps else 'did NOT beat'} the whole "
         "pool (N=3, $1K).",
         f"**Sharp wallets (closing-line value):** {len(sharp)} wallets beat the closing price "
@@ -549,6 +557,11 @@ def main():
         with open(os.path.join(OUT_DIR, "recommended_settings.json"), "w") as f:
             json.dump({"MIN_WALLETS_AGREEING": best["N"], "MIN_POSITION_USD": best["min_pos"]},
                       f, indent=1)
+    else:   # no edge this run: don't leave an old recommendation lying around
+        try:
+            os.remove(os.path.join(OUT_DIR, "recommended_settings.json"))
+        except FileNotFoundError:
+            pass
     lines += ["", "## Caveats",
               "- The wallet pool comes from today's leaderboards, which partly reflect test-window "
               "profits. The volume boards and training-only scoring reduce this, but results may "
