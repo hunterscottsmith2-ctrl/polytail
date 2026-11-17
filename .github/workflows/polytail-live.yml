@@ -44,7 +44,8 @@ jobs:
             POLYTAIL_PROFILE=sports timeout 150 python tracker.py || echo "sports scan failed"
             timeout 150 python early.py || echo "early scan failed"
             for f in state.json signals_log.csv state_sports.json signals_sports.csv \
-                     state_early.json signals_early.csv; do
+                     state_early.json signals_early.csv \
+                     fills.csv fills_sports.csv fills_early.csv; do
               [ -f "$f" ] && git add "$f"
             done
             if ! git diff --cached --quiet; then
