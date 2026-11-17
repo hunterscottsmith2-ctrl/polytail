@@ -46,6 +46,9 @@ SETTINGS = {
     "MIN_PRICE": 0.05,               # skip near-dead outcomes
     "MAX_PRICE": 0.60,               # 60c+ was break-even in the backtest
     "MIN_WALLETS_AGREEING": 4,
+    # Live scorecard (Nov 16): 5+ wallets agreeing lost -42%/bet (all markets) and -31% (sports),
+    # while exactly 4 held up. Only alert when exactly 4 agree.
+    "MAX_WALLETS_AGREEING": 4,
     "MIN_NET_WALLETS": 3,            # agreeing wallets minus wallets on the other side
     # Freshness filters
     "FRESH_HOURS": 2,                # the Nth wallet must have got in within this window
@@ -192,6 +195,8 @@ def find_consensus(wallets, positions_by_wallet, cfg):
     for g in groups.values():
         if len(g["holders"]) < cfg["MIN_WALLETS_AGREEING"]:
             continue
+        if len(g["holders"]) > cfg.get("MAX_WALLETS_AGREEING", 999):
+            continue  # crowded trades (5+) have been losing live
         if not (cfg["MIN_PRICE"] <= g["price"] <= cfg["MAX_PRICE"]):
             continue
         g["opposing_wallets"] = sum(len(o["holders"]) for o in by_market[g["condition_id"]]

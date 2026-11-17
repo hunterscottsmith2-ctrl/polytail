@@ -58,9 +58,14 @@ def load_json(path, default):
     except (FileNotFoundError, json.JSONDecodeError):
         return default
 
+BLOCKLIST_FILE = os.environ.get("POLYTAIL_BLOCKLIST", "wallets_blocklist.json")
+
 def watchlist():
     data = load_json(WALLETS_FILE, {})
-    return {w["wallet"].lower(): w for w in data.get("wallets", []) if w.get("proven")}
+    # Wallets cut by hand (survives backtest.py rewriting wallets_sharp.json)
+    blocked = {w.lower() for w in load_json(BLOCKLIST_FILE, {}).get("wallets", {})}
+    return {w["wallet"].lower(): w for w in data.get("wallets", [])
+            if w.get("proven") and w["wallet"].lower() not in blocked}
 
 def recent_buys(wallet, start, end):
     rows, _ = get_pages("/v2/trades", {"user": wallet, "start": int(start), "end": int(end),

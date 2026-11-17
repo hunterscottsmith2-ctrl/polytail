@@ -1,0 +1,6 @@
+{
+  "note": "Wallets removed from the single-wallet (early) test. Key = wallet, value = why.",
+  "wallets": {
+    "0x9f15613ebf1f36d4bc679e1211d1fc567cf9bdb3": "Cut Nov 17 2026: -$31.7K over the scoring window, up in only 1 of 3 months; was 8 of 14 early alerts"
+  }
+}
