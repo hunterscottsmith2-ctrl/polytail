@@ -6,7 +6,20 @@
    "outcome": "Over",
    "title": "Denmark vs. Norway: O/U 3.5",
    "wallets": 4
+  },
+  "0x94a2abd40a848a82c1691927d833f967fbea1e937294131e662e87f732c4243b|1": {
+   "first_seen": "2026-11-17T23:44+00:00",
+   "outcome": "Kent State",
+   "title": "Spread: Miami (OH) (-9.5)",
+   "wallets": 4
   }
  },
- "recheck": []
+ "recheck": [
+  {
+   "alerted_at": "2026-11-17T23:44:40+00:00",
+   "key": "0x94a2abd40a848a82c1691927d833f967fbea1e937294131e662e87f732c4243b|1",
+   "token": "46442267705343497079321002183029090091966203175295505385204808430302644907286",
+   "ts": 1794959080.6949594
+  }
+ ]
 }
