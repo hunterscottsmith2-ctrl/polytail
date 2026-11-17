@@ -33,6 +33,7 @@ jobs:
           POLYTAIL_LOG: signals_sports.csv
           SCORECARD_LABEL: "🏈 PolyTail Sports"
           SCORECARD_TAG: scorecard_sports
+          SCORECARD_FEE_RATE: "0.03"
         run: python scorecard.py
 
       - name: Grade early sharp-wallet test
