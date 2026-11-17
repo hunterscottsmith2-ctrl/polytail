@@ -26,7 +26,20 @@
    "outcome": "Kent State",
    "title": "Spread: Miami (OH) (-9.5)",
    "wallets": 4
+  },
+  "0x9f83f1e6f1ead4824b23843684060c026c08773b3859e7daa482062e57313d34|1": {
+   "first_seen": "2026-11-17T23:53+00:00",
+   "outcome": "Lightning",
+   "title": "Capitals vs. Lightning",
+   "wallets": 4
   }
  },
- "recheck": []
+ "recheck": [
+  {
+   "alerted_at": "2026-11-17T23:53:50+00:00",
+   "key": "0x9f83f1e6f1ead4824b23843684060c026c08773b3859e7daa482062e57313d34|1",
+   "token": "2782650744429654451040037968692948267501652736148100869856247625021236954995",
+   "ts": 1794959631.1523123
+  }
+ ]
 }
