@@ -22,7 +22,7 @@
    "first_seen": "2026-11-16T23:43+00:00",
    "outcome": "Pelicans",
    "title": "Warriors vs. Pelicans",
-   "wallets": 5
+   "wallets": 6
   },
   "0xbf1f4fe058e91cade12bc1a3d73b9e6d159ec7a1c29d78642e0765eb44e8b34f|1": {
    "first_seen": "2026-11-17T00:13+00:00",
@@ -41,6 +41,12 @@
    "outcome": "Heat",
    "title": "Rockets vs. Heat",
    "wallets": 9
+  },
+  "0xd52bf2df8eebb1aa0f1e87662421f431d730474c81932a434e4c66d82fa00725|0": {
+   "first_seen": "2026-11-17T00:16+00:00",
+   "outcome": "Magic",
+   "title": "Magic vs. Celtics",
+   "wallets": 4
   },
   "0xda52f043efb851b20aa8132a0a2476f9b6ce3db631ac5ac17b083f3d4e0b1bf4|1": {
    "first_seen": "2026-11-17T00:01+00:00",
