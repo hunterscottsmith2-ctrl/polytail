@@ -29,13 +29,14 @@ from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
-from common import (GAMMA_API, ask_quote, get_pages, get_json, log_fill, money, num, parse_time,
+from common import (GAMMA_API, american, ask_quote, book_quote, log_books, get_pages, get_json, log_fill, money, num, parse_time,
                     queue_recheck, run_rechecks, send_telegram)
 
 WALLETS_FILE = os.environ.get("POLYTAIL_WALLETS", "wallets_sharp.json")
 STATE_FILE = "state_early.json"
 LOG_FILE = "signals_early.csv"
 FILLS_FILE = "fills_early.csv"
+BOOKS_FILE = "books_early.csv"
 SEND_ALERTS = os.environ.get("SEND_ALERTS", "0") == "1"
 
 MIN_BUY_USD = 1_000        # backtest: $1K setting beat $5K for single sharp wallets
@@ -162,6 +163,8 @@ def main():
             stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
             log_fill(FILLS_FILE, s["key"], stamp, time.time(), s["token_id"], s["price"])
             queue_recheck(state, s["key"], stamp, s["token_id"])
+            books = book_quote(s["title"], s["outcome"], s["event_slug"], s["game_start"])
+            log_books(BOOKS_FILE, s["key"], stamp, books)
             wr.writerow({
                 "alerted_at": stamp,
                 "kind": "new", "key": s["key"], "condition_id": s["condition_id"],
@@ -178,6 +181,9 @@ def main():
                 for h in s["holders"]:
                     lines.append(f"• {html.escape(h['name'])} — {money(h['cost'])} "
                                  f"(beats the close by {h['clv']}¢ on avg)")
+                for q in books[:2]:
+                    lines.append(f"{html.escape(q['book'])}: {american(q['decimal'])}"
+                                 f" (like paying {100 / q['decimal']:.0f}¢)")
                 if s["game_start"]:
                     mins = int((s["game_start"] - now) / 60)
                     lines.append(f"Starts in {mins // 60}h {mins % 60}m")
