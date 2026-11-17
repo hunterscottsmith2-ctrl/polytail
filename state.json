@@ -6,17 +6,17 @@
    "title": "Spread: Ravens (-4.5)",
    "wallets": 5
   },
-  "0x4beba8709f36c7fe7022777e61cc32846176821f308a4690262d9a3a7516cb1e|1": {
-   "first_seen": "2026-11-17T00:22+00:00",
-   "outcome": "Nets",
-   "title": "Spread: 76ers (-5.5)",
+  "0x651f52936b2119794ceb56335c2131816880e31e2f0f112d7f68fb059200cea5|0": {
+   "first_seen": "2026-11-17T00:55+00:00",
+   "outcome": "Warriors",
+   "title": "Spread: Warriors (-3.5)",
    "wallets": 4
   },
   "0x651f52936b2119794ceb56335c2131816880e31e2f0f112d7f68fb059200cea5|1": {
    "first_seen": "2026-11-17T00:49+00:00",
    "outcome": "Pelicans",
    "title": "Spread: Warriors (-3.5)",
-   "wallets": 4
+   "wallets": 5
   },
   "0xa4205ef4d7859ca4bbfbe3bf42454f854489c4187133b895d17a21175d4d668b|1": {
    "first_seen": "2026-11-16T23:43+00:00",
