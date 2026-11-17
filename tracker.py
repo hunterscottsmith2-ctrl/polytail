@@ -20,7 +20,7 @@ import os
 import time
 from datetime import datetime, timezone
 
-from common import (get_json, log_fill, market_info, money, num, queue_recheck, run_rechecks,
+from common import (american, book_quote, get_json, log_books, log_fill, market_info, money, num, queue_recheck, run_rechecks,
                     send_telegram)
 
 # Two independent tests run from this file:
@@ -64,6 +64,7 @@ SETTINGS_FILE = os.environ.get("POLYTAIL_SETTINGS", f"settings{SUFFIX}.json")
 WALLETS_FILE = os.environ.get("POLYTAIL_WALLETS", f"wallets{SUFFIX}.json")
 POOL_FILE = f"wallets{SUFFIX}_pool.json"   # non-bot wallets, written by backtest.py
 FILLS_FILE = os.environ.get("POLYTAIL_FILLS", f"fills{SUFFIX}.csv")
+BOOKS_FILE = os.environ.get("POLYTAIL_BOOKS", f"books{SUFFIX}.csv")   # sportsbook prices per alert
 
 LOG_FIELDS = ["alerted_at", "kind", "key", "condition_id", "outcome_index", "outcome",
               "title", "event_slug", "price", "avg_entry", "wallets", "total_value",
@@ -284,6 +285,9 @@ def format_alert(s, is_upgrade):
         lines.append(f"Kickoff in {mins // 60}h {mins % 60}m")
     elif s["end_date"]:
         lines.append(f"Ends: {s['end_date']}")
+    for q in s.get("books", [])[:2]:   # same bet at the sportsbooks, best price first
+        lines.append(f"{html.escape(q['book'])}: {american(q['decimal'])}"
+                     f" (like paying {100 / q['decimal']:.0f}¢)")
     lines.append("")
     for h in s["holders"][:6]:
         lines.append(f"• {html.escape(h['name'])} — {money(h['value'])} in"
@@ -334,11 +338,13 @@ def main():
         is_upgrade = prev is not None and len(s["holders"]) > prev["wallets"]
         if not (prev is None or is_upgrade) or sent >= cfg["MAX_ALERTS_PER_RUN"]:
             continue
+        s["books"] = book_quote(s["title"], s["outcome"], s["event_slug"], s.get("game_start"))
         if send_telegram(format_alert(s, is_upgrade)):
             stamp = log_signal(s, "upgrade" if is_upgrade else "new")
             if not is_upgrade:
                 log_fill(FILLS_FILE, s["key"], stamp, time.time(), s.get("token_id"), s["price"])
                 queue_recheck(state, s["key"], stamp, s.get("token_id"))
+                log_books(BOOKS_FILE, s["key"], stamp, s["books"])
             alerted[s["key"]] = {
                 "wallets": len(s["holders"]), "title": s["title"], "outcome": s["outcome"],
                 "first_seen": (prev or {}).get(
