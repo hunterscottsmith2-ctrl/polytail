@@ -1,12 +1,5 @@
 {
  "alerted": {
-  "0x3469d7f30ffdb771d5a9c82ee594b50e47507465ef007f5e9690518d3ed75b49|0": {
-   "first_seen": "2026-11-17T14:02+00:00",
-   "gone_at": 1794930272.6624124,
-   "outcome": "Over",
-   "title": "Denmark vs. Norway: O/U 3.5",
-   "wallets": 4
-  },
   "0x47463db8bac7dee7d833b1379ab1404de239bbc827ccc7cc499d5a862904ed33|1": {
    "first_seen": "2026-11-17T17:26+00:00",
    "gone_at": 1794936576.9933076,
