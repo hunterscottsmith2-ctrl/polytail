@@ -59,6 +59,7 @@ jobs:
           git config user.email "polytail-bot@users.noreply.github.com"
           [ -d results ] && git add results
           for f in wallets*.json; do [ -f "$f" ] && git add "$f"; done
+          git add -u -- 'wallets*.json'   # also commits a removed wallets.json
           git diff --cached --quiet && exit 0
           git commit -m "Backtest results"
           for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
