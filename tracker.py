@@ -17,10 +17,10 @@ import csv
 import html
 import json
 import os
-import re
 import time
 from datetime import datetime, timezone
 
+from common import side_of as common_side_of
 from common import (american, book_quote, get_json, log_books, log_fill, market_info, money, num, queue_recheck, run_rechecks,
                     send_telegram)
 
@@ -161,21 +161,8 @@ def open_positions(wallet, cfg):
 
 
 def side_of(p):
-    """(axis, direction) for a position, so bets on the same game line up across markets.
-
-    Every moneyline and spread for one game shares a "team" axis: Pistons -4.5 and Pistons ML
-    both lean Pistons; Pelicans +5.5 leans the other way. Every full-game total line shares a
-    "total" axis (Over / Under). Anything else is its own axis, one market at a time."""
-    title = (p.get("title") or "").strip()
-    outcome = (p.get("outcome") or "").strip().lower()
-    slug = p.get("event_slug") or p.get("slug") or ""
-    if slug and outcome:
-        if re.match(r"Spread:", title) or (re.search(r"\s+vs\.?\s+", title)
-                                           and ":" not in title and "?" not in title):
-            return f"{slug}|team", outcome
-        if "O/U" in title and outcome in ("over", "under"):
-            return f"{slug}|total|{title.split('O/U')[0].strip()}", outcome
-    return str(p.get("condition_id")), str(p.get("outcome_index"))
+    return common_side_of(p.get("title"), p.get("outcome"), p.get("event_slug") or p.get("slug") or "",
+                          p.get("condition_id"), p.get("outcome_index"))
 
 
 def find_consensus(wallets, positions_by_wallet, cfg):

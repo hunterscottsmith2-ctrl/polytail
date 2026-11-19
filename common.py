@@ -121,6 +121,24 @@ def _sport_fields(m):
             "game_start": parse_time(m.get("gameStartTime"))}
 
 
+def side_of(title, outcome, slug, condition_id, outcome_index):
+    """(axis, direction) for a bet, so bets on the same game line up across markets.
+
+    Every moneyline and spread for one game shares a "team" axis: Pistons -4.5 and Pistons ML
+    both lean Pistons; Pelicans +5.5 leans the other way. Every full-game total line shares a
+    "total" axis (Over / Under). Anything else is its own axis, one market at a time.
+    A wallet with more than one direction on an axis is hedged (or middling) on that game."""
+    title = (title or "").strip()
+    outcome = (outcome or "").strip().lower()
+    if slug and outcome:
+        if re.match(r"Spread:", title) or (re.search(r"\s+vs\.?\s+", title)
+                                           and ":" not in title and "?" not in title):
+            return f"{slug}|team", outcome
+        if "O/U" in title and outcome in ("over", "under"):
+            return f"{slug}|total|{title.split('O/U')[0].strip()}", outcome
+    return str(condition_id), str(outcome_index)
+
+
 def market_info(condition_ids):
     """Sports info for open (or any) markets: {cid: {"sport": bool, "game_start": epoch|None}}."""
     out, ids = {}, [c for c in dict.fromkeys(condition_ids) if c]
