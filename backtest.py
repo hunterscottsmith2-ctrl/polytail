@@ -70,6 +70,7 @@ CACHE_DIR = os.environ.get("BT_CACHE", "cache")
 OUT_DIR = os.environ.get("POLYTAIL_RESULTS", "results" if not SPORTS else "results/sports")
 SHARP_FILE = "wallets_sharp.json" if not SPORTS else "wallets_sports_sharp.json"
 POOL_FILE = "wallets_pool.json" if not SPORTS else "wallets_sports_pool.json"   # read by tracker.py
+WALLETS_FILE = "wallets.json" if not SPORTS else "wallets_sports.json"   # scored watchlist, read by tracker.py
 DAY = 86400
 WINDOW = 30 * DAY
 
@@ -675,6 +676,26 @@ def main():
                                 "hedge_rate": round(live_hedge[w], 3)} for w in keep]},
                   f, indent=1)
     log(f"Wrote {SHARP_FILE} with {len(keep)} sharp wallets (not active)")
+
+    # Scored watchlist for the consensus bot: only when picking wallets by profit beat the
+    # whole pool in this backtest. Re-scored on everything through today so recent form counts.
+    if scoring_helps:
+        winners = {w: score_wallet(tr, res, now) for w, tr in trades_by_wallet.items()}
+        winners = {w: s for w, s in winners.items() if passes(s)}
+        with open(WALLETS_FILE, "w") as f:
+            json.dump({"generated_at": now, "source": "backtest profit scoring (one-sided bets)",
+                       "wallets": [{"wallet": w, "name": pool[w]["name"], "pnl": round(s["pnl"]),
+                                    "roi": round(s["roi"], 4), "markets": s["markets"],
+                                    "hedge_rate": round(s["hedge_rate"], 3)}
+                                   for w, s in sorted(winners.items(), key=lambda kv: -kv[1]["pnl"])]},
+                      f, indent=1)
+        log(f"Wrote {WALLETS_FILE} with {len(winners)} profit-scored wallets (live watchlist)")
+    else:
+        try:
+            os.remove(WALLETS_FILE)   # scoring didn't help: the bot falls back to the leaderboard
+            log(f"Removed {WALLETS_FILE}: profit scoring didn't beat the pool this run")
+        except FileNotFoundError:
+            pass
 
     tg = [f"<b>🧪 PolyTail backtest done ({CATEGORY})</b>", verdict.replace("**", ""), ""]
     tg.append(f"Hedgers removed (play both sides): {len(hedgers)}")
