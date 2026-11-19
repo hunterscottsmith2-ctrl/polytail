@@ -48,6 +48,13 @@ MIN_TRAIN_MARKETS = 15           # wallet needs this many settled markets in tra
 MIN_TRAIN_ROI = 0.05             # ...and at least +5% return on money bet
 MIN_TRAIN_PNL = 5_000            # ...and at least $5K profit
 
+# Hedgers: wallets that often hold both sides of the same game (both teams across moneyline /
+# spread lines, Over and Under, or both outcomes of one market). Their profit can come from
+# trading both sides rather than picking winners, so they're judged only on one-sided bets and
+# dropped entirely if hedging is a big share of what they do.
+HEDGE_MIN_SHARE = 0.15           # the smaller side must be 15%+ of the money on that game to count
+MAX_HEDGE_RATE = float(os.environ.get("BT_MAX_HEDGE_RATE", 0.25))   # share of money on hedged games
+
 N_GRID = [1, 2, 3, 4, 5]         # wallets that must agree
 MIN_POS_GRID = [1_000, 5_000]    # $ each wallet must have in the position
 MIN_PRICE, MAX_PRICE = 0.05, 0.95
@@ -163,12 +170,41 @@ def price_after(asset, ts, lookups):
     return p
 
 
+# ---------------------------------------------------------------- hedging
+def hedge_profile(trades, as_of):
+    """Which games a wallet played both sides of, before as_of.
+    Returns (hedge_rate, hedged_cids): the share of its money that went into two-sided games,
+    and every market on those games."""
+    axes = defaultdict(lambda: defaultdict(float))   # axis -> direction -> $ bought
+    cids = defaultdict(set)                          # axis -> markets
+    for t in trades:
+        if t["ts"] >= as_of or t["idx"] < 0 or t["side"] != "BUY":
+            continue
+        axis, direction = side_of(t["title"], t["outcome"], t["slug"], t["cid"], t["idx"])
+        axes[axis][direction] += t["size"] * t["price"]
+        cids[axis].add(t["cid"])
+    total = hedged_cost = 0.0
+    hedged = set()
+    for axis, by_dir in axes.items():
+        cost = sum(by_dir.values())
+        total += cost
+        if len(by_dir) > 1 and cost and (cost - max(by_dir.values())) / cost >= HEDGE_MIN_SHARE:
+            hedged_cost += cost
+            hedged |= cids[axis]
+    return (hedged_cost / total if total else 0.0), hedged
+
+
+def is_hedger(s):
+    return s.get("hedge_rate", 0.0) > MAX_HEDGE_RATE
+
+
 # ---------------------------------------------------------------- scoring
-def market_pnl(trades, res, as_of):
-    """Per-market profit for one wallet, counting only markets settled before as_of."""
+def market_pnl(trades, res, as_of, skip=frozenset()):
+    """Per-market profit for one wallet, counting only markets settled before as_of.
+    Markets in `skip` (games the wallet hedged) are left out."""
     per = defaultdict(lambda: {"cash": 0.0, "cost": 0.0, "shares": defaultdict(float)})
     for t in trades:
-        if t["ts"] >= as_of or t["idx"] < 0:
+        if t["ts"] >= as_of or t["idx"] < 0 or t["cid"] in skip:
             continue
         m = per[t["cid"]]
         amt = t["size"] * t["price"]
@@ -194,7 +230,9 @@ def market_pnl(trades, res, as_of):
 
 
 def score_wallet(trades, res, as_of):
-    mk = market_pnl(trades, res, as_of)
+    """Profit on one-sided bets only, plus how much of the wallet's money went into hedged games."""
+    hedge_rate, hedged = hedge_profile(trades, as_of)
+    mk = market_pnl(trades, res, as_of, skip=hedged)
     cost = sum(m["cost"] for m in mk.values())
     pnl = sum(m["pnl"] for m in mk.values())
     months = defaultdict(float)
@@ -205,11 +243,12 @@ def score_wallet(trades, res, as_of):
         "roi": pnl / cost if cost else 0.0,
         "market_win_rate": (sum(m["pnl"] > 0 for m in mk.values()) / len(mk)) if mk else 0.0,
         "months_positive": f"{sum(v > 0 for v in months.values())}/{len(months)}",
+        "hedge_rate": hedge_rate, "hedged_cids": hedged,
     }
 
 
 def passes(s):
-    return (s["markets"] >= MIN_TRAIN_MARKETS and s["roi"] >= MIN_TRAIN_ROI
+    return (not is_hedger(s) and s["markets"] >= MIN_TRAIN_MARKETS and s["roi"] >= MIN_TRAIN_ROI
             and s["pnl"] >= MIN_TRAIN_PNL)
 
 
@@ -232,10 +271,12 @@ def clv_ref_time(entry_ts, info):
 
 
 def clv_jobs(trades, res, before):
-    """One job per (market, side) the wallet bought before `before`: avg entry vs. close."""
+    """One job per (market, side) the wallet bought before `before`: avg entry vs. close.
+    Hedged games are left out: buying both sides near the close looks 'sharp' without a view."""
+    _, hedged = hedge_profile(trades, before)
     per = {}
     for t in trades:
-        if t["side"] != "BUY" or t["idx"] < 0 or not t["asset"]:
+        if t["side"] != "BUY" or t["idx"] < 0 or not t["asset"] or t["cid"] in hedged:
             continue
         info = res.get(t["cid"])
         if not info:
@@ -293,8 +334,8 @@ def clv_score(jobs):
 
 
 def is_profitable(s):
-    """Real winnings on settled markets: $5K+ profit and a positive return."""
-    return s["markets"] >= 10 and s["pnl"] >= MIN_TRAIN_PNL and s["roi"] > 0
+    """Real winnings on settled one-sided bets: $5K+ profit and a positive return, not a hedger."""
+    return not is_hedger(s) and s["markets"] >= 10 and s["pnl"] >= MIN_TRAIN_PNL and s["roi"] > 0
 
 
 def is_sharp(s):
@@ -453,14 +494,17 @@ def main():
     cache_put("prices.json", lookups["cache"])
     for w in scores:
         scores[w].update(clv_score(train_jobs[w]))
-    sharp = {w for w, s in scores.items() if is_sharp(s)}
+    hedgers = {w for w, s in scores.items() if is_hedger(s)}
+    log(f"Hedgers (>{MAX_HEDGE_RATE:.0%} of money on two-sided games, training window): {len(hedgers)}")
+    sharp = {w for w, s in scores.items() if is_sharp(s) and w not in hedgers}
     log(f"Sharp by CLV (training window): {len(sharp)} wallets")
     proven = {w for w in sharp if is_profitable(scores[w])}
     log(f"Proven (sharp AND profitable): {len(proven)} wallets")
 
     all_trades = sorted((t for tr in trades_by_wallet.values() for t in tr), key=lambda t: t["ts"])
 
-    sets = {"proven (profit+CLV)": proven, "sharp (CLV)": sharp, "scored": selected, "whole pool": set(trades_by_wallet)}
+    sets = {"proven (profit+CLV)": proven, "sharp (CLV)": sharp, "scored": selected,
+            "one-sided pool": set(trades_by_wallet) - hedgers, "whole pool": set(trades_by_wallet)}
     table, sig_rows = [], []
     for set_name, wset in sets.items():
         for n in N_GRID:
@@ -520,13 +564,13 @@ def main():
         w = csv.writer(f)
         w.writerow(["wallet", "name", "sharp_clv", "selected", "markets", "cost", "pnl", "roi",
                     "market_win_rate", "months_positive", "clv_bets", "clv_avg_cents",
-                    "clv_beat_rate", "clv_t"])
+                    "clv_beat_rate", "clv_t", "hedge_rate", "hedger"])
         for wal, s in sorted(scores.items(), key=lambda kv: -kv[1]["clv_t"]):
             w.writerow([wal, pool[wal]["name"], wal in sharp, wal in selected, s["markets"],
                         round(s["cost"]), round(s["pnl"]), round(s["roi"], 4),
                         round(s["market_win_rate"], 3), s["months_positive"], s["clv_n"],
                         round(s["clv_mean"] * 100, 2), round(s["clv_beat"], 3),
-                        round(s["clv_t"], 2)])
+                        round(s["clv_t"], 2), round(s["hedge_rate"], 3), wal in hedgers])
 
     lines = [
         f"# PolyTail backtest report ({CATEGORY})",
@@ -534,6 +578,9 @@ def main():
         f"{LOOKBACK_DAYS - TEST_DAYS} days, test window {TEST_DAYS} days.",
         f"Wallet pool {len(pool)}, usable {len(trades_by_wallet)}, bot-like skipped {bots}, "
         f"selected by training score {len(selected)}.",
+        f"**Hedgers removed:** {len(hedgers)} wallets put more than {MAX_HEDGE_RATE:.0%} of their money "
+        "into games where they held both sides. They're left out of the scored, sharp and proven "
+        "lists and the live watchlist, and every wallet is judged on one-sided bets only.",
         "",
         f"**Verdict:** {verdict}",
         "",
@@ -595,8 +642,16 @@ def main():
     # Candidate sharp watchlist, scored on ALL bets through today. Saved for review only —
     # the live bots don't use it until it's renamed/activated with Hunter's OK.
     live_clv = {w: clv_score(js) for w, js in live_jobs.items()}
-    keep = sorted((w for w, s in live_clv.items() if is_sharp(s)), key=lambda w: -live_clv[w]["clv_t"])
+    live_hedge = {w: hedge_profile(tr, now)[0] for w, tr in trades_by_wallet.items()}
+    keep = sorted((w for w, s in live_clv.items() if is_sharp(s) and live_hedge[w] <= MAX_HEDGE_RATE),
+                  key=lambda w: -live_clv[w]["clv_t"])
     live_profit = {w: score_wallet(trades_by_wallet[w], res, now) for w in keep}
+    # The consensus bots' watchlist (wallets_pool.json): leave out wallets that mostly hedge.
+    with open(POOL_FILE, "w") as f:
+        json.dump({"generated_at": now, "wallets": sorted(w for w in trades_by_wallet
+                                                          if live_hedge[w] <= MAX_HEDGE_RATE)}, f, indent=0)
+    log(f"{POOL_FILE}: {sum(h <= MAX_HEDGE_RATE for h in live_hedge.values())} wallets after "
+        f"removing {sum(h > MAX_HEDGE_RATE for h in live_hedge.values())} hedgers")
     with open(SHARP_FILE, "w") as f:
         json.dump({"generated_at": now, "beat_pool_in_backtest": sharp_helps,
                    "proven_beat_pool_in_backtest": proven_helps,
@@ -610,11 +665,13 @@ def main():
                                 "proven": is_profitable(live_profit[w]),
                                 "clv_avg_cents": round(live_clv[w]["clv_mean"] * 100, 2),
                                 "clv_beat_rate": round(live_clv[w]["clv_beat"], 3),
-                                "clv_bets": live_clv[w]["clv_n"]} for w in keep]},
+                                "clv_bets": live_clv[w]["clv_n"],
+                                "hedge_rate": round(live_hedge[w], 3)} for w in keep]},
                   f, indent=1)
     log(f"Wrote {SHARP_FILE} with {len(keep)} sharp wallets (not active)")
 
     tg = [f"<b>🧪 PolyTail backtest done ({CATEGORY})</b>", verdict.replace("**", ""), ""]
+    tg.append(f"Hedgers removed (play both sides): {len(hedgers)}")
     tg.append(f"Sharp wallets (beat the close): {len(sharp)}")
     for r in table:
         if r["wallets"] == "sharp (CLV)" and r["N"] in (2, 3, 4):
