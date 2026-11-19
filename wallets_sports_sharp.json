@@ -1,48 +1,52 @@
 {
- "generated_at": 1794699981.6235955,
+ "generated_at": 1795049134.784199,
  "beat_pool_in_backtest": false,
  "proven_beat_pool_in_backtest": false,
  "proven_best_setting": null,
  "best_setting": {
   "MIN_WALLETS_AGREEING": 2,
-  "MIN_POSITION_USD": 5000
+  "MIN_POSITION_USD": 1000
  },
  "wallets": [
   {
    "wallet": "0xb45a797faa52b0fd8adc56d30382022b7b12192c",
    "name": "bcda",
-   "pnl": 315311,
-   "proven": true,
+   "pnl": -321863,
+   "proven": false,
    "clv_avg_cents": 2.61,
    "clv_beat_rate": 0.879,
-   "clv_bets": 99
+   "clv_bets": 99,
+   "hedge_rate": 0.0
   },
   {
    "wallet": "0xa96274cc1b321afc8cbdc1ba07f7e2d471e6f7c8",
    "name": "Takon88",
-   "pnl": 356673,
+   "pnl": 356797,
    "proven": true,
    "clv_avg_cents": 1.74,
-   "clv_beat_rate": 0.807,
-   "clv_bets": 83
+   "clv_beat_rate": 0.815,
+   "clv_bets": 81,
+   "hedge_rate": 0.009
   },
   {
    "wallet": "0x924379a79c64b77ad5816ad362122a5f6228658e",
    "name": "Kch-Temp",
-   "pnl": 2449921,
+   "pnl": 2776585,
    "proven": true,
-   "clv_avg_cents": 1.1,
-   "clv_beat_rate": 0.76,
-   "clv_bets": 100
+   "clv_avg_cents": 1.2,
+   "clv_beat_rate": 0.78,
+   "clv_bets": 100,
+   "hedge_rate": 0.017
   },
   {
-   "wallet": "0xd38b71f3e8ed1af71983e5c309eac3dfa9b35029",
-   "name": "primm",
-   "pnl": 1225400,
-   "proven": true,
-   "clv_avg_cents": 10.11,
-   "clv_beat_rate": 0.61,
-   "clv_bets": 100
+   "wallet": "0xe4a57385a34b0b32fd86be72efd25cda41003cad",
+   "name": "chubbytoro",
+   "pnl": -434176,
+   "proven": false,
+   "clv_avg_cents": 1.03,
+   "clv_beat_rate": 0.73,
+   "clv_bets": 100,
+   "hedge_rate": 0.001
   },
   {
    "wallet": "0xc1da9728491b4d25480a771bbf932dbeddc5fefa",
@@ -51,16 +55,8 @@
    "proven": true,
    "clv_avg_cents": 1.89,
    "clv_beat_rate": 0.707,
-   "clv_bets": 41
-  },
-  {
-   "wallet": "0xa797d6bd8fe6e404bb4d8e4ab3d97c38336fdede",
-   "name": "LonnieHawkinss",
-   "pnl": 459959,
-   "proven": true,
-   "clv_avg_cents": 7.48,
-   "clv_beat_rate": 0.75,
-   "clv_bets": 100
+   "clv_bets": 41,
+   "hedge_rate": 0.0
   },
   {
    "wallet": "0x5966db1fe50763c9e3c014d756369bad07e1f804",
@@ -69,52 +65,58 @@
    "proven": true,
    "clv_avg_cents": 3.67,
    "clv_beat_rate": 0.551,
-   "clv_bets": 98
+   "clv_bets": 98,
+   "hedge_rate": 0.0
   },
   {
-   "wallet": "0x61a3f1ef9c9618f532eb49f0cb260486c168e508",
-   "name": "ch27er",
-   "pnl": 262815,
-   "proven": true,
-   "clv_avg_cents": 4.01,
-   "clv_beat_rate": 0.45,
-   "clv_bets": 100
+   "wallet": "0xb9c7d35d1f04d08624fabcfd3b6cee2d3c9baade",
+   "name": "taylorsversion",
+   "pnl": -918822,
+   "proven": false,
+   "clv_avg_cents": 1.36,
+   "clv_beat_rate": 0.7,
+   "clv_bets": 100,
+   "hedge_rate": 0.022
   },
   {
-   "wallet": "0x1610db79f753a80207e1d66716be9e91e627ae49",
-   "name": "NS13",
-   "pnl": 824085,
-   "proven": true,
-   "clv_avg_cents": 3.76,
-   "clv_beat_rate": 0.51,
-   "clv_bets": 100
+   "wallet": "0x1d1ade627d0bb0205758580b20d808573e720df6",
+   "name": "Pwaddler",
+   "pnl": -159295,
+   "proven": false,
+   "clv_avg_cents": 2.68,
+   "clv_beat_rate": 0.54,
+   "clv_bets": 100,
+   "hedge_rate": 0.05
   },
   {
    "wallet": "0x9f15613ebf1f36d4bc679e1211d1fc567cf9bdb3",
    "name": "0x9f15613ebf1f36d4bc679e1211d1fc567cf9bdb3",
-   "pnl": 678931,
+   "pnl": 731776,
    "proven": true,
-   "clv_avg_cents": 1.29,
-   "clv_beat_rate": 0.66,
-   "clv_bets": 100
+   "clv_avg_cents": 1.59,
+   "clv_beat_rate": 0.58,
+   "clv_bets": 100,
+   "hedge_rate": 0.067
   },
   {
-   "wallet": "0xb4f978be63cdf75554b0b46a4262a6db597cc9a7",
-   "name": "0xb4F978BE63cDF75554b0B46a4262a6dB597cc9A7-1779258330186",
-   "pnl": 539284,
-   "proven": true,
-   "clv_avg_cents": 3.98,
-   "clv_beat_rate": 0.63,
-   "clv_bets": 100
+   "wallet": "0x0f6f76ced62a911bccef92f50faaff143854d977",
+   "name": "totoro3miyazaki",
+   "pnl": -20317,
+   "proven": false,
+   "clv_avg_cents": 1.03,
+   "clv_beat_rate": 0.726,
+   "clv_bets": 62,
+   "hedge_rate": 0.0
   },
   {
-   "wallet": "0xd29312e2446a746bbd94408e1c475f1ec6d7d683",
-   "name": "Kyn008",
-   "pnl": 296548,
-   "proven": true,
-   "clv_avg_cents": 1.17,
-   "clv_beat_rate": 0.65,
-   "clv_bets": 100
+   "wallet": "0xf4c95b636c71243531dfc82a97565a94c106f88c",
+   "name": "milkteaboba",
+   "pnl": -422081,
+   "proven": false,
+   "clv_avg_cents": 3.23,
+   "clv_beat_rate": 0.72,
+   "clv_bets": 82,
+   "hedge_rate": 0.004
   }
  ]
 }
