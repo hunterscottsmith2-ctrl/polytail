@@ -1,5 +1,11 @@
 {
  "alerted": {
+  "0x0fc4d2631c92f56228c6ef8deb1d8d5be48065c07c73c7e59e75be1bfda313b1|0": {
+   "first_seen": "2026-11-19T00:21+00:00",
+   "outcome": "Pistons",
+   "title": "Spread: Pistons (-4.5)",
+   "wallets": 4
+  },
   "0xca51c5b4cd5785ac9ddf24cef2a13e4feb5eb8739fd529f8a7ff03f1e0a71138|1": {
    "first_seen": "2026-11-18T14:18+00:00",
    "gone_at": 1795014016.2356906,
@@ -8,5 +14,12 @@
    "wallets": 4
   }
  },
- "recheck": []
+ "recheck": [
+  {
+   "alerted_at": "2026-11-19T00:21:26+00:00",
+   "key": "0x0fc4d2631c92f56228c6ef8deb1d8d5be48065c07c73c7e59e75be1bfda313b1|0",
+   "token": "109311447155919522297870910778537803489893532000294741572186313889365441394067",
+   "ts": 1795047687.01363
+  }
+ ]
 }
