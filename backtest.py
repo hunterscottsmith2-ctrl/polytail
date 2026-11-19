@@ -97,8 +97,14 @@ def cache_put(name, obj):
 def wallet_pool():
     pool = {}
     for period, order in POOL_BOARDS:
-        rows = get_json("/v2/leaderboard", {"category": CATEGORY, "time_period": period.lower(),
-                                            "sort_by": order, "limit": POOL_DEPTH}) or []
+        params = {"category": CATEGORY, "time_period": period.lower(), "sort_by": order}
+        # Pages of up to 100 (cursor pagination), so pool depths past 100 work.
+        rows, _ = get_pages("/v2/leaderboard", {**params, "limit": min(POOL_DEPTH, 100)},
+                            max_rows=POOL_DEPTH, max_pages=max(1, -(-POOL_DEPTH // 100)))
+        if not rows:   # fall back to a single plain request
+            rows = get_json("/v2/leaderboard", {**params, "limit": min(POOL_DEPTH, 100)}) or []
+        rows = rows[:POOL_DEPTH]
+        log(f"  leaderboard {period}/{order}: {len(rows)} wallets")
         for r in rows:
             w = (r.get("user_id") or "").lower()
             if w:
