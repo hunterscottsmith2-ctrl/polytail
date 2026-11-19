@@ -1,19 +1,5 @@
 {
  "alerted": {
-  "0x0fc4d2631c92f56228c6ef8deb1d8d5be48065c07c73c7e59e75be1bfda313b1|0": {
-   "first_seen": "2026-11-19T00:21+00:00",
-   "gone_at": 1795048227.6299508,
-   "outcome": "Pistons",
-   "title": "Spread: Pistons (-4.5)",
-   "wallets": 4
-  },
-  "0xe44925612c1794fa232f0824bb2f70d0d9777a1b65a4258de769414abae98fa5|1": {
-   "first_seen": "2026-11-19T00:24+00:00",
-   "gone_at": 1795048227.6299508,
-   "outcome": "Central Michigan",
-   "title": "Spread: Buffalo (-2.5)",
-   "wallets": 4
-  },
   "0xe99db0912d2a522942706314a31e73ec0a108dffc6ffc0f9c2baaf61c851d7f0|1": {
    "first_seen": "2026-11-19T00:30+00:00",
    "gone_at": 1795048767.1732998,
