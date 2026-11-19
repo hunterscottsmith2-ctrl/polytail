@@ -17,6 +17,7 @@ import csv
 import html
 import json
 import os
+import re
 import time
 from datetime import datetime, timezone
 
@@ -35,7 +36,7 @@ SUFFIX = "" if PROFILE == "main" else f"_{PROFILE}"
 SETTINGS = {
     "CATEGORY": "sports" if PROFILE == "sports" else "overall",
     "SPORTS_GAMES_ONLY": PROFILE == "sports",   # only moneyline/spread/total markets, pre-kickoff
-    "LABEL": "🏈 SPORTS: " if PROFILE == "sports" else "",
+    "LABEL": "SPORTS: " if PROFILE == "sports" else "",   # sport emoji is added per alert
     # Watchlist = same pool the backtest tested: profit AND volume boards.
     "LEADERBOARDS": [["ALL", "PNL"], ["MONTH", "PNL"], ["ALL", "VOLUME"], ["MONTH", "VOLUME"]],
     "LEADERBOARD_DEPTH": 100,
@@ -159,15 +160,40 @@ def open_positions(wallet, cfg):
     return out
 
 
+def side_of(p):
+    """(axis, direction) for a position, so bets on the same game line up across markets.
+
+    Every moneyline and spread for one game shares a "team" axis: Pistons -4.5 and Pistons ML
+    both lean Pistons; Pelicans +5.5 leans the other way. Every full-game total line shares a
+    "total" axis (Over / Under). Anything else is its own axis, one market at a time."""
+    title = (p.get("title") or "").strip()
+    outcome = (p.get("outcome") or "").strip().lower()
+    slug = p.get("event_slug") or p.get("slug") or ""
+    if slug and outcome:
+        if re.match(r"Spread:", title) or (re.search(r"\s+vs\.?\s+", title)
+                                           and ":" not in title and "?" not in title):
+            return f"{slug}|team", outcome
+        if "O/U" in title and outcome in ("over", "under"):
+            return f"{slug}|total|{title.split('O/U')[0].strip()}", outcome
+    return str(p.get("condition_id")), str(p.get("outcome_index"))
+
+
 def find_consensus(wallets, positions_by_wallet, cfg):
     groups, now = {}, time.time()
+    hedged = 0
     for w, positions in positions_by_wallet.items():
+        # A wallet holding both sides of the same game — the same market, or opposite teams on
+        # different lines (Pistons -4.5 + Pelicans +5.5 is a middle) — has no view on who wins.
+        # Leave it out of every market on that game.
         sides = {}
         for p in positions:
-            sides.setdefault(p.get("condition_id"), set()).add(p.get("outcome_index"))
+            axis, direction = side_of(p)
+            sides.setdefault(axis, set()).add(direction)
+        hedged += sum(1 for d in sides.values() if len(d) > 1)
         for p in positions:
-            if len(sides[p.get("condition_id")]) > 1:
-                continue  # holds both sides of this market: hedged or market-making, not a view
+            axis, direction = side_of(p)
+            if len(sides[axis]) > 1:
+                continue  # hedged / middled / market-making on this game, not a view
             key = f"{p.get('condition_id')}|{p.get('outcome_index')}"
             g = groups.setdefault(key, {
                 "key": key,
@@ -179,6 +205,7 @@ def find_consensus(wallets, positions_by_wallet, cfg):
                 "token_id": p.get("token_id"),
                 "price": num(p.get("current_price")),
                 "end_date": (p.get("end_date") or "")[:10],
+                "axis": axis, "direction": direction,
                 "holders": [],
             })
             g["holders"].append({
@@ -187,9 +214,12 @@ def find_consensus(wallets, positions_by_wallet, cfg):
                 "entered": num(p.get("first_entry_at")),
             })
 
-    by_market = {}
+    if hedged:
+        print(f"Left out {hedged} hedged wallet/game pair(s)")
+
+    by_axis = {}
     for g in groups.values():
-        by_market.setdefault(g["condition_id"], []).append(g)
+        by_axis.setdefault(g["axis"], []).append(g)
 
     signals = []
     for g in groups.values():
@@ -199,8 +229,9 @@ def find_consensus(wallets, positions_by_wallet, cfg):
             continue  # crowded trades (5+) have been losing live
         if not (cfg["MIN_PRICE"] <= g["price"] <= cfg["MAX_PRICE"]):
             continue
-        g["opposing_wallets"] = sum(len(o["holders"]) for o in by_market[g["condition_id"]]
-                                    if o["key"] != g["key"])
+        # Opposing = watched wallets on the other side of this game, on any line.
+        g["opposing_wallets"] = len({h["wallet"] for o in by_axis[g["axis"]]
+                                     if o["direction"] != g["direction"] for h in o["holders"]})
         if len(g["holders"]) - g["opposing_wallets"] < cfg["MIN_NET_WALLETS"]:
             continue  # the watched wallets are split on this market
         g["holders"].sort(key=lambda h: h["value"], reverse=True)
@@ -271,10 +302,19 @@ def log_signal(s, kind):
     return stamp
 
 
+SPORT_EMOJI = {"nba": "🏀", "wnba": "🏀", "cbb": "🏀", "nfl": "🏈", "cfb": "🏈",
+               "nhl": "🏒", "mlb": "⚾"}
+
+
+def sport_emoji(slug):
+    return SPORT_EMOJI.get((slug or "").split("-")[0].lower(), "🏟️")
+
+
 def format_alert(s, is_upgrade):
     head = "📈 MORE TOP TRADERS JOINED" if is_upgrade else "🐋 TOP TRADERS AGREE"
+    label = f"{sport_emoji(s['event_slug'])} {LABEL}" if LABEL else ""
     lines = [
-        f"<b>{html.escape(LABEL)}{head}</b>",
+        f"<b>{html.escape(label)}{head}</b>",
         f"<b>{html.escape(s['title'])}</b>",
         f"Side: <b>{html.escape(s['outcome'])}</b> @ {s['price']*100:.0f}¢ now"
         f" (their avg entry {s['avg_entry']*100:.0f}¢)",
@@ -287,7 +327,7 @@ def format_alert(s, is_upgrade):
         lines.append(f"⚠️ {s['opposing_wallets']} top wallet(s) on the other side")
     if s.get("game_start"):
         mins = int((s["game_start"] - time.time()) / 60)
-        lines.append(f"Kickoff in {mins // 60}h {mins % 60}m")
+        lines.append(f"Starts in {mins // 60}h {mins % 60}m")
     elif s["end_date"]:
         lines.append(f"Ends: {s['end_date']}")
     for q in s.get("books", [])[:2]:   # same bet at the sportsbooks, best price first
@@ -305,6 +345,22 @@ def format_alert(s, is_upgrade):
 
 
 LABEL = ""
+
+
+def other_profile_alerts():
+    """Keys the other test (main <-> sports) has already sent to Telegram, with wallet counts.
+    Both tests watch overlapping wallets, so the same bet can qualify in each."""
+    out = {}
+    for path in ("state.json", "state_sports.json"):
+        if path == STATE_FILE:
+            continue
+        try:
+            with open(path) as f:
+                for k, v in json.load(f).get("alerted", {}).items():
+                    out[k] = max(out.get(k, 0), v.get("wallets", 0))
+        except (FileNotFoundError, json.JSONDecodeError, AttributeError):
+            pass
+    return out
 
 
 def main():
@@ -333,6 +389,7 @@ def main():
 
     signals = find_consensus(wallets, positions, cfg)
     print(f"{len(signals)} consensus signals")
+    sent_elsewhere = other_profile_alerts()
 
     sent, live_keys = 0, set()
     for s in signals:
@@ -344,7 +401,11 @@ def main():
         if not (prev is None or is_upgrade) or sent >= cfg["MAX_ALERTS_PER_RUN"]:
             continue
         s["books"] = book_quote(s["title"], s["outcome"], s["event_slug"], s.get("game_start"))
-        if send_telegram(format_alert(s, is_upgrade)):
+        # Still logged and graded for this test, but don't text the same bet twice.
+        already_sent = sent_elsewhere.get(s["key"], 0) >= len(s["holders"])
+        if already_sent:
+            print(f"Already alerted by the other test, not re-sending: {s['title']} / {s['outcome']}")
+        if already_sent or send_telegram(format_alert(s, is_upgrade)):
             stamp = log_signal(s, "upgrade" if is_upgrade else "new")
             if not is_upgrade:
                 log_fill(FILLS_FILE, s["key"], stamp, time.time(), s.get("token_id"), s["price"])
@@ -355,7 +416,7 @@ def main():
                 "first_seen": (prev or {}).get(
                     "first_seen", datetime.now(timezone.utc).isoformat(timespec="minutes")),
             }
-            sent += 1
+            sent += 0 if already_sent else 1
 
     # A signal that drops out (price blip, API hiccup) is remembered for a while, so the
     # same bet isn't sent and graded again as a brand-new alert minutes later.
