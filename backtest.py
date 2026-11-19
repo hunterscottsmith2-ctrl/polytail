@@ -32,7 +32,7 @@ import time
 from collections import defaultdict
 from datetime import datetime, timezone
 
-from common import (get_json, get_pages, market_resolutions, money, num, send_telegram,
+from common import (get_json, get_pages, market_resolutions, money, num, send_telegram, side_of,
                     taker_fee)
 
 # ---------------------------------------------------------------- settings
@@ -303,14 +303,31 @@ def is_sharp(s):
 
 # ---------------------------------------------------------------- replay
 def replay(all_trades, wallet_set, n_needed, min_pos, cutoff):
-    """Walk trades in time order; emit a signal when n_needed wallets hold the same side."""
+    """Walk trades in time order; emit a signal when n_needed wallets hold the same side.
+
+    Same rule as the live bot: a wallet holding both teams of a game (on any mix of moneyline /
+    spread lines, e.g. Pistons -4.5 + Pelicans +5.5) or both Over and Under is hedged, and
+    doesn't count — for or against — on that game while it's hedged."""
     # cid -> outcome idx -> wallet -> [shares, cost]
     hold = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: [0.0, 0.0])))
+    side = {}                                # (cid, idx) -> (axis, direction)
+    axis_markets = defaultdict(set)          # axis -> {(cid, idx)}
     fired, signals = set(), []
+
+    def held(w, cid, idx):
+        p = hold[cid][idx].get(w)
+        return bool(p) and p[0] > 0 and p[1] >= min_pos
+
+    def directions(w, axis):
+        return {side[m][1] for m in axis_markets[axis] if held(w, *m)}
+
     for t in all_trades:
         if t["wallet"] not in wallet_set or t["idx"] < 0:
             continue
         key = (t["cid"], t["idx"])
+        if key not in side:
+            side[key] = side_of(t["title"], t["outcome"], t["slug"], t["cid"], t["idx"])
+            axis_markets[side[key][0]].add(key)
         pos = hold[t["cid"]][t["idx"]][t["wallet"]]
         if t["side"] == "BUY":
             pos[0] += t["size"]
@@ -322,11 +339,14 @@ def replay(all_trades, wallet_set, n_needed, min_pos, cutoff):
             pos[0] = max(pos[0] - t["size"], 0.0)
         if t["ts"] < cutoff or key in fired or t["side"] != "BUY":
             continue
-        holders = [w for w, p in hold[t["cid"]][t["idx"]].items() if p[0] > 0 and p[1] >= min_pos]
+        axis, direction = side[key]
+        holders = [w for w in hold[t["cid"]][t["idx"]]
+                   if held(w, *key) and len(directions(w, axis)) == 1]
         if len(holders) >= n_needed:
             fired.add(key)
-            opposing = sum(1 for idx, ws in hold[t["cid"]].items() if idx != t["idx"]
-                           for p in ws.values() if p[0] > 0 and p[1] >= min_pos)
+            opposing = len({w for m in axis_markets[axis] if side[m][1] != direction
+                            for w in hold[m[0]][m[1]]
+                            if held(w, *m) and len(directions(w, axis)) == 1})
             signals.append({"ts": t["ts"], "cid": t["cid"], "idx": t["idx"],
                             "asset": t["asset"], "trigger_price": t["price"],
                             "title": t["title"], "outcome": t["outcome"], "slug": t["slug"],
