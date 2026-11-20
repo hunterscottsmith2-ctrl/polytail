@@ -1,15 +1,17 @@
 {
- "at": "2026-11-20T20:00:15+00:00",
+ "at": "2026-11-20T20:03:15+00:00",
  "wallets_watched": 62,
  "signals": 0,
- "most_wallets_on_one_side": 2,
+ "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
- "rows": 5141,
- "skipped_redeemable_or_no_outcome": 4779,
+ "rows": 6427,
+ "skipped_redeemable_or_no_outcome": 6065,
  "under_min_value": 195,
  "already_ended": 26,
- "ends_too_late": 111,
- "kept": 30,
+ "ends_too_late": 45,
+ "kept": 96,
+ "wallets_needing_extra_pages": 4,
+ "wallets_over_3000_rows": 0,
  "sample_keys": [
   "archived",
   "avg_price",
@@ -49,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Counter-Strike: THUNDER dOWNUNDER vs BIG (BO1) - IEM Cologne Major Stage 1",
-  "outcome": "THUNDER dOWNUNDER",
+  "title": "Baltimore Orioles vs. St. Louis Cardinals",
+  "outcome": "Baltimore Orioles",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-03",
+  "end_date": "2026-09-03",
   "redeemable": true
  }
 }
