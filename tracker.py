@@ -332,6 +332,7 @@ def write_leans(cfg, days_ahead=2):
                        "leans": out}, f, indent=1)
     except OSError:
         pass
+    return out
 
 
 # ---------------------------------------------------------------- output
@@ -462,17 +463,19 @@ def main():
             holders.setdefault(f"{p.get('condition_id')}|{p.get('outcome_index')}", set()).add(w)
     top = sorted(holders.values(), key=len, reverse=True)[:1]
     try:
+        leans = write_leans(cfg)
+    except Exception as e:
+        print(f"Leans file skipped: {e}")
+        leans = []
+    try:
         with open(f"scan_status{SUFFIX}.json", "w") as f:
             json.dump({"at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                        "wallets_watched": len(wallets), "signals": len(signals),
                        "most_wallets_on_one_side": len(top[0]) if top else 0,
-                       **SCAN_STATS}, f, indent=1, default=str)
+                       **SCAN_STATS,
+                       "leans_not_alerts": leans}, f, indent=1, default=str)
     except OSError:
         pass
-    try:
-        write_leans(cfg)
-    except Exception as e:
-        print(f"Leans file skipped: {e}")
     sent_elsewhere = other_profile_alerts()
 
     sent, live_keys = 0, set()
