@@ -18,11 +18,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Grade main alerts (current rules since Nov 16, 8:15 PM ET)
+      - name: Grade main alerts (current rules since Nov 20, 3:25 PM ET)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          SCORECARD_SINCE: "2026-11-17T01:15:00Z"
+          SCORECARD_SINCE: "2026-11-20T20:25:00Z"
         run: python scorecard.py
 
       - name: Grade sports alerts
@@ -34,7 +34,7 @@ jobs:
           SCORECARD_LABEL: "🏈 PolyTail Sports"
           SCORECARD_TAG: scorecard_sports
           SCORECARD_FEE_RATE: "0.03"
-          SCORECARD_SINCE: "2026-11-17T01:15:00Z"
+          SCORECARD_SINCE: "2026-11-20T20:25:00Z"
         run: python scorecard.py
 
       - name: Grade early sharp-wallet test
@@ -46,6 +46,29 @@ jobs:
           SCORECARD_LABEL: "🎯 PolyTail Early (sharp wallets)"
           SCORECARD_TAG: scorecard_early
         run: python scorecard.py
+
+      - name: Grade missed alerts (winners test, replayed)
+        if: always()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          POLYTAIL_LOG: signals_backfill.csv
+          POLYTAIL_FILLS: none.csv
+          SCORECARD_LABEL: "🕳️ PolyTail missed alerts (winners test, replayed)"
+          SCORECARD_TAG: scorecard_backfill
+        run: '[ -f signals_backfill.csv ] && python scorecard.py || true'
+
+      - name: Grade missed alerts (sports test, replayed)
+        if: always()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          POLYTAIL_LOG: signals_backfill_sports.csv
+          POLYTAIL_FILLS: none.csv
+          SCORECARD_LABEL: "🕳️ PolyTail missed alerts (sports test, replayed)"
+          SCORECARD_TAG: scorecard_backfill_sports
+          SCORECARD_FEE_RATE: "0.03"
+        run: '[ -f signals_backfill_sports.csv ] && python scorecard.py || true'
 
       - name: Save scorecard
         if: always()

@@ -1,0 +1,82 @@
+name: PolyTail backfill (missed alerts)
+
+# Replays the watched wallets' trades over a window when the live bot was down or blind,
+# logs the alerts it would have sent (signals_backfill*.csv), and grades them.
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "Window start (UTC, e.g. 2026-11-19T16:25:00Z)"
+        required: true
+      end:
+        description: "Window end (UTC)"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: polytail-backfill
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      BACKFILL_START: ${{ inputs.start }}
+      BACKFILL_END: ${{ inputs.end }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Restore download cache
+        uses: actions/cache@v4
+        with:
+          path: cache
+          key: polytail-cache-backfill-${{ github.run_id }}
+          restore-keys: polytail-cache-
+
+      - name: Winners test (main)
+        run: python backfill.py
+
+      - name: Sports test
+        if: always()
+        env:
+          POLYTAIL_PROFILE: sports
+        run: python backfill.py
+
+      - name: Grade missed alerts (winners test)
+        if: always()
+        env:
+          POLYTAIL_LOG: signals_backfill.csv
+          POLYTAIL_FILLS: none.csv
+          SCORECARD_LABEL: "🕳️ PolyTail missed alerts (winners test, replayed)"
+          SCORECARD_TAG: scorecard_backfill
+        run: '[ -f signals_backfill.csv ] && python scorecard.py || true'
+
+      - name: Grade missed alerts (sports test)
+        if: always()
+        env:
+          POLYTAIL_LOG: signals_backfill_sports.csv
+          POLYTAIL_FILLS: none.csv
+          SCORECARD_LABEL: "🕳️ PolyTail missed alerts (sports test, replayed)"
+          SCORECARD_TAG: scorecard_backfill_sports
+          SCORECARD_FEE_RATE: "0.03"
+        run: '[ -f signals_backfill_sports.csv ] && python scorecard.py || true'
+
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "polytail-bot"
+          git config user.email "polytail-bot@users.noreply.github.com"
+          for f in signals_backfill.csv signals_backfill_sports.csv; do [ -f "$f" ] && git add "$f"; done
+          [ -d results ] && git add results
+          git diff --cached --quiet && exit 0
+          git commit -m "Backfill missed alerts ${{ inputs.start }} to ${{ inputs.end }}"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          exit 1
