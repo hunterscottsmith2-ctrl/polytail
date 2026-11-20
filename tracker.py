@@ -130,18 +130,32 @@ def leaderboard_wallets(cfg):
 
 
 # ---------------------------------------------------------------- positions
+SCAN_STATS = {"wallets_with_rows": 0, "rows": 0, "skipped_redeemable_or_no_outcome": 0,
+              "under_min_value": 0, "already_ended": 0, "ends_too_late": 0, "kept": 0,
+              "sample_keys": None, "sample_row": None}
+
+
 def open_positions(wallet, cfg):
     rows = get_json("/v2/positions", {
         "user": wallet, "status": "OPEN", "limit": 500,
         "sort_by": "CURRENT_VALUE", "sort_direction": "DESC",
     }) or []
     out, now = [], time.time()
+    if rows:
+        SCAN_STATS["wallets_with_rows"] += 1
+        SCAN_STATS["rows"] += len(rows)
+        if SCAN_STATS["sample_keys"] is None and isinstance(rows[0], dict):
+            SCAN_STATS["sample_keys"] = sorted(rows[0].keys())
+            SCAN_STATS["sample_row"] = {k: rows[0].get(k) for k in (
+                "title", "outcome", "outcome_index", "current_value", "end_date", "redeemable")}
     for p in rows:
         if p.get("redeemable") or int(num(p.get("outcome_index"), 999)) == 999:
+            SCAN_STATS["skipped_redeemable_or_no_outcome"] += 1
             continue
         # No price filter here: the other side of a market has to stay visible so
         # opposing wallets are counted. The price range is applied per signal instead.
         if num(p.get("current_value")) < cfg["MIN_POSITION_USD"]:
+            SCAN_STATS["under_min_value"] += 1
             continue
         end = p.get("end_date")
         if end:
@@ -151,11 +165,14 @@ def open_positions(wallet, cfg):
                     end_dt = end_dt.replace(tzinfo=timezone.utc)
                 # end_date is a calendar day; allow the whole day to play out
                 if end_dt.timestamp() + 86400 < now:
+                    SCAN_STATS["already_ended"] += 1
                     continue
                 if end_dt.timestamp() > now + cfg["MAX_DAYS_TO_END"] * 86400:
+                    SCAN_STATS["ends_too_late"] += 1
                     continue
             except ValueError:
                 pass
+        SCAN_STATS["kept"] += 1
         out.append(p)
     return out
 
@@ -376,6 +393,20 @@ def main():
 
     signals = find_consensus(wallets, positions, cfg)
     print(f"{len(signals)} consensus signals")
+    # What this scan saw, so a quiet stretch can be told apart from a broken data feed.
+    holders = {}
+    for w, ps in positions.items():
+        for p in ps:
+            holders.setdefault(f"{p.get('condition_id')}|{p.get('outcome_index')}", set()).add(w)
+    top = sorted(holders.values(), key=len, reverse=True)[:1]
+    try:
+        with open(f"scan_status{SUFFIX}.json", "w") as f:
+            json.dump({"at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                       "wallets_watched": len(wallets), "signals": len(signals),
+                       "most_wallets_on_one_side": len(top[0]) if top else 0,
+                       **SCAN_STATS}, f, indent=1, default=str)
+    except OSError:
+        pass
     sent_elsewhere = other_profile_alerts()
 
     sent, live_keys = 0, set()
