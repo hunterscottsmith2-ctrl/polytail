@@ -71,6 +71,13 @@ OUT_DIR = os.environ.get("POLYTAIL_RESULTS", "results" if not SPORTS else "resul
 SHARP_FILE = "wallets_sharp.json" if not SPORTS else "wallets_sports_sharp.json"
 POOL_FILE = "wallets_pool.json" if not SPORTS else "wallets_sports_pool.json"   # read by tracker.py
 WALLETS_FILE = "wallets.json" if not SPORTS else "wallets_sports.json"   # scored watchlist, read by tracker.py
+# Report-only (the weekly scheduled run): write the new wallet lists to results/.../proposed/
+# for review instead of replacing the live ones, so the running paper test keeps the same wallets.
+REPORT_ONLY = os.environ.get("BT_REPORT_ONLY", "0") == "1"
+if REPORT_ONLY:
+    _prop = os.path.join(OUT_DIR, "proposed")
+    os.makedirs(_prop, exist_ok=True)
+    SHARP_FILE, POOL_FILE, WALLETS_FILE = (os.path.join(_prop, f) for f in (SHARP_FILE, POOL_FILE, WALLETS_FILE))
 DAY = 86400
 WINDOW = 30 * DAY
 
@@ -712,6 +719,8 @@ def main():
                       f"{r['win_rate']:.0%} wins, {pct(r['mean_roi'])}/bet")
     tg.append("✅ Proven winners beat the pool" if proven_helps else "Proven winners did not clearly beat the pool")
     tg.append(f"\nFull report: {OUT_DIR}/backtest_report.md in your repo")
+    if REPORT_ONLY:
+        tg.append(f"Report only: live wallet lists NOT changed (new lists saved in {OUT_DIR}/proposed/)")
     send_telegram("\n".join(tg))
     print(report)
 

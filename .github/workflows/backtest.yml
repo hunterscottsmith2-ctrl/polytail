@@ -1,6 +1,10 @@
 name: PolyTail backtest
 
 on:
+  # Weekly report-only run of both tests: Saturdays ~2:37am Eastern, so the report is in
+  # before Sunday's scorecard. It does NOT change the live wallet lists.
+  schedule:
+    - cron: "37 7 * * 6"
   workflow_dispatch:
     inputs:
       category:
@@ -17,17 +21,25 @@ on:
       pool_depth:
         description: "Wallets to pull from each leaderboard (multiples of 50)"
         default: "100"
+      update_live_wallets:
+        description: "Replace the live wallet lists with this run's picks (changes who the alerts watch)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
 
-concurrency:
-  group: polytail-backtest-${{ inputs.category }}
-  cancel-in-progress: false
-
 jobs:
   backtest:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        category: ${{ github.event_name == 'schedule' && fromJSON('["overall","sports"]') || fromJSON(format('["{0}"]', inputs.category)) }}
+    concurrency:
+      group: polytail-backtest-${{ matrix.category }}
+      cancel-in-progress: false
     timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
@@ -46,10 +58,11 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          BT_LOOKBACK_DAYS: ${{ inputs.lookback_days }}
-          BT_TEST_DAYS: ${{ inputs.test_days }}
-          BT_POOL_DEPTH: ${{ inputs.pool_depth }}
-          BT_CATEGORY: ${{ inputs.category }}
+          BT_LOOKBACK_DAYS: ${{ inputs.lookback_days || '240' }}
+          BT_TEST_DAYS: ${{ inputs.test_days || '90' }}
+          BT_POOL_DEPTH: ${{ inputs.pool_depth || '100' }}
+          BT_CATEGORY: ${{ matrix.category }}
+          BT_REPORT_ONLY: ${{ inputs.update_live_wallets == true && '0' || '1' }}
         run: python backtest.py
 
       - name: Save results to the repo
