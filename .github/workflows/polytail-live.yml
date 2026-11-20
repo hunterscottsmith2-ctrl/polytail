@@ -48,7 +48,8 @@ jobs:
                      state_early.json signals_early.csv \
                      fills.csv fills_sports.csv fills_early.csv \
                      books.csv books_sports.csv books_early.csv \
-                     scan_status.json scan_status_sports.json; do
+                     scan_status.json scan_status_sports.json \
+                     leans.json leans_sports.json; do
               [ -f "$f" ] && git add "$f"
             done
             if ! git diff --cached --quiet; then

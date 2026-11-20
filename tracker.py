@@ -191,8 +191,13 @@ def side_of(p):
                           p.get("condition_id"), p.get("outcome_index"))
 
 
+LAST_GROUPS = {}   # every wallet group from the latest scan, for the leans file
+
+
 def find_consensus(wallets, positions_by_wallet, cfg):
     groups, now = {}, time.time()
+    global LAST_GROUPS
+    LAST_GROUPS = groups
     hedged = 0
     for w, positions in positions_by_wallet.items():
         # A wallet holding both sides of the same game — the same market, or opposite teams on
@@ -279,6 +284,54 @@ def find_consensus(wallets, positions_by_wallet, cfg):
 
     signals.sort(key=lambda s: (len(s["holders"]), s["total_value"]), reverse=True)
     return signals
+
+
+# ---------------------------------------------------------------- leans
+def write_leans(cfg, days_ahead=2):
+    """Save 'near-miss' picks: any bet where 2+ watched wallets agree (hedgers left out) on a
+    game ending within the next couple of days, even if it doesn't pass the alert rules.
+    For reading only — never alerted or graded."""
+    now = time.time()
+    cutoff = datetime.fromtimestamp(now + days_ahead * 86400, timezone.utc).strftime("%Y-%m-%d")
+    by_axis = {}
+    for g in LAST_GROUPS.values():
+        by_axis.setdefault(g["axis"], []).append(g)
+    leans = []
+    for g in LAST_GROUPS.values():
+        if len(g["holders"]) < 2 or not g["end_date"] or g["end_date"] > cutoff:
+            continue
+        opposing = len({h["wallet"] for o in by_axis[g["axis"]]
+                        if o["direction"] != g["direction"] for h in o["holders"]})
+        if len(g["holders"]) <= opposing:
+            continue
+        leans.append(g)
+    try:
+        info = market_info([g["condition_id"] for g in leans]) if leans else {}
+    except Exception:
+        info = {}
+    out = []
+    for g in leans:
+        start = (info.get(g["condition_id"]) or {}).get("game_start")
+        if start and start <= now:
+            continue  # already started
+        out.append({
+            "title": g["title"], "pick": g["outcome"], "price": round(g["price"], 3),
+            "wallets": len(g["holders"]),
+            "opposing_wallets": len({h["wallet"] for o in by_axis[g["axis"]]
+                                     if o["direction"] != g["direction"] for h in o["holders"]}),
+            "total_value": round(sum(h["value"] for h in g["holders"])),
+            "names": [h["name"] for h in sorted(g["holders"], key=lambda h: -h["value"])],
+            "game_start": datetime.fromtimestamp(start, timezone.utc).isoformat(timespec="minutes") if start else None,
+            "end_date": g["end_date"], "event_slug": g["event_slug"],
+        })
+    out.sort(key=lambda x: (x["wallets"] - x["opposing_wallets"], x["total_value"]), reverse=True)
+    try:
+        with open(f"leans{SUFFIX}.json", "w") as f:
+            json.dump({"at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                       "note": "2+ watched wallets agree; NOT alerts, not graded",
+                       "leans": out}, f, indent=1)
+    except OSError:
+        pass
 
 
 # ---------------------------------------------------------------- output
@@ -416,6 +469,10 @@ def main():
                        **SCAN_STATS}, f, indent=1, default=str)
     except OSError:
         pass
+    try:
+        write_leans(cfg)
+    except Exception as e:
+        print(f"Leans file skipped: {e}")
     sent_elsewhere = other_profile_alerts()
 
     sent, live_keys = 0, set()
