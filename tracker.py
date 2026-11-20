@@ -21,6 +21,7 @@ import time
 from datetime import datetime, timezone
 
 from common import side_of as common_side_of
+from common import get_pages
 from common import (american, book_quote, get_json, log_books, log_fill, market_info, money, num, queue_recheck, run_rechecks,
                     send_telegram)
 
@@ -132,14 +133,22 @@ def leaderboard_wallets(cfg):
 # ---------------------------------------------------------------- positions
 SCAN_STATS = {"wallets_with_rows": 0, "rows": 0, "skipped_redeemable_or_no_outcome": 0,
               "under_min_value": 0, "already_ended": 0, "ends_too_late": 0, "kept": 0,
+              "wallets_needing_extra_pages": 0, "wallets_over_3000_rows": 0,
               "sample_keys": None, "sample_row": None}
 
 
 def open_positions(wallet, cfg):
-    rows = get_json("/v2/positions", {
+    # "OPEN" still includes settled-but-unclaimed positions (worth $0), and the API doesn't
+    # reliably sort live ones first, so one page of 500 can be all dead rows for an active
+    # wallet. Page through (up to 3,000 rows) so live positions aren't cut off.
+    rows, complete = get_pages("/v2/positions", {
         "user": wallet, "status": "OPEN", "limit": 500,
         "sort_by": "CURRENT_VALUE", "sort_direction": "DESC",
-    }) or []
+    }, max_rows=3000, max_pages=6)
+    if not complete and len(rows) >= 3000:
+        SCAN_STATS["wallets_over_3000_rows"] += 1
+    if len(rows) > 500:
+        SCAN_STATS["wallets_needing_extra_pages"] += 1
     out, now = [], time.time()
     if rows:
         SCAN_STATS["wallets_with_rows"] += 1
