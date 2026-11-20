@@ -1,15 +1,15 @@
 {
- "at": "2026-11-20T22:57:20+00:00",
+ "at": "2026-11-20T23:00:20+00:00",
  "wallets_watched": 138,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 115,
- "rows": 26443,
- "skipped_redeemable_or_no_outcome": 23926,
- "under_min_value": 2429,
+ "rows": 26435,
+ "skipped_redeemable_or_no_outcome": 23961,
+ "under_min_value": 2385,
  "already_ended": 6,
  "ends_too_late": 38,
- "kept": 44,
+ "kept": 45,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -59,22 +59,6 @@
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Iowa State vs. UCF",
-   "pick": "UCF",
-   "price": 0.465,
-   "wallets": 3,
-   "opposing_wallets": 1,
-   "total_value": 88350,
-   "names": [
-    "justwins",
-    "monkeymashingkeyboard",
-    "bands1"
-   ],
-   "game_start": "2026-11-20T23:00+00:00",
-   "end_date": "2026-11-20",
-   "event_slug": "cfb-iowast-ucf-2026-11-20"
-  },
   {
    "title": "Spread: Lions (-6.5)",
    "pick": "Buccaneers",
