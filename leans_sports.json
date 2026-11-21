@@ -1,22 +1,7 @@
 {
- "at": "2026-11-21T16:13:00+00:00",
+ "at": "2026-11-21T16:16:00+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
-  {
-   "title": "OGC Nice vs. Paris Saint-Germain FC: O/U 3.5",
-   "pick": "Under",
-   "price": 0.485,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 31966,
-   "names": [
-    "1l2ihj34li12u34",
-    "Kyn008"
-   ],
-   "game_start": "2026-11-21T16:15+00:00",
-   "end_date": "2026-11-21",
-   "event_slug": "fl1-ogc-psg-2026-11-21-more-markets"
-  },
   {
    "title": "Spread: Lions (-6.5)",
    "pick": "Buccaneers",
