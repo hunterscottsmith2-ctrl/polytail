@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T23:31:06+00:00",
+ "at": "2026-11-21T23:34:06+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
@@ -51,12 +51,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Capitals vs. Bruins",
-  "outcome": "Capitals",
+  "title": "Will England win the 2026 FIFA World Cup?",
+  "outcome": "Yes",
   "outcome_index": 0,
-  "current_value": 49632.5647,
-  "end_date": "2026-11-22",
-  "redeemable": false
+  "current_value": 0.0,
+  "end_date": "2026-07-20",
+  "redeemable": true
  },
  "leans_not_alerts": []
 }
