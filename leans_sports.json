@@ -1,7 +1,22 @@
 {
- "at": "2026-11-21T16:34:01+00:00",
+ "at": "2026-11-21T16:37:00+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Will VfB Stuttgart win on 2026-11-21?",
+   "pick": "Yes",
+   "price": 0.485,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 20772,
+   "names": [
+    "darkumbreon88",
+    "Kyn008"
+   ],
+   "game_start": "2026-11-21T17:30+00:00",
+   "end_date": "2026-11-21",
+   "event_slug": "bun-s04-stu-2026-11-21"
+  },
   {
    "title": "Spread: Lions (-6.5)",
    "pick": "Buccaneers",
