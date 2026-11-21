@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T20:19:06+00:00",
+ "at": "2026-11-21T20:22:06+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
  "rows": 6464,
  "skipped_redeemable_or_no_outcome": 6085,
- "under_min_value": 200,
+ "under_min_value": 201,
  "already_ended": 23,
  "ends_too_late": 47,
- "kept": 109,
+ "kept": 108,
  "wallets_needing_extra_pages": 4,
  "wallets_over_3000_rows": 0,
  "sample_keys": [
@@ -51,12 +51,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Oilers vs. Hurricanes",
-  "outcome": "Hurricanes",
-  "outcome_index": 1,
-  "current_value": 206146.5869,
-  "end_date": "2026-11-21",
-  "redeemable": false
+  "title": "Baltimore Orioles vs. St. Louis Cardinals",
+  "outcome": "Baltimore Orioles",
+  "outcome_index": 0,
+  "current_value": 0.0,
+  "end_date": "2026-09-03",
+  "redeemable": true
  },
  "leans_not_alerts": []
 }
