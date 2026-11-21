@@ -1,12 +1,12 @@
 {
- "at": "2026-11-21T23:55:13+00:00",
+ "at": "2026-11-21T23:58:14+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 115,
- "rows": 26772,
+ "rows": 26771,
  "skipped_redeemable_or_no_outcome": 24192,
- "under_min_value": 2454,
+ "under_min_value": 2453,
  "already_ended": 6,
  "ends_too_late": 46,
  "kept": 74,
@@ -73,6 +73,21 @@
    "game_start": "2026-11-22T01:00+00:00",
    "end_date": "2026-11-22",
    "event_slug": "nba-mem-min-2026-11-21"
+  },
+  {
+   "title": "Spread: Arizona (-9.5)",
+   "pick": "Kansas State",
+   "price": 0.465,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 14825,
+   "names": [
+    "hi774c",
+    "bands1"
+   ],
+   "game_start": "2026-11-22T00:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "cfb-arz-kanst-2026-11-21"
   },
   {
    "title": "Kings vs. Senators",
