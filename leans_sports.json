@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T17:07:00+00:00",
+ "at": "2026-11-21T17:10:00+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.675,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 90481,
+   "total_value": 90498,
    "names": [
     "taylorsversion",
     "chubbytoro"
@@ -16,21 +16,6 @@
    "game_start": "2026-11-21T18:00+00:00",
    "end_date": "2026-11-21",
    "event_slug": "nhl-edm-car-2026-11-21"
-  },
-  {
-   "title": "Will VfB Stuttgart win on 2026-11-21?",
-   "pick": "Yes",
-   "price": 0.485,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 57646,
-   "names": [
-    "Kyn008",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-21T17:30+00:00",
-   "end_date": "2026-11-21",
-   "event_slug": "bun-s04-stu-2026-11-21"
   },
   {
    "title": "Spread: Lions (-6.5)",

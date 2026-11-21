@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T17:07:00+00:00",
- "wallets_watched": 137,
+ "at": "2026-11-21T17:10:00+00:00",
+ "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 5,
- "wallets_with_rows": 116,
- "rows": 27108,
- "skipped_redeemable_or_no_outcome": 24279,
- "under_min_value": 2673,
- "already_ended": 8,
+ "wallets_with_rows": 114,
+ "rows": 26634,
+ "skipped_redeemable_or_no_outcome": 23861,
+ "under_min_value": 2625,
+ "already_ended": 6,
  "ends_too_late": 46,
- "kept": 102,
+ "kept": 96,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -65,7 +65,7 @@
    "price": 0.675,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 90481,
+   "total_value": 90498,
    "names": [
     "taylorsversion",
     "chubbytoro"
@@ -73,21 +73,6 @@
    "game_start": "2026-11-21T18:00+00:00",
    "end_date": "2026-11-21",
    "event_slug": "nhl-edm-car-2026-11-21"
-  },
-  {
-   "title": "Will VfB Stuttgart win on 2026-11-21?",
-   "pick": "Yes",
-   "price": 0.485,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 57646,
-   "names": [
-    "Kyn008",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-21T17:30+00:00",
-   "end_date": "2026-11-21",
-   "event_slug": "bun-s04-stu-2026-11-21"
   },
   {
    "title": "Spread: Lions (-6.5)",
