@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T15:49:00+00:00",
+ "at": "2026-11-21T15:52:00+00:00",
  "wallets_watched": 137,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 115,
- "rows": 27124,
- "skipped_redeemable_or_no_outcome": 24288,
- "under_min_value": 2675,
+ "rows": 27128,
+ "skipped_redeemable_or_no_outcome": 24286,
+ "under_min_value": 2680,
  "already_ended": 8,
  "ends_too_late": 46,
- "kept": 107,
+ "kept": 108,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -65,7 +65,7 @@
    "price": 0.485,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 24206,
+   "total_value": 31966,
    "names": [
     "1l2ihj34li12u34",
     "Kyn008"
