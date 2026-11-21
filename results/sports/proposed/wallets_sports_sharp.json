@@ -1,0 +1,89 @@
+{
+ "generated_at": 1795251557.9101985,
+ "beat_pool_in_backtest": false,
+ "proven_beat_pool_in_backtest": false,
+ "proven_best_setting": null,
+ "best_setting": null,
+ "wallets": [
+  {
+   "wallet": "0xb45a797faa52b0fd8adc56d30382022b7b12192c",
+   "name": "bcda",
+   "pnl": 188875,
+   "proven": true,
+   "clv_avg_cents": 2.61,
+   "clv_beat_rate": 0.879,
+   "clv_bets": 99,
+   "hedge_rate": 0.0
+  },
+  {
+   "wallet": "0xa96274cc1b321afc8cbdc1ba07f7e2d471e6f7c8",
+   "name": "Takon88",
+   "pnl": 356797,
+   "proven": true,
+   "clv_avg_cents": 1.74,
+   "clv_beat_rate": 0.815,
+   "clv_bets": 81,
+   "hedge_rate": 0.009
+  },
+  {
+   "wallet": "0x924379a79c64b77ad5816ad362122a5f6228658e",
+   "name": "Kch-Temp",
+   "pnl": 2776585,
+   "proven": true,
+   "clv_avg_cents": 1.2,
+   "clv_beat_rate": 0.78,
+   "clv_bets": 100,
+   "hedge_rate": 0.017
+  },
+  {
+   "wallet": "0x2c866881290c2197960f06448d3a236d9f20d939",
+   "name": "ropetard",
+   "pnl": 149963,
+   "proven": true,
+   "clv_avg_cents": 3.78,
+   "clv_beat_rate": 0.84,
+   "clv_bets": 100,
+   "hedge_rate": 0.237
+  },
+  {
+   "wallet": "0xc1da9728491b4d25480a771bbf932dbeddc5fefa",
+   "name": "vanjie",
+   "pnl": 1512481,
+   "proven": true,
+   "clv_avg_cents": 1.89,
+   "clv_beat_rate": 0.707,
+   "clv_bets": 41,
+   "hedge_rate": 0.0
+  },
+  {
+   "wallet": "0x5966db1fe50763c9e3c014d756369bad07e1f804",
+   "name": "0x5966Db1fE50763C9e3C014d756369BAd07E1F804-1777648534241",
+   "pnl": 3622887,
+   "proven": true,
+   "clv_avg_cents": 3.67,
+   "clv_beat_rate": 0.551,
+   "clv_bets": 98,
+   "hedge_rate": 0.0
+  },
+  {
+   "wallet": "0xb9c7d35d1f04d08624fabcfd3b6cee2d3c9baade",
+   "name": "taylorsversion",
+   "pnl": -1017491,
+   "proven": false,
+   "clv_avg_cents": 1.26,
+   "clv_beat_rate": 0.69,
+   "clv_bets": 100,
+   "hedge_rate": 0.021
+  },
+  {
+   "wallet": "0xf4c95b636c71243531dfc82a97565a94c106f88c",
+   "name": "milkteaboba",
+   "pnl": -366785,
+   "proven": false,
+   "clv_avg_cents": 3.19,
+   "clv_beat_rate": 0.711,
+   "clv_bets": 83,
+   "hedge_rate": 0.004
+  }
+ ]
+}
