@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T06:45:33+00:00",
+ "at": "2026-11-21T06:48:32+00:00",
  "wallets_watched": 137,
  "signals": 0,
  "most_wallets_on_one_side": 2,
@@ -62,10 +62,10 @@
   {
    "title": "Spread: Lions (-6.5)",
    "pick": "Buccaneers",
-   "price": 0.57,
+   "price": 0.565,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 18097,
+   "total_value": 17988,
    "names": [
     "monkeymashingkeyboard",
     "bands1"
