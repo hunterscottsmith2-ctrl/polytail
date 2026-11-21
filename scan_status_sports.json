@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T14:51:59+00:00",
+ "at": "2026-11-21T14:54:59+00:00",
  "wallets_watched": 137,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 115,
- "rows": 27066,
- "skipped_redeemable_or_no_outcome": 24308,
- "under_min_value": 2611,
+ "rows": 27067,
+ "skipped_redeemable_or_no_outcome": 24309,
+ "under_min_value": 2609,
  "already_ended": 8,
  "ends_too_late": 46,
- "kept": 93,
+ "kept": 95,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -94,10 +94,10 @@
   {
    "title": "Will Aston Villa FC win on 2026-11-21?",
    "pick": "Yes",
-   "price": 0.555,
+   "price": 0.565,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 24320,
+   "total_value": 24758,
    "names": [
     "darkumbreon88",
     "0xb4F978BE63cDF75554b0B46a4262a6dB597cc9A7-1779258330186"
