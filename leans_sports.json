@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T14:27:59+00:00",
+ "at": "2026-11-21T14:30:59+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -33,6 +33,36 @@
    "game_start": "2026-11-21T15:00+00:00",
    "end_date": "2026-11-21",
    "event_slug": "epl-bou-not-2026-11-21"
+  },
+  {
+   "title": "Will Aston Villa FC win on 2026-11-21?",
+   "pick": "Yes",
+   "price": 0.555,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 24320,
+   "names": [
+    "darkumbreon88",
+    "0xb4F978BE63cDF75554b0B46a4262a6dB597cc9A7-1779258330186"
+   ],
+   "game_start": "2026-11-21T15:00+00:00",
+   "end_date": "2026-11-21",
+   "event_slug": "epl-ast-sun-2026-11-21"
+  },
+  {
+   "title": "Will Ipswich Town FC win on 2026-11-21?",
+   "pick": "Yes",
+   "price": 0.165,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 12785,
+   "names": [
+    "MigRodr",
+    "Siddhartha1"
+   ],
+   "game_start": "2026-11-21T15:00+00:00",
+   "end_date": "2026-11-21",
+   "event_slug": "epl-tot-ips-2026-11-21"
   },
   {
    "title": "Spread: Lions (-6.5)",
