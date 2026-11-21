@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T13:03:41+00:00",
+ "at": "2026-11-21T13:06:40+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
- "rows": 6437,
+ "rows": 6436,
  "skipped_redeemable_or_no_outcome": 6078,
  "under_min_value": 197,
  "already_ended": 23,
  "ends_too_late": 47,
- "kept": 92,
+ "kept": 91,
  "wallets_needing_extra_pages": 4,
  "wallets_over_3000_rows": 0,
  "sample_keys": [
@@ -51,12 +51,28 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
-  "outcome": "Yes",
+  "title": "Baltimore Orioles vs. St. Louis Cardinals",
+  "outcome": "Baltimore Orioles",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-09-03",
   "redeemable": true
  },
- "leans_not_alerts": []
+ "leans_not_alerts": [
+  {
+   "title": "Counter-Strike: Alliance vs Envy (BO3) - RUSH Brno Playoffs",
+   "pick": "Envy",
+   "price": 0.505,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 34767,
+   "names": [
+    "shekelmeister",
+    "BrotherObama"
+   ],
+   "game_start": "2026-11-21T13:30+00:00",
+   "end_date": "2026-11-21",
+   "event_slug": "cs2-all-envy-2026-11-21"
+  }
+ ]
 }

@@ -1,5 +1,21 @@
 {
- "at": "2026-11-21T13:03:41+00:00",
+ "at": "2026-11-21T13:06:40+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": []
+ "leans": [
+  {
+   "title": "Counter-Strike: Alliance vs Envy (BO3) - RUSH Brno Playoffs",
+   "pick": "Envy",
+   "price": 0.505,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 34767,
+   "names": [
+    "shekelmeister",
+    "BrotherObama"
+   ],
+   "game_start": "2026-11-21T13:30+00:00",
+   "end_date": "2026-11-21",
+   "event_slug": "cs2-all-envy-2026-11-21"
+  }
+ ]
 }
