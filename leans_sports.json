@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T14:54:59+00:00",
+ "at": "2026-11-21T14:58:00+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -20,6 +20,21 @@
    "event_slug": "epl-tot-ips-2026-11-21"
   },
   {
+   "title": "Will Chelsea FC win on 2026-11-21?",
+   "pick": "No",
+   "price": 0.515,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 57912,
+   "names": [
+    "1l2ihj34li12u34",
+    "Siddhartha1"
+   ],
+   "game_start": "2026-11-21T15:00+00:00",
+   "end_date": "2026-11-21",
+   "event_slug": "epl-che-lee-2026-11-21"
+  },
+  {
    "title": "Will AFC Bournemouth win on 2026-11-21?",
    "pick": "Yes",
    "price": 0.465,
@@ -37,10 +52,10 @@
   {
    "title": "Will Aston Villa FC win on 2026-11-21?",
    "pick": "Yes",
-   "price": 0.565,
+   "price": 0.575,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 24758,
+   "total_value": 25196,
    "names": [
     "darkumbreon88",
     "0xb4F978BE63cDF75554b0B46a4262a6dB597cc9A7-1779258330186"
