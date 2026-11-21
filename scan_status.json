@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T17:36:53+00:00",
+ "at": "2026-11-21T17:39:54+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
- "rows": 6440,
- "skipped_redeemable_or_no_outcome": 6078,
- "under_min_value": 200,
+ "rows": 6439,
+ "skipped_redeemable_or_no_outcome": 6081,
+ "under_min_value": 197,
  "already_ended": 23,
  "ends_too_late": 47,
- "kept": 92,
+ "kept": 91,
  "wallets_needing_extra_pages": 4,
  "wallets_over_3000_rows": 0,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will France win on 2026-06-16?",
-  "outcome": "No",
-  "outcome_index": 1,
+  "title": "Lionel Messi: 1+ goals",
+  "outcome": "Yes",
+  "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-16",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": []
