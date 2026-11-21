@@ -1,0 +1,36 @@
+{
+ "at": "2026-11-21T01:42:34+00:00",
+ "note": "2+ watched wallets agree; NOT alerts, not graded",
+ "leans": [
+  {
+   "title": "Rockets vs. Nuggets",
+   "pick": "Rockets",
+   "price": 0.515,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 24718,
+   "names": [
+    "yabanci",
+    "monkeymashingkeyboard"
+   ],
+   "game_start": "2026-11-21T03:00+00:00",
+   "end_date": "2026-11-21",
+   "event_slug": "nba-hou-den-2026-11-20"
+  },
+  {
+   "title": "Spread: Lions (-6.5)",
+   "pick": "Buccaneers",
+   "price": 0.575,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 18306,
+   "names": [
+    "monkeymashingkeyboard",
+    "bands1"
+   ],
+   "game_start": "2026-11-22T18:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-tb-det-2026-11-22"
+  }
+ ]
+}
