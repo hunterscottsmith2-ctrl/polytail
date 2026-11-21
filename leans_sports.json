@@ -1,7 +1,22 @@
 {
- "at": "2026-11-21T14:09:59+00:00",
+ "at": "2026-11-21T14:12:58+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Will Tottenham Hotspur FC win on 2026-11-21?",
+   "pick": "Yes",
+   "price": 0.625,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 90927,
+   "names": [
+    "1l2ihj34li12u34",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-21T15:00+00:00",
+   "end_date": "2026-11-21",
+   "event_slug": "epl-tot-ips-2026-11-21"
+  },
   {
    "title": "Spread: Lions (-6.5)",
    "pick": "Buccaneers",
