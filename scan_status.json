@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T22:37:06+00:00",
+ "at": "2026-11-21T22:40:06+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
- "rows": 6456,
- "skipped_redeemable_or_no_outcome": 6088,
- "under_min_value": 197,
+ "rows": 6457,
+ "skipped_redeemable_or_no_outcome": 6089,
+ "under_min_value": 196,
  "already_ended": 23,
  "ends_too_late": 46,
- "kept": 102,
+ "kept": 103,
  "wallets_needing_extra_pages": 4,
  "wallets_over_3000_rows": 0,
  "sample_keys": [
@@ -51,12 +51,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will France win on 2026-06-16?",
-  "outcome": "No",
+  "title": "Sabres vs. Panthers: O/U 6.5",
+  "outcome": "Under",
   "outcome_index": 1,
-  "current_value": 0.0,
-  "end_date": "2026-06-16",
-  "redeemable": true
+  "current_value": 21683.55,
+  "end_date": "2026-11-21",
+  "redeemable": false
  },
  "leans_not_alerts": []
 }
