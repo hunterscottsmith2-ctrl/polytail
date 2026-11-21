@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T16:01:01+00:00",
+ "at": "2026-11-21T16:04:00+00:00",
  "wallets_watched": 137,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 115,
- "rows": 27120,
- "skipped_redeemable_or_no_outcome": 24270,
- "under_min_value": 2691,
+ "rows": 27123,
+ "skipped_redeemable_or_no_outcome": 24268,
+ "under_min_value": 2695,
  "already_ended": 8,
  "ends_too_late": 46,
- "kept": 105,
+ "kept": 106,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -77,10 +77,10 @@
   {
    "title": "Spread: Lions (-6.5)",
    "pick": "Buccaneers",
-   "price": 0.565,
+   "price": 0.575,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 17988,
+   "total_value": 18306,
    "names": [
     "monkeymashingkeyboard",
     "bands1"
