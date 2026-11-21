@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T17:31:00+00:00",
+ "at": "2026-11-21T17:33:59+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.675,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 138297,
+   "total_value": 139329,
    "names": [
     "taylorsversion",
     "chubbytoro"
