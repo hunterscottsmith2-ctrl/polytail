@@ -1,12 +1,12 @@
 {
- "at": "2026-11-21T15:34:00+00:00",
+ "at": "2026-11-21T15:37:00+00:00",
  "wallets_watched": 137,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 115,
- "rows": 27103,
- "skipped_redeemable_or_no_outcome": 24298,
- "under_min_value": 2643,
+ "rows": 27110,
+ "skipped_redeemable_or_no_outcome": 24296,
+ "under_min_value": 2652,
  "already_ended": 8,
  "ends_too_late": 46,
  "kept": 108,
@@ -62,10 +62,10 @@
   {
    "title": "OGC Nice vs. Paris Saint-Germain FC: O/U 3.5",
    "pick": "Under",
-   "price": 0.485,
+   "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 24206,
+   "total_value": 24705,
    "names": [
     "1l2ihj34li12u34",
     "Kyn008"
