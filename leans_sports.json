@@ -1,7 +1,22 @@
 {
- "at": "2026-11-21T16:55:00+00:00",
+ "at": "2026-11-21T16:58:00+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Spread: Wisconsin (-5.5)",
+   "pick": "Purdue",
+   "price": 0.525,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 18553,
+   "names": [
+    "bands1",
+    "justwins"
+   ],
+   "game_start": "2026-11-21T17:00+00:00",
+   "end_date": "2026-11-21",
+   "event_slug": "cfb-wisc-pur-2026-11-21"
+  },
   {
    "title": "Oilers vs. Hurricanes",
    "pick": "Hurricanes",
