@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T14:48:59+00:00",
+ "at": "2026-11-21T14:51:59+00:00",
  "wallets_watched": 137,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 115,
- "rows": 27058,
+ "rows": 27066,
  "skipped_redeemable_or_no_outcome": 24308,
- "under_min_value": 2604,
+ "under_min_value": 2611,
  "already_ended": 8,
  "ends_too_late": 46,
- "kept": 92,
+ "kept": 93,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -62,10 +62,10 @@
   {
    "title": "Will Tottenham Hotspur FC win on 2026-11-21?",
    "pick": "Yes",
-   "price": 0.645,
+   "price": 0.655,
    "wallets": 4,
    "opposing_wallets": 2,
-   "total_value": 890489,
+   "total_value": 904295,
    "names": [
     "3edmond.dantes",
     "1l2ihj34li12u34",
@@ -142,7 +142,7 @@
    "price": 0.375,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 11893,
+   "total_value": 15743,
    "names": [
     "hi774c",
     "forecastication4"
