@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T23:43:12+00:00",
+ "at": "2026-11-21T23:46:14+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 115,
- "rows": 26789,
- "skipped_redeemable_or_no_outcome": 24186,
- "under_min_value": 2475,
+ "rows": 26788,
+ "skipped_redeemable_or_no_outcome": 24199,
+ "under_min_value": 2460,
  "already_ended": 6,
  "ends_too_late": 46,
- "kept": 76,
+ "kept": 77,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -75,19 +75,19 @@
    "event_slug": "nba-mem-min-2026-11-21"
   },
   {
-   "title": "Trail Blazers vs. Knicks",
-   "pick": "Knicks",
-   "price": 0.495,
+   "title": "Kings vs. Senators",
+   "pick": "Senators",
+   "price": 0.645,
    "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 14075,
+   "opposing_wallets": 1,
+   "total_value": 166400,
    "names": [
-    "chubbytoro",
-    "hi774c"
+    "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
+    "chubbytoro"
    ],
-   "game_start": "2026-11-22T00:30+00:00",
+   "game_start": "2026-11-22T00:00+00:00",
    "end_date": "2026-11-22",
-   "event_slug": "nba-por-nyk-2026-11-21"
+   "event_slug": "nhl-lak-ott-2026-11-21"
   },
   {
    "title": "Spread: Chiefs (-16.5)",
