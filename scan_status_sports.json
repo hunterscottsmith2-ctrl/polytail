@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T23:40:12+00:00",
+ "at": "2026-11-21T23:43:12+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 115,
- "rows": 26786,
- "skipped_redeemable_or_no_outcome": 24183,
- "under_min_value": 2478,
+ "rows": 26789,
+ "skipped_redeemable_or_no_outcome": 24186,
+ "under_min_value": 2475,
  "already_ended": 6,
  "ends_too_late": 46,
- "kept": 73,
+ "kept": 76,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -60,12 +60,27 @@
  },
  "leans_not_alerts": [
   {
+   "title": "Grizzlies vs. Timberwolves: O/U 228.5",
+   "pick": "Over",
+   "price": 0.505,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 35373,
+   "names": [
+    "yabanci",
+    "hi774c"
+   ],
+   "game_start": "2026-11-22T01:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nba-mem-min-2026-11-21"
+  },
+  {
    "title": "Trail Blazers vs. Knicks",
    "pick": "Knicks",
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 10925,
+   "total_value": 14075,
    "names": [
     "chubbytoro",
     "hi774c"

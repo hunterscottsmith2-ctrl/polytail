@@ -1,14 +1,29 @@
 {
- "at": "2026-11-21T23:40:12+00:00",
+ "at": "2026-11-21T23:43:12+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Grizzlies vs. Timberwolves: O/U 228.5",
+   "pick": "Over",
+   "price": 0.505,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 35373,
+   "names": [
+    "yabanci",
+    "hi774c"
+   ],
+   "game_start": "2026-11-22T01:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nba-mem-min-2026-11-21"
+  },
   {
    "title": "Trail Blazers vs. Knicks",
    "pick": "Knicks",
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 10925,
+   "total_value": 14075,
    "names": [
     "chubbytoro",
     "hi774c"
