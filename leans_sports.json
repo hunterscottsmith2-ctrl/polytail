@@ -1,14 +1,44 @@
 {
- "at": "2026-11-21T02:24:32+00:00",
+ "at": "2026-11-21T02:27:31+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Spread: Suns (-4.5)",
+   "pick": "Jazz",
+   "price": 0.485,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 150350,
+   "names": [
+    "Thunderous-Authoritarian-Snarl",
+    "monkeymashingkeyboard"
+   ],
+   "game_start": "2026-11-21T02:30+00:00",
+   "end_date": "2026-11-21",
+   "event_slug": "nba-phx-uta-2026-11-20"
+  },
+  {
+   "title": "Suns vs. Jazz",
+   "pick": "Jazz",
+   "price": 0.365,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 87600,
+   "names": [
+    "monkeymashingkeyboard",
+    "Thunderous-Authoritarian-Snarl"
+   ],
+   "game_start": "2026-11-21T02:30+00:00",
+   "end_date": "2026-11-21",
+   "event_slug": "nba-phx-uta-2026-11-20"
+  },
   {
    "title": "Rockets vs. Nuggets",
    "pick": "Rockets",
    "price": 0.515,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 35942,
+   "total_value": 35996,
    "names": [
     "monkeymashingkeyboard",
     "yabanci"
