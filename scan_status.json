@@ -1,11 +1,11 @@
 {
- "at": "2026-11-21T22:19:06+00:00",
+ "at": "2026-11-21T22:22:05+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
- "rows": 6459,
- "skipped_redeemable_or_no_outcome": 6090,
+ "rows": 6457,
+ "skipped_redeemable_or_no_outcome": 6088,
  "under_min_value": 197,
  "already_ended": 23,
  "ends_too_late": 46,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Spread: Spurs (-15.5)",
-  "outcome": "Spurs",
-  "outcome_index": 0,
+  "title": "Will France win on 2026-06-16?",
+  "outcome": "No",
+  "outcome_index": 1,
   "current_value": 0.0,
-  "end_date": "2026-11-20",
+  "end_date": "2026-06-16",
   "redeemable": true
  },
  "leans_not_alerts": []
