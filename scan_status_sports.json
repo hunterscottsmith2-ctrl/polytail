@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T00:51:20+00:00",
+ "at": "2026-11-21T00:54:20+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 115,
- "rows": 26488,
- "skipped_redeemable_or_no_outcome": 24010,
- "under_min_value": 2370,
+ "rows": 26493,
+ "skipped_redeemable_or_no_outcome": 24006,
+ "under_min_value": 2377,
  "already_ended": 18,
  "ends_too_late": 38,
- "kept": 52,
+ "kept": 54,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -65,7 +65,7 @@
    "price": 0.555,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 241973,
+   "total_value": 251984,
    "names": [
     "googleplay",
     "shekelmeister"
@@ -77,10 +77,10 @@
   {
    "title": "Spread: Lions (-6.5)",
    "pick": "Buccaneers",
-   "price": 0.57,
+   "price": 0.575,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 18147,
+   "total_value": 18306,
    "names": [
     "monkeymashingkeyboard",
     "bands1"
