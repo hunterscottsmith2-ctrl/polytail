@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T01:54:32+00:00",
+ "at": "2026-11-21T01:57:31+00:00",
  "wallets_watched": 137,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 114,
  "rows": 26529,
  "skipped_redeemable_or_no_outcome": 24008,
- "under_min_value": 2401,
+ "under_min_value": 2400,
  "already_ended": 17,
  "ends_too_late": 42,
- "kept": 61,
+ "kept": 62,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -65,7 +65,7 @@
    "price": 0.515,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 35386,
+   "total_value": 35397,
    "names": [
     "monkeymashingkeyboard",
     "yabanci"
