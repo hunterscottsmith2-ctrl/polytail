@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T14:58:00+00:00",
+ "at": "2026-11-21T15:00:59+00:00",
  "wallets_watched": 137,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 115,
- "rows": 27067,
- "skipped_redeemable_or_no_outcome": 24306,
- "under_min_value": 2609,
+ "rows": 27074,
+ "skipped_redeemable_or_no_outcome": 24304,
+ "under_min_value": 2616,
  "already_ended": 8,
  "ends_too_late": 46,
- "kept": 98,
+ "kept": 100,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -60,83 +60,6 @@
  },
  "leans_not_alerts": [
   {
-   "title": "Will Tottenham Hotspur FC win on 2026-11-21?",
-   "pick": "Yes",
-   "price": 0.655,
-   "wallets": 4,
-   "opposing_wallets": 2,
-   "total_value": 904295,
-   "names": [
-    "3edmond.dantes",
-    "1l2ihj34li12u34",
-    "0xb4F978BE63cDF75554b0B46a4262a6dB597cc9A7-1779258330186",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-21T15:00+00:00",
-   "end_date": "2026-11-21",
-   "event_slug": "epl-tot-ips-2026-11-21"
-  },
-  {
-   "title": "Will Chelsea FC win on 2026-11-21?",
-   "pick": "No",
-   "price": 0.515,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 57912,
-   "names": [
-    "1l2ihj34li12u34",
-    "Siddhartha1"
-   ],
-   "game_start": "2026-11-21T15:00+00:00",
-   "end_date": "2026-11-21",
-   "event_slug": "epl-che-lee-2026-11-21"
-  },
-  {
-   "title": "Will AFC Bournemouth win on 2026-11-21?",
-   "pick": "Yes",
-   "price": 0.465,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 43483,
-   "names": [
-    "Siddhartha1",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-21T15:00+00:00",
-   "end_date": "2026-11-21",
-   "event_slug": "epl-bou-not-2026-11-21"
-  },
-  {
-   "title": "Will Aston Villa FC win on 2026-11-21?",
-   "pick": "Yes",
-   "price": 0.575,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 25196,
-   "names": [
-    "darkumbreon88",
-    "0xb4F978BE63cDF75554b0B46a4262a6dB597cc9A7-1779258330186"
-   ],
-   "game_start": "2026-11-21T15:00+00:00",
-   "end_date": "2026-11-21",
-   "event_slug": "epl-ast-sun-2026-11-21"
-  },
-  {
-   "title": "Will Ipswich Town FC win on 2026-11-21?",
-   "pick": "Yes",
-   "price": 0.155,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 15130,
-   "names": [
-    "Siddhartha1",
-    "MigRodr"
-   ],
-   "game_start": "2026-11-21T15:00+00:00",
-   "end_date": "2026-11-21",
-   "event_slug": "epl-tot-ips-2026-11-21"
-  },
-  {
    "title": "Spread: Lions (-6.5)",
    "pick": "Buccaneers",
    "price": 0.565,
@@ -157,7 +80,7 @@
    "price": 0.375,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 15743,
+   "total_value": 16187,
    "names": [
     "hi774c",
     "forecastication4"
