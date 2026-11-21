@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:54:53+00:00",
+ "at": "2026-11-21T18:58:12+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
@@ -51,12 +51,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Oilers vs. Hurricanes",
-  "outcome": "Hurricanes",
-  "outcome_index": 1,
-  "current_value": 85174.3383,
-  "end_date": "2026-11-21",
-  "redeemable": false
+  "title": "Counter-Strike: THUNDER dOWNUNDER vs BIG (BO1) - IEM Cologne Major Stage 1",
+  "outcome": "THUNDER dOWNUNDER",
+  "outcome_index": 0,
+  "current_value": 0.0,
+  "end_date": "2026-06-03",
+  "redeemable": true
  },
  "leans_not_alerts": []
 }
