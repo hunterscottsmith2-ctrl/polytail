@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T19:58:12+00:00",
+ "at": "2026-11-21T20:01:12+00:00",
  "wallets_watched": 134,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 112,
- "rows": 26834,
- "skipped_redeemable_or_no_outcome": 24040,
- "under_min_value": 2666,
+ "rows": 26836,
+ "skipped_redeemable_or_no_outcome": 24039,
+ "under_min_value": 2671,
  "already_ended": 6,
  "ends_too_late": 46,
- "kept": 76,
+ "kept": 74,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -59,21 +59,6 @@
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Will RC Celta de Vigo win on 2026-11-21?",
-   "pick": "No",
-   "price": 0.955,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 123114,
-   "names": [
-    "S-Works",
-    "0F62"
-   ],
-   "game_start": "2026-11-21T20:00+00:00",
-   "end_date": "2026-11-21",
-   "event_slug": "lal-rea-cel-2026-11-21"
-  },
   {
    "title": "Spread: Chiefs (-16.5)",
    "pick": "Cardinals",
