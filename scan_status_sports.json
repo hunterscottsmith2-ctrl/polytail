@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T23:22:12+00:00",
+ "at": "2026-11-21T23:25:13+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 115,
- "rows": 26792,
- "skipped_redeemable_or_no_outcome": 24176,
- "under_min_value": 2497,
+ "rows": 26791,
+ "skipped_redeemable_or_no_outcome": 24175,
+ "under_min_value": 2495,
  "already_ended": 6,
  "ends_too_late": 46,
- "kept": 67,
+ "kept": 69,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -59,6 +59,21 @@
   "redeemable": true
  },
  "leans_not_alerts": [
+  {
+   "title": "Trail Blazers vs. Knicks",
+   "pick": "Knicks",
+   "price": 0.495,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 10334,
+   "names": [
+    "chubbytoro",
+    "hi774c"
+   ],
+   "game_start": "2026-11-22T00:30+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nba-por-nyk-2026-11-21"
+  },
   {
    "title": "Spread: Chiefs (-16.5)",
    "pick": "Cardinals",

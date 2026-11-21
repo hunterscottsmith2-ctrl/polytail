@@ -1,7 +1,22 @@
 {
- "at": "2026-11-21T23:22:12+00:00",
+ "at": "2026-11-21T23:25:13+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Trail Blazers vs. Knicks",
+   "pick": "Knicks",
+   "price": 0.495,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 10334,
+   "names": [
+    "chubbytoro",
+    "hi774c"
+   ],
+   "game_start": "2026-11-22T00:30+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nba-por-nyk-2026-11-21"
+  },
   {
    "title": "Spread: Chiefs (-16.5)",
    "pick": "Cardinals",
