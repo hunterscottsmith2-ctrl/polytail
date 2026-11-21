@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T14:30:59+00:00",
+ "at": "2026-11-21T14:33:59+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -52,13 +52,13 @@
   {
    "title": "Will Ipswich Town FC win on 2026-11-21?",
    "pick": "Yes",
-   "price": 0.165,
+   "price": 0.155,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 12785,
+   "total_value": 15130,
    "names": [
-    "MigRodr",
-    "Siddhartha1"
+    "Siddhartha1",
+    "MigRodr"
    ],
    "game_start": "2026-11-21T15:00+00:00",
    "end_date": "2026-11-21",

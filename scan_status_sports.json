@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T14:30:59+00:00",
+ "at": "2026-11-21T14:33:59+00:00",
  "wallets_watched": 137,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 115,
- "rows": 27037,
+ "rows": 27041,
  "skipped_redeemable_or_no_outcome": 24288,
- "under_min_value": 2602,
+ "under_min_value": 2603,
  "already_ended": 8,
  "ends_too_late": 46,
- "kept": 93,
+ "kept": 96,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -109,13 +109,13 @@
   {
    "title": "Will Ipswich Town FC win on 2026-11-21?",
    "pick": "Yes",
-   "price": 0.165,
+   "price": 0.155,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 12785,
+   "total_value": 15130,
    "names": [
-    "MigRodr",
-    "Siddhartha1"
+    "Siddhartha1",
+    "MigRodr"
    ],
    "game_start": "2026-11-21T15:00+00:00",
    "end_date": "2026-11-21",
