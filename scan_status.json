@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T10:18:40+00:00",
+ "at": "2026-11-21T10:21:41+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
- "rows": 6432,
+ "rows": 6433,
  "skipped_redeemable_or_no_outcome": 6077,
  "under_min_value": 198,
  "already_ended": 23,
  "ends_too_late": 46,
- "kept": 88,
+ "kept": 89,
  "wallets_needing_extra_pages": 4,
  "wallets_over_3000_rows": 0,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will England win the 2026 FIFA World Cup?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-20",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": []
