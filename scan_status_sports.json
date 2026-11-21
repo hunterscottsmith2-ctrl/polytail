@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T19:46:13+00:00",
+ "at": "2026-11-21T19:49:12+00:00",
  "wallets_watched": 134,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 112,
- "rows": 26825,
- "skipped_redeemable_or_no_outcome": 24033,
- "under_min_value": 2665,
+ "rows": 26823,
+ "skipped_redeemable_or_no_outcome": 24034,
+ "under_min_value": 2664,
  "already_ended": 6,
  "ends_too_late": 46,
- "kept": 75,
+ "kept": 73,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -62,10 +62,10 @@
   {
    "title": "Will RC Celta de Vigo win on 2026-11-21?",
    "pick": "No",
-   "price": 0.945,
+   "price": 0.955,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 121825,
+   "total_value": 123114,
    "names": [
     "S-Works",
     "0F62"
