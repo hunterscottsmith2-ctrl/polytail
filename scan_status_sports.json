@@ -1,12 +1,12 @@
 {
- "at": "2026-11-21T16:04:00+00:00",
+ "at": "2026-11-21T16:07:00+00:00",
  "wallets_watched": 137,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 115,
- "rows": 27123,
- "skipped_redeemable_or_no_outcome": 24268,
- "under_min_value": 2695,
+ "rows": 27124,
+ "skipped_redeemable_or_no_outcome": 24267,
+ "under_min_value": 2697,
  "already_ended": 8,
  "ends_too_late": 46,
  "kept": 106,
@@ -95,7 +95,7 @@
    "price": 0.375,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 17390,
+   "total_value": 18118,
    "names": [
     "hi774c",
     "forecastication4"
