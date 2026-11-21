@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T12:33:40+00:00",
+ "at": "2026-11-21T12:36:40+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
-  "outcome": "Yes",
+  "title": "Counter-Strike: THUNDER dOWNUNDER vs BIG (BO1) - IEM Cologne Major Stage 1",
+  "outcome": "THUNDER dOWNUNDER",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-03",
   "redeemable": true
  },
  "leans_not_alerts": []
