@@ -1,7 +1,22 @@
 {
- "at": "2026-11-21T19:22:12+00:00",
+ "at": "2026-11-21T19:25:12+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Spread: Chiefs (-16.5)",
+   "pick": "Cardinals",
+   "price": 0.525,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 21830,
+   "names": [
+    "monkeymashingkeyboard",
+    "bands1"
+   ],
+   "game_start": "2026-11-22T18:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-ari-kc-2026-11-22"
+  },
   {
    "title": "Spread: Lions (-6.5)",
    "pick": "Buccaneers",
