@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T05:15:27+00:00",
+ "at": "2026-11-21T05:18:28+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
  "rows": 6433,
  "skipped_redeemable_or_no_outcome": 6073,
- "under_min_value": 199,
+ "under_min_value": 200,
  "already_ended": 23,
  "ends_too_late": 45,
- "kept": 93,
+ "kept": 92,
  "wallets_needing_extra_pages": 4,
  "wallets_over_3000_rows": 0,
  "sample_keys": [
@@ -51,12 +51,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will England win the 2026 FIFA World Cup?",
-  "outcome": "Yes",
+  "title": "Rockets vs. Nuggets: O/U 227.5",
+  "outcome": "Over",
   "outcome_index": 0,
-  "current_value": 0.0,
-  "end_date": "2026-07-20",
-  "redeemable": true
+  "current_value": 254826.0027,
+  "end_date": "2026-11-21",
+  "redeemable": false
  },
  "leans_not_alerts": []
 }
