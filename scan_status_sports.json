@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T02:27:31+00:00",
+ "at": "2026-11-21T02:30:31+00:00",
  "wallets_watched": 137,
  "signals": 0,
- "most_wallets_on_one_side": 3,
- "wallets_with_rows": 114,
- "rows": 26541,
- "skipped_redeemable_or_no_outcome": 24009,
- "under_min_value": 2406,
+ "most_wallets_on_one_side": 2,
+ "wallets_with_rows": 115,
+ "rows": 26543,
+ "skipped_redeemable_or_no_outcome": 24006,
+ "under_min_value": 2407,
  "already_ended": 16,
  "ends_too_late": 42,
- "kept": 68,
+ "kept": 72,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -59,36 +59,6 @@
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Spread: Suns (-4.5)",
-   "pick": "Jazz",
-   "price": 0.485,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 150350,
-   "names": [
-    "Thunderous-Authoritarian-Snarl",
-    "monkeymashingkeyboard"
-   ],
-   "game_start": "2026-11-21T02:30+00:00",
-   "end_date": "2026-11-21",
-   "event_slug": "nba-phx-uta-2026-11-20"
-  },
-  {
-   "title": "Suns vs. Jazz",
-   "pick": "Jazz",
-   "price": 0.365,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 87600,
-   "names": [
-    "monkeymashingkeyboard",
-    "Thunderous-Authoritarian-Snarl"
-   ],
-   "game_start": "2026-11-21T02:30+00:00",
-   "end_date": "2026-11-21",
-   "event_slug": "nba-phx-uta-2026-11-20"
-  },
   {
    "title": "Rockets vs. Nuggets",
    "pick": "Rockets",
