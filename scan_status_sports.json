@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T00:33:19+00:00",
+ "at": "2026-11-21T00:36:20+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 115,
- "rows": 26488,
- "skipped_redeemable_or_no_outcome": 24015,
- "under_min_value": 2366,
+ "rows": 26489,
+ "skipped_redeemable_or_no_outcome": 24014,
+ "under_min_value": 2367,
  "already_ended": 19,
  "ends_too_late": 38,
- "kept": 50,
+ "kept": 51,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -60,12 +60,27 @@
  },
  "leans_not_alerts": [
   {
-   "title": "Spread: Lions (-6.5)",
-   "pick": "Buccaneers",
-   "price": 0.555,
+   "title": "Wizards vs. Bulls",
+   "pick": "Bulls",
+   "price": 0.545,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 17669,
+   "total_value": 163438,
+   "names": [
+    "googleplay",
+    "shekelmeister"
+   ],
+   "game_start": "2026-11-21T01:00+00:00",
+   "end_date": "2026-11-21",
+   "event_slug": "nba-was-chi-2026-11-20"
+  },
+  {
+   "title": "Spread: Lions (-6.5)",
+   "pick": "Buccaneers",
+   "price": 0.57,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 18147,
    "names": [
     "monkeymashingkeyboard",
     "bands1"
