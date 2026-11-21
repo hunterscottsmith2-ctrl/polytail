@@ -1,12 +1,12 @@
 {
- "at": "2026-11-21T16:52:00+00:00",
+ "at": "2026-11-21T16:55:00+00:00",
  "wallets_watched": 137,
  "signals": 0,
  "most_wallets_on_one_side": 5,
  "wallets_with_rows": 115,
- "rows": 27108,
- "skipped_redeemable_or_no_outcome": 24273,
- "under_min_value": 2678,
+ "rows": 27109,
+ "skipped_redeemable_or_no_outcome": 24271,
+ "under_min_value": 2681,
  "already_ended": 8,
  "ends_too_late": 46,
  "kept": 103,
@@ -59,6 +59,21 @@
   "redeemable": true
  },
  "leans_not_alerts": [
+  {
+   "title": "Oilers vs. Hurricanes",
+   "pick": "Hurricanes",
+   "price": 0.675,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 90479,
+   "names": [
+    "taylorsversion",
+    "chubbytoro"
+   ],
+   "game_start": "2026-11-21T18:00+00:00",
+   "end_date": "2026-11-21",
+   "event_slug": "nhl-edm-car-2026-11-21"
+  },
   {
    "title": "Will VfB Stuttgart win on 2026-11-21?",
    "pick": "Yes",
