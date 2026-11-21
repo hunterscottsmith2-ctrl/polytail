@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T13:51:59+00:00",
+ "at": "2026-11-21T13:54:59+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -16,6 +16,21 @@
    "game_start": "2026-11-22T18:00+00:00",
    "end_date": "2026-11-22",
    "event_slug": "nfl-tb-det-2026-11-22"
+  },
+  {
+   "title": "Ohio State vs. Nebraska",
+   "pick": "Nebraska",
+   "price": 0.375,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 11189,
+   "names": [
+    "forecastication4",
+    "hi774c"
+   ],
+   "game_start": "2026-11-21T17:00+00:00",
+   "end_date": "2026-11-21",
+   "event_slug": "cfb-ohiost-nebr-2026-11-21"
   }
  ]
 }

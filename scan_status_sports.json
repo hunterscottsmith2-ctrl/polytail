@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T13:51:59+00:00",
+ "at": "2026-11-21T13:54:59+00:00",
  "wallets_watched": 137,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 114,
- "rows": 27023,
- "skipped_redeemable_or_no_outcome": 24307,
- "under_min_value": 2588,
+ "rows": 27025,
+ "skipped_redeemable_or_no_outcome": 24303,
+ "under_min_value": 2591,
  "already_ended": 8,
  "ends_too_late": 46,
- "kept": 74,
+ "kept": 77,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -73,6 +73,21 @@
    "game_start": "2026-11-22T18:00+00:00",
    "end_date": "2026-11-22",
    "event_slug": "nfl-tb-det-2026-11-22"
+  },
+  {
+   "title": "Ohio State vs. Nebraska",
+   "pick": "Nebraska",
+   "price": 0.375,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 11189,
+   "names": [
+    "forecastication4",
+    "hi774c"
+   ],
+   "game_start": "2026-11-21T17:00+00:00",
+   "end_date": "2026-11-21",
+   "event_slug": "cfb-ohiost-nebr-2026-11-21"
   }
  ]
 }
