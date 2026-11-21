@@ -1,12 +1,12 @@
 {
- "at": "2026-11-21T02:30:26+00:00",
+ "at": "2026-11-21T02:33:26+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
  "rows": 6435,
- "skipped_redeemable_or_no_outcome": 6065,
- "under_min_value": 205,
+ "skipped_redeemable_or_no_outcome": 6067,
+ "under_min_value": 203,
  "already_ended": 26,
  "ends_too_late": 45,
  "kept": 94,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will England win the 2026 FIFA World Cup?",
-  "outcome": "Yes",
+  "title": "Baltimore Orioles vs. St. Louis Cardinals",
+  "outcome": "Baltimore Orioles",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-20",
+  "end_date": "2026-09-03",
   "redeemable": true
  },
  "leans_not_alerts": []
