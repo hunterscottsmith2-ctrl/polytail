@@ -1,15 +1,16 @@
 {
- "at": "2026-11-21T17:43:00+00:00",
+ "at": "2026-11-21T17:45:59+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Oilers vs. Hurricanes",
    "pick": "Hurricanes",
-   "price": 0.675,
-   "wallets": 2,
+   "price": 0.685,
+   "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 139331,
+   "total_value": 310561,
    "names": [
+    "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
     "taylorsversion",
     "chubbytoro"
    ],

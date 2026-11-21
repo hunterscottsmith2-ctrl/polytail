@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T17:43:00+00:00",
+ "at": "2026-11-21T17:45:59+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 114,
- "rows": 26711,
+ "rows": 26712,
  "skipped_redeemable_or_no_outcome": 23888,
- "under_min_value": 2689,
+ "under_min_value": 2687,
  "already_ended": 6,
  "ends_too_late": 46,
- "kept": 82,
+ "kept": 85,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -62,11 +62,12 @@
   {
    "title": "Oilers vs. Hurricanes",
    "pick": "Hurricanes",
-   "price": 0.675,
-   "wallets": 2,
+   "price": 0.685,
+   "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 139331,
+   "total_value": 310561,
    "names": [
+    "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
     "taylorsversion",
     "chubbytoro"
    ],
