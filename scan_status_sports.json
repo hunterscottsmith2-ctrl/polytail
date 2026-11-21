@@ -1,12 +1,12 @@
 {
- "at": "2026-11-21T23:25:13+00:00",
+ "at": "2026-11-21T23:28:12+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 115,
- "rows": 26791,
- "skipped_redeemable_or_no_outcome": 24175,
- "under_min_value": 2495,
+ "rows": 26790,
+ "skipped_redeemable_or_no_outcome": 24176,
+ "under_min_value": 2493,
  "already_ended": 6,
  "ends_too_late": 46,
  "kept": 69,
@@ -65,7 +65,7 @@
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 10334,
+   "total_value": 10364,
    "names": [
     "chubbytoro",
     "hi774c"
