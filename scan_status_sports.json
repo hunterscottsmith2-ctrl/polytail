@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T00:42:20+00:00",
+ "at": "2026-11-21T00:45:19+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 115,
- "rows": 26494,
+ "rows": 26496,
  "skipped_redeemable_or_no_outcome": 24027,
- "under_min_value": 2357,
+ "under_min_value": 2358,
  "already_ended": 19,
  "ends_too_late": 38,
- "kept": 53,
+ "kept": 54,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -62,10 +62,10 @@
   {
    "title": "Wizards vs. Bulls",
    "pick": "Bulls",
-   "price": 0.545,
+   "price": 0.555,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 211653,
+   "total_value": 241973,
    "names": [
     "googleplay",
     "shekelmeister"
