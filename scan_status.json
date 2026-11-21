@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T13:24:52+00:00",
+ "at": "2026-11-21T13:27:52+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will England win the 2026 FIFA World Cup?",
-  "outcome": "Yes",
+  "title": "Spread: Spurs (-15.5)",
+  "outcome": "Spurs",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-20",
+  "end_date": "2026-11-20",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Counter-Strike: Alliance vs Envy (BO3) - RUSH Brno Playoffs",
    "pick": "Envy",
-   "price": 0.505,
+   "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 34767,
+   "total_value": 34079,
    "names": [
     "shekelmeister",
     "BrotherObama"
