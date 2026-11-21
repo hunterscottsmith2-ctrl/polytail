@@ -1,12 +1,12 @@
 {
- "at": "2026-11-21T12:48:41+00:00",
+ "at": "2026-11-21T12:51:40+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
  "rows": 6438,
- "skipped_redeemable_or_no_outcome": 6077,
- "under_min_value": 198,
+ "skipped_redeemable_or_no_outcome": 6079,
+ "under_min_value": 196,
  "already_ended": 23,
  "ends_too_late": 47,
  "kept": 93,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
-  "outcome": "Yes",
+  "title": "Spread: Spurs (-15.5)",
+  "outcome": "Spurs",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-11-20",
   "redeemable": true
  },
  "leans_not_alerts": []
