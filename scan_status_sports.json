@@ -1,12 +1,12 @@
 {
- "at": "2026-11-21T17:57:59+00:00",
+ "at": "2026-11-21T18:01:01+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 115,
- "rows": 26720,
- "skipped_redeemable_or_no_outcome": 23888,
- "under_min_value": 2699,
+ "rows": 26722,
+ "skipped_redeemable_or_no_outcome": 23887,
+ "under_min_value": 2702,
  "already_ended": 6,
  "ends_too_late": 46,
  "kept": 81,
@@ -59,22 +59,6 @@
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Oilers vs. Hurricanes",
-   "pick": "Hurricanes",
-   "price": 0.695,
-   "wallets": 3,
-   "opposing_wallets": 1,
-   "total_value": 315094,
-   "names": [
-    "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
-    "taylorsversion",
-    "chubbytoro"
-   ],
-   "game_start": "2026-11-21T18:00+00:00",
-   "end_date": "2026-11-21",
-   "event_slug": "nhl-edm-car-2026-11-21"
-  },
   {
    "title": "Spread: Lions (-6.5)",
    "pick": "Buccaneers",
