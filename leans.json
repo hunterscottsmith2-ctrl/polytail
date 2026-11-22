@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T23:50:26+00:00",
+ "at": "2026-11-22T23:53:26+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -23,7 +23,7 @@
    "price": 0.515,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 131163,
+   "total_value": 221260,
    "names": [
     "googleplay",
     "justwins"
