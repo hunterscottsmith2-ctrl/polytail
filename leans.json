@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T14:41:03+00:00",
+ "at": "2026-11-22T14:44:04+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -54,7 +54,7 @@
    "price": 0.575,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 173351,
+   "total_value": 173406,
    "names": [
     "999585",
     "darkumbreon88"
