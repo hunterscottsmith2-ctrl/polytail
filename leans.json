@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T23:38:15+00:00",
+ "at": "2026-11-22T23:41:15+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -20,10 +20,10 @@
   {
    "title": "Nuggets vs. Bulls: O/U 236.5",
    "pick": "Over",
-   "price": 0.545,
+   "price": 0.535,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 20718,
+   "total_value": 20338,
    "names": [
     "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
     "justwins"
