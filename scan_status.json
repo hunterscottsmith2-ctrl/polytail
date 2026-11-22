@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T17:11:06+00:00",
+ "at": "2026-11-22T17:14:06+00:00",
  "wallets_watched": 124,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 106,
- "rows": 33863,
- "skipped_redeemable_or_no_outcome": 27501,
- "under_min_value": 5811,
+ "rows": 33859,
+ "skipped_redeemable_or_no_outcome": 27503,
+ "under_min_value": 5804,
  "already_ended": 20,
  "ends_too_late": 114,
- "kept": 417,
+ "kept": 418,
  "wallets_needing_extra_pages": 19,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -127,7 +127,7 @@
    "price": 0.525,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 8091,
+   "total_value": 8267,
    "names": [
     "darkumbreon88",
     "monkeymashingkeyboard"
