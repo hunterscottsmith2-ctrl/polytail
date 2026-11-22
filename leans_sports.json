@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T16:38:14+00:00",
+ "at": "2026-11-22T16:41:14+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -21,10 +21,10 @@
   {
    "title": "Spread: Steelers (-3.5)",
    "pick": "Eagles",
-   "price": 0.505,
+   "price": 0.495,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 109095,
+   "total_value": 106935,
    "names": [
     "chubbytoro",
     "Pwaddler",
