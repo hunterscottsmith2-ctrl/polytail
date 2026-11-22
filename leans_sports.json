@@ -1,22 +1,7 @@
 {
- "at": "2026-11-22T11:28:41+00:00",
+ "at": "2026-11-22T11:31:42+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
-  {
-   "title": "Will Juventus FC win on 2026-11-22?",
-   "pick": "Yes",
-   "price": 0.685,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 69044,
-   "names": [
-    "darkumbreon88",
-    "forecastication4"
-   ],
-   "game_start": "2026-11-22T11:30+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "sea-juv-ven-2026-11-22"
-  },
   {
    "title": "Spread: Chiefs (-16.5)",
    "pick": "Cardinals",
