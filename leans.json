@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T21:23:15+00:00",
+ "at": "2026-11-22T21:26:16+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.645,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 25703,
+   "total_value": 25757,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
     "darkumbreon88"
@@ -16,36 +16,6 @@
    "game_start": "2026-11-23T01:20+00:00",
    "end_date": "2026-11-23",
    "event_slug": "nfl-min-sf-2026-11-23"
-  },
-  {
-   "title": "Jaguars vs. Giants",
-   "pick": "Jaguars",
-   "price": 0.725,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 203559,
-   "names": [
-    "Kch-Temp",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-22T21:25+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-jax-nyg-2026-11-22"
-  },
-  {
-   "title": "Spread: Jaguars (-5.5)",
-   "pick": "Jaguars",
-   "price": 0.545,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 9461,
-   "names": [
-    "darkumbreon88",
-    "monkeymashingkeyboard"
-   ],
-   "game_start": "2026-11-22T21:25+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-jax-nyg-2026-11-22"
   }
  ]
 }

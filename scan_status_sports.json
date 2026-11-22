@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T21:23:21+00:00",
+ "at": "2026-11-22T21:26:22+00:00",
  "wallets_watched": 134,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 115,
- "rows": 26507,
- "skipped_redeemable_or_no_outcome": 23930,
- "under_min_value": 2457,
+ "rows": 26509,
+ "skipped_redeemable_or_no_outcome": 23953,
+ "under_min_value": 2442,
  "already_ended": 6,
  "ends_too_late": 43,
- "kept": 71,
+ "kept": 65,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -51,29 +51,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
- "leans_not_alerts": [
-  {
-   "title": "Jaguars vs. Giants",
-   "pick": "Jaguars",
-   "price": 0.725,
-   "wallets": 3,
-   "opposing_wallets": 2,
-   "total_value": 213770,
-   "names": [
-    "Kch-Temp",
-    "Siddhartha1",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-22T21:25+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-jax-nyg-2026-11-22"
-  }
- ]
+ "leans_not_alerts": []
 }
