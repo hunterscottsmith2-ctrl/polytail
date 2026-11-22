@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T12:07:36+00:00",
+ "at": "2026-11-22T12:10:36+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
- "rows": 6465,
+ "rows": 6466,
  "skipped_redeemable_or_no_outcome": 6111,
  "under_min_value": 191,
  "already_ended": 26,
  "ends_too_late": 47,
- "kept": 90,
+ "kept": 91,
  "wallets_needing_extra_pages": 4,
  "wallets_over_3000_rows": 0,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Spread: Spurs (-15.5)",
-  "outcome": "Spurs",
+  "title": "Counter-Strike: THUNDER dOWNUNDER vs BIG (BO1) - IEM Cologne Major Stage 1",
+  "outcome": "THUNDER dOWNUNDER",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-11-20",
+  "end_date": "2026-06-03",
   "redeemable": true
  },
  "leans_not_alerts": []
