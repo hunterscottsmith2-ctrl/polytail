@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T23:02:21+00:00",
+ "at": "2026-11-22T23:05:22+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -20,10 +20,10 @@
   {
    "title": "Vikings vs. 49ers: O/U 46.5",
    "pick": "Over",
-   "price": 0.455,
+   "price": 0.445,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 22357,
+   "total_value": 21866,
    "names": [
     "bands1",
     "Pwaddler"
