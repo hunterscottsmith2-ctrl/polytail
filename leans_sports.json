@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T17:59:27+00:00",
+ "at": "2026-11-22T18:02:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -17,81 +17,6 @@
    "game_start": "2026-11-22T21:25+00:00",
    "end_date": "2026-11-22",
    "event_slug": "nfl-jax-nyg-2026-11-22"
-  },
-  {
-   "title": "Ravens vs. Panthers",
-   "pick": "Panthers",
-   "price": 0.555,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 453381,
-   "names": [
-    "999585",
-    "monkeymashingkeyboard"
-   ],
-   "game_start": "2026-11-22T18:00+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-bal-car-2026-11-22"
-  },
-  {
-   "title": "Dolphins vs. Bills",
-   "pick": "Bills",
-   "price": 0.925,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 40380,
-   "names": [
-    "darkumbreon88",
-    "Siddhartha1"
-   ],
-   "game_start": "2026-11-22T18:00+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-mia-buf-2026-11-22"
-  },
-  {
-   "title": "Steelers vs. Eagles: O/U 38.5",
-   "pick": "Under",
-   "price": 0.535,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 26720,
-   "names": [
-    "EdZachary",
-    "Pwaddler"
-   ],
-   "game_start": "2026-11-22T18:00+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-pit-phi-2026-11-22"
-  },
-  {
-   "title": "Spread: Lions (-6.5)",
-   "pick": "Buccaneers",
-   "price": 0.585,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 18625,
-   "names": [
-    "monkeymashingkeyboard",
-    "bands1"
-   ],
-   "game_start": "2026-11-22T18:00+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-tb-det-2026-11-22"
-  },
-  {
-   "title": "Spread: Bills (-16.5)",
-   "pick": "Bills",
-   "price": 0.525,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 18040,
-   "names": [
-    "Siddhartha1",
-    "Pwaddler"
-   ],
-   "game_start": "2026-11-22T18:00+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-mia-buf-2026-11-22"
   }
  ]
 }

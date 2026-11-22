@@ -2,6 +2,7 @@
  "alerted": {
   "0x6e610e1d2341e2bb60db4c80177840196357a66d124ac458453bb5b3966d1d38|1": {
    "first_seen": "2026-11-22T17:56+00:00",
+   "gone_at": 1795370535.887163,
    "outcome": "Panthers",
    "title": "Ravens vs. Panthers",
    "wallets": 3

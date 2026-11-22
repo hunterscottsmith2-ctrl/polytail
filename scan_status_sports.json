@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T17:59:27+00:00",
+ "at": "2026-11-22T18:02:21+00:00",
  "wallets_watched": 136,
  "signals": 1,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 116,
- "rows": 26857,
- "skipped_redeemable_or_no_outcome": 24160,
- "under_min_value": 2516,
+ "rows": 26859,
+ "skipped_redeemable_or_no_outcome": 24157,
+ "under_min_value": 2519,
  "already_ended": 6,
  "ends_too_late": 45,
- "kept": 130,
+ "kept": 132,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -74,81 +74,6 @@
    "game_start": "2026-11-22T21:25+00:00",
    "end_date": "2026-11-22",
    "event_slug": "nfl-jax-nyg-2026-11-22"
-  },
-  {
-   "title": "Ravens vs. Panthers",
-   "pick": "Panthers",
-   "price": 0.555,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 453381,
-   "names": [
-    "999585",
-    "monkeymashingkeyboard"
-   ],
-   "game_start": "2026-11-22T18:00+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-bal-car-2026-11-22"
-  },
-  {
-   "title": "Dolphins vs. Bills",
-   "pick": "Bills",
-   "price": 0.925,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 40380,
-   "names": [
-    "darkumbreon88",
-    "Siddhartha1"
-   ],
-   "game_start": "2026-11-22T18:00+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-mia-buf-2026-11-22"
-  },
-  {
-   "title": "Steelers vs. Eagles: O/U 38.5",
-   "pick": "Under",
-   "price": 0.535,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 26720,
-   "names": [
-    "EdZachary",
-    "Pwaddler"
-   ],
-   "game_start": "2026-11-22T18:00+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-pit-phi-2026-11-22"
-  },
-  {
-   "title": "Spread: Lions (-6.5)",
-   "pick": "Buccaneers",
-   "price": 0.585,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 18625,
-   "names": [
-    "monkeymashingkeyboard",
-    "bands1"
-   ],
-   "game_start": "2026-11-22T18:00+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-tb-det-2026-11-22"
-  },
-  {
-   "title": "Spread: Bills (-16.5)",
-   "pick": "Bills",
-   "price": 0.525,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 18040,
-   "names": [
-    "Siddhartha1",
-    "Pwaddler"
-   ],
-   "game_start": "2026-11-22T18:00+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-mia-buf-2026-11-22"
   }
  ]
 }
