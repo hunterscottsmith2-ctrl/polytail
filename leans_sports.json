@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T21:20:21+00:00",
+ "at": "2026-11-22T21:23:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -7,7 +7,7 @@
    "pick": "Jaguars",
    "price": 0.725,
    "wallets": 3,
-   "opposing_wallets": 1,
+   "opposing_wallets": 2,
    "total_value": 213770,
    "names": [
     "Kch-Temp",
