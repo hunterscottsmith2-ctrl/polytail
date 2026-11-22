@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T11:10:41+00:00",
+ "at": "2026-11-22T11:13:40+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -16,6 +16,21 @@
    "game_start": "2026-11-22T11:30+00:00",
    "end_date": "2026-11-22",
    "event_slug": "sea-juv-ven-2026-11-22"
+  },
+  {
+   "title": "FC Twente vs. Willem II Tilburg: O/U 4.5",
+   "pick": "Over",
+   "price": 0.485,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 34262,
+   "names": [
+    "Bloodygoodrep1",
+    "nb1985"
+   ],
+   "game_start": "2026-11-22T11:15+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "ere-twe-wii-2026-11-22-more-markets"
   },
   {
    "title": "Spread: Chiefs (-16.5)",
