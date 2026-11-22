@@ -1,12 +1,12 @@
 {
- "at": "2026-11-22T07:19:36+00:00",
+ "at": "2026-11-22T07:22:35+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
  "rows": 6461,
- "skipped_redeemable_or_no_outcome": 6104,
- "under_min_value": 197,
+ "skipped_redeemable_or_no_outcome": 6107,
+ "under_min_value": 194,
  "already_ended": 26,
  "ends_too_late": 46,
  "kept": 88,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
-  "outcome": "Yes",
+  "title": "Baltimore Orioles vs. St. Louis Cardinals",
+  "outcome": "Baltimore Orioles",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-09-03",
   "redeemable": true
  },
  "leans_not_alerts": []
