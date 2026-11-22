@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T23:44:30+00:00",
+ "at": "2026-11-22T23:47:26+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -16,6 +16,21 @@
    "game_start": "2026-11-23T01:20+00:00",
    "end_date": "2026-11-23",
    "event_slug": "nfl-min-sf-2026-11-23"
+  },
+  {
+   "title": "Spread: Magic (-4.5)",
+   "pick": "Magic",
+   "price": 0.515,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 79663,
+   "names": [
+    "googleplay",
+    "justwins"
+   ],
+   "game_start": "2026-11-23T00:00+00:00",
+   "end_date": "2026-11-23",
+   "event_slug": "nba-orl-was-2026-11-22"
   },
   {
    "title": "Nuggets vs. Bulls: O/U 236.5",
