@@ -1,37 +1,7 @@
 {
- "at": "2026-11-22T14:14:01+00:00",
+ "at": "2026-11-22T14:17:02+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
-  {
-   "title": "Jaguars vs. Giants",
-   "pick": "Jaguars",
-   "price": 0.715,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 199404,
-   "names": [
-    "Kch-Temp",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-22T21:25+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-jax-nyg-2026-11-22"
-  },
-  {
-   "title": "Titans vs. Cowboys",
-   "pick": "Titans",
-   "price": 0.235,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 36224,
-   "names": [
-    "EdZachary",
-    "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816"
-   ],
-   "game_start": "2026-11-22T18:00+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-ten-dal-2026-11-22"
-  },
   {
    "title": "Spread: Chiefs (-16.5)",
    "pick": "Cardinals",
