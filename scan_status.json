@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T20:50:15+00:00",
+ "at": "2026-11-22T20:53:15+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 102,
- "rows": 33705,
+ "rows": 33709,
  "skipped_redeemable_or_no_outcome": 27360,
- "under_min_value": 5822,
+ "under_min_value": 5825,
  "already_ended": 20,
  "ends_too_late": 113,
- "kept": 390,
+ "kept": 391,
  "wallets_needing_extra_pages": 19,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -65,7 +65,7 @@
    "price": 0.645,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 25007,
+   "total_value": 25029,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
     "darkumbreon88"
@@ -92,10 +92,10 @@
   {
    "title": "Spread: Jaguars (-5.5)",
    "pick": "Jaguars",
-   "price": 0.545,
+   "price": 0.535,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 9461,
+   "total_value": 9288,
    "names": [
     "darkumbreon88",
     "monkeymashingkeyboard"
