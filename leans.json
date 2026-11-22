@@ -1,5 +1,83 @@
 {
- "at": "2026-11-22T14:19:55+00:00",
+ "at": "2026-11-22T14:23:03+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": []
+ "leans": [
+  {
+   "title": "Counter-Strike: Envy vs Sinners (BO3) - RUSH Brno Playoffs",
+   "pick": "Envy",
+   "price": 0.445,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 46289,
+   "names": [
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
+    "shekelmeister"
+   ],
+   "game_start": "2026-11-22T15:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "cs2-envy-sin2-2026-11-22"
+  },
+  {
+   "title": "Spread: Lions (-6.5)",
+   "pick": "Buccaneers",
+   "price": 0.585,
+   "wallets": 3,
+   "opposing_wallets": 1,
+   "total_value": 20005,
+   "names": [
+    "monkeymashingkeyboard",
+    "bands1",
+    "0xb4F978BE63cDF75554b0B46a4262a6dB597cc9A7-1779258330186"
+   ],
+   "game_start": "2026-11-22T18:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-tb-det-2026-11-22"
+  },
+  {
+   "title": "Jaguars vs. Giants",
+   "pick": "Jaguars",
+   "price": 0.715,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 199404,
+   "names": [
+    "Kch-Temp",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-22T21:25+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-jax-nyg-2026-11-22"
+  },
+  {
+   "title": "Ravens vs. Panthers",
+   "pick": "Panthers",
+   "price": 0.575,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 173351,
+   "names": [
+    "999585",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-22T18:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-bal-car-2026-11-22"
+  },
+  {
+   "title": "Spread: Chiefs (-16.5)",
+   "pick": "Cardinals",
+   "price": 0.535,
+   "wallets": 3,
+   "opposing_wallets": 2,
+   "total_value": 23419,
+   "names": [
+    "monkeymashingkeyboard",
+    "bands1",
+    "justwins"
+   ],
+   "game_start": "2026-11-22T18:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-ari-kc-2026-11-22"
+  }
+ ]
 }
