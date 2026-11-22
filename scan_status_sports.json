@@ -1,12 +1,12 @@
 {
- "at": "2026-11-22T22:05:21+00:00",
+ "at": "2026-11-22T22:08:21+00:00",
  "wallets_watched": 134,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 114,
- "rows": 26494,
- "skipped_redeemable_or_no_outcome": 23945,
- "under_min_value": 2443,
+ "rows": 26495,
+ "skipped_redeemable_or_no_outcome": 23947,
+ "under_min_value": 2442,
  "already_ended": 6,
  "ends_too_late": 45,
  "kept": 55,
@@ -62,10 +62,10 @@
   {
    "title": "Nuggets vs. Bulls",
    "pick": "Nuggets",
-   "price": 0.785,
+   "price": 0.775,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 18133,
+   "total_value": 23010,
    "names": [
     "hi774c",
     "darkumbreon88"
