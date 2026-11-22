@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T17:53:05+00:00",
+ "at": "2026-11-22T17:56:05+00:00",
  "wallets_watched": 124,
- "signals": 0,
+ "signals": 1,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 107,
- "rows": 33915,
+ "rows": 33919,
  "skipped_redeemable_or_no_outcome": 27507,
- "under_min_value": 5857,
+ "under_min_value": 5858,
  "already_ended": 20,
  "ends_too_late": 115,
- "kept": 416,
+ "kept": 419,
  "wallets_needing_extra_pages": 19,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -60,12 +60,28 @@
  },
  "leans_not_alerts": [
   {
+   "title": "Ravens vs. Panthers",
+   "pick": "Panthers",
+   "price": 0.555,
+   "wallets": 3,
+   "opposing_wallets": 1,
+   "total_value": 456241,
+   "names": [
+    "999585",
+    "monkeymashingkeyboard",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-22T18:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-bal-car-2026-11-22"
+  },
+  {
    "title": "Dota 2: 1win vs Aurora (BO3) - BLAST Slam Group D",
    "pick": "1win",
    "price": 0.425,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 21921,
+   "total_value": 21992,
    "names": [
     "CORGII",
     "0xE16D3F2A5807999b358aFfD9445C3a09E45E5e30-1776429210592"
@@ -91,21 +107,6 @@
    "event_slug": "nfl-tb-det-2026-11-22"
   },
   {
-   "title": "Ravens vs. Panthers",
-   "pick": "Panthers",
-   "price": 0.565,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 407962,
-   "names": [
-    "999585",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-22T18:00+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-bal-car-2026-11-22"
-  },
-  {
    "title": "Jaguars vs. Giants",
    "pick": "Jaguars",
    "price": 0.725,
@@ -126,7 +127,7 @@
    "price": 0.525,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 9026,
+   "total_value": 9030,
    "names": [
     "darkumbreon88",
     "monkeymashingkeyboard"
