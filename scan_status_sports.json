@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T21:50:21+00:00",
+ "at": "2026-11-22T21:53:20+00:00",
  "wallets_watched": 134,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 115,
  "rows": 26508,
- "skipped_redeemable_or_no_outcome": 23941,
+ "skipped_redeemable_or_no_outcome": 23940,
  "under_min_value": 2456,
  "already_ended": 6,
  "ends_too_late": 45,
- "kept": 60,
+ "kept": 61,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -51,12 +51,28 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
- "leans_not_alerts": []
+ "leans_not_alerts": [
+  {
+   "title": "Nuggets vs. Bulls",
+   "pick": "Nuggets",
+   "price": 0.785,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 18133,
+   "names": [
+    "hi774c",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-23T00:00+00:00",
+   "end_date": "2026-11-23",
+   "event_slug": "nba-den-chi-2026-11-22"
+  }
+ ]
 }

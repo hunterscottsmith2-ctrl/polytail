@@ -1,5 +1,21 @@
 {
- "at": "2026-11-22T21:50:21+00:00",
+ "at": "2026-11-22T21:53:20+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": []
+ "leans": [
+  {
+   "title": "Nuggets vs. Bulls",
+   "pick": "Nuggets",
+   "price": 0.785,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 18133,
+   "names": [
+    "hi774c",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-23T00:00+00:00",
+   "end_date": "2026-11-23",
+   "event_slug": "nba-den-chi-2026-11-22"
+  }
+ ]
 }
