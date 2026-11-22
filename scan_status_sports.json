@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T13:41:01+00:00",
+ "at": "2026-11-22T13:44:02+00:00",
  "wallets_watched": 138,
  "signals": 0,
- "most_wallets_on_one_side": 2,
+ "most_wallets_on_one_side": 3,
  "wallets_with_rows": 118,
- "rows": 27016,
+ "rows": 27022,
  "skipped_redeemable_or_no_outcome": 24467,
- "under_min_value": 2427,
+ "under_min_value": 2431,
  "already_ended": 6,
  "ends_too_late": 44,
- "kept": 72,
+ "kept": 74,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -59,6 +59,21 @@
   "redeemable": true
  },
  "leans_not_alerts": [
+  {
+   "title": "Titans vs. Cowboys",
+   "pick": "Titans",
+   "price": 0.235,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 36188,
+   "names": [
+    "EdZachary",
+    "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816"
+   ],
+   "game_start": "2026-11-22T18:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-ten-dal-2026-11-22"
+  },
   {
    "title": "Spread: Chiefs (-16.5)",
    "pick": "Cardinals",
