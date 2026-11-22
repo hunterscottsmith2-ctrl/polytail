@@ -1,7 +1,38 @@
 {
- "at": "2026-11-22T16:05:13+00:00",
+ "at": "2026-11-22T16:08:13+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Will Stade Rennais FC 1901 win on 2026-11-22?",
+   "pick": "Yes",
+   "price": 0.485,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 653237,
+   "names": [
+    "3edmond.dantes",
+    "nb1985"
+   ],
+   "game_start": "2026-11-22T16:15+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "fl1-lor-ren-2026-11-22"
+  },
+  {
+   "title": "Jaguars vs. Giants",
+   "pick": "Jaguars",
+   "price": 0.715,
+   "wallets": 3,
+   "opposing_wallets": 2,
+   "total_value": 210822,
+   "names": [
+    "Kch-Temp",
+    "Siddhartha1",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-22T21:25+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-jax-nyg-2026-11-22"
+  },
   {
    "title": "Spread: Chiefs (-16.5)",
    "pick": "Cardinals",
