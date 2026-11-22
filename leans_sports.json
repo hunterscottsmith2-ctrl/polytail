@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T17:20:14+00:00",
+ "at": "2026-11-22T17:23:13+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -53,10 +53,10 @@
   {
    "title": "Steelers vs. Eagles: O/U 38.5",
    "pick": "Under",
-   "price": 0.53,
+   "price": 0.525,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 26470,
+   "total_value": 26220,
    "names": [
     "EdZachary",
     "Pwaddler"
