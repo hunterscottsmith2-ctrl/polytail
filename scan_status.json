@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T20:14:16+00:00",
+ "at": "2026-11-22T20:17:16+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 102,
  "rows": 33710,
  "skipped_redeemable_or_no_outcome": 27356,
- "under_min_value": 5821,
+ "under_min_value": 5820,
  "already_ended": 20,
  "ends_too_late": 115,
- "kept": 398,
+ "kept": 399,
  "wallets_needing_extra_pages": 19,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -65,7 +65,7 @@
    "price": 0.645,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 24934,
+   "total_value": 24938,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
     "darkumbreon88"
@@ -92,10 +92,10 @@
   {
    "title": "Spread: Jaguars (-5.5)",
    "pick": "Jaguars",
-   "price": 0.535,
+   "price": 0.545,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 9288,
+   "total_value": 9461,
    "names": [
     "darkumbreon88",
     "monkeymashingkeyboard"
