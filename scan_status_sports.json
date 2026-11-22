@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T17:47:14+00:00",
+ "at": "2026-11-22T17:50:14+00:00",
  "wallets_watched": 136,
- "signals": 0,
+ "signals": 1,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 117,
- "rows": 26843,
+ "rows": 26844,
  "skipped_redeemable_or_no_outcome": 24159,
- "under_min_value": 2506,
+ "under_min_value": 2509,
  "already_ended": 6,
  "ends_too_late": 45,
- "kept": 127,
+ "kept": 125,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -64,7 +64,7 @@
    "pick": "Jaguars",
    "price": 0.725,
    "wallets": 3,
-   "opposing_wallets": 2,
+   "opposing_wallets": 1,
    "total_value": 213770,
    "names": [
     "Kch-Temp",
@@ -143,7 +143,7 @@
    "price": 0.525,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 16220,
+   "total_value": 16589,
    "names": [
     "Pwaddler",
     "Siddhartha1"

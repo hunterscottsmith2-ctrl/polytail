@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T17:47:06+00:00",
+ "at": "2026-11-22T17:50:07+00:00",
  "wallets_watched": 124,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 107,
- "rows": 33906,
+ "rows": 33909,
  "skipped_redeemable_or_no_outcome": 27508,
- "under_min_value": 5845,
+ "under_min_value": 5850,
  "already_ended": 20,
  "ends_too_late": 115,
- "kept": 418,
+ "kept": 416,
  "wallets_needing_extra_pages": 19,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -59,6 +59,21 @@
   "redeemable": true
  },
  "leans_not_alerts": [
+  {
+   "title": "Dota 2: 1win vs Aurora (BO3) - BLAST Slam Group D",
+   "pick": "1win",
+   "price": 0.425,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 21855,
+   "names": [
+    "CORGII",
+    "0xE16D3F2A5807999b358aFfD9445C3a09E45E5e30-1776429210592"
+   ],
+   "game_start": "2026-11-22T18:00+00:00",
+   "end_date": "2026-11-23",
+   "event_slug": "dota2-1win-aur1-2026-11-22"
+  },
   {
    "title": "Spread: Lions (-6.5)",
    "pick": "Buccaneers",
@@ -111,7 +126,7 @@
    "price": 0.525,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 9011,
+   "total_value": 9026,
    "names": [
     "darkumbreon88",
     "monkeymashingkeyboard"
