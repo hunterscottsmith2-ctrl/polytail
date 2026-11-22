@@ -1,14 +1,14 @@
 {
- "at": "2026-11-22T16:08:06+00:00",
+ "at": "2026-11-22T16:11:06+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Counter-Strike: Envy vs Sinners (BO3) - RUSH Brno Playoffs",
    "pick": "Envy",
-   "price": 0.425,
+   "price": 0.445,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 44209,
+   "total_value": 46289,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "shekelmeister"
@@ -51,10 +51,10 @@
   {
    "title": "Ravens vs. Panthers",
    "pick": "Panthers",
-   "price": 0.575,
+   "price": 0.565,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 174649,
+   "total_value": 171762,
    "names": [
     "999585",
     "darkumbreon88"
