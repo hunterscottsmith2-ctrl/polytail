@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T17:56:05+00:00",
+ "at": "2026-11-22T17:59:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.555,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 456241,
+   "total_value": 457386,
    "names": [
     "999585",
     "monkeymashingkeyboard",
@@ -21,10 +21,10 @@
   {
    "title": "Dota 2: 1win vs Aurora (BO3) - BLAST Slam Group D",
    "pick": "1win",
-   "price": 0.425,
+   "price": 0.435,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 21992,
+   "total_value": 22615,
    "names": [
     "CORGII",
     "0xE16D3F2A5807999b358aFfD9445C3a09E45E5e30-1776429210592"
@@ -50,6 +50,22 @@
    "event_slug": "nfl-tb-det-2026-11-22"
   },
   {
+   "title": "Steelers vs. Eagles",
+   "pick": "Steelers",
+   "price": 0.655,
+   "wallets": 3,
+   "opposing_wallets": 2,
+   "total_value": 532659,
+   "names": [
+    "Kch-Temp",
+    "0x5966Db1fE50763C9e3C014d756369BAd07E1F804-1777648534241",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-22T18:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-pit-phi-2026-11-22"
+  },
+  {
    "title": "Jaguars vs. Giants",
    "pick": "Jaguars",
    "price": 0.725,
@@ -70,7 +86,7 @@
    "price": 0.525,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 9030,
+   "total_value": 9033,
    "names": [
     "darkumbreon88",
     "monkeymashingkeyboard"

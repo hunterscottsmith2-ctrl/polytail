@@ -1,12 +1,12 @@
 {
- "at": "2026-11-22T17:56:05+00:00",
+ "at": "2026-11-22T17:59:21+00:00",
  "wallets_watched": 124,
  "signals": 1,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 107,
- "rows": 33919,
- "skipped_redeemable_or_no_outcome": 27507,
- "under_min_value": 5858,
+ "rows": 33925,
+ "skipped_redeemable_or_no_outcome": 27508,
+ "under_min_value": 5863,
  "already_ended": 20,
  "ends_too_late": 115,
  "kept": 419,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -65,7 +65,7 @@
    "price": 0.555,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 456241,
+   "total_value": 457386,
    "names": [
     "999585",
     "monkeymashingkeyboard",
@@ -78,10 +78,10 @@
   {
    "title": "Dota 2: 1win vs Aurora (BO3) - BLAST Slam Group D",
    "pick": "1win",
-   "price": 0.425,
+   "price": 0.435,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 21992,
+   "total_value": 22615,
    "names": [
     "CORGII",
     "0xE16D3F2A5807999b358aFfD9445C3a09E45E5e30-1776429210592"
@@ -107,6 +107,22 @@
    "event_slug": "nfl-tb-det-2026-11-22"
   },
   {
+   "title": "Steelers vs. Eagles",
+   "pick": "Steelers",
+   "price": 0.655,
+   "wallets": 3,
+   "opposing_wallets": 2,
+   "total_value": 532659,
+   "names": [
+    "Kch-Temp",
+    "0x5966Db1fE50763C9e3C014d756369BAd07E1F804-1777648534241",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-22T18:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-pit-phi-2026-11-22"
+  },
+  {
    "title": "Jaguars vs. Giants",
    "pick": "Jaguars",
    "price": 0.725,
@@ -127,7 +143,7 @@
    "price": 0.525,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 9030,
+   "total_value": 9033,
    "names": [
     "darkumbreon88",
     "monkeymashingkeyboard"
