@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T23:26:15+00:00",
+ "at": "2026-11-22T23:29:15+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -16,6 +16,21 @@
    "game_start": "2026-11-23T01:20+00:00",
    "end_date": "2026-11-23",
    "event_slug": "nfl-min-sf-2026-11-23"
+  },
+  {
+   "title": "Nuggets vs. Bulls: O/U 236.5",
+   "pick": "Over",
+   "price": 0.545,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 20718,
+   "names": [
+    "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
+    "justwins"
+   ],
+   "game_start": "2026-11-23T00:00+00:00",
+   "end_date": "2026-11-23",
+   "event_slug": "nba-den-chi-2026-11-22"
   }
  ]
 }
