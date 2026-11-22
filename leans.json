@@ -1,14 +1,14 @@
 {
- "at": "2026-11-22T14:32:03+00:00",
+ "at": "2026-11-22T14:35:02+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Counter-Strike: Envy vs Sinners (BO3) - RUSH Brno Playoffs",
    "pick": "Envy",
-   "price": 0.455,
+   "price": 0.445,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 47330,
+   "total_value": 46289,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "shekelmeister"
