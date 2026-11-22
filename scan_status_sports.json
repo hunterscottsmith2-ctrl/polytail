@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T18:08:21+00:00",
+ "at": "2026-11-22T18:11:21+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 116,
- "rows": 26864,
- "skipped_redeemable_or_no_outcome": 24157,
- "under_min_value": 2522,
+ "rows": 27153,
+ "skipped_redeemable_or_no_outcome": 24436,
+ "under_min_value": 2533,
  "already_ended": 6,
  "ends_too_late": 45,
- "kept": 134,
+ "kept": 133,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Jaguars vs. Giants",
    "pick": "Jaguars",
-   "price": 0.725,
+   "price": 0.715,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 213770,
+   "total_value": 210822,
    "names": [
     "Kch-Temp",
     "Siddhartha1",
