@@ -1,13 +1,13 @@
 {
- "at": "2026-11-22T00:07:14+00:00",
+ "at": "2026-11-22T00:10:14+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 116,
- "rows": 26775,
- "skipped_redeemable_or_no_outcome": 24194,
- "under_min_value": 2453,
- "already_ended": 26,
+ "rows": 26474,
+ "skipped_redeemable_or_no_outcome": 23891,
+ "under_min_value": 2447,
+ "already_ended": 34,
  "ends_too_late": 46,
  "kept": 56,
  "wallets_needing_extra_pages": 13,
@@ -73,6 +73,21 @@
    "game_start": "2026-11-22T01:00+00:00",
    "end_date": "2026-11-22",
    "event_slug": "nba-mem-min-2026-11-21"
+  },
+  {
+   "title": "Trail Blazers vs. Knicks",
+   "pick": "Knicks",
+   "price": 0.475,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 157809,
+   "names": [
+    "chubbytoro",
+    "big8betz"
+   ],
+   "game_start": "2026-11-22T00:30+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nba-por-nyk-2026-11-21"
   },
   {
    "title": "Spread: Chiefs (-16.5)",
