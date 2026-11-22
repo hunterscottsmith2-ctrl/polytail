@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T12:38:01+00:00",
+ "at": "2026-11-22T12:41:01+00:00",
  "wallets_watched": 138,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 118,
- "rows": 26970,
+ "rows": 26976,
  "skipped_redeemable_or_no_outcome": 24468,
- "under_min_value": 2384,
+ "under_min_value": 2389,
  "already_ended": 6,
  "ends_too_late": 44,
- "kept": 68,
+ "kept": 69,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -59,6 +59,21 @@
   "redeemable": true
  },
  "leans_not_alerts": [
+  {
+   "title": "FC Barcelona vs. Villarreal CF: O/U 4.5",
+   "pick": "Over",
+   "price": 0.525,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 116427,
+   "names": [
+    "nb1985",
+    "DaBossHogg"
+   ],
+   "game_start": "2026-11-22T13:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "lal-bar-vil-2026-11-22-more-markets"
+  },
   {
    "title": "Spread: Chiefs (-16.5)",
    "pick": "Cardinals",
