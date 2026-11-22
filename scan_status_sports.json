@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T00:55:24+00:00",
+ "at": "2026-11-22T00:58:26+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 116,
  "rows": 26465,
- "skipped_redeemable_or_no_outcome": 23914,
- "under_min_value": 2420,
- "already_ended": 17,
+ "skipped_redeemable_or_no_outcome": 23920,
+ "under_min_value": 2414,
+ "already_ended": 16,
  "ends_too_late": 42,
- "kept": 72,
+ "kept": 73,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -92,10 +92,10 @@
   {
    "title": "Spread: Timberwolves (-6.5)",
    "pick": "Timberwolves",
-   "price": 0.485,
+   "price": 0.48,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 149928,
+   "total_value": 148382,
    "names": [
     "googleplay",
     "justwins"
