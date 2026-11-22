@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T22:29:21+00:00",
+ "at": "2026-11-22T22:32:22+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -23,10 +23,10 @@
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 24143,
+   "total_value": 25741,
    "names": [
-    "monkeymashingkeyboard",
-    "justwins"
+    "justwins",
+    "monkeymashingkeyboard"
    ],
    "game_start": "2026-11-22T23:00+00:00",
    "end_date": "2026-11-22",
