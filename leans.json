@@ -1,7 +1,22 @@
 {
- "at": "2026-11-22T22:47:16+00:00",
+ "at": "2026-11-22T22:50:15+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Spread: Heat (-4.5)",
+   "pick": "Thunder",
+   "price": 0.495,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 111375,
+   "names": [
+    "justwins",
+    "monkeymashingkeyboard"
+   ],
+   "game_start": "2026-11-22T23:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nba-okc-mia-2026-11-22"
+  },
   {
    "title": "Vikings vs. 49ers",
    "pick": "49ers",
@@ -16,21 +31,6 @@
    "game_start": "2026-11-23T01:20+00:00",
    "end_date": "2026-11-23",
    "event_slug": "nfl-min-sf-2026-11-23"
-  },
-  {
-   "title": "Spread: Heat (-4.5)",
-   "pick": "Thunder",
-   "price": 0.495,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 26888,
-   "names": [
-    "justwins",
-    "monkeymashingkeyboard"
-   ],
-   "game_start": "2026-11-22T23:00+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nba-okc-mia-2026-11-22"
   }
  ]
 }
