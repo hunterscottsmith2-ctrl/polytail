@@ -1,15 +1,15 @@
 {
- "at": "2026-11-21T23:58:08+00:00",
+ "at": "2026-11-22T00:01:06+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
  "rows": 6461,
  "skipped_redeemable_or_no_outcome": 6089,
- "under_min_value": 198,
- "already_ended": 23,
+ "under_min_value": 197,
+ "already_ended": 32,
  "ends_too_late": 46,
- "kept": 105,
+ "kept": 97,
  "wallets_needing_extra_pages": 4,
  "wallets_over_3000_rows": 0,
  "sample_keys": [
@@ -51,12 +51,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
-  "outcome": "Yes",
-  "outcome_index": 0,
-  "current_value": 0.0,
-  "end_date": "2026-07-12",
-  "redeemable": true
+  "title": "Kings vs. Senators",
+  "outcome": "Senators",
+  "outcome_index": 1,
+  "current_value": 150919.3639,
+  "end_date": "2026-11-22",
+  "redeemable": false
  },
  "leans_not_alerts": []
 }
