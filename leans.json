@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T18:17:16+00:00",
+ "at": "2026-11-22T18:20:15+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -20,10 +20,10 @@
   {
    "title": "Spread: Jaguars (-5.5)",
    "pick": "Jaguars",
-   "price": 0.525,
+   "price": 0.535,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 9114,
+   "total_value": 9288,
    "names": [
     "darkumbreon88",
     "monkeymashingkeyboard"
