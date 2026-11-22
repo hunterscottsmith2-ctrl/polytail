@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T20:38:21+00:00",
+ "at": "2026-11-22T20:41:22+00:00",
  "wallets_watched": 135,
- "signals": 0,
+ "signals": 1,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 115,
- "rows": 26814,
- "skipped_redeemable_or_no_outcome": 24179,
+ "rows": 26817,
+ "skipped_redeemable_or_no_outcome": 24178,
  "under_min_value": 2486,
  "already_ended": 6,
  "ends_too_late": 43,
- "kept": 100,
+ "kept": 104,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -51,14 +51,30 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
+  {
+   "title": "Jets vs. Chargers",
+   "pick": "Chargers",
+   "price": 0.605,
+   "wallets": 3,
+   "opposing_wallets": 0,
+   "total_value": 153103,
+   "names": [
+    "cosmicxbt",
+    "darkumbreon88",
+    "hi774c"
+   ],
+   "game_start": "2026-11-22T21:05+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-nyj-lac-2026-11-22"
+  },
   {
    "title": "Jaguars vs. Giants",
    "pick": "Jaguars",
@@ -74,21 +90,6 @@
    "game_start": "2026-11-22T21:25+00:00",
    "end_date": "2026-11-22",
    "event_slug": "nfl-jax-nyg-2026-11-22"
-  },
-  {
-   "title": "Jets vs. Chargers",
-   "pick": "Chargers",
-   "price": 0.605,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 127944,
-   "names": [
-    "cosmicxbt",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-22T21:05+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-nyj-lac-2026-11-22"
   }
  ]
 }

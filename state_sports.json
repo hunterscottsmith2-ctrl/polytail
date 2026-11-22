@@ -20,7 +20,20 @@
    "outcome": "Jaguars",
    "title": "Jaguars vs. Giants",
    "wallets": 3
+  },
+  "0xeb0627e2db47f132eb6fc19150580aafe384ee8ef62b21725b80dc5e549ba9ac|1": {
+   "first_seen": "2026-11-22T20:41+00:00",
+   "outcome": "Chargers",
+   "title": "Jets vs. Chargers",
+   "wallets": 3
   }
  },
- "recheck": []
+ "recheck": [
+  {
+   "alerted_at": "2026-11-22T20:41:23+00:00",
+   "key": "0xeb0627e2db47f132eb6fc19150580aafe384ee8ef62b21725b80dc5e549ba9ac|1",
+   "token": "99395985274074315456039113017660137869175093286297612943315926916647689921210",
+   "ts": 1795380083.2347825
+  }
+ ]
 }
