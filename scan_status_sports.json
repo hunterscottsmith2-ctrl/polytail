@@ -1,12 +1,12 @@
 {
- "at": "2026-11-22T01:58:27+00:00",
+ "at": "2026-11-22T02:01:27+00:00",
  "wallets_watched": 135,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 116,
- "rows": 26738,
+ "rows": 26739,
  "skipped_redeemable_or_no_outcome": 24187,
- "under_min_value": 2421,
+ "under_min_value": 2422,
  "already_ended": 9,
  "ends_too_late": 44,
  "kept": 77,
@@ -59,21 +59,6 @@
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Ducks vs. Utah",
-   "pick": "Ducks",
-   "price": 0.425,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 73005,
-   "names": [
-    "taylorsversion",
-    "chubbytoro"
-   ],
-   "game_start": "2026-11-22T02:00+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nhl-ana-utah-2026-11-21"
-  },
   {
    "title": "Spread: Chiefs (-16.5)",
    "pick": "Cardinals",
