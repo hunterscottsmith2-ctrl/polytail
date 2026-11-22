@@ -1,12 +1,12 @@
 {
- "at": "2026-11-22T00:49:18+00:00",
+ "at": "2026-11-22T00:52:18+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
- "rows": 6464,
+ "rows": 6465,
  "skipped_redeemable_or_no_outcome": 6092,
- "under_min_value": 198,
+ "under_min_value": 199,
  "already_ended": 26,
  "ends_too_late": 46,
  "kept": 102,
@@ -51,12 +51,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Kings vs. Senators",
-  "outcome": "Senators",
-  "outcome_index": 1,
-  "current_value": 99442.9917,
-  "end_date": "2026-11-22",
-  "redeemable": false
+  "title": "Will England win the 2026 FIFA World Cup?",
+  "outcome": "Yes",
+  "outcome_index": 0,
+  "current_value": 0.0,
+  "end_date": "2026-07-20",
+  "redeemable": true
  },
  "leans_not_alerts": []
 }
