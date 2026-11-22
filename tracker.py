@@ -52,6 +52,9 @@ SETTINGS = {
     # while exactly 4 held up. Only alert when exactly 4 agree.
     "MAX_WALLETS_AGREEING": 4,
     "MIN_NET_WALLETS": 3,            # agreeing wallets minus wallets on the other side
+    # False = skip wallets.json and watch the leaderboard pool minus bots/hedgers (wallets_pool.json).
+    # Nov 21 backtest: profit-scored wallets did NOT beat that pool, and rarely had 3+ agree.
+    "USE_SCORED_WALLETS": True,
     # Freshness filters
     "FRESH_HOURS": 2,                # the Nth wallet must have got in within this window
     "MAX_RUNUP": 0.05,               # skip if price is >5c above their avg entry
@@ -439,7 +442,7 @@ def main():
     alerted = state.setdefault("alerted", {})
     run_rechecks(state, FILLS_FILE)   # what could you really buy at, a few minutes after each alert?
 
-    wallets = scored_wallets(cfg)
+    wallets = scored_wallets(cfg) if cfg["USE_SCORED_WALLETS"] else {}
     source = "backtest-scored wallets.json"
     if not wallets:
         wallets, source = leaderboard_wallets(cfg), "leaderboard"
