@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T17:50:07+00:00",
+ "at": "2026-11-22T17:53:05+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.425,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 21855,
+   "total_value": 21921,
    "names": [
     "CORGII",
     "0xE16D3F2A5807999b358aFfD9445C3a09E45E5e30-1776429210592"
@@ -34,6 +34,21 @@
    "event_slug": "nfl-tb-det-2026-11-22"
   },
   {
+   "title": "Ravens vs. Panthers",
+   "pick": "Panthers",
+   "price": 0.565,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 407962,
+   "names": [
+    "999585",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-22T18:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-bal-car-2026-11-22"
+  },
+  {
    "title": "Jaguars vs. Giants",
    "pick": "Jaguars",
    "price": 0.725,
@@ -47,21 +62,6 @@
    "game_start": "2026-11-22T21:25+00:00",
    "end_date": "2026-11-22",
    "event_slug": "nfl-jax-nyg-2026-11-22"
-  },
-  {
-   "title": "Ravens vs. Panthers",
-   "pick": "Panthers",
-   "price": 0.565,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 171762,
-   "names": [
-    "999585",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-22T18:00+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-bal-car-2026-11-22"
   },
   {
    "title": "Spread: Jaguars (-5.5)",
