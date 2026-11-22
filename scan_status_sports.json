@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T22:44:21+00:00",
+ "at": "2026-11-22T22:47:22+00:00",
  "wallets_watched": 135,
  "signals": 0,
- "most_wallets_on_one_side": 3,
+ "most_wallets_on_one_side": 2,
  "wallets_with_rows": 115,
- "rows": 26522,
- "skipped_redeemable_or_no_outcome": 23993,
- "under_min_value": 2423,
+ "rows": 26513,
+ "skipped_redeemable_or_no_outcome": 23984,
+ "under_min_value": 2424,
  "already_ended": 6,
  "ends_too_late": 45,
- "kept": 55,
+ "kept": 54,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -80,7 +80,7 @@
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 26887,
+   "total_value": 26888,
    "names": [
     "justwins",
     "monkeymashingkeyboard"
