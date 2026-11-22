@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T00:34:07+00:00",
+ "at": "2026-11-22T00:37:07+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
@@ -7,9 +7,9 @@
  "rows": 6465,
  "skipped_redeemable_or_no_outcome": 6090,
  "under_min_value": 200,
- "already_ended": 30,
+ "already_ended": 29,
  "ends_too_late": 46,
- "kept": 99,
+ "kept": 100,
  "wallets_needing_extra_pages": 4,
  "wallets_over_3000_rows": 0,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Counter-Strike: THUNDER dOWNUNDER vs BIG (BO1) - IEM Cologne Major Stage 1",
-  "outcome": "THUNDER dOWNUNDER",
+  "title": "Lionel Messi: 1+ goals",
+  "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-03",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": []
