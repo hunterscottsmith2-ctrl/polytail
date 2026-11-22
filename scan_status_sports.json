@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T12:41:01+00:00",
+ "at": "2026-11-22T12:44:02+00:00",
  "wallets_watched": 138,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 118,
- "rows": 26976,
- "skipped_redeemable_or_no_outcome": 24468,
- "under_min_value": 2389,
+ "rows": 26977,
+ "skipped_redeemable_or_no_outcome": 24470,
+ "under_min_value": 2387,
  "already_ended": 6,
  "ends_too_late": 44,
- "kept": 69,
+ "kept": 70,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -62,10 +62,10 @@
   {
    "title": "FC Barcelona vs. Villarreal CF: O/U 4.5",
    "pick": "Over",
-   "price": 0.525,
+   "price": 0.535,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 116427,
+   "total_value": 138463,
    "names": [
     "nb1985",
     "DaBossHogg"
