@@ -1,7 +1,22 @@
 {
- "at": "2026-11-22T14:02:01+00:00",
+ "at": "2026-11-22T14:05:02+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Jaguars vs. Giants",
+   "pick": "Jaguars",
+   "price": 0.715,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 199404,
+   "names": [
+    "Kch-Temp",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-22T21:25+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-jax-nyg-2026-11-22"
+  },
   {
    "title": "Titans vs. Cowboys",
    "pick": "Titans",
