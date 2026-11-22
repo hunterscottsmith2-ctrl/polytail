@@ -1,12 +1,12 @@
 {
- "at": "2026-11-22T22:17:14+00:00",
+ "at": "2026-11-22T22:20:15+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 102,
- "rows": 33662,
+ "rows": 33660,
  "skipped_redeemable_or_no_outcome": 27411,
- "under_min_value": 5782,
+ "under_min_value": 5780,
  "already_ended": 20,
  "ends_too_late": 114,
  "kept": 335,
@@ -65,7 +65,7 @@
    "price": 0.645,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 29716,
+   "total_value": 29741,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
     "darkumbreon88"
