@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T21:32:15+00:00",
+ "at": "2026-11-22T21:35:15+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 103,
- "rows": 33680,
+ "rows": 33672,
  "skipped_redeemable_or_no_outcome": 27390,
- "under_min_value": 5808,
+ "under_min_value": 5806,
  "already_ended": 20,
  "ends_too_late": 113,
- "kept": 349,
+ "kept": 343,
  "wallets_needing_extra_pages": 19,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -65,7 +65,7 @@
    "price": 0.645,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 25787,
+   "total_value": 25793,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
     "darkumbreon88"
