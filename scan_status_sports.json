@@ -1,12 +1,12 @@
 {
- "at": "2026-11-22T02:55:28+00:00",
+ "at": "2026-11-22T02:58:29+00:00",
  "wallets_watched": 137,
  "signals": 0,
  "most_wallets_on_one_side": 5,
  "wallets_with_rows": 117,
- "rows": 26760,
- "skipped_redeemable_or_no_outcome": 24206,
- "under_min_value": 2430,
+ "rows": 26759,
+ "skipped_redeemable_or_no_outcome": 24204,
+ "under_min_value": 2431,
  "already_ended": 6,
  "ends_too_late": 44,
  "kept": 74,
@@ -62,10 +62,10 @@
   {
    "title": "Spread: Chiefs (-16.5)",
    "pick": "Cardinals",
-   "price": 0.525,
+   "price": 0.535,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 21913,
+   "total_value": 22330,
    "names": [
     "monkeymashingkeyboard",
     "bands1"

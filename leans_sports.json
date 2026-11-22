@@ -1,14 +1,14 @@
 {
- "at": "2026-11-22T02:55:28+00:00",
+ "at": "2026-11-22T02:58:29+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Spread: Chiefs (-16.5)",
    "pick": "Cardinals",
-   "price": 0.525,
+   "price": 0.535,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 21913,
+   "total_value": 22330,
    "names": [
     "monkeymashingkeyboard",
     "bands1"

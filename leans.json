@@ -1,15 +1,16 @@
 {
- "at": "2026-11-22T02:55:21+00:00",
+ "at": "2026-11-22T02:58:22+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Spread: Celtics (-12.5)",
    "pick": "Kings",
    "price": 0.515,
-   "wallets": 2,
+   "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 7038,
+   "total_value": 21893,
    "names": [
+    "BrotherObama",
     "0xb4F978BE63cDF75554b0B46a4262a6dB597cc9A7-1779258330186",
     "shekelmeister"
    ],
