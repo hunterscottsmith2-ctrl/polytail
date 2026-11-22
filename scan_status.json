@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T04:37:21+00:00",
+ "at": "2026-11-22T04:40:21+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
  "rows": 6464,
  "skipped_redeemable_or_no_outcome": 6104,
- "under_min_value": 194,
+ "under_min_value": 195,
  "already_ended": 24,
  "ends_too_late": 46,
- "kept": 96,
+ "kept": 95,
  "wallets_needing_extra_pages": 4,
  "wallets_over_3000_rows": 0,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Baltimore Orioles vs. St. Louis Cardinals",
-  "outcome": "Baltimore Orioles",
+  "title": "Spread: Spurs (-15.5)",
+  "outcome": "Spurs",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-09-03",
+  "end_date": "2026-11-20",
   "redeemable": true
  },
  "leans_not_alerts": []
