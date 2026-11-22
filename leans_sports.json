@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T22:50:21+00:00",
+ "at": "2026-11-22T22:53:22+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -31,6 +31,21 @@
    "game_start": "2026-11-23T00:00+00:00",
    "end_date": "2026-11-23",
    "event_slug": "nba-den-chi-2026-11-22"
+  },
+  {
+   "title": "Vikings vs. 49ers: O/U 46.5",
+   "pick": "Over",
+   "price": 0.455,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 22357,
+   "names": [
+    "bands1",
+    "Pwaddler"
+   ],
+   "game_start": "2026-11-23T01:20+00:00",
+   "end_date": "2026-11-23",
+   "event_slug": "nfl-min-sf-2026-11-23"
   }
  ]
 }
