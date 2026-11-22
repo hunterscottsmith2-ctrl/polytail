@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T00:19:13+00:00",
+ "at": "2026-11-22T00:22:14+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 116,
  "rows": 26465,
- "skipped_redeemable_or_no_outcome": 23902,
- "under_min_value": 2435,
+ "skipped_redeemable_or_no_outcome": 23900,
+ "under_min_value": 2436,
  "already_ended": 25,
  "ends_too_late": 46,
- "kept": 57,
+ "kept": 58,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -65,7 +65,7 @@
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 34673,
+   "total_value": 34700,
    "names": [
     "yabanci",
     "hi774c"
