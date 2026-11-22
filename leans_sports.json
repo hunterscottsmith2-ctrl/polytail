@@ -1,23 +1,7 @@
 {
- "at": "2026-11-22T20:56:22+00:00",
+ "at": "2026-11-22T20:59:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
-  {
-   "title": "Jets vs. Chargers",
-   "pick": "Chargers",
-   "price": 0.605,
-   "wallets": 3,
-   "opposing_wallets": 0,
-   "total_value": 153151,
-   "names": [
-    "cosmicxbt",
-    "darkumbreon88",
-    "hi774c"
-   ],
-   "game_start": "2026-11-22T21:05+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-nyj-lac-2026-11-22"
-  },
   {
    "title": "Jaguars vs. Giants",
    "pick": "Jaguars",
@@ -33,6 +17,22 @@
    "game_start": "2026-11-22T21:25+00:00",
    "end_date": "2026-11-22",
    "event_slug": "nfl-jax-nyg-2026-11-22"
+  },
+  {
+   "title": "Jets vs. Chargers",
+   "pick": "Chargers",
+   "price": 0.595,
+   "wallets": 3,
+   "opposing_wallets": 1,
+   "total_value": 162644,
+   "names": [
+    "cosmicxbt",
+    "hi774c",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-22T21:05+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-nyj-lac-2026-11-22"
   }
  ]
 }
