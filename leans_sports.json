@@ -1,23 +1,7 @@
 {
- "at": "2026-11-22T16:53:13+00:00",
+ "at": "2026-11-22T16:56:14+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
-  {
-   "title": "Jaguars vs. Giants",
-   "pick": "Jaguars",
-   "price": 0.715,
-   "wallets": 3,
-   "opposing_wallets": 1,
-   "total_value": 210822,
-   "names": [
-    "Kch-Temp",
-    "Siddhartha1",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-22T21:25+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-jax-nyg-2026-11-22"
-  },
   {
    "title": "Steelers vs. Eagles",
    "pick": "Eagles",
@@ -49,6 +33,22 @@
    "game_start": "2026-11-22T18:00+00:00",
    "end_date": "2026-11-22",
    "event_slug": "nfl-pit-phi-2026-11-22"
+  },
+  {
+   "title": "Jaguars vs. Giants",
+   "pick": "Jaguars",
+   "price": 0.715,
+   "wallets": 3,
+   "opposing_wallets": 2,
+   "total_value": 210822,
+   "names": [
+    "Kch-Temp",
+    "Siddhartha1",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-22T21:25+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-jax-nyg-2026-11-22"
   },
   {
    "title": "Spread: Lions (-6.5)",

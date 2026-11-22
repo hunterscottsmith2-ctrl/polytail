@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T16:53:13+00:00",
+ "at": "2026-11-22T16:56:14+00:00",
  "wallets_watched": 137,
- "signals": 3,
+ "signals": 2,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 117,
- "rows": 26873,
- "skipped_redeemable_or_no_outcome": 24200,
- "under_min_value": 2514,
+ "rows": 26875,
+ "skipped_redeemable_or_no_outcome": 24223,
+ "under_min_value": 2490,
  "already_ended": 6,
  "ends_too_late": 45,
- "kept": 108,
+ "kept": 111,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -51,30 +51,14 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Jaguars vs. Giants",
-   "pick": "Jaguars",
-   "price": 0.715,
-   "wallets": 3,
-   "opposing_wallets": 1,
-   "total_value": 210822,
-   "names": [
-    "Kch-Temp",
-    "Siddhartha1",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-22T21:25+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-jax-nyg-2026-11-22"
-  },
   {
    "title": "Steelers vs. Eagles",
    "pick": "Eagles",
@@ -106,6 +90,22 @@
    "game_start": "2026-11-22T18:00+00:00",
    "end_date": "2026-11-22",
    "event_slug": "nfl-pit-phi-2026-11-22"
+  },
+  {
+   "title": "Jaguars vs. Giants",
+   "pick": "Jaguars",
+   "price": 0.715,
+   "wallets": 3,
+   "opposing_wallets": 2,
+   "total_value": 210822,
+   "names": [
+    "Kch-Temp",
+    "Siddhartha1",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-22T21:25+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-jax-nyg-2026-11-22"
   },
   {
    "title": "Spread: Lions (-6.5)",
