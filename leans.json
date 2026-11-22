@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T17:44:06+00:00",
+ "at": "2026-11-22T17:47:06+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -21,10 +21,10 @@
   {
    "title": "Jaguars vs. Giants",
    "pick": "Jaguars",
-   "price": 0.715,
+   "price": 0.725,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 200751,
+   "total_value": 203559,
    "names": [
     "Kch-Temp",
     "darkumbreon88"
@@ -47,22 +47,6 @@
    "game_start": "2026-11-22T18:00+00:00",
    "end_date": "2026-11-22",
    "event_slug": "nfl-bal-car-2026-11-22"
-  },
-  {
-   "title": "Spread: Chiefs (-16.5)",
-   "pick": "Cardinals",
-   "price": 0.535,
-   "wallets": 3,
-   "opposing_wallets": 2,
-   "total_value": 23419,
-   "names": [
-    "monkeymashingkeyboard",
-    "bands1",
-    "justwins"
-   ],
-   "game_start": "2026-11-22T18:00+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-ari-kc-2026-11-22"
   },
   {
    "title": "Spread: Jaguars (-5.5)",

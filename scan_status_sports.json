@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T17:44:13+00:00",
+ "at": "2026-11-22T17:47:14+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 117,
- "rows": 26840,
+ "rows": 26843,
  "skipped_redeemable_or_no_outcome": 24159,
  "under_min_value": 2506,
  "already_ended": 6,
  "ends_too_late": 45,
- "kept": 124,
+ "kept": 127,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -62,10 +62,10 @@
   {
    "title": "Jaguars vs. Giants",
    "pick": "Jaguars",
-   "price": 0.715,
+   "price": 0.725,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 210822,
+   "total_value": 213770,
    "names": [
     "Kch-Temp",
     "Siddhartha1",
@@ -136,6 +136,21 @@
    "game_start": "2026-11-22T18:00+00:00",
    "end_date": "2026-11-22",
    "event_slug": "nfl-tb-det-2026-11-22"
+  },
+  {
+   "title": "Spread: Bills (-16.5)",
+   "pick": "Bills",
+   "price": 0.525,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 16220,
+   "names": [
+    "Pwaddler",
+    "Siddhartha1"
+   ],
+   "game_start": "2026-11-22T18:00+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-mia-buf-2026-11-22"
   }
  ]
 }
