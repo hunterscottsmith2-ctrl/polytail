@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T21:05:22+00:00",
+ "at": "2026-11-22T21:08:21+00:00",
  "wallets_watched": 135,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 115,
- "rows": 26815,
- "skipped_redeemable_or_no_outcome": 24181,
- "under_min_value": 2495,
+ "rows": 26818,
+ "skipped_redeemable_or_no_outcome": 24180,
+ "under_min_value": 2498,
  "already_ended": 6,
  "ends_too_late": 43,
- "kept": 90,
+ "kept": 91,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -74,6 +74,21 @@
    "game_start": "2026-11-22T21:25+00:00",
    "end_date": "2026-11-22",
    "event_slug": "nfl-jax-nyg-2026-11-22"
+  },
+  {
+   "title": "Raiders vs. Broncos",
+   "pick": "Broncos",
+   "price": 0.845,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 46347,
+   "names": [
+    "scootergene",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-22T21:25+00:00",
+   "end_date": "2026-11-22",
+   "event_slug": "nfl-lv-den-2026-11-22"
   }
  ]
 }
