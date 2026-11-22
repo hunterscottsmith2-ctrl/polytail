@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T21:08:21+00:00",
+ "at": "2026-11-22T21:11:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -17,21 +17,6 @@
    "game_start": "2026-11-22T21:25+00:00",
    "end_date": "2026-11-22",
    "event_slug": "nfl-jax-nyg-2026-11-22"
-  },
-  {
-   "title": "Raiders vs. Broncos",
-   "pick": "Broncos",
-   "price": 0.845,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 46347,
-   "names": [
-    "scootergene",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-22T21:25+00:00",
-   "end_date": "2026-11-22",
-   "event_slug": "nfl-lv-den-2026-11-22"
   }
  ]
 }
