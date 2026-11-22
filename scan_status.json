@@ -1,15 +1,15 @@
 {
- "at": "2026-11-22T23:53:26+00:00",
+ "at": "2026-11-22T23:56:25+00:00",
  "wallets_watched": 121,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 104,
- "rows": 33774,
- "skipped_redeemable_or_no_outcome": 27551,
- "under_min_value": 5755,
+ "rows": 33773,
+ "skipped_redeemable_or_no_outcome": 27550,
+ "under_min_value": 5754,
  "already_ended": 20,
  "ends_too_late": 114,
- "kept": 334,
+ "kept": 335,
  "wallets_needing_extra_pages": 19,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -77,10 +77,10 @@
   {
    "title": "Spread: Magic (-4.5)",
    "pick": "Magic",
-   "price": 0.515,
+   "price": 0.525,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 221260,
+   "total_value": 251564,
    "names": [
     "googleplay",
     "justwins"
@@ -92,10 +92,10 @@
   {
    "title": "Nuggets vs. Bulls: O/U 236.5",
    "pick": "Over",
-   "price": 0.535,
+   "price": 0.545,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 20338,
+   "total_value": 20718,
    "names": [
     "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
     "justwins"

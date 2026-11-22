@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T23:53:26+00:00",
+ "at": "2026-11-22T23:56:25+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -20,10 +20,10 @@
   {
    "title": "Spread: Magic (-4.5)",
    "pick": "Magic",
-   "price": 0.515,
+   "price": 0.525,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 221260,
+   "total_value": 251564,
    "names": [
     "googleplay",
     "justwins"
@@ -35,10 +35,10 @@
   {
    "title": "Nuggets vs. Bulls: O/U 236.5",
    "pick": "Over",
-   "price": 0.535,
+   "price": 0.545,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 20338,
+   "total_value": 20718,
    "names": [
     "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
     "justwins"
