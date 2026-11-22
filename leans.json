@@ -1,14 +1,14 @@
 {
- "at": "2026-11-22T23:08:15+00:00",
+ "at": "2026-11-22T23:11:15+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Vikings vs. 49ers",
    "pick": "49ers",
-   "price": 0.645,
+   "price": 0.655,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 32544,
+   "total_value": 33049,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
     "darkumbreon88"
