@@ -1,15 +1,15 @@
 {
- "at": "2026-11-23T22:45:34+00:00",
+ "at": "2026-11-23T22:48:27+00:00",
  "wallets_watched": 135,
  "signals": 0,
  "most_wallets_on_one_side": 3,
- "wallets_with_rows": 115,
- "rows": 26439,
- "skipped_redeemable_or_no_outcome": 23871,
- "under_min_value": 2461,
+ "wallets_with_rows": 116,
+ "rows": 26441,
+ "skipped_redeemable_or_no_outcome": 23869,
+ "under_min_value": 2463,
  "already_ended": 7,
  "ends_too_late": 48,
- "kept": 52,
+ "kept": 54,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -77,10 +77,10 @@
   {
    "title": "Trail Blazers vs. 76ers",
    "pick": "76ers",
-   "price": 0.535,
+   "price": 0.515,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 47994,
+   "total_value": 46200,
    "names": [
     "0x9f15613ebf1f36d4bc679e1211d1fc567cf9bdb3",
     "hi774c",
@@ -104,6 +104,21 @@
    "game_start": "2026-11-24T00:30+00:00",
    "end_date": "2026-11-24",
    "event_slug": "nba-bkn-min-2026-11-23"
+  },
+  {
+   "title": "Spread: 76ers (-2.5)",
+   "pick": "76ers",
+   "price": 0.445,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 14536,
+   "names": [
+    "tian888",
+    "hi774c"
+   ],
+   "game_start": "2026-11-24T00:00+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "nba-por-phi-2026-11-23"
   }
  ]
 }

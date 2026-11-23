@@ -1,15 +1,15 @@
 {
- "at": "2026-11-23T22:45:28+00:00",
+ "at": "2026-11-23T22:48:21+00:00",
  "wallets_watched": 125,
  "signals": 0,
  "most_wallets_on_one_side": 4,
- "wallets_with_rows": 105,
- "rows": 37094,
- "skipped_redeemable_or_no_outcome": 30542,
- "under_min_value": 6074,
+ "wallets_with_rows": 106,
+ "rows": 37095,
+ "skipped_redeemable_or_no_outcome": 30543,
+ "under_min_value": 6073,
  "already_ended": 19,
  "ends_too_late": 105,
- "kept": 354,
+ "kept": 355,
  "wallets_needing_extra_pages": 22,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -80,7 +80,7 @@
    "price": 0.655,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 3059,
+   "total_value": 3179,
    "names": [
     "shekelmeister",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
