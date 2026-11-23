@@ -1,12 +1,12 @@
 {
- "at": "2026-11-23T23:21:21+00:00",
+ "at": "2026-11-23T23:24:22+00:00",
  "wallets_watched": 126,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 107,
- "rows": 37222,
- "skipped_redeemable_or_no_outcome": 30699,
- "under_min_value": 6035,
+ "rows": 37221,
+ "skipped_redeemable_or_no_outcome": 30697,
+ "under_min_value": 6036,
  "already_ended": 19,
  "ends_too_late": 104,
  "kept": 365,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -107,10 +107,10 @@
   {
    "title": "Trail Blazers vs. 76ers",
    "pick": "Trail Blazers",
-   "price": 0.485,
+   "price": 0.495,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 34124,
+   "total_value": 34828,
    "names": [
     "monkeymashingkeyboard",
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
