@@ -1,12 +1,4 @@
 {
- "alerted": {
-  "0xeb0627e2db47f132eb6fc19150580aafe384ee8ef62b21725b80dc5e549ba9ac|1": {
-   "first_seen": "2026-11-22T20:41+00:00",
-   "gone_at": 1795381522.5610967,
-   "outcome": "Chargers",
-   "title": "Jets vs. Chargers",
-   "wallets": 3
-  }
- },
+ "alerted": {},
  "recheck": []
 }
