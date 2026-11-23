@@ -1,29 +1,14 @@
 {
- "at": "2026-11-23T00:41:33+00:00",
+ "at": "2026-11-23T00:44:32+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
-   "title": "Pacers vs. Knicks",
-   "pick": "Knicks",
-   "price": 0.685,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 45657,
-   "names": [
-    "darkumbreon88",
-    "hi774c"
-   ],
-   "game_start": "2026-11-23T01:00+00:00",
-   "end_date": "2026-11-23",
-   "event_slug": "nba-ind-nyk-2026-11-22"
-  },
-  {
    "title": "Vikings vs. 49ers: O/U 46.5",
    "pick": "Over",
-   "price": 0.455,
+   "price": 0.445,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 22357,
+   "total_value": 21866,
    "names": [
     "bands1",
     "Pwaddler"
