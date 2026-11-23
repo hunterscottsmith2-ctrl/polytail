@@ -1,12 +1,12 @@
 {
- "at": "2026-11-23T19:03:21+00:00",
+ "at": "2026-11-23T19:06:21+00:00",
  "wallets_watched": 135,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 116,
  "rows": 26447,
- "skipped_redeemable_or_no_outcome": 23875,
- "under_min_value": 2467,
+ "skipped_redeemable_or_no_outcome": 23874,
+ "under_min_value": 2468,
  "already_ended": 6,
  "ends_too_late": 48,
  "kept": 51,
@@ -62,10 +62,10 @@
   {
    "title": "Will Brentford FC win on 2026-11-23?",
    "pick": "Yes",
-   "price": 0.425,
+   "price": 0.435,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 454750,
+   "total_value": 465450,
    "names": [
     "3edmond.dantes",
     "plonker2026"
