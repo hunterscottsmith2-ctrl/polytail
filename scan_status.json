@@ -1,13 +1,13 @@
 {
- "at": "2026-11-23T00:11:26+00:00",
+ "at": "2026-11-23T00:14:26+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 105,
- "rows": 34608,
+ "rows": 34646,
  "skipped_redeemable_or_no_outcome": 28367,
- "under_min_value": 5760,
- "already_ended": 41,
+ "under_min_value": 5799,
+ "already_ended": 40,
  "ends_too_late": 114,
  "kept": 326,
  "wallets_needing_extra_pages": 20,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
