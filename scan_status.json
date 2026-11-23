@@ -1,15 +1,15 @@
 {
- "at": "2026-11-23T20:48:15+00:00",
+ "at": "2026-11-23T20:51:13+00:00",
  "wallets_watched": 126,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 107,
- "rows": 37258,
+ "rows": 37260,
  "skipped_redeemable_or_no_outcome": 30646,
- "under_min_value": 6123,
+ "under_min_value": 6124,
  "already_ended": 18,
  "ends_too_late": 104,
- "kept": 367,
+ "kept": 368,
  "wallets_needing_extra_pages": 21,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -95,7 +95,7 @@
    "price": 0.655,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 2534,
+   "total_value": 2581,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "shekelmeister"
