@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T21:09:23+00:00",
+ "at": "2026-11-23T21:12:23+00:00",
  "wallets_watched": 135,
  "signals": 0,
  "most_wallets_on_one_side": 4,
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Nets vs. Timberwolves: O/U 223.5",
    "pick": "Under",
-   "price": 0.51,
+   "price": 0.505,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 40133,
+   "total_value": 39740,
    "names": [
     "justwins",
     "shekelmeister"
