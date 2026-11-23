@@ -1,12 +1,12 @@
 {
- "at": "2026-11-23T21:27:13+00:00",
+ "at": "2026-11-23T21:30:13+00:00",
  "wallets_watched": 127,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 108,
- "rows": 37352,
+ "rows": 37353,
  "skipped_redeemable_or_no_outcome": 30759,
- "under_min_value": 6095,
+ "under_min_value": 6096,
  "already_ended": 18,
  "ends_too_late": 105,
  "kept": 375,
@@ -62,10 +62,10 @@
   {
    "title": "Trail Blazers vs. 76ers",
    "pick": "Trail Blazers",
-   "price": 0.435,
+   "price": 0.425,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 17556,
+   "total_value": 17152,
    "names": [
     "monkeymashingkeyboard",
     "shekelmeister"
@@ -95,7 +95,7 @@
    "price": 0.655,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 2754,
+   "total_value": 2763,
    "names": [
     "shekelmeister",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
