@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T23:09:20+00:00",
+ "at": "2026-11-23T23:12:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -50,10 +50,10 @@
   {
    "title": "Trail Blazers vs. 76ers",
    "pick": "Trail Blazers",
-   "price": 0.485,
+   "price": 0.475,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 29274,
+   "total_value": 33420,
    "names": [
     "monkeymashingkeyboard",
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
