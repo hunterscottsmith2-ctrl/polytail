@@ -1,45 +1,14 @@
 {
- "at": "2026-11-23T19:57:22+00:00",
+ "at": "2026-11-23T20:00:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
-  {
-   "title": "Will Brentford FC win on 2026-11-23?",
-   "pick": "Yes",
-   "price": 0.455,
-   "wallets": 3,
-   "opposing_wallets": 0,
-   "total_value": 653031,
-   "names": [
-    "3edmond.dantes",
-    "plonker2026",
-    "Siddhartha1"
-   ],
-   "game_start": "2026-11-23T20:00+00:00",
-   "end_date": "2026-11-23",
-   "event_slug": "epl-bre-eve-2026-11-23"
-  },
-  {
-   "title": "Will Everton FC win on 2026-11-23?",
-   "pick": "No",
-   "price": 0.725,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 1255960,
-   "names": [
-    "3edmond.dantes",
-    "Siddhartha1"
-   ],
-   "game_start": "2026-11-23T20:00+00:00",
-   "end_date": "2026-11-23",
-   "event_slug": "epl-bre-eve-2026-11-23"
-  },
   {
    "title": "Nets vs. Timberwolves: O/U 223.5",
    "pick": "Under",
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 38942,
+   "total_value": 38943,
    "names": [
     "justwins",
     "shekelmeister"
