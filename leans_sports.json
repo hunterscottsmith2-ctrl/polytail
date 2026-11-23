@@ -1,7 +1,22 @@
 {
- "at": "2026-11-23T19:00:21+00:00",
+ "at": "2026-11-23T19:03:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Will Brentford FC win on 2026-11-23?",
+   "pick": "Yes",
+   "price": 0.425,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 454750,
+   "names": [
+    "3edmond.dantes",
+    "plonker2026"
+   ],
+   "game_start": "2026-11-23T20:00+00:00",
+   "end_date": "2026-11-23",
+   "event_slug": "epl-bre-eve-2026-11-23"
+  },
   {
    "title": "Nets vs. Timberwolves: O/U 223.5",
    "pick": "Under",
