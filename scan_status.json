@@ -1,15 +1,15 @@
 {
- "at": "2026-11-23T16:32:53+00:00",
+ "at": "2026-11-23T16:35:54+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 104,
- "rows": 35711,
- "skipped_redeemable_or_no_outcome": 28870,
- "under_min_value": 6378,
+ "rows": 35705,
+ "skipped_redeemable_or_no_outcome": 28862,
+ "under_min_value": 6379,
  "already_ended": 20,
  "ends_too_late": 110,
- "kept": 333,
+ "kept": 334,
  "wallets_needing_extra_pages": 20,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -65,7 +65,7 @@
    "price": 0.425,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 16755,
+   "total_value": 16766,
    "names": [
     "monkeymashingkeyboard",
     "shekelmeister"
@@ -110,7 +110,7 @@
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 35869,
+   "total_value": 36059,
    "names": [
     "justwins",
     "shekelmeister"
