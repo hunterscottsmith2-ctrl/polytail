@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T23:33:28+00:00",
+ "at": "2026-11-23T23:36:27+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -16,6 +16,21 @@
    "game_start": "2026-11-24T01:15+00:00",
    "end_date": "2026-11-24",
    "event_slug": "nfl-cin-was-2026-11-24"
+  },
+  {
+   "title": "Grizzlies vs. Hornets",
+   "pick": "Hornets",
+   "price": 0.415,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 43575,
+   "names": [
+    "monkeymashingkeyboard",
+    "shekelmeister"
+   ],
+   "game_start": "2026-11-24T00:00+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "nba-mem-cha-2026-11-23"
   },
   {
    "title": "Nets vs. Timberwolves: O/U 223.5",
