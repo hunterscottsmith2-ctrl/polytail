@@ -1,12 +1,12 @@
 {
- "at": "2026-11-23T05:59:42+00:00",
+ "at": "2026-11-23T06:02:42+00:00",
  "wallets_watched": 123,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 104,
- "rows": 36481,
+ "rows": 36480,
  "skipped_redeemable_or_no_outcome": 30366,
- "under_min_value": 5676,
+ "under_min_value": 5675,
  "already_ended": 21,
  "ends_too_late": 114,
  "kept": 304,
@@ -62,10 +62,10 @@
   {
    "title": "Will xQc finish GTA VI by November 22?",
    "pick": "No",
-   "price": 1.0,
+   "price": 0.999,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 12054,
+   "total_value": 12048,
    "names": [
     "328.400.fund",
     "Rex416"
