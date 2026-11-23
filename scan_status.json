@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T04:44:26+00:00",
+ "at": "2026-11-23T04:47:26+00:00",
  "wallets_watched": 123,
  "signals": 0,
  "most_wallets_on_one_side": 5,
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will xQc finish GTA VI by November 22?",
    "pick": "No",
-   "price": 0.976,
+   "price": 0.991,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 4342,
+   "total_value": 4411,
    "names": [
     "Rex416",
     "328.400.fund"
