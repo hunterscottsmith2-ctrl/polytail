@@ -1,15 +1,15 @@
 {
- "at": "2026-11-23T14:41:54+00:00",
+ "at": "2026-11-23T14:44:52+00:00",
  "wallets_watched": 123,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 103,
- "rows": 35720,
- "skipped_redeemable_or_no_outcome": 28958,
- "under_min_value": 6285,
+ "rows": 35763,
+ "skipped_redeemable_or_no_outcome": 28953,
+ "under_min_value": 6334,
  "already_ended": 21,
- "ends_too_late": 113,
- "kept": 343,
+ "ends_too_late": 114,
+ "kept": 341,
  "wallets_needing_extra_pages": 20,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -80,7 +80,7 @@
    "price": 0.685,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 3514,
+   "total_value": 3520,
    "names": [
     "chubbytoro",
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816"
