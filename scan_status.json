@@ -1,15 +1,15 @@
 {
- "at": "2026-11-23T21:39:14+00:00",
+ "at": "2026-11-23T21:42:13+00:00",
  "wallets_watched": 127,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 108,
- "rows": 37384,
- "skipped_redeemable_or_no_outcome": 30758,
- "under_min_value": 6125,
+ "rows": 37396,
+ "skipped_redeemable_or_no_outcome": 30757,
+ "under_min_value": 6136,
  "already_ended": 18,
- "ends_too_late": 105,
- "kept": 378,
+ "ends_too_late": 106,
+ "kept": 379,
  "wallets_needing_extra_pages": 21,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,29 +51,14 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Trail Blazers vs. 76ers",
-   "pick": "Trail Blazers",
-   "price": 0.425,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 17152,
-   "names": [
-    "monkeymashingkeyboard",
-    "shekelmeister"
-   ],
-   "game_start": "2026-11-24T00:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "nba-por-phi-2026-11-23"
-  },
   {
    "title": "Flames vs. Senators",
    "pick": "Senators",
@@ -118,6 +103,21 @@
    "game_start": "2026-11-24T00:30+00:00",
    "end_date": "2026-11-24",
    "event_slug": "nba-bkn-min-2026-11-23"
+  },
+  {
+   "title": "Trail Blazers vs. 76ers",
+   "pick": "Trail Blazers",
+   "price": 0.415,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 16749,
+   "names": [
+    "monkeymashingkeyboard",
+    "shekelmeister"
+   ],
+   "game_start": "2026-11-24T00:00+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "nba-por-phi-2026-11-23"
   }
  ]
 }

@@ -1,7 +1,23 @@
 {
- "at": "2026-11-23T21:39:21+00:00",
+ "at": "2026-11-23T21:42:22+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Trail Blazers vs. 76ers",
+   "pick": "76ers",
+   "price": 0.585,
+   "wallets": 3,
+   "opposing_wallets": 1,
+   "total_value": 47335,
+   "names": [
+    "0x9f15613ebf1f36d4bc679e1211d1fc567cf9bdb3",
+    "scootergene",
+    "hi774c"
+   ],
+   "game_start": "2026-11-24T00:00+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "nba-por-phi-2026-11-23"
+  },
   {
    "title": "Spread: Bengals (-6.5)",
    "pick": "Commanders",
@@ -32,21 +48,6 @@
    "game_start": "2026-11-24T00:30+00:00",
    "end_date": "2026-11-24",
    "event_slug": "nba-bkn-min-2026-11-23"
-  },
-  {
-   "title": "Trail Blazers vs. 76ers",
-   "pick": "76ers",
-   "price": 0.575,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 25036,
-   "names": [
-    "scootergene",
-    "hi774c"
-   ],
-   "game_start": "2026-11-24T00:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "nba-por-phi-2026-11-23"
   }
  ]
 }
