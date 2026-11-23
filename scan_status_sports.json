@@ -1,12 +1,12 @@
 {
- "at": "2026-11-23T21:12:23+00:00",
+ "at": "2026-11-23T21:15:22+00:00",
  "wallets_watched": 135,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 117,
  "rows": 26457,
- "skipped_redeemable_or_no_outcome": 23849,
- "under_min_value": 2498,
+ "skipped_redeemable_or_no_outcome": 23850,
+ "under_min_value": 2497,
  "already_ended": 7,
  "ends_too_late": 48,
  "kept": 55,
@@ -77,10 +77,10 @@
   {
    "title": "Trail Blazers vs. 76ers",
    "pick": "76ers",
-   "price": 0.555,
+   "price": 0.565,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 24165,
+   "total_value": 24600,
    "names": [
     "scootergene",
     "hi774c"
