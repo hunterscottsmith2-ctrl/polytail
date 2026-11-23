@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T23:00:27+00:00",
+ "at": "2026-11-23T23:03:27+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -69,7 +69,7 @@
    "price": 0.455,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 14863,
+   "total_value": 14854,
    "names": [
     "tian888",
     "hi774c"
