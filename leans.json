@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T23:36:22+00:00",
+ "at": "2026-11-23T23:39:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -22,10 +22,10 @@
   {
    "title": "Grizzlies vs. Hornets",
    "pick": "Hornets",
-   "price": 0.415,
+   "price": 0.425,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 43575,
+   "total_value": 44625,
    "names": [
     "monkeymashingkeyboard",
     "shekelmeister"
