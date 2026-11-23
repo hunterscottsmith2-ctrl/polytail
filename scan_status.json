@@ -1,15 +1,15 @@
 {
- "at": "2026-11-23T22:18:13+00:00",
+ "at": "2026-11-23T22:21:13+00:00",
  "wallets_watched": 125,
  "signals": 0,
  "most_wallets_on_one_side": 4,
- "wallets_with_rows": 106,
- "rows": 37099,
- "skipped_redeemable_or_no_outcome": 30531,
- "under_min_value": 6087,
+ "wallets_with_rows": 105,
+ "rows": 37086,
+ "skipped_redeemable_or_no_outcome": 30539,
+ "under_min_value": 6072,
  "already_ended": 19,
  "ends_too_late": 104,
- "kept": 358,
+ "kept": 352,
  "wallets_needing_extra_pages": 21,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -80,7 +80,7 @@
    "price": 0.655,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 2823,
+   "total_value": 2829,
    "names": [
     "shekelmeister",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
