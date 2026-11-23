@@ -1,15 +1,15 @@
 {
- "at": "2026-11-23T19:45:21+00:00",
+ "at": "2026-11-23T19:48:22+00:00",
  "wallets_watched": 135,
  "signals": 1,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 117,
- "rows": 26451,
- "skipped_redeemable_or_no_outcome": 23858,
- "under_min_value": 2486,
+ "rows": 26455,
+ "skipped_redeemable_or_no_outcome": 23854,
+ "under_min_value": 2495,
  "already_ended": 6,
  "ends_too_late": 48,
- "kept": 53,
+ "kept": 52,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -65,7 +65,7 @@
    "price": 0.455,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 648125,
+   "total_value": 648249,
    "names": [
     "3edmond.dantes",
     "plonker2026",
@@ -81,7 +81,7 @@
    "price": 0.725,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 1241460,
+   "total_value": 1255960,
    "names": [
     "3edmond.dantes",
     "Siddhartha1"

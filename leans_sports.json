@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T19:45:21+00:00",
+ "at": "2026-11-23T19:48:22+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.455,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 648125,
+   "total_value": 648249,
    "names": [
     "3edmond.dantes",
     "plonker2026",
@@ -24,7 +24,7 @@
    "price": 0.725,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 1241460,
+   "total_value": 1255960,
    "names": [
     "3edmond.dantes",
     "Siddhartha1"
