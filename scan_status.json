@@ -1,15 +1,15 @@
 {
- "at": "2026-11-23T06:59:41+00:00",
+ "at": "2026-11-23T07:02:41+00:00",
  "wallets_watched": 123,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 104,
- "rows": 36480,
- "skipped_redeemable_or_no_outcome": 30348,
- "under_min_value": 5692,
+ "rows": 36481,
+ "skipped_redeemable_or_no_outcome": 30351,
+ "under_min_value": 5694,
  "already_ended": 22,
- "ends_too_late": 114,
- "kept": 304,
+ "ends_too_late": 113,
+ "kept": 301,
  "wallets_needing_extra_pages": 21,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,28 +51,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
- "leans_not_alerts": [
-  {
-   "title": "Will xQc finish GTA VI by November 22?",
-   "pick": "No",
-   "price": 0.999,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 12048,
-   "names": [
-    "328.400.fund",
-    "Rex416"
-   ],
-   "game_start": null,
-   "end_date": "2026-11-23",
-   "event_slug": "xqc-finishes-gta-vi-by"
-  }
- ]
+ "leans_not_alerts": []
 }

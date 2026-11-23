@@ -1,21 +1,5 @@
 {
- "at": "2026-11-23T06:59:41+00:00",
+ "at": "2026-11-23T07:02:41+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": [
-  {
-   "title": "Will xQc finish GTA VI by November 22?",
-   "pick": "No",
-   "price": 0.999,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 12048,
-   "names": [
-    "328.400.fund",
-    "Rex416"
-   ],
-   "game_start": null,
-   "end_date": "2026-11-23",
-   "event_slug": "xqc-finishes-gta-vi-by"
-  }
- ]
+ "leans": []
 }
