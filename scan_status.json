@@ -1,12 +1,12 @@
 {
- "at": "2026-11-23T22:33:13+00:00",
+ "at": "2026-11-23T22:36:13+00:00",
  "wallets_watched": 125,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 105,
- "rows": 37105,
- "skipped_redeemable_or_no_outcome": 30546,
- "under_min_value": 6082,
+ "rows": 37106,
+ "skipped_redeemable_or_no_outcome": 30544,
+ "under_min_value": 6085,
  "already_ended": 19,
  "ends_too_late": 105,
  "kept": 353,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -65,7 +65,7 @@
    "price": 0.705,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 6340,
+   "total_value": 6342,
    "names": [
     "chubbytoro",
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816"
