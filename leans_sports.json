@@ -1,5 +1,21 @@
 {
- "at": "2026-11-23T16:23:59+00:00",
+ "at": "2026-11-23T16:26:59+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": []
+ "leans": [
+  {
+   "title": "Nets vs. Timberwolves: O/U 223.5",
+   "pick": "Under",
+   "price": 0.495,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 30738,
+   "names": [
+    "justwins",
+    "shekelmeister"
+   ],
+   "game_start": "2026-11-24T00:30+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "nba-bkn-min-2026-11-23"
+  }
+ ]
 }

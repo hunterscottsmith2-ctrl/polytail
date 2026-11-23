@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T16:23:54+00:00",
+ "at": "2026-11-23T16:26:54+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.425,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 16741,
+   "total_value": 16754,
    "names": [
     "monkeymashingkeyboard",
     "shekelmeister"
@@ -28,7 +28,7 @@
     "CORGII",
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816"
    ],
-   "game_start": "2026-11-23T17:00+00:00",
+   "game_start": "2026-11-23T16:45+00:00",
    "end_date": "2026-11-23",
    "event_slug": "dota2-liquid-konca-2026-11-23"
   },
@@ -46,6 +46,21 @@
    "game_start": "2026-11-24T00:30+00:00",
    "end_date": "2026-11-24",
    "event_slug": "nhl-cal-ott-2026-11-23"
+  },
+  {
+   "title": "Nets vs. Timberwolves: O/U 223.5",
+   "pick": "Under",
+   "price": 0.495,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 30691,
+   "names": [
+    "justwins",
+    "shekelmeister"
+   ],
+   "game_start": "2026-11-24T00:30+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "nba-bkn-min-2026-11-23"
   }
  ]
 }
