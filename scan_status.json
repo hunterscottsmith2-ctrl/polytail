@@ -1,12 +1,12 @@
 {
- "at": "2026-11-23T04:26:27+00:00",
+ "at": "2026-11-23T04:29:27+00:00",
  "wallets_watched": 123,
  "signals": 0,
  "most_wallets_on_one_side": 6,
  "wallets_with_rows": 105,
- "rows": 36505,
+ "rows": 36503,
  "skipped_redeemable_or_no_outcome": 30341,
- "under_min_value": 5715,
+ "under_min_value": 5713,
  "already_ended": 21,
  "ends_too_late": 111,
  "kept": 317,
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will xQc finish GTA VI by November 22?",
    "pick": "No",
-   "price": 0.965,
+   "price": 0.963,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 5740,
+   "total_value": 5728,
    "names": [
     "Rex416",
     "328.400.fund"
