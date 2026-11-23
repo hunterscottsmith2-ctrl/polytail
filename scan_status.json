@@ -1,15 +1,15 @@
 {
- "at": "2026-11-23T21:24:14+00:00",
+ "at": "2026-11-23T21:27:13+00:00",
  "wallets_watched": 127,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 108,
- "rows": 37355,
- "skipped_redeemable_or_no_outcome": 30762,
- "under_min_value": 6096,
+ "rows": 37352,
+ "skipped_redeemable_or_no_outcome": 30759,
+ "under_min_value": 6095,
  "already_ended": 18,
  "ends_too_late": 105,
- "kept": 374,
+ "kept": 375,
  "wallets_needing_extra_pages": 21,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -95,7 +95,7 @@
    "price": 0.655,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 2724,
+   "total_value": 2754,
    "names": [
     "shekelmeister",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
