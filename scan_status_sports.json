@@ -1,15 +1,15 @@
 {
- "at": "2026-11-23T01:14:33+00:00",
+ "at": "2026-11-23T01:17:33+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 118,
- "rows": 26815,
- "skipped_redeemable_or_no_outcome": 24311,
- "under_min_value": 2389,
- "already_ended": 13,
- "ends_too_late": 43,
- "kept": 59,
+ "rows": 26820,
+ "skipped_redeemable_or_no_outcome": 24309,
+ "under_min_value": 2393,
+ "already_ended": 14,
+ "ends_too_late": 42,
+ "kept": 62,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -59,21 +59,6 @@
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Vikings vs. 49ers",
-   "pick": "49ers",
-   "price": 0.655,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 42402,
-   "names": [
-    "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
-    "Siddhartha1"
-   ],
-   "game_start": "2026-11-23T01:20+00:00",
-   "end_date": "2026-11-23",
-   "event_slug": "nfl-min-sf-2026-11-23"
-  },
   {
    "title": "Vikings vs. 49ers: O/U 44.5",
    "pick": "Over",
