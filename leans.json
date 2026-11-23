@@ -1,14 +1,14 @@
 {
- "at": "2026-11-23T18:06:11+00:00",
+ "at": "2026-11-23T18:09:11+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Trail Blazers vs. 76ers",
    "pick": "Trail Blazers",
-   "price": 0.455,
+   "price": 0.445,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 18363,
+   "total_value": 17960,
    "names": [
     "monkeymashingkeyboard",
     "shekelmeister"
@@ -38,7 +38,7 @@
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 38789,
+   "total_value": 38798,
    "names": [
     "justwins",
     "shekelmeister"

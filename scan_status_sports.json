@@ -1,15 +1,15 @@
 {
- "at": "2026-11-23T18:06:19+00:00",
+ "at": "2026-11-23T18:09:19+00:00",
  "wallets_watched": 134,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 115,
- "rows": 26283,
- "skipped_redeemable_or_no_outcome": 23705,
- "under_min_value": 2480,
+ "rows": 26281,
+ "skipped_redeemable_or_no_outcome": 23704,
+ "under_min_value": 2478,
  "already_ended": 6,
  "ends_too_late": 49,
- "kept": 43,
+ "kept": 44,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -65,7 +65,7 @@
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 38789,
+   "total_value": 38798,
    "names": [
     "justwins",
     "shekelmeister"
@@ -77,10 +77,10 @@
   {
    "title": "Trail Blazers vs. 76ers",
    "pick": "76ers",
-   "price": 0.545,
+   "price": 0.555,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 23730,
+   "total_value": 24165,
    "names": [
     "scootergene",
     "hi774c"
