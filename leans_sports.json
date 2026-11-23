@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T22:48:27+00:00",
+ "at": "2026-11-23T22:51:27+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -51,10 +51,10 @@
   {
    "title": "Spread: 76ers (-2.5)",
    "pick": "76ers",
-   "price": 0.445,
+   "price": 0.455,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 14536,
+   "total_value": 14863,
    "names": [
     "tian888",
     "hi774c"
