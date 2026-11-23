@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T22:42:13+00:00",
+ "at": "2026-11-23T22:45:28+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -46,21 +46,6 @@
    "game_start": "2026-11-24T00:30+00:00",
    "end_date": "2026-11-24",
    "event_slug": "nba-bkn-min-2026-11-23"
-  },
-  {
-   "title": "Trail Blazers vs. 76ers",
-   "pick": "Trail Blazers",
-   "price": 0.425,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 17152,
-   "names": [
-    "monkeymashingkeyboard",
-    "shekelmeister"
-   ],
-   "game_start": "2026-11-24T00:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "nba-por-phi-2026-11-23"
   }
  ]
 }

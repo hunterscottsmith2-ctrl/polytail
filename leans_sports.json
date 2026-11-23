@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T22:42:21+00:00",
+ "at": "2026-11-23T22:45:34+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -20,14 +20,14 @@
   {
    "title": "Trail Blazers vs. 76ers",
    "pick": "76ers",
-   "price": 0.575,
+   "price": 0.535,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 46526,
+   "total_value": 47994,
    "names": [
     "0x9f15613ebf1f36d4bc679e1211d1fc567cf9bdb3",
-    "scootergene",
-    "hi774c"
+    "hi774c",
+    "scootergene"
    ],
    "game_start": "2026-11-24T00:00+00:00",
    "end_date": "2026-11-24",

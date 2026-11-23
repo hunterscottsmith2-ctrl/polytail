@@ -1,12 +1,12 @@
 {
- "at": "2026-11-23T22:42:13+00:00",
+ "at": "2026-11-23T22:45:28+00:00",
  "wallets_watched": 125,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 105,
- "rows": 37099,
- "skipped_redeemable_or_no_outcome": 30545,
- "under_min_value": 6076,
+ "rows": 37094,
+ "skipped_redeemable_or_no_outcome": 30542,
+ "under_min_value": 6074,
  "already_ended": 19,
  "ends_too_late": 105,
  "kept": 354,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -103,21 +103,6 @@
    "game_start": "2026-11-24T00:30+00:00",
    "end_date": "2026-11-24",
    "event_slug": "nba-bkn-min-2026-11-23"
-  },
-  {
-   "title": "Trail Blazers vs. 76ers",
-   "pick": "Trail Blazers",
-   "price": 0.425,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 17152,
-   "names": [
-    "monkeymashingkeyboard",
-    "shekelmeister"
-   ],
-   "game_start": "2026-11-24T00:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "nba-por-phi-2026-11-23"
   }
  ]
 }
