@@ -1,12 +1,12 @@
 {
- "at": "2026-11-23T04:59:27+00:00",
+ "at": "2026-11-23T05:02:27+00:00",
  "wallets_watched": 123,
  "signals": 0,
  "most_wallets_on_one_side": 5,
  "wallets_with_rows": 104,
- "rows": 36491,
- "skipped_redeemable_or_no_outcome": 30344,
- "under_min_value": 5706,
+ "rows": 36488,
+ "skipped_redeemable_or_no_outcome": 30343,
+ "under_min_value": 5704,
  "already_ended": 21,
  "ends_too_late": 114,
  "kept": 306,
@@ -65,10 +65,10 @@
    "price": 1.0,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 7056,
+   "total_value": 12054,
    "names": [
-    "Rex416",
-    "328.400.fund"
+    "328.400.fund",
+    "Rex416"
    ],
    "game_start": null,
    "end_date": "2026-11-23",
