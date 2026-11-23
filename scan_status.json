@@ -1,12 +1,12 @@
 {
- "at": "2026-11-23T04:02:27+00:00",
+ "at": "2026-11-23T04:05:27+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 5,
  "wallets_with_rows": 104,
- "rows": 34589,
- "skipped_redeemable_or_no_outcome": 28410,
- "under_min_value": 5722,
+ "rows": 34585,
+ "skipped_redeemable_or_no_outcome": 28408,
+ "under_min_value": 5720,
  "already_ended": 21,
  "ends_too_late": 111,
  "kept": 325,
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will xQc finish GTA VI by November 22?",
    "pick": "No",
-   "price": 0.886,
+   "price": 0.91,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 4500,
+   "total_value": 5416,
    "names": [
     "Rex416",
     "328.400.fund"
