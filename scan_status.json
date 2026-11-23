@@ -1,12 +1,12 @@
 {
- "at": "2026-11-23T16:35:54+00:00",
+ "at": "2026-11-23T16:38:55+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 104,
- "rows": 35705,
+ "rows": 35707,
  "skipped_redeemable_or_no_outcome": 28862,
- "under_min_value": 6379,
+ "under_min_value": 6381,
  "already_ended": 20,
  "ends_too_late": 110,
  "kept": 334,
@@ -65,7 +65,7 @@
    "price": 0.425,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 16766,
+   "total_value": 16827,
    "names": [
     "monkeymashingkeyboard",
     "shekelmeister"
@@ -73,21 +73,6 @@
    "game_start": "2026-11-24T00:00+00:00",
    "end_date": "2026-11-24",
    "event_slug": "nba-por-phi-2026-11-23"
-  },
-  {
-   "title": "Dota 2: Team Liquid vs DO KONCA (BO3) - BLAST Slam Group C",
-   "pick": "DO KONCA",
-   "price": 0.275,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 8660,
-   "names": [
-    "CORGII",
-    "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816"
-   ],
-   "game_start": "2026-11-23T16:45+00:00",
-   "end_date": "2026-11-23",
-   "event_slug": "dota2-liquid-konca-2026-11-23"
   },
   {
    "title": "Flames vs. Senators",
