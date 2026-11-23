@@ -1,12 +1,12 @@
 {
- "at": "2026-11-23T19:33:22+00:00",
+ "at": "2026-11-23T19:36:21+00:00",
  "wallets_watched": 135,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 117,
- "rows": 26439,
- "skipped_redeemable_or_no_outcome": 23865,
- "under_min_value": 2468,
+ "rows": 26440,
+ "skipped_redeemable_or_no_outcome": 23863,
+ "under_min_value": 2471,
  "already_ended": 6,
  "ends_too_late": 48,
  "kept": 52,
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will Brentford FC win on 2026-11-23?",
    "pick": "Yes",
-   "price": 0.435,
+   "price": 0.445,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 465450,
+   "total_value": 549938,
    "names": [
     "3edmond.dantes",
     "plonker2026"
@@ -80,7 +80,7 @@
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 38938,
+   "total_value": 38942,
    "names": [
     "justwins",
     "shekelmeister"
