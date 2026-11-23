@@ -1,17 +1,33 @@
 {
- "at": "2026-11-23T19:42:22+00:00",
+ "at": "2026-11-23T19:45:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Will Brentford FC win on 2026-11-23?",
    "pick": "Yes",
-   "price": 0.445,
-   "wallets": 2,
+   "price": 0.455,
+   "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 628324,
+   "total_value": 648125,
    "names": [
     "3edmond.dantes",
-    "plonker2026"
+    "plonker2026",
+    "Siddhartha1"
+   ],
+   "game_start": "2026-11-23T20:00+00:00",
+   "end_date": "2026-11-23",
+   "event_slug": "epl-bre-eve-2026-11-23"
+  },
+  {
+   "title": "Will Everton FC win on 2026-11-23?",
+   "pick": "No",
+   "price": 0.725,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 1241460,
+   "names": [
+    "3edmond.dantes",
+    "Siddhartha1"
    ],
    "game_start": "2026-11-23T20:00+00:00",
    "end_date": "2026-11-23",

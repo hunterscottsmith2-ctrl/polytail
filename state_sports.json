@@ -1,4 +1,18 @@
 {
- "alerted": {},
- "recheck": []
+ "alerted": {
+  "0x9c183fba1441c3917b7e3a99c0103626285576b0d6b8e1bcabf3e10cb8e3a239|0": {
+   "first_seen": "2026-11-23T19:45+00:00",
+   "outcome": "Yes",
+   "title": "Will Brentford FC win on 2026-11-23?",
+   "wallets": 3
+  }
+ },
+ "recheck": [
+  {
+   "alerted_at": "2026-11-23T19:45:22+00:00",
+   "key": "0x9c183fba1441c3917b7e3a99c0103626285576b0d6b8e1bcabf3e10cb8e3a239|0",
+   "token": "74187729370603471522604787793194741911431483561219452936153080558051564641212",
+   "ts": 1795463122.82715
+  }
+ ]
 }
