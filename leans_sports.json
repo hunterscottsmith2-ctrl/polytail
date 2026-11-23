@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T00:38:33+00:00",
+ "at": "2026-11-23T00:41:33+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -7,8 +7,8 @@
    "pick": "Knicks",
    "price": 0.685,
    "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 39123,
+   "opposing_wallets": 1,
+   "total_value": 45657,
    "names": [
     "darkumbreon88",
     "hi774c"

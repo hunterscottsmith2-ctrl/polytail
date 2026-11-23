@@ -1,15 +1,15 @@
 {
- "at": "2026-11-23T00:38:33+00:00",
+ "at": "2026-11-23T00:41:33+00:00",
  "wallets_watched": 138,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 120,
- "rows": 26853,
- "skipped_redeemable_or_no_outcome": 24324,
- "under_min_value": 2407,
+ "rows": 26857,
+ "skipped_redeemable_or_no_outcome": 24333,
+ "under_min_value": 2399,
  "already_ended": 31,
  "ends_too_late": 43,
- "kept": 48,
+ "kept": 51,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -64,8 +64,8 @@
    "pick": "Knicks",
    "price": 0.685,
    "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 39123,
+   "opposing_wallets": 1,
+   "total_value": 45657,
    "names": [
     "darkumbreon88",
     "hi774c"
