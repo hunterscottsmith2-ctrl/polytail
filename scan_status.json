@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T16:17:54+00:00",
+ "at": "2026-11-23T16:20:54+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 3,
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Trail Blazers vs. 76ers",
    "pick": "Trail Blazers",
-   "price": 0.415,
+   "price": 0.425,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 14933,
+   "total_value": 16713,
    "names": [
     "monkeymashingkeyboard",
     "shekelmeister"
@@ -95,7 +95,7 @@
    "price": 0.285,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 4714,
+   "total_value": 4769,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
     "CORGII"
