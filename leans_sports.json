@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T23:06:27+00:00",
+ "at": "2026-11-23T23:09:26+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -22,7 +22,7 @@
    "pick": "76ers",
    "price": 0.515,
    "wallets": 3,
-   "opposing_wallets": 1,
+   "opposing_wallets": 2,
    "total_value": 46200,
    "names": [
     "0x9f15613ebf1f36d4bc679e1211d1fc567cf9bdb3",
@@ -62,21 +62,6 @@
    "game_start": "2026-11-24T00:30+00:00",
    "end_date": "2026-11-24",
    "event_slug": "nba-okc-ind-2026-11-23"
-  },
-  {
-   "title": "Spread: 76ers (-2.5)",
-   "pick": "76ers",
-   "price": 0.455,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 14854,
-   "names": [
-    "tian888",
-    "hi774c"
-   ],
-   "game_start": "2026-11-24T00:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "nba-por-phi-2026-11-23"
   }
  ]
 }

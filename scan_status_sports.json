@@ -1,15 +1,15 @@
 {
- "at": "2026-11-23T23:06:27+00:00",
+ "at": "2026-11-23T23:09:26+00:00",
  "wallets_watched": 135,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 116,
- "rows": 26446,
- "skipped_redeemable_or_no_outcome": 23867,
- "under_min_value": 2464,
+ "rows": 26456,
+ "skipped_redeemable_or_no_outcome": 23865,
+ "under_min_value": 2474,
  "already_ended": 7,
  "ends_too_late": 48,
- "kept": 60,
+ "kept": 62,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -79,7 +79,7 @@
    "pick": "76ers",
    "price": 0.515,
    "wallets": 3,
-   "opposing_wallets": 1,
+   "opposing_wallets": 2,
    "total_value": 46200,
    "names": [
     "0x9f15613ebf1f36d4bc679e1211d1fc567cf9bdb3",
@@ -119,21 +119,6 @@
    "game_start": "2026-11-24T00:30+00:00",
    "end_date": "2026-11-24",
    "event_slug": "nba-okc-ind-2026-11-23"
-  },
-  {
-   "title": "Spread: 76ers (-2.5)",
-   "pick": "76ers",
-   "price": 0.455,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 14854,
-   "names": [
-    "tian888",
-    "hi774c"
-   ],
-   "game_start": "2026-11-24T00:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "nba-por-phi-2026-11-23"
   }
  ]
 }
