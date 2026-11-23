@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T20:42:13+00:00",
+ "at": "2026-11-23T20:45:13+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -31,6 +31,21 @@
    "game_start": "2026-11-24T00:30+00:00",
    "end_date": "2026-11-24",
    "event_slug": "nhl-cal-ott-2026-11-23"
+  },
+  {
+   "title": "Counter-Strike: Heroic vs Imperial (BO1) - PGL Major Singapore Stage 1",
+   "pick": "Heroic",
+   "price": 0.655,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 2490,
+   "names": [
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
+    "shekelmeister"
+   ],
+   "game_start": "2026-11-24T04:00+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "cs2-hero-imp11-2026-11-24"
   },
   {
    "title": "Nets vs. Timberwolves: O/U 223.5",
