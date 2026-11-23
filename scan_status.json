@@ -1,13 +1,13 @@
 {
- "at": "2026-11-23T00:59:26+00:00",
+ "at": "2026-11-23T01:02:27+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 5,
  "wallets_with_rows": 105,
- "rows": 34626,
- "skipped_redeemable_or_no_outcome": 28369,
- "under_min_value": 5775,
- "already_ended": 35,
+ "rows": 34625,
+ "skipped_redeemable_or_no_outcome": 28370,
+ "under_min_value": 5772,
+ "already_ended": 36,
  "ends_too_late": 112,
  "kept": 335,
  "wallets_needing_extra_pages": 20,
@@ -62,10 +62,10 @@
   {
    "title": "Vikings vs. 49ers",
    "pick": "49ers",
-   "price": 0.665,
+   "price": 0.655,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 33553,
+   "total_value": 33049,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
     "darkumbreon88"

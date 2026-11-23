@@ -1,7 +1,37 @@
 {
- "at": "2026-11-23T00:59:33+00:00",
+ "at": "2026-11-23T01:02:33+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Vikings vs. 49ers",
+   "pick": "49ers",
+   "price": 0.655,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 42402,
+   "names": [
+    "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
+    "Siddhartha1"
+   ],
+   "game_start": "2026-11-23T01:20+00:00",
+   "end_date": "2026-11-23",
+   "event_slug": "nfl-min-sf-2026-11-23"
+  },
+  {
+   "title": "Vikings vs. 49ers: O/U 44.5",
+   "pick": "Over",
+   "price": 0.515,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 40942,
+   "names": [
+    "bands1",
+    "DaBossHogg"
+   ],
+   "game_start": "2026-11-23T01:20+00:00",
+   "end_date": "2026-11-23",
+   "event_slug": "nfl-min-sf-2026-11-23"
+  },
   {
    "title": "Vikings vs. 49ers: O/U 46.5",
    "pick": "Over",
