@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T22:06:13+00:00",
+ "at": "2026-11-23T22:09:13+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -50,10 +50,10 @@
   {
    "title": "Trail Blazers vs. 76ers",
    "pick": "Trail Blazers",
-   "price": 0.415,
+   "price": 0.425,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 16749,
+   "total_value": 17152,
    "names": [
     "monkeymashingkeyboard",
     "shekelmeister"

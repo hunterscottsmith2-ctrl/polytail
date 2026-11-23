@@ -1,15 +1,15 @@
 {
- "at": "2026-11-23T22:06:20+00:00",
+ "at": "2026-11-23T22:09:21+00:00",
  "wallets_watched": 135,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 117,
- "rows": 26495,
- "skipped_redeemable_or_no_outcome": 23892,
- "under_min_value": 2489,
+ "rows": 26458,
+ "skipped_redeemable_or_no_outcome": 23860,
+ "under_min_value": 2485,
  "already_ended": 7,
  "ends_too_late": 48,
- "kept": 59,
+ "kept": 58,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Trail Blazers vs. 76ers",
    "pick": "76ers",
-   "price": 0.585,
+   "price": 0.575,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 47335,
+   "total_value": 46526,
    "names": [
     "0x9f15613ebf1f36d4bc679e1211d1fc567cf9bdb3",
     "scootergene",
