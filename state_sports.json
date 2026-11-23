@@ -1,19 +1,5 @@
 {
  "alerted": {
-  "0x31ea52361b553b3724881698a2a7e7a86e4e27959ba64964d3a97b5c0faa0366|1": {
-   "first_seen": "2026-11-22T16:32+00:00",
-   "gone_at": 1795368553.9763064,
-   "outcome": "Eagles",
-   "title": "Spread: Steelers (-3.5)",
-   "wallets": 3
-  },
-  "0x6ab8f6b4d2c5992ce4fe0abd522953301ca3213433beefd5017d1cfbeb4fd69a|1": {
-   "first_seen": "2026-11-22T16:32+00:00",
-   "gone_at": 1795368553.9763064,
-   "outcome": "Eagles",
-   "title": "Steelers vs. Eagles",
-   "wallets": 3
-  },
   "0xacb4bae086c3641d13b6ef1d90c4a5e24d52b74f50a33fe4523ce0636238ea1f|0": {
    "first_seen": "2026-11-22T16:50+00:00",
    "gone_at": 1795370901.573296,
