@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T21:42:22+00:00",
+ "at": "2026-11-23T21:45:22+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -17,22 +17,6 @@
    "game_start": "2026-11-24T00:00+00:00",
    "end_date": "2026-11-24",
    "event_slug": "nba-por-phi-2026-11-23"
-  },
-  {
-   "title": "Spread: Bengals (-6.5)",
-   "pick": "Commanders",
-   "price": 0.515,
-   "wallets": 3,
-   "opposing_wallets": 2,
-   "total_value": 55327,
-   "names": [
-    "monkeymashingkeyboard",
-    "bands1",
-    "hi774c"
-   ],
-   "game_start": "2026-11-24T01:15+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "nfl-cin-was-2026-11-24"
   },
   {
    "title": "Nets vs. Timberwolves: O/U 223.5",
