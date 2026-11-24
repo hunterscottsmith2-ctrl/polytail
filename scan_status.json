@@ -1,12 +1,12 @@
 {
- "at": "2026-11-24T09:57:34+00:00",
+ "at": "2026-11-24T10:00:35+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 102,
- "rows": 37374,
+ "rows": 37373,
  "skipped_redeemable_or_no_outcome": 28415,
- "under_min_value": 8498,
+ "under_min_value": 8497,
  "already_ended": 18,
  "ends_too_late": 105,
  "kept": 338,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -73,22 +73,6 @@
    "game_start": "2026-11-24T14:00+00:00",
    "end_date": "2026-11-24",
    "event_slug": "dota2-ty-1win-2026-11-24"
-  },
-  {
-   "title": "Counter-Strike: 100 Thieves vs Imperial (BO1) - PGL Major Singapore Stage 1",
-   "pick": "100 Thieves",
-   "price": 0.53,
-   "wallets": 3,
-   "opposing_wallets": 2,
-   "total_value": 67702,
-   "names": [
-    "lonmi2511",
-    "lllllllIlll",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-24T10:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "cs2-100t-imp11-2026-11-24"
   }
  ]
 }
