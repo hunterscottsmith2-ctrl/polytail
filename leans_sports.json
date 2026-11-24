@@ -1,5 +1,21 @@
 {
- "at": "2026-11-24T09:33:41+00:00",
+ "at": "2026-11-24T09:36:40+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": []
+ "leans": [
+  {
+   "title": "Counter-Strike: 9z vs M80 (BO1) - PGL Major Singapore Stage 1",
+   "pick": "M80",
+   "price": 0.505,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 22921,
+   "names": [
+    "Ruma-C",
+    "luckycat888888"
+   ],
+   "game_start": "2026-11-24T10:00+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "cs2-9z-m80-2026-11-24"
+  }
+ ]
 }
