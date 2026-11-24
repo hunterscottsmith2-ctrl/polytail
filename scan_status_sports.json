@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T03:27:27+00:00",
+ "at": "2026-11-24T03:30:28+00:00",
  "wallets_watched": 134,
  "signals": 0,
  "most_wallets_on_one_side": 5,
  "wallets_with_rows": 116,
- "rows": 26392,
- "skipped_redeemable_or_no_outcome": 23873,
- "under_min_value": 2401,
+ "rows": 26394,
+ "skipped_redeemable_or_no_outcome": 23875,
+ "under_min_value": 2402,
  "already_ended": 6,
  "ends_too_late": 46,
- "kept": 66,
+ "kept": 65,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -58,5 +58,21 @@
   "end_date": "2026-07-12",
   "redeemable": true
  },
- "leans_not_alerts": []
+ "leans_not_alerts": [
+  {
+   "title": "Counter-Strike: 9z vs Lynn Vision (BO1) - PGL Major Singapore Stage 1",
+   "pick": "9z",
+   "price": 0.645,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 30881,
+   "names": [
+    "shekelmeister",
+    "yabanci"
+   ],
+   "game_start": "2026-11-24T04:00+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "cs2-9z-lvg-2026-11-24"
+  }
+ ]
 }
