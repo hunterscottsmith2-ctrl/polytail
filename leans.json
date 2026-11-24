@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T06:48:35+00:00",
+ "at": "2026-11-24T06:51:34+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.705,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 165112,
+   "total_value": 186280,
    "names": [
     "Thunderous-Authoritarian-Snarl",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
