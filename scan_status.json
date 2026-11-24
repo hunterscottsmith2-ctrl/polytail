@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T06:45:34+00:00",
+ "at": "2026-11-24T06:48:35+00:00",
  "wallets_watched": 119,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 101,
- "rows": 36971,
- "skipped_redeemable_or_no_outcome": 28185,
- "under_min_value": 8346,
+ "rows": 36981,
+ "skipped_redeemable_or_no_outcome": 28182,
+ "under_min_value": 8358,
  "already_ended": 18,
  "ends_too_late": 103,
- "kept": 319,
+ "kept": 320,
  "wallets_needing_extra_pages": 22,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -58,5 +58,21 @@
   "end_date": "2026-06-13",
   "redeemable": true
  },
- "leans_not_alerts": []
+ "leans_not_alerts": [
+  {
+   "title": "Counter-Strike: FaZe vs Wildcard (BO1) - PGL Major Singapore Stage 1",
+   "pick": "FaZe",
+   "price": 0.705,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 165112,
+   "names": [
+    "Thunderous-Authoritarian-Snarl",
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
+   ],
+   "game_start": "2026-11-24T07:00+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "cs2-faze-wc1-2026-11-24"
+  }
+ ]
 }
