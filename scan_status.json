@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T15:52:06+00:00",
+ "at": "2026-11-24T15:55:05+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 103,
- "rows": 37672,
- "skipped_redeemable_or_no_outcome": 28524,
- "under_min_value": 8688,
+ "rows": 37654,
+ "skipped_redeemable_or_no_outcome": 28512,
+ "under_min_value": 8683,
  "already_ended": 18,
  "ends_too_late": 107,
- "kept": 335,
+ "kept": 334,
  "wallets_needing_extra_pages": 22,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,12 +51,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Donald Trump win the 2028 Republican presidential nomination?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
-  "current_value": 1118.9306,
-  "end_date": "2028-11-08",
-  "redeemable": false
+  "current_value": 0.0,
+  "end_date": "2026-07-12",
+  "redeemable": true
  },
  "leans_not_alerts": []
 }
