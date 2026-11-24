@@ -1,12 +1,12 @@
 {
- "at": "2026-11-24T05:57:34+00:00",
+ "at": "2026-11-24T06:00:35+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 101,
- "rows": 39899,
- "skipped_redeemable_or_no_outcome": 30917,
- "under_min_value": 8543,
+ "rows": 39927,
+ "skipped_redeemable_or_no_outcome": 30927,
+ "under_min_value": 8561,
  "already_ended": 18,
  "ends_too_late": 104,
  "kept": 317,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -70,7 +70,7 @@
     "shekelmeister",
     "CORGII"
    ],
-   "game_start": "2026-11-24T06:00+00:00",
+   "game_start": "2026-11-24T06:15+00:00",
    "end_date": "2026-11-24",
    "event_slug": "cs2-pv-dendel-2026-11-24"
   }

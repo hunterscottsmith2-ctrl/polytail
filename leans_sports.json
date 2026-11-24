@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T05:57:40+00:00",
+ "at": "2026-11-24T06:00:40+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -13,7 +13,7 @@
     "Moneymethod",
     "Ruma-C"
    ],
-   "game_start": "2026-11-24T06:00+00:00",
+   "game_start": "2026-11-24T06:15+00:00",
    "end_date": "2026-11-24",
    "event_slug": "cs2-pv-dendel-2026-11-24"
   }
