@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T11:30:50+00:00",
+ "at": "2026-11-24T11:33:49+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 103,
- "rows": 35263,
- "skipped_redeemable_or_no_outcome": 26259,
- "under_min_value": 8541,
+ "rows": 35264,
+ "skipped_redeemable_or_no_outcome": 26260,
+ "under_min_value": 8540,
  "already_ended": 18,
  "ends_too_late": 106,
- "kept": 339,
+ "kept": 340,
  "wallets_needing_extra_pages": 21,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -73,6 +73,22 @@
    "game_start": "2026-11-24T14:00+00:00",
    "end_date": "2026-11-24",
    "event_slug": "dota2-ty-1win-2026-11-24"
+  },
+  {
+   "title": "Counter-Strike: FaZe vs GOSH (BO1) - PGL Major Singapore Stage 1",
+   "pick": "FaZe",
+   "price": 0.565,
+   "wallets": 3,
+   "opposing_wallets": 2,
+   "total_value": 25375,
+   "names": [
+    "shekelmeister",
+    "darkumbreon88",
+    "lllllllIlll"
+   ],
+   "game_start": "2026-11-24T12:00+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "cs2-faze-gosh-2026-11-24"
   }
  ]
 }
