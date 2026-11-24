@@ -1,14 +1,14 @@
 {
- "at": "2026-11-24T23:55:46+00:00",
+ "at": "2026-11-24T23:58:47+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Pistons vs. Magic",
    "pick": "Magic",
-   "price": 0.565,
+   "price": 0.575,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 38099,
+   "total_value": 38774,
    "names": [
     "shekelmeister",
     "hi774c"
