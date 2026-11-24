@@ -1,14 +1,14 @@
 {
- "at": "2026-11-24T04:48:33+00:00",
+ "at": "2026-11-24T04:51:34+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Counter-Strike: NIP vs M80 (BO1) - PGL Major Singapore Stage 1",
    "pick": "NIP",
-   "price": 0.585,
+   "price": 0.575,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 80592,
+   "total_value": 79214,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "shekelmeister"
