@@ -1,12 +1,12 @@
 {
- "at": "2026-11-24T03:57:22+00:00",
+ "at": "2026-11-24T04:00:23+00:00",
  "wallets_watched": 122,
- "signals": 1,
+ "signals": 0,
  "most_wallets_on_one_side": 5,
  "wallets_with_rows": 104,
  "rows": 42671,
- "skipped_redeemable_or_no_outcome": 33861,
- "under_min_value": 8314,
+ "skipped_redeemable_or_no_outcome": 33860,
+ "under_min_value": 8315,
  "already_ended": 19,
  "ends_too_late": 104,
  "kept": 373,
@@ -51,46 +51,14 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Counter-Strike: Heroic vs Imperial (BO1) - PGL Major Singapore Stage 1",
-   "pick": "Heroic",
-   "price": 0.655,
-   "wallets": 3,
-   "opposing_wallets": 1,
-   "total_value": 26019,
-   "names": [
-    "shekelmeister",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-24T04:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "cs2-hero-imp11-2026-11-24"
-  },
-  {
-   "title": "Counter-Strike: 9z vs Lynn Vision (BO1) - PGL Major Singapore Stage 1",
-   "pick": "Lynn Vision",
-   "price": 0.405,
-   "wallets": 3,
-   "opposing_wallets": 2,
-   "total_value": 149646,
-   "names": [
-    "Thunderous-Authoritarian-Snarl",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
-    "GeorgeRe"
-   ],
-   "game_start": "2026-11-24T04:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "cs2-9z-lvg-2026-11-24"
-  },
   {
    "title": "Counter-Strike: NIP vs M80 (BO1) - PGL Major Singapore Stage 1",
    "pick": "NIP",
