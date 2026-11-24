@@ -1,12 +1,12 @@
 {
- "at": "2026-11-24T15:48:58+00:00",
+ "at": "2026-11-24T15:52:06+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 103,
- "rows": 37659,
- "skipped_redeemable_or_no_outcome": 28512,
- "under_min_value": 8687,
+ "rows": 37672,
+ "skipped_redeemable_or_no_outcome": 28524,
+ "under_min_value": 8688,
  "already_ended": 18,
  "ends_too_late": 107,
  "kept": 335,
@@ -51,12 +51,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will Donald Trump win the 2028 Republican presidential nomination?",
   "outcome": "Yes",
   "outcome_index": 0,
-  "current_value": 0.0,
-  "end_date": "2026-06-25",
-  "redeemable": true
+  "current_value": 1118.9306,
+  "end_date": "2028-11-08",
+  "redeemable": false
  },
  "leans_not_alerts": []
 }
