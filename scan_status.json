@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T10:18:48+00:00",
+ "at": "2026-11-24T10:21:49+00:00",
  "wallets_watched": 121,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 104,
- "rows": 37438,
+ "rows": 37437,
  "skipped_redeemable_or_no_outcome": 28459,
  "under_min_value": 8516,
  "already_ended": 18,
- "ends_too_late": 105,
- "kept": 340,
+ "ends_too_late": 106,
+ "kept": 338,
  "wallets_needing_extra_pages": 22,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -65,7 +65,7 @@
    "price": 0.265,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 4902,
+   "total_value": 4910,
    "names": [
     "CORGII",
     "0xE16D3F2A5807999b358aFfD9445C3a09E45E5e30-1776429210592"
