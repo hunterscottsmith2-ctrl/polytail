@@ -6,7 +6,20 @@
    "outcome": "Trail Blazers",
    "title": "Trail Blazers vs. 76ers",
    "wallets": 4
+  },
+  "0xf953da23adb7e972e95c302836b2993fe8027f8e5d419ab82651b849931a0b92|1": {
+   "first_seen": "2026-11-24T03:39+00:00",
+   "outcome": "Lynn Vision",
+   "title": "Counter-Strike: 9z vs Lynn Vision (BO1) - PGL Major Singapore Stage 1",
+   "wallets": 3
   }
  },
- "recheck": []
+ "recheck": [
+  {
+   "alerted_at": "2026-11-24T03:39:23+00:00",
+   "key": "0xf953da23adb7e972e95c302836b2993fe8027f8e5d419ab82651b849931a0b92|1",
+   "token": "61103104939004286863509411220242513783789340081930256175941099247252342493752",
+   "ts": 1795491563.8309839
+  }
+ ]
 }

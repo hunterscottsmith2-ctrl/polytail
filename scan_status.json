@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T03:36:22+00:00",
+ "at": "2026-11-24T03:39:23+00:00",
  "wallets_watched": 122,
- "signals": 0,
+ "signals": 1,
  "most_wallets_on_one_side": 5,
  "wallets_with_rows": 105,
- "rows": 42638,
- "skipped_redeemable_or_no_outcome": 33849,
- "under_min_value": 8286,
+ "rows": 42636,
+ "skipped_redeemable_or_no_outcome": 33848,
+ "under_min_value": 8284,
  "already_ended": 19,
  "ends_too_late": 104,
- "kept": 380,
+ "kept": 381,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,14 +51,30 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
+  {
+   "title": "Counter-Strike: 9z vs Lynn Vision (BO1) - PGL Major Singapore Stage 1",
+   "pick": "Lynn Vision",
+   "price": 0.375,
+   "wallets": 3,
+   "opposing_wallets": 1,
+   "total_value": 55644,
+   "names": [
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
+    "Thunderous-Authoritarian-Snarl",
+    "GeorgeRe"
+   ],
+   "game_start": "2026-11-24T04:00+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "cs2-9z-lvg-2026-11-24"
+  },
   {
    "title": "Counter-Strike: Heroic vs Imperial (BO1) - PGL Major Singapore Stage 1",
    "pick": "Heroic",
@@ -80,7 +96,7 @@
    "price": 0.565,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 76823,
+   "total_value": 76879,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "shekelmeister"
@@ -88,21 +104,6 @@
    "game_start": "2026-11-24T05:00+00:00",
    "end_date": "2026-11-24",
    "event_slug": "cs2-nip-m80-2026-11-24"
-  },
-  {
-   "title": "Counter-Strike: 9z vs Lynn Vision (BO1) - PGL Major Singapore Stage 1",
-   "pick": "Lynn Vision",
-   "price": 0.355,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 38476,
-   "names": [
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
-    "GeorgeRe"
-   ],
-   "game_start": "2026-11-24T04:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "cs2-9z-lvg-2026-11-24"
   }
  ]
 }

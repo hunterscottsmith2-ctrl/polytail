@@ -1,21 +1,5 @@
 {
- "at": "2026-11-24T03:36:27+00:00",
+ "at": "2026-11-24T03:39:29+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": [
-  {
-   "title": "Counter-Strike: 9z vs Lynn Vision (BO1) - PGL Major Singapore Stage 1",
-   "pick": "9z",
-   "price": 0.645,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 30881,
-   "names": [
-    "shekelmeister",
-    "yabanci"
-   ],
-   "game_start": "2026-11-24T04:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "cs2-9z-lvg-2026-11-24"
-  }
- ]
+ "leans": []
 }
