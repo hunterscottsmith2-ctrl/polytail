@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T19:55:30+00:00",
+ "at": "2026-11-24T19:58:31+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.485,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 229202,
+   "total_value": 258896,
    "names": [
     "nb1985",
     "GetsOnBase"
@@ -20,10 +20,10 @@
   {
    "title": "Spread: Real Madrid CF (-2.5)",
    "pick": "PSV",
-   "price": 0.475,
+   "price": 0.485,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 68714,
+   "total_value": 70161,
    "names": [
     "1l2ihj34li12u34",
     "bands1",
