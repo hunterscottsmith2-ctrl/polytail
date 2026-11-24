@@ -1,16 +1,16 @@
 {
- "at": "2026-11-24T12:06:51+00:00",
+ "at": "2026-11-24T12:09:50+00:00",
  "wallets_watched": 120,
- "signals": 0,
+ "signals": 1,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 103,
- "rows": 35275,
- "skipped_redeemable_or_no_outcome": 26258,
- "under_min_value": 8558,
+ "rows": 37502,
+ "skipped_redeemable_or_no_outcome": 28452,
+ "under_min_value": 8591,
  "already_ended": 18,
  "ends_too_late": 106,
  "kept": 335,
- "wallets_needing_extra_pages": 21,
+ "wallets_needing_extra_pages": 22,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
   "archived",
@@ -51,25 +51,25 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Counter-Strike: FaZe vs GOSH (BO1) - PGL Major Singapore Stage 1",
    "pick": "FaZe",
-   "price": 0.565,
+   "price": 0.575,
    "wallets": 4,
    "opposing_wallets": 2,
-   "total_value": 69603,
+   "total_value": 80824,
    "names": [
     "lllllllIlll",
-    "shekelmeister",
     "Moneymethod",
+    "shekelmeister",
     "darkumbreon88"
    ],
    "game_start": "2026-11-24T12:10+00:00",
