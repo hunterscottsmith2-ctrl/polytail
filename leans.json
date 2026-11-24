@@ -1,21 +1,5 @@
 {
- "at": "2026-11-24T06:57:34+00:00",
+ "at": "2026-11-24T07:00:34+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": [
-  {
-   "title": "Counter-Strike: FaZe vs Wildcard (BO1) - PGL Major Singapore Stage 1",
-   "pick": "FaZe",
-   "price": 0.705,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 205109,
-   "names": [
-    "Thunderous-Authoritarian-Snarl",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
-   ],
-   "game_start": "2026-11-24T07:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "cs2-faze-wc1-2026-11-24"
-  }
- ]
+ "leans": []
 }
