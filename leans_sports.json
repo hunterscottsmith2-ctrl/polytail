@@ -1,7 +1,23 @@
 {
- "at": "2026-11-24T19:10:30+00:00",
+ "at": "2026-11-24T19:13:31+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Spread: Real Madrid CF (-2.5)",
+   "pick": "PSV",
+   "price": 0.475,
+   "wallets": 3,
+   "opposing_wallets": 2,
+   "total_value": 68714,
+   "names": [
+    "1l2ihj34li12u34",
+    "bands1",
+    "tian888"
+   ],
+   "game_start": "2026-11-24T20:00+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "ucl-rma-psv-2026-11-24-more-markets"
+  },
   {
    "title": "Packers vs. Rams: O/U 44.5",
    "pick": "Under",
