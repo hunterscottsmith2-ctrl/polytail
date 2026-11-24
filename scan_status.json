@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T03:39:23+00:00",
+ "at": "2026-11-24T03:42:22+00:00",
  "wallets_watched": 122,
- "signals": 1,
+ "signals": 2,
  "most_wallets_on_one_side": 5,
- "wallets_with_rows": 105,
- "rows": 42636,
- "skipped_redeemable_or_no_outcome": 33848,
- "under_min_value": 8284,
+ "wallets_with_rows": 104,
+ "rows": 42661,
+ "skipped_redeemable_or_no_outcome": 33856,
+ "under_min_value": 8307,
  "already_ended": 19,
  "ends_too_late": 104,
- "kept": 381,
+ "kept": 375,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -79,12 +79,13 @@
    "title": "Counter-Strike: Heroic vs Imperial (BO1) - PGL Major Singapore Stage 1",
    "pick": "Heroic",
    "price": 0.665,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 3768,
+   "wallets": 3,
+   "opposing_wallets": 1,
+   "total_value": 13117,
    "names": [
     "shekelmeister",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
+    "darkumbreon88"
    ],
    "game_start": "2026-11-24T04:00+00:00",
    "end_date": "2026-11-24",
