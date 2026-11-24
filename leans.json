@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T06:06:35+00:00",
+ "at": "2026-11-24T06:09:34+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -7,8 +7,8 @@
    "pick": "DENDELE CS",
    "price": 0.385,
    "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 24307,
+   "opposing_wallets": 1,
+   "total_value": 38131,
    "names": [
     "shekelmeister",
     "CORGII"
