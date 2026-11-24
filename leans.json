@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T10:48:49+00:00",
+ "at": "2026-11-24T10:51:51+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.265,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 4921,
+   "total_value": 5064,
    "names": [
     "CORGII",
     "0xE16D3F2A5807999b358aFfD9445C3a09E45E5e30-1776429210592"
@@ -18,12 +18,28 @@
    "event_slug": "dota2-ty-1win-2026-11-24"
   },
   {
+   "title": "Counter-Strike: Eternal Fire vs DENDELE CS (BO1) - PGL Major Singapore Stage 1",
+   "pick": "Eternal Fire",
+   "price": 0.625,
+   "wallets": 3,
+   "opposing_wallets": 2,
+   "total_value": 177873,
+   "names": [
+    "lllllllIlll",
+    "lonmi2511",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-24T11:00+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "cs2-ef1-dendel-2026-11-24"
+  },
+  {
    "title": "Counter-Strike: PVISION vs FlyQuest (BO1) - PGL Major Singapore Stage 1",
    "pick": "PVISION",
    "price": 0.675,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 59785,
+   "total_value": 59968,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "Thunderous-Authoritarian-Snarl"
@@ -33,19 +49,19 @@
    "event_slug": "cs2-pv-fly-2026-11-24"
   },
   {
-   "title": "Counter-Strike: Eternal Fire vs DENDELE CS (BO1) - PGL Major Singapore Stage 1",
-   "pick": "DENDELE CS",
-   "price": 0.475,
+   "title": "Counter-Strike: FaZe vs GOSH (BO1) - PGL Major Singapore Stage 1",
+   "pick": "FaZe",
+   "price": 0.555,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 41152,
+   "total_value": 23885,
    "names": [
-    "Thunderous-Authoritarian-Snarl",
-    "CORGII"
+    "shekelmeister",
+    "darkumbreon88"
    ],
-   "game_start": "2026-11-24T11:00+00:00",
+   "game_start": "2026-11-24T12:00+00:00",
    "end_date": "2026-11-24",
-   "event_slug": "cs2-ef1-dendel-2026-11-24"
+   "event_slug": "cs2-faze-gosh-2026-11-24"
   }
  ]
 }
