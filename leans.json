@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T09:51:35+00:00",
+ "at": "2026-11-24T09:54:35+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -16,6 +16,22 @@
    "game_start": "2026-11-24T14:00+00:00",
    "end_date": "2026-11-24",
    "event_slug": "dota2-ty-1win-2026-11-24"
+  },
+  {
+   "title": "Counter-Strike: 100 Thieves vs Imperial (BO1) - PGL Major Singapore Stage 1",
+   "pick": "100 Thieves",
+   "price": 0.585,
+   "wallets": 3,
+   "opposing_wallets": 2,
+   "total_value": 71394,
+   "names": [
+    "lonmi2511",
+    "lllllllIlll",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-24T10:00+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "cs2-100t-imp11-2026-11-24"
   }
  ]
 }
