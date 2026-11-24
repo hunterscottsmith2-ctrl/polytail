@@ -1,12 +1,12 @@
 {
- "at": "2026-11-24T03:45:22+00:00",
+ "at": "2026-11-24T03:48:22+00:00",
  "wallets_watched": 122,
  "signals": 2,
  "most_wallets_on_one_side": 5,
  "wallets_with_rows": 104,
- "rows": 42657,
- "skipped_redeemable_or_no_outcome": 33868,
- "under_min_value": 8294,
+ "rows": 42667,
+ "skipped_redeemable_or_no_outcome": 33864,
+ "under_min_value": 8308,
  "already_ended": 19,
  "ends_too_late": 104,
  "kept": 372,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -65,10 +65,10 @@
    "price": 0.375,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 55644,
+   "total_value": 78144,
    "names": [
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "Thunderous-Authoritarian-Snarl",
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "GeorgeRe"
    ],
    "game_start": "2026-11-24T04:00+00:00",
@@ -81,7 +81,7 @@
    "price": 0.665,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 13117,
+   "total_value": 26417,
    "names": [
     "shekelmeister",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
@@ -94,10 +94,10 @@
   {
    "title": "Counter-Strike: NIP vs M80 (BO1) - PGL Major Singapore Stage 1",
    "pick": "NIP",
-   "price": 0.565,
+   "price": 0.575,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 76879,
+   "total_value": 78240,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "shekelmeister"

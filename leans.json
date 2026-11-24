@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T03:45:22+00:00",
+ "at": "2026-11-24T03:48:22+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,10 +8,10 @@
    "price": 0.375,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 55644,
+   "total_value": 78144,
    "names": [
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "Thunderous-Authoritarian-Snarl",
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "GeorgeRe"
    ],
    "game_start": "2026-11-24T04:00+00:00",
@@ -24,7 +24,7 @@
    "price": 0.665,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 13117,
+   "total_value": 26417,
    "names": [
     "shekelmeister",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
@@ -37,10 +37,10 @@
   {
    "title": "Counter-Strike: NIP vs M80 (BO1) - PGL Major Singapore Stage 1",
    "pick": "NIP",
-   "price": 0.565,
+   "price": 0.575,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 76879,
+   "total_value": 78240,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "shekelmeister"
