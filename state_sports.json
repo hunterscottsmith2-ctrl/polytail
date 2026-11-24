@@ -2,17 +2,11 @@
  "alerted": {
   "0x6943b7a909ca741f93732faf4735274ffd02acdb8e2d638e6f1dfee0f1dbb5ab|1": {
    "first_seen": "2026-11-24T09:42+00:00",
+   "gone_at": 1795513540.5407343,
    "outcome": "M80",
    "title": "Counter-Strike: 9z vs M80 (BO1) - PGL Major Singapore Stage 1",
    "wallets": 3
   }
  },
- "recheck": [
-  {
-   "alerted_at": "2026-11-24T09:42:42+00:00",
-   "key": "0x6943b7a909ca741f93732faf4735274ffd02acdb8e2d638e6f1dfee0f1dbb5ab|1",
-   "token": "68990058142422592858385230600284425451746581360400812375117308550688594509098",
-   "ts": 1795513362.2534509
-  }
- ]
+ "recheck": []
 }
