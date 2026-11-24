@@ -1,12 +1,12 @@
 {
- "at": "2026-11-24T19:16:22+00:00",
+ "at": "2026-11-24T19:19:23+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 103,
- "rows": 37339,
- "skipped_redeemable_or_no_outcome": 27971,
- "under_min_value": 8883,
+ "rows": 37341,
+ "skipped_redeemable_or_no_outcome": 27977,
+ "under_min_value": 8879,
  "already_ended": 13,
  "ends_too_late": 112,
  "kept": 360,
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Spread: Real Madrid CF (-2.5)",
    "pick": "PSV",
-   "price": 0.475,
+   "price": 0.485,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 62122,
+   "total_value": 63430,
    "names": [
     "1l2ihj34li12u34",
     "bands1"
