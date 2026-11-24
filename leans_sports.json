@@ -1,21 +1,5 @@
 {
- "at": "2026-11-24T01:12:28+00:00",
+ "at": "2026-11-24T01:15:28+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": [
-  {
-   "title": "Bengals vs. Commanders: O/U 54.5",
-   "pick": "Over",
-   "price": 0.485,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 85326,
-   "names": [
-    "Moneymethod",
-    "DaBossHogg"
-   ],
-   "game_start": "2026-11-24T01:15+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "nfl-cin-was-2026-11-24"
-  }
- ]
+ "leans": []
 }
