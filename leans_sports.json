@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T00:24:28+00:00",
+ "at": "2026-11-24T00:27:28+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -20,10 +20,10 @@
   {
    "title": "Spread: Thunder (-4.5)",
    "pick": "Thunder",
-   "price": 0.495,
+   "price": 0.485,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 80190,
+   "total_value": 78570,
    "names": [
     "monkeymashingkeyboard",
     "S-Works",
