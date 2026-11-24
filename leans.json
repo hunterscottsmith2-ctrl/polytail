@@ -1,14 +1,14 @@
 {
- "at": "2026-11-24T19:28:22+00:00",
+ "at": "2026-11-24T19:31:22+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Spread: Middlesbrough FC (-1.5)",
    "pick": "Swansea City AFC",
-   "price": 0.585,
+   "price": 0.595,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 38307,
+   "total_value": 52191,
    "names": [
     "GetsOnBase",
     "1l2ihj34li12u34"
