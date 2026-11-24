@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T19:52:30+00:00",
+ "at": "2026-11-24T19:55:30+00:00",
  "wallets_watched": 134,
  "signals": 0,
  "most_wallets_on_one_side": 3,
- "wallets_with_rows": 117,
- "rows": 27006,
- "skipped_redeemable_or_no_outcome": 24348,
- "under_min_value": 2541,
+ "wallets_with_rows": 116,
+ "rows": 27005,
+ "skipped_redeemable_or_no_outcome": 24355,
+ "under_min_value": 2535,
  "already_ended": 8,
  "ends_too_late": 46,
- "kept": 63,
+ "kept": 61,
  "wallets_needing_extra_pages": 14,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -65,7 +65,7 @@
    "price": 0.485,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 219304,
+   "total_value": 229202,
    "names": [
     "nb1985",
     "GetsOnBase"
@@ -77,10 +77,10 @@
   {
    "title": "Spread: Real Madrid CF (-2.5)",
    "pick": "PSV",
-   "price": 0.485,
+   "price": 0.475,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 70161,
+   "total_value": 68714,
    "names": [
     "1l2ihj34li12u34",
     "bands1",

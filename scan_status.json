@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T19:52:23+00:00",
+ "at": "2026-11-24T19:55:23+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 4,
- "wallets_with_rows": 103,
- "rows": 37358,
- "skipped_redeemable_or_no_outcome": 27987,
- "under_min_value": 8886,
+ "wallets_with_rows": 102,
+ "rows": 37352,
+ "skipped_redeemable_or_no_outcome": 27994,
+ "under_min_value": 8875,
  "already_ended": 13,
  "ends_too_late": 112,
- "kept": 360,
+ "kept": 358,
  "wallets_needing_extra_pages": 21,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Spread: Real Madrid CF (-2.5)",
    "pick": "PSV",
-   "price": 0.485,
+   "price": 0.475,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 63430,
+   "total_value": 62122,
    "names": [
     "1l2ihj34li12u34",
     "bands1"
