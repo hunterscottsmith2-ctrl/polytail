@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T19:49:30+00:00",
+ "at": "2026-11-24T19:52:30+00:00",
  "wallets_watched": 134,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 117,
- "rows": 27008,
- "skipped_redeemable_or_no_outcome": 24338,
- "under_min_value": 2550,
+ "rows": 27006,
+ "skipped_redeemable_or_no_outcome": 24348,
+ "under_min_value": 2541,
  "already_ended": 8,
  "ends_too_late": 46,
- "kept": 66,
+ "kept": 63,
  "wallets_needing_extra_pages": 14,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will FC Porto win on 2026-11-24?",
    "pick": "Yes",
-   "price": 0.475,
+   "price": 0.485,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 214782,
+   "total_value": 219304,
    "names": [
     "nb1985",
     "GetsOnBase"
@@ -77,10 +77,10 @@
   {
    "title": "Spread: Real Madrid CF (-2.5)",
    "pick": "PSV",
-   "price": 0.475,
+   "price": 0.485,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 68714,
+   "total_value": 70161,
    "names": [
     "1l2ihj34li12u34",
     "bands1",

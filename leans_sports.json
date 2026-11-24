@@ -1,14 +1,14 @@
 {
- "at": "2026-11-24T19:49:30+00:00",
+ "at": "2026-11-24T19:52:30+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Will FC Porto win on 2026-11-24?",
    "pick": "Yes",
-   "price": 0.475,
+   "price": 0.485,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 214782,
+   "total_value": 219304,
    "names": [
     "nb1985",
     "GetsOnBase"
@@ -20,10 +20,10 @@
   {
    "title": "Spread: Real Madrid CF (-2.5)",
    "pick": "PSV",
-   "price": 0.475,
+   "price": 0.485,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 68714,
+   "total_value": 70161,
    "names": [
     "1l2ihj34li12u34",
     "bands1",
