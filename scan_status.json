@@ -1,12 +1,12 @@
 {
- "at": "2026-11-24T11:57:50+00:00",
+ "at": "2026-11-24T12:00:50+00:00",
  "wallets_watched": 120,
- "signals": 1,
+ "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 103,
- "rows": 35258,
+ "rows": 35260,
  "skipped_redeemable_or_no_outcome": 26258,
- "under_min_value": 8541,
+ "under_min_value": 8543,
  "already_ended": 18,
  "ends_too_late": 106,
  "kept": 335,
@@ -51,38 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Counter-Strike: FaZe vs GOSH (BO1) - PGL Major Singapore Stage 1",
-   "pick": "FaZe",
-   "price": 0.575,
-   "wallets": 4,
-   "opposing_wallets": 2,
-   "total_value": 64557,
-   "names": [
-    "lllllllIlll",
-    "shekelmeister",
-    "Moneymethod",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-24T12:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "cs2-faze-gosh-2026-11-24"
-  },
   {
    "title": "Dota 2: Team Yandex vs 1win (BO3) - BLAST Slam Seeding Matches",
    "pick": "1win",
    "price": 0.265,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 6723,
+   "total_value": 6755,
    "names": [
     "CORGII",
     "0xE16D3F2A5807999b358aFfD9445C3a09E45E5e30-1776429210592"

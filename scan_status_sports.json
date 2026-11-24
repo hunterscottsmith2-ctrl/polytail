@@ -1,12 +1,12 @@
 {
- "at": "2026-11-24T11:57:58+00:00",
+ "at": "2026-11-24T12:00:58+00:00",
  "wallets_watched": 133,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 114,
- "rows": 26890,
+ "rows": 26889,
  "skipped_redeemable_or_no_outcome": 24404,
- "under_min_value": 2404,
+ "under_min_value": 2403,
  "already_ended": 8,
  "ends_too_late": 47,
  "kept": 27,
@@ -58,21 +58,5 @@
   "end_date": "2026-06-30",
   "redeemable": true
  },
- "leans_not_alerts": [
-  {
-   "title": "Counter-Strike: FaZe vs GOSH (BO1) - PGL Major Singapore Stage 1",
-   "pick": "FaZe",
-   "price": 0.575,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 39000,
-   "names": [
-    "shekelmeister",
-    "Moneymethod"
-   ],
-   "game_start": "2026-11-24T12:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "cs2-faze-gosh-2026-11-24"
-  }
- ]
+ "leans_not_alerts": []
 }

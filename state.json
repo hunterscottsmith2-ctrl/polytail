@@ -1,12 +1,5 @@
 {
  "alerted": {
-  "0x08b3a14c88414512c9d074db808bd94681383b4e08b53613f82877c560ecb234|0": {
-   "first_seen": "2026-11-23T23:33+00:00",
-   "gone_at": 1795478423.9066749,
-   "outcome": "Trail Blazers",
-   "title": "Trail Blazers vs. 76ers",
-   "wallets": 4
-  },
   "0x9fb7a541d9da6a90bf5ffbc73fd8e4c9e1abcf212c4ae080a172d7af6eed3934|0": {
    "first_seen": "2026-11-24T03:42+00:00",
    "gone_at": 1795492823.1449804,
@@ -16,6 +9,7 @@
   },
   "0xcb8986e5d17cdd33297b4b66da1d5457ec34578af105ee5048cc36080d979e1c|0": {
    "first_seen": "2026-11-24T11:57+00:00",
+   "gone_at": 1795521650.6841793,
    "outcome": "FaZe",
    "title": "Counter-Strike: FaZe vs GOSH (BO1) - PGL Major Singapore Stage 1",
    "wallets": 4
@@ -28,12 +22,5 @@
    "wallets": 3
   }
  },
- "recheck": [
-  {
-   "alerted_at": "2026-11-24T11:57:50+00:00",
-   "key": "0xcb8986e5d17cdd33297b4b66da1d5457ec34578af105ee5048cc36080d979e1c|0",
-   "token": "51543776719257802745442557763304557616211324727321390289274194103078570664027",
-   "ts": 1795521470.797391
-  }
- ]
+ "recheck": []
 }

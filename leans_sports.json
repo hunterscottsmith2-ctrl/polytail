@@ -1,21 +1,5 @@
 {
- "at": "2026-11-24T11:57:58+00:00",
+ "at": "2026-11-24T12:00:58+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": [
-  {
-   "title": "Counter-Strike: FaZe vs GOSH (BO1) - PGL Major Singapore Stage 1",
-   "pick": "FaZe",
-   "price": 0.575,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 39000,
-   "names": [
-    "shekelmeister",
-    "Moneymethod"
-   ],
-   "game_start": "2026-11-24T12:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "cs2-faze-gosh-2026-11-24"
-  }
- ]
+ "leans": []
 }
