@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T00:15:23+00:00",
+ "at": "2026-11-24T00:18:23+00:00",
  "wallets_watched": 121,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 104,
- "rows": 42873,
- "skipped_redeemable_or_no_outcome": 34008,
- "under_min_value": 8324,
+ "rows": 42874,
+ "skipped_redeemable_or_no_outcome": 34006,
+ "under_min_value": 8325,
  "already_ended": 27,
  "ends_too_late": 108,
- "kept": 406,
+ "kept": 408,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -62,10 +62,10 @@
   {
    "title": "Nets vs. Timberwolves: O/U 223.5",
    "pick": "Under",
-   "price": 0.515,
+   "price": 0.525,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 43025,
+   "total_value": 43860,
    "names": [
     "justwins",
     "shekelmeister",
@@ -74,21 +74,6 @@
    "game_start": "2026-11-24T00:30+00:00",
    "end_date": "2026-11-24",
    "event_slug": "nba-bkn-min-2026-11-23"
-  },
-  {
-   "title": "Flames vs. Senators",
-   "pick": "Senators",
-   "price": 0.705,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 12108,
-   "names": [
-    "chubbytoro",
-    "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816"
-   ],
-   "game_start": "2026-11-24T00:30+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "nhl-cal-ott-2026-11-23"
   },
   {
    "title": "Bucks vs. Raptors",
