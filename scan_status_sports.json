@@ -1,12 +1,12 @@
 {
- "at": "2026-11-24T06:12:39+00:00",
+ "at": "2026-11-24T06:15:40+00:00",
  "wallets_watched": 133,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 113,
- "rows": 26831,
- "skipped_redeemable_or_no_outcome": 24473,
- "under_min_value": 2286,
+ "rows": 26830,
+ "skipped_redeemable_or_no_outcome": 24470,
+ "under_min_value": 2288,
  "already_ended": 6,
  "ends_too_late": 46,
  "kept": 20,
@@ -51,26 +51,26 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Counter-Strike: PVISION vs DENDELE CS (BO1) - PGL Major Singapore Stage 1",
    "pick": "PVISION",
-   "price": 0.605,
+   "price": 0.62,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 45953,
+   "total_value": 47092,
    "names": [
     "Moneymethod",
     "Ruma-C"
    ],
-   "game_start": "2026-11-24T06:15+00:00",
+   "game_start": "2026-11-24T06:25+00:00",
    "end_date": "2026-11-24",
    "event_slug": "cs2-pv-dendel-2026-11-24"
   }
