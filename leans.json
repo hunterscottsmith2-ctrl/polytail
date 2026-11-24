@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T12:51:50+00:00",
+ "at": "2026-11-24T12:54:51+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.265,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 10458,
+   "total_value": 10512,
    "names": [
     "CORGII",
     "0xE16D3F2A5807999b358aFfD9445C3a09E45E5e30-1776429210592"
