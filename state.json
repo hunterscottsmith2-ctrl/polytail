@@ -14,6 +14,12 @@
    "title": "Counter-Strike: Heroic vs Imperial (BO1) - PGL Major Singapore Stage 1",
    "wallets": 3
   },
+  "0xcb8986e5d17cdd33297b4b66da1d5457ec34578af105ee5048cc36080d979e1c|0": {
+   "first_seen": "2026-11-24T11:57+00:00",
+   "outcome": "FaZe",
+   "title": "Counter-Strike: FaZe vs GOSH (BO1) - PGL Major Singapore Stage 1",
+   "wallets": 4
+  },
   "0xf953da23adb7e972e95c302836b2993fe8027f8e5d419ab82651b849931a0b92|1": {
    "first_seen": "2026-11-24T03:39+00:00",
    "gone_at": 1795492282.5550778,
@@ -22,5 +28,12 @@
    "wallets": 3
   }
  },
- "recheck": []
+ "recheck": [
+  {
+   "alerted_at": "2026-11-24T11:57:50+00:00",
+   "key": "0xcb8986e5d17cdd33297b4b66da1d5457ec34578af105ee5048cc36080d979e1c|0",
+   "token": "51543776719257802745442557763304557616211324727321390289274194103078570664027",
+   "ts": 1795521470.797391
+  }
+ ]
 }
