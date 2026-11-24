@@ -1,17 +1,17 @@
 {
- "at": "2026-11-24T17:05:04+00:00",
+ "at": "2026-11-24T17:09:00+00:00",
  "wallets_watched": 134,
  "signals": 0,
- "most_wallets_on_one_side": 1,
- "wallets_with_rows": 106,
- "rows": 26756,
- "skipped_redeemable_or_no_outcome": 24220,
- "under_min_value": 2450,
+ "most_wallets_on_one_side": 2,
+ "wallets_with_rows": 111,
+ "rows": 27037,
+ "skipped_redeemable_or_no_outcome": 24484,
+ "under_min_value": 2464,
  "already_ended": 8,
- "ends_too_late": 45,
- "kept": 33,
- "wallets_needing_extra_pages": 14,
- "wallets_over_3000_rows": 2,
+ "ends_too_late": 47,
+ "kept": 34,
+ "wallets_needing_extra_pages": 12,
+ "wallets_over_3000_rows": 3,
  "sample_keys": [
   "archived",
   "avg_price",
@@ -58,5 +58,21 @@
   "end_date": "2026-07-12",
   "redeemable": true
  },
- "leans_not_alerts": []
+ "leans_not_alerts": [
+  {
+   "title": "Packers vs. Rams: O/U 44.5",
+   "pick": "Under",
+   "price": 0.515,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 31692,
+   "names": [
+    "bands1",
+    "hi774c"
+   ],
+   "game_start": "2026-11-26T01:00+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "nfl-gb-la-2026-11-26"
+  }
+ ]
 }
