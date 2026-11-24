@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T11:03:49+00:00",
+ "at": "2026-11-24T11:06:50+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -16,21 +16,6 @@
    "game_start": "2026-11-24T14:00+00:00",
    "end_date": "2026-11-24",
    "event_slug": "dota2-ty-1win-2026-11-24"
-  },
-  {
-   "title": "Counter-Strike: FaZe vs GOSH (BO1) - PGL Major Singapore Stage 1",
-   "pick": "FaZe",
-   "price": 0.565,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 24315,
-   "names": [
-    "shekelmeister",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-24T12:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "cs2-faze-gosh-2026-11-24"
   }
  ]
 }
