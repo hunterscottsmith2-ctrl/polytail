@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T11:33:49+00:00",
+ "at": "2026-11-24T11:36:48+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -23,11 +23,11 @@
    "price": 0.565,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 25375,
+   "total_value": 28232,
    "names": [
     "shekelmeister",
-    "darkumbreon88",
-    "lllllllIlll"
+    "lllllllIlll",
+    "darkumbreon88"
    ],
    "game_start": "2026-11-24T12:00+00:00",
    "end_date": "2026-11-24",
