@@ -1,5 +1,21 @@
 {
- "at": "2026-11-24T03:06:22+00:00",
+ "at": "2026-11-24T03:09:23+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": []
+ "leans": [
+  {
+   "title": "Counter-Strike: Heroic vs Imperial (BO1) - PGL Major Singapore Stage 1",
+   "pick": "Heroic",
+   "price": 0.665,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 3768,
+   "names": [
+    "shekelmeister",
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
+   ],
+   "game_start": "2026-11-24T04:00+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "cs2-hero-imp11-2026-11-24"
+  }
+ ]
 }
