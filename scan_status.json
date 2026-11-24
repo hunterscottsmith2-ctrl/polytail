@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T19:31:22+00:00",
+ "at": "2026-11-24T19:34:22+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 103,
- "rows": 37343,
+ "rows": 37336,
  "skipped_redeemable_or_no_outcome": 27977,
- "under_min_value": 8879,
+ "under_min_value": 8874,
  "already_ended": 13,
- "ends_too_late": 112,
- "kept": 362,
+ "ends_too_late": 113,
+ "kept": 359,
  "wallets_needing_extra_pages": 21,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -62,10 +62,10 @@
   {
    "title": "Spread: Middlesbrough FC (-1.5)",
    "pick": "Swansea City AFC",
-   "price": 0.595,
+   "price": 0.585,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 52191,
+   "total_value": 51314,
    "names": [
     "GetsOnBase",
     "1l2ihj34li12u34"
