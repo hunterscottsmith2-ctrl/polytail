@@ -1,12 +1,12 @@
 {
- "at": "2026-11-24T05:24:34+00:00",
+ "at": "2026-11-24T05:27:33+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 102,
- "rows": 39901,
- "skipped_redeemable_or_no_outcome": 30912,
- "under_min_value": 8534,
+ "rows": 39905,
+ "skipped_redeemable_or_no_outcome": 30911,
+ "under_min_value": 8539,
  "already_ended": 18,
  "ends_too_late": 103,
  "kept": 334,
@@ -65,7 +65,7 @@
    "price": 0.405,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 19680,
+   "total_value": 19731,
    "names": [
     "shekelmeister",
     "CORGII"
