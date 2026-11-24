@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T10:51:51+00:00",
+ "at": "2026-11-24T10:54:49+00:00",
  "wallets_watched": 121,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 104,
- "rows": 37493,
+ "rows": 37495,
  "skipped_redeemable_or_no_outcome": 28441,
- "under_min_value": 8589,
+ "under_min_value": 8590,
  "already_ended": 18,
  "ends_too_late": 106,
- "kept": 339,
+ "kept": 340,
  "wallets_needing_extra_pages": 22,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -75,28 +75,12 @@
    "event_slug": "dota2-ty-1win-2026-11-24"
   },
   {
-   "title": "Counter-Strike: Eternal Fire vs DENDELE CS (BO1) - PGL Major Singapore Stage 1",
-   "pick": "Eternal Fire",
-   "price": 0.625,
-   "wallets": 3,
-   "opposing_wallets": 2,
-   "total_value": 177873,
-   "names": [
-    "lllllllIlll",
-    "lonmi2511",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-24T11:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "cs2-ef1-dendel-2026-11-24"
-  },
-  {
    "title": "Counter-Strike: PVISION vs FlyQuest (BO1) - PGL Major Singapore Stage 1",
    "pick": "PVISION",
    "price": 0.675,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 59968,
+   "total_value": 75440,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "Thunderous-Authoritarian-Snarl"
