@@ -1,7 +1,22 @@
 {
- "at": "2026-11-24T23:43:45+00:00",
+ "at": "2026-11-24T23:46:46+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Pistons vs. Magic",
+   "pick": "Magic",
+   "price": 0.565,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 38099,
+   "names": [
+    "shekelmeister",
+    "hi774c"
+   ],
+   "game_start": "2026-11-25T00:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "nba-det-orl-2026-11-24"
+  },
   {
    "title": "Packers vs. Rams: O/U 44.5",
    "pick": "Under",
