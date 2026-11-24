@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T00:27:28+00:00",
+ "at": "2026-11-24T00:30:29+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -16,53 +16,6 @@
    "game_start": "2026-11-24T01:15+00:00",
    "end_date": "2026-11-24",
    "event_slug": "nfl-cin-was-2026-11-24"
-  },
-  {
-   "title": "Spread: Thunder (-4.5)",
-   "pick": "Thunder",
-   "price": 0.485,
-   "wallets": 3,
-   "opposing_wallets": 2,
-   "total_value": 78570,
-   "names": [
-    "monkeymashingkeyboard",
-    "S-Works",
-    "Novelty8"
-   ],
-   "game_start": "2026-11-24T00:30+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "nba-okc-ind-2026-11-23"
-  },
-  {
-   "title": "Nets vs. Timberwolves: O/U 223.5",
-   "pick": "Under",
-   "price": 0.525,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 41313,
-   "names": [
-    "justwins",
-    "shekelmeister"
-   ],
-   "game_start": "2026-11-24T00:30+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "nba-bkn-min-2026-11-23"
-  },
-  {
-   "title": "Thunder vs. Pacers",
-   "pick": "Thunder",
-   "price": 0.615,
-   "wallets": 3,
-   "opposing_wallets": 2,
-   "total_value": 21080,
-   "names": [
-    "monkeymashingkeyboard",
-    "0x0c154c190E293B7e5F8D453b5F690C4dC9599A45-1775083003603",
-    "hi774c"
-   ],
-   "game_start": "2026-11-24T00:30+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "nba-okc-ind-2026-11-23"
   }
  ]
 }
