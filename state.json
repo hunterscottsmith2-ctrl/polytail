@@ -2,6 +2,7 @@
  "alerted": {
   "0x08b3a14c88414512c9d074db808bd94681383b4e08b53613f82877c560ecb234|0": {
    "first_seen": "2026-11-23T23:33+00:00",
+   "gone_at": 1795478423.9066749,
    "outcome": "Trail Blazers",
    "title": "Trail Blazers vs. 76ers",
    "wallets": 4

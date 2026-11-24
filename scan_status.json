@@ -1,15 +1,15 @@
 {
- "at": "2026-11-23T23:57:22+00:00",
+ "at": "2026-11-24T00:00:23+00:00",
  "wallets_watched": 126,
- "signals": 1,
+ "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 108,
- "rows": 37240,
+ "rows": 37247,
  "skipped_redeemable_or_no_outcome": 30700,
- "under_min_value": 6050,
- "already_ended": 19,
+ "under_min_value": 6056,
+ "already_ended": 23,
  "ends_too_late": 104,
- "kept": 367,
+ "kept": 364,
  "wallets_needing_extra_pages": 22,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,53 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Trail Blazers vs. 76ers",
-   "pick": "Trail Blazers",
-   "price": 0.505,
-   "wallets": 4,
-   "opposing_wallets": 2,
-   "total_value": 284964,
-   "names": [
-    "googleplay",
-    "monkeymashingkeyboard",
-    "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
-    "shekelmeister"
-   ],
-   "game_start": "2026-11-24T00:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "nba-por-phi-2026-11-23"
-  },
-  {
-   "title": "Grizzlies vs. Hornets",
-   "pick": "Hornets",
-   "price": 0.425,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 44625,
-   "names": [
-    "monkeymashingkeyboard",
-    "shekelmeister"
-   ],
-   "game_start": "2026-11-24T00:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "nba-mem-cha-2026-11-23"
-  },
   {
    "title": "Flames vs. Senators",
    "pick": "Senators",
    "price": 0.705,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 12028,
+   "total_value": 12099,
    "names": [
     "chubbytoro",
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816"
@@ -112,7 +80,7 @@
    "price": 0.655,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 3276,
+   "total_value": 3342,
    "names": [
     "shekelmeister",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
