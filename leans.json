@@ -1,5 +1,21 @@
 {
- "at": "2026-11-24T09:09:35+00:00",
+ "at": "2026-11-24T09:12:35+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": []
+ "leans": [
+  {
+   "title": "Dota 2: Team Yandex vs 1win (BO3) - BLAST Slam Seeding Matches",
+   "pick": "1win",
+   "price": 0.265,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 4902,
+   "names": [
+    "CORGII",
+    "0xE16D3F2A5807999b358aFfD9445C3a09E45E5e30-1776429210592"
+   ],
+   "game_start": "2026-11-24T14:00+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "dota2-ty-1win-2026-11-24"
+  }
+ ]
 }
