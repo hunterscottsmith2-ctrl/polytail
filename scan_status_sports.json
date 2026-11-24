@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T06:24:40+00:00",
+ "at": "2026-11-24T06:27:39+00:00",
  "wallets_watched": 133,
  "signals": 0,
  "most_wallets_on_one_side": 2,
- "wallets_with_rows": 113,
- "rows": 26831,
- "skipped_redeemable_or_no_outcome": 24470,
- "under_min_value": 2289,
+ "wallets_with_rows": 114,
+ "rows": 26830,
+ "skipped_redeemable_or_no_outcome": 24471,
+ "under_min_value": 2286,
  "already_ended": 6,
  "ends_too_late": 46,
- "kept": 20,
+ "kept": 21,
  "wallets_needing_extra_pages": 14,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -58,21 +58,5 @@
   "end_date": "2026-06-25",
   "redeemable": true
  },
- "leans_not_alerts": [
-  {
-   "title": "Counter-Strike: PVISION vs DENDELE CS (BO1) - PGL Major Singapore Stage 1",
-   "pick": "PVISION",
-   "price": 0.635,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 48232,
-   "names": [
-    "Moneymethod",
-    "Ruma-C"
-   ],
-   "game_start": "2026-11-24T06:25+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "cs2-pv-dendel-2026-11-24"
-  }
- ]
+ "leans_not_alerts": []
 }
