@@ -1,14 +1,31 @@
 {
- "at": "2026-11-24T12:03:51+00:00",
+ "at": "2026-11-24T12:06:51+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Counter-Strike: FaZe vs GOSH (BO1) - PGL Major Singapore Stage 1",
+   "pick": "FaZe",
+   "price": 0.565,
+   "wallets": 4,
+   "opposing_wallets": 2,
+   "total_value": 69603,
+   "names": [
+    "lllllllIlll",
+    "shekelmeister",
+    "Moneymethod",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-24T12:10+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "cs2-faze-gosh-2026-11-24"
+  },
   {
    "title": "Dota 2: Team Yandex vs 1win (BO3) - BLAST Slam Seeding Matches",
    "pick": "1win",
    "price": 0.265,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 6785,
+   "total_value": 10429,
    "names": [
     "CORGII",
     "0xE16D3F2A5807999b358aFfD9445C3a09E45E5e30-1776429210592"
