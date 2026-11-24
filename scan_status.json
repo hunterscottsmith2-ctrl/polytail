@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T00:12:22+00:00",
+ "at": "2026-11-24T00:15:23+00:00",
  "wallets_watched": 121,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 104,
- "rows": 42870,
- "skipped_redeemable_or_no_outcome": 34009,
- "under_min_value": 8325,
+ "rows": 42873,
+ "skipped_redeemable_or_no_outcome": 34008,
+ "under_min_value": 8324,
  "already_ended": 27,
- "ends_too_late": 105,
- "kept": 404,
+ "ends_too_late": 108,
+ "kept": 406,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -81,7 +81,7 @@
    "price": 0.705,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 12106,
+   "total_value": 12108,
    "names": [
     "chubbytoro",
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816"
@@ -89,6 +89,21 @@
    "game_start": "2026-11-24T00:30+00:00",
    "end_date": "2026-11-24",
    "event_slug": "nhl-cal-ott-2026-11-23"
+  },
+  {
+   "title": "Bucks vs. Raptors",
+   "pick": "Raptors",
+   "price": 0.785,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 4741,
+   "names": [
+    "hi774c",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-24T00:30+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "nba-mil-tor-2026-11-23"
   },
   {
    "title": "Nets vs. Timberwolves",
