@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T04:06:22+00:00",
+ "at": "2026-11-24T04:09:22+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.575,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 78922,
+   "total_value": 79140,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "shekelmeister"
