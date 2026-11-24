@@ -1,23 +1,7 @@
 {
- "at": "2026-11-24T00:21:22+00:00",
+ "at": "2026-11-24T00:24:23+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
-  {
-   "title": "Nets vs. Timberwolves: O/U 223.5",
-   "pick": "Under",
-   "price": 0.525,
-   "wallets": 3,
-   "opposing_wallets": 1,
-   "total_value": 43860,
-   "names": [
-    "justwins",
-    "shekelmeister",
-    "hi774c"
-   ],
-   "game_start": "2026-11-24T00:30+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "nba-bkn-min-2026-11-23"
-  },
   {
    "title": "Bucks vs. Raptors",
    "pick": "Raptors",
@@ -43,6 +27,21 @@
    "names": [
     "hi774c",
     "darkumbreon88"
+   ],
+   "game_start": "2026-11-24T00:30+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "nba-bkn-min-2026-11-23"
+  },
+  {
+   "title": "Nets vs. Timberwolves: O/U 223.5",
+   "pick": "Under",
+   "price": 0.525,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 41313,
+   "names": [
+    "justwins",
+    "shekelmeister"
    ],
    "game_start": "2026-11-24T00:30+00:00",
    "end_date": "2026-11-24",
