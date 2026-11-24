@@ -1,17 +1,17 @@
 {
- "at": "2026-11-24T00:09:23+00:00",
- "wallets_watched": 126,
+ "at": "2026-11-24T00:12:22+00:00",
+ "wallets_watched": 121,
  "signals": 0,
  "most_wallets_on_one_side": 4,
- "wallets_with_rows": 108,
- "rows": 37260,
- "skipped_redeemable_or_no_outcome": 30698,
- "under_min_value": 6066,
- "already_ended": 23,
- "ends_too_late": 104,
- "kept": 369,
- "wallets_needing_extra_pages": 22,
- "wallets_over_3000_rows": 4,
+ "wallets_with_rows": 104,
+ "rows": 42870,
+ "skipped_redeemable_or_no_outcome": 34009,
+ "under_min_value": 8325,
+ "already_ended": 27,
+ "ends_too_late": 105,
+ "kept": 404,
+ "wallets_needing_extra_pages": 24,
+ "wallets_over_3000_rows": 6,
  "sample_keys": [
   "archived",
   "avg_price",
@@ -51,14 +51,30 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
+  {
+   "title": "Nets vs. Timberwolves: O/U 223.5",
+   "pick": "Under",
+   "price": 0.515,
+   "wallets": 3,
+   "opposing_wallets": 1,
+   "total_value": 43025,
+   "names": [
+    "justwins",
+    "shekelmeister",
+    "hi774c"
+   ],
+   "game_start": "2026-11-24T00:30+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "nba-bkn-min-2026-11-23"
+  },
   {
    "title": "Flames vs. Senators",
    "pick": "Senators",
@@ -75,30 +91,15 @@
    "event_slug": "nhl-cal-ott-2026-11-23"
   },
   {
-   "title": "Counter-Strike: Heroic vs Imperial (BO1) - PGL Major Singapore Stage 1",
-   "pick": "Heroic",
-   "price": 0.655,
+   "title": "Nets vs. Timberwolves",
+   "pick": "Timberwolves",
+   "price": 0.815,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 3342,
+   "total_value": 3544,
    "names": [
-    "shekelmeister",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
-   ],
-   "game_start": "2026-11-24T04:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "cs2-hero-imp11-2026-11-24"
-  },
-  {
-   "title": "Nets vs. Timberwolves: O/U 223.5",
-   "pick": "Under",
-   "price": 0.515,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 40527,
-   "names": [
-    "justwins",
-    "shekelmeister"
+    "hi774c",
+    "darkumbreon88"
    ],
    "game_start": "2026-11-24T00:30+00:00",
    "end_date": "2026-11-24",

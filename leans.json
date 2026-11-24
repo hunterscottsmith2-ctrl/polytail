@@ -1,7 +1,23 @@
 {
- "at": "2026-11-24T00:09:23+00:00",
+ "at": "2026-11-24T00:12:22+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Nets vs. Timberwolves: O/U 223.5",
+   "pick": "Under",
+   "price": 0.515,
+   "wallets": 3,
+   "opposing_wallets": 1,
+   "total_value": 43025,
+   "names": [
+    "justwins",
+    "shekelmeister",
+    "hi774c"
+   ],
+   "game_start": "2026-11-24T00:30+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "nba-bkn-min-2026-11-23"
+  },
   {
    "title": "Flames vs. Senators",
    "pick": "Senators",
@@ -18,30 +34,15 @@
    "event_slug": "nhl-cal-ott-2026-11-23"
   },
   {
-   "title": "Counter-Strike: Heroic vs Imperial (BO1) - PGL Major Singapore Stage 1",
-   "pick": "Heroic",
-   "price": 0.655,
+   "title": "Nets vs. Timberwolves",
+   "pick": "Timberwolves",
+   "price": 0.815,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 3342,
+   "total_value": 3544,
    "names": [
-    "shekelmeister",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
-   ],
-   "game_start": "2026-11-24T04:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "cs2-hero-imp11-2026-11-24"
-  },
-  {
-   "title": "Nets vs. Timberwolves: O/U 223.5",
-   "pick": "Under",
-   "price": 0.515,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 40527,
-   "names": [
-    "justwins",
-    "shekelmeister"
+    "hi774c",
+    "darkumbreon88"
    ],
    "game_start": "2026-11-24T00:30+00:00",
    "end_date": "2026-11-24",
