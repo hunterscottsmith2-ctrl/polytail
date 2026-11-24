@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T19:25:22+00:00",
+ "at": "2026-11-24T19:28:22+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 103,
- "rows": 37341,
- "skipped_redeemable_or_no_outcome": 27976,
- "under_min_value": 8875,
+ "rows": 37342,
+ "skipped_redeemable_or_no_outcome": 27977,
+ "under_min_value": 8877,
  "already_ended": 13,
  "ends_too_late": 112,
- "kept": 365,
+ "kept": 363,
  "wallets_needing_extra_pages": 21,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,14 +51,29 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
+  {
+   "title": "Spread: Middlesbrough FC (-1.5)",
+   "pick": "Swansea City AFC",
+   "price": 0.585,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 38307,
+   "names": [
+    "GetsOnBase",
+    "1l2ihj34li12u34"
+   ],
+   "game_start": "2026-11-24T19:45+00:00",
+   "end_date": "2026-11-24",
+   "event_slug": "elc-mid-swa-2026-11-24-more-markets"
+  },
   {
    "title": "Spread: Real Madrid CF (-2.5)",
    "pick": "PSV",
