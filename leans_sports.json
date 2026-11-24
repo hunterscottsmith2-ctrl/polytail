@@ -1,14 +1,14 @@
 {
- "at": "2026-11-24T06:09:39+00:00",
+ "at": "2026-11-24T06:12:39+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Counter-Strike: PVISION vs DENDELE CS (BO1) - PGL Major Singapore Stage 1",
    "pick": "PVISION",
-   "price": 0.615,
+   "price": 0.605,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 46713,
+   "total_value": 45953,
    "names": [
     "Moneymethod",
     "Ruma-C"
