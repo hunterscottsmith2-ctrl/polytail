@@ -1,21 +1,5 @@
 {
- "at": "2026-11-24T19:58:24+00:00",
+ "at": "2026-11-24T20:01:24+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": [
-  {
-   "title": "Spread: Real Madrid CF (-2.5)",
-   "pick": "PSV",
-   "price": 0.485,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 63430,
-   "names": [
-    "1l2ihj34li12u34",
-    "bands1"
-   ],
-   "game_start": "2026-11-24T20:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "ucl-rma-psv-2026-11-24-more-markets"
-  }
- ]
+ "leans": []
 }

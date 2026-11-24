@@ -1,14 +1,14 @@
 {
- "at": "2026-11-24T19:58:24+00:00",
+ "at": "2026-11-24T20:01:24+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 102,
- "rows": 37338,
- "skipped_redeemable_or_no_outcome": 27983,
- "under_min_value": 8876,
+ "rows": 37341,
+ "skipped_redeemable_or_no_outcome": 27984,
+ "under_min_value": 8879,
  "already_ended": 13,
- "ends_too_late": 112,
+ "ends_too_late": 111,
  "kept": 354,
  "wallets_needing_extra_pages": 21,
  "wallets_over_3000_rows": 4,
@@ -58,21 +58,5 @@
   "end_date": "2026-06-25",
   "redeemable": true
  },
- "leans_not_alerts": [
-  {
-   "title": "Spread: Real Madrid CF (-2.5)",
-   "pick": "PSV",
-   "price": 0.485,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 63430,
-   "names": [
-    "1l2ihj34li12u34",
-    "bands1"
-   ],
-   "game_start": "2026-11-24T20:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "ucl-rma-psv-2026-11-24-more-markets"
-  }
- ]
+ "leans_not_alerts": []
 }
