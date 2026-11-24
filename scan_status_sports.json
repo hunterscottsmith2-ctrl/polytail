@@ -1,15 +1,15 @@
 {
- "at": "2026-11-24T09:45:40+00:00",
+ "at": "2026-11-24T09:48:40+00:00",
  "wallets_watched": 133,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 114,
  "rows": 26916,
  "skipped_redeemable_or_no_outcome": 24465,
- "under_min_value": 2370,
+ "under_min_value": 2369,
  "already_ended": 6,
  "ends_too_late": 48,
- "kept": 27,
+ "kept": 28,
  "wallets_needing_extra_pages": 14,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -51,29 +51,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
- "leans_not_alerts": [
-  {
-   "title": "Counter-Strike: 9z vs M80 (BO1) - PGL Major Singapore Stage 1",
-   "pick": "M80",
-   "price": 0.605,
-   "wallets": 3,
-   "opposing_wallets": 0,
-   "total_value": 79656,
-   "names": [
-    "fantasy7788",
-    "Ruma-C",
-    "luckycat888888"
-   ],
-   "game_start": "2026-11-24T10:00+00:00",
-   "end_date": "2026-11-24",
-   "event_slug": "cs2-9z-m80-2026-11-24"
-  }
- ]
+ "leans_not_alerts": []
 }
