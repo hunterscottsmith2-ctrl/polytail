@@ -1,22 +1,7 @@
 {
- "at": "2026-11-25T09:56:16+00:00",
+ "at": "2026-11-25T09:59:15+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
-  {
-   "title": "Counter-Strike: GOSH vs Chinggis Warriors (BO3) - PGL Major Singapore Stage 1",
-   "pick": "GOSH",
-   "price": 0.825,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 48987,
-   "names": [
-    "JabJabich",
-    "lllllllIlll"
-   ],
-   "game_start": "2026-11-25T10:30+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "cs2-gosh-cw-2026-11-25"
-  },
   {
    "title": "Will FK Shakhtar Donetsk win on 2026-11-25?",
    "pick": "No",
@@ -35,10 +20,10 @@
   {
    "title": "Nets vs. Bucks",
    "pick": "Bucks",
-   "price": 0.515,
+   "price": 0.525,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 3441,
+   "total_value": 3508,
    "names": [
     "monkeymashingkeyboard",
     "hi774c"
@@ -46,6 +31,21 @@
    "game_start": "2026-11-26T01:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nba-bkn-mil-2026-11-25"
+  },
+  {
+   "title": "Counter-Strike: GOSH vs Chinggis Warriors (BO3) - PGL Major Singapore Stage 1",
+   "pick": "GOSH",
+   "price": 0.815,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 48393,
+   "names": [
+    "JabJabich",
+    "lllllllIlll"
+   ],
+   "game_start": "2026-11-25T10:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "cs2-gosh-cw-2026-11-25"
   },
   {
    "title": "Packers vs. Rams: O/U 44.5",
