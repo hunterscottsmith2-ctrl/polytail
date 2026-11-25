@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T06:13:54+00:00",
+ "at": "2026-11-25T06:16:54+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 106,
- "rows": 43969,
- "skipped_redeemable_or_no_outcome": 34655,
- "under_min_value": 8880,
+ "rows": 43973,
+ "skipped_redeemable_or_no_outcome": 34657,
+ "under_min_value": 8881,
  "already_ended": 8,
  "ends_too_late": 104,
- "kept": 322,
+ "kept": 323,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 5,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -65,7 +65,7 @@
    "price": 0.825,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 24768,
+   "total_value": 24791,
    "names": [
     "lllllllIlll",
     "JabJabich"
@@ -110,7 +110,7 @@
    "price": 0.515,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 3380,
+   "total_value": 3381,
    "names": [
     "monkeymashingkeyboard",
     "hi774c"
