@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T14:14:17+00:00",
+ "at": "2026-11-25T14:17:17+00:00",
  "wallets_watched": 121,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 105,
- "rows": 46436,
- "skipped_redeemable_or_no_outcome": 36990,
- "under_min_value": 9007,
+ "rows": 46433,
+ "skipped_redeemable_or_no_outcome": 36991,
+ "under_min_value": 9002,
  "already_ended": 9,
  "ends_too_late": 108,
- "kept": 322,
+ "kept": 323,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -88,6 +88,21 @@
    "game_start": "2026-11-26T01:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nba-bkn-mil-2026-11-25"
+  },
+  {
+   "title": "Packers vs. Rams",
+   "pick": "Packers",
+   "price": 0.435,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 42197,
+   "names": [
+    "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
+    "hi774c"
+   ],
+   "game_start": "2026-11-26T01:00+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "nfl-gb-la-2026-11-26"
   },
   {
    "title": "Packers vs. Rams: O/U 44.5",
