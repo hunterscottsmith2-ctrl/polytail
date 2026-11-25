@@ -1,12 +1,12 @@
 {
- "at": "2026-11-25T20:59:50+00:00",
+ "at": "2026-11-25T21:02:49+00:00",
  "wallets_watched": 123,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 107,
- "rows": 46650,
- "skipped_redeemable_or_no_outcome": 36974,
- "under_min_value": 9173,
+ "rows": 46652,
+ "skipped_redeemable_or_no_outcome": 36975,
+ "under_min_value": 9174,
  "already_ended": 9,
  "ends_too_late": 106,
  "kept": 388,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -80,7 +80,7 @@
    "price": 0.485,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 44371,
+   "total_value": 44373,
    "names": [
     "monkeymashingkeyboard",
     "hi774c"
