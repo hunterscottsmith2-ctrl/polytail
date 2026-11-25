@@ -2,6 +2,7 @@
  "alerted": {
   "0x2bf2fcf504c237ecbdd584663a8ec1498054b983285d656bccd6e810376fa5d7|1": {
    "first_seen": "2026-11-25T00:52+00:00",
+   "gone_at": 1795568509.9383755,
    "outcome": "Under",
    "title": "Celtics vs. Wizards: O/U 219.5",
    "wallets": 4

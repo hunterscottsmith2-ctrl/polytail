@@ -1,29 +1,14 @@
 {
- "at": "2026-11-25T00:58:41+00:00",
+ "at": "2026-11-25T01:01:41+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
-  {
-   "title": "Celtics vs. Wizards: O/U 218.5",
-   "pick": "Under",
-   "price": 0.475,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 16625,
-   "names": [
-    "bands1",
-    "hi774c"
-   ],
-   "game_start": "2026-11-25T01:00+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "nba-bos-was-2026-11-24"
-  },
   {
    "title": "Counter-Strike: 9z vs DENDELE CS (BO3) - PGL Major Singapore Stage 1",
    "pick": "DENDELE CS",
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 8997,
+   "total_value": 9049,
    "names": [
     "CORGII",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
