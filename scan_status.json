@@ -1,12 +1,12 @@
 {
- "at": "2026-11-25T08:22:55+00:00",
+ "at": "2026-11-25T08:25:55+00:00",
  "wallets_watched": 121,
  "signals": 0,
- "most_wallets_on_one_side": 3,
+ "most_wallets_on_one_side": 4,
  "wallets_with_rows": 105,
- "rows": 46849,
+ "rows": 46847,
  "skipped_redeemable_or_no_outcome": 37427,
- "under_min_value": 8980,
+ "under_min_value": 8978,
  "already_ended": 9,
  "ends_too_late": 103,
  "kept": 330,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -110,7 +110,7 @@
    "price": 0.545,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 362031,
+   "total_value": 366339,
    "names": [
     "Thunderous-Authoritarian-Snarl",
     "fantasy7788",
@@ -153,10 +153,10 @@
   {
    "title": "Counter-Strike: Imperial vs FlyQuest - Map 1 Winner",
    "pick": "FlyQuest",
-   "price": 0.495,
+   "price": 0.505,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 16112,
+   "total_value": 16329,
    "names": [
     "CORGII",
     "JabJabich",

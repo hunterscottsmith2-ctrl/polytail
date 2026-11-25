@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T08:22:55+00:00",
+ "at": "2026-11-25T08:25:55+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -53,7 +53,7 @@
    "price": 0.545,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 362031,
+   "total_value": 366339,
    "names": [
     "Thunderous-Authoritarian-Snarl",
     "fantasy7788",
@@ -96,10 +96,10 @@
   {
    "title": "Counter-Strike: Imperial vs FlyQuest - Map 1 Winner",
    "pick": "FlyQuest",
-   "price": 0.495,
+   "price": 0.505,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 16112,
+   "total_value": 16329,
    "names": [
     "CORGII",
     "JabJabich",
