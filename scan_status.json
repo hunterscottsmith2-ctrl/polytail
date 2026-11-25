@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T06:28:54+00:00",
+ "at": "2026-11-25T06:31:55+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 106,
- "rows": 43965,
+ "rows": 43964,
  "skipped_redeemable_or_no_outcome": 34658,
  "under_min_value": 8871,
  "already_ended": 8,
  "ends_too_late": 104,
- "kept": 324,
+ "kept": 323,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 5,
  "sample_keys": [
@@ -65,7 +65,7 @@
    "price": 0.825,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 24814,
+   "total_value": 24823,
    "names": [
     "lllllllIlll",
     "JabJabich"
@@ -110,7 +110,7 @@
    "price": 0.515,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 3381,
+   "total_value": 3382,
    "names": [
     "monkeymashingkeyboard",
     "hi774c"
