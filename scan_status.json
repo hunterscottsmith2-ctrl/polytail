@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T05:52:53+00:00",
+ "at": "2026-11-25T05:55:54+00:00",
  "wallets_watched": 123,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 107,
  "rows": 43996,
  "skipped_redeemable_or_no_outcome": 34657,
- "under_min_value": 8907,
+ "under_min_value": 8906,
  "already_ended": 8,
  "ends_too_late": 105,
- "kept": 319,
+ "kept": 320,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 5,
  "sample_keys": [
@@ -73,6 +73,21 @@
    "game_start": "2026-11-25T17:45+00:00",
    "end_date": "2026-11-25",
    "event_slug": "ucl-sf-fcb-2026-11-25"
+  },
+  {
+   "title": "Counter-Strike: GOSH vs Chinggis Warriors (BO3) - PGL Major Singapore Stage 1",
+   "pick": "GOSH",
+   "price": 0.825,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 24603,
+   "names": [
+    "lllllllIlll",
+    "JabJabich"
+   ],
+   "game_start": "2026-11-25T10:30+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "cs2-gosh-cw-2026-11-25"
   },
   {
    "title": "Counter-Strike: 9z vs DENDELE CS (BO3) - PGL Major Singapore Stage 1",
