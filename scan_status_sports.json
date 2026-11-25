@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T08:02:03+00:00",
+ "at": "2026-11-25T08:05:02+00:00",
  "wallets_watched": 134,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 114,
- "rows": 26527,
+ "rows": 26529,
  "skipped_redeemable_or_no_outcome": 24137,
- "under_min_value": 2301,
+ "under_min_value": 2302,
  "already_ended": 6,
  "ends_too_late": 45,
- "kept": 38,
+ "kept": 39,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -58,5 +58,21 @@
   "end_date": "2026-06-25",
   "redeemable": true
  },
- "leans_not_alerts": []
+ "leans_not_alerts": [
+  {
+   "title": "Counter-Strike: Imperial vs FlyQuest (BO3) - PGL Major Singapore Stage 1",
+   "pick": "FlyQuest",
+   "price": 0.465,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 30601,
+   "names": [
+    "shekelmeister",
+    "luckycat888888"
+   ],
+   "game_start": "2026-11-25T08:15+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "cs2-imp11-fly-2026-11-25"
+  }
+ ]
 }
