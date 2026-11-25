@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T19:53:40+00:00",
+ "at": "2026-11-25T19:56:39+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -16,6 +16,21 @@
    "game_start": "2026-11-25T20:00+00:00",
    "end_date": "2026-11-25",
    "event_slug": "ucl-shd-fen-2026-11-25"
+  },
+  {
+   "title": "Will Liverpool FC win on 2026-11-25?",
+   "pick": "Yes",
+   "price": 0.565,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 7092,
+   "names": [
+    "darkumbreon88",
+    "hi774c"
+   ],
+   "game_start": "2026-11-25T20:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "ucl-bru-liv-2026-11-25"
   },
   {
    "title": "Suns vs. Rockets",
