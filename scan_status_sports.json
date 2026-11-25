@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T21:53:59+00:00",
+ "at": "2026-11-25T21:56:59+00:00",
  "wallets_watched": 134,
  "signals": 1,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 114,
- "rows": 26846,
- "skipped_redeemable_or_no_outcome": 24035,
- "under_min_value": 2679,
+ "rows": 26850,
+ "skipped_redeemable_or_no_outcome": 24034,
+ "under_min_value": 2682,
  "already_ended": 6,
  "ends_too_late": 45,
- "kept": 81,
+ "kept": 83,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -65,7 +65,7 @@
    "price": 0.505,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 251960,
+   "total_value": 347018,
    "names": [
     "fantasy7788",
     "monkeymashingkeyboard",
@@ -74,6 +74,21 @@
    "game_start": "2026-11-25T22:00+00:00",
    "end_date": "2026-11-25",
    "event_slug": "nba-mia-phi-2026-11-25"
+  },
+  {
+   "title": "Timberwolves vs. Thunder",
+   "pick": "Thunder",
+   "price": 0.545,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 35731,
+   "names": [
+    "monkeymashingkeyboard",
+    "0x0c154c190E293B7e5F8D453b5F690C4dC9599A45-1775083003603"
+   ],
+   "game_start": "2026-11-26T00:30+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "nba-min-okc-2026-11-25"
   },
   {
    "title": "Packers vs. Rams",
