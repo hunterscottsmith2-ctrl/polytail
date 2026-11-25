@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T03:22:52+00:00",
+ "at": "2026-11-25T03:25:51+00:00",
  "wallets_watched": 135,
  "signals": 0,
  "most_wallets_on_one_side": 2,
- "wallets_with_rows": 118,
+ "wallets_with_rows": 117,
  "rows": 26482,
- "skipped_redeemable_or_no_outcome": 24026,
- "under_min_value": 2360,
+ "skipped_redeemable_or_no_outcome": 24027,
+ "under_min_value": 2362,
  "already_ended": 6,
  "ends_too_late": 46,
- "kept": 44,
+ "kept": 41,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -65,7 +65,7 @@
    "price": 0.505,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 27893,
+   "total_value": 27900,
    "names": [
     "shekelmeister",
     "ChonkVision"
