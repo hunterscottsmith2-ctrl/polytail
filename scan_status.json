@@ -1,12 +1,12 @@
 {
- "at": "2026-11-25T21:35:50+00:00",
+ "at": "2026-11-25T21:38:51+00:00",
  "wallets_watched": 123,
  "signals": 1,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 108,
- "rows": 46674,
- "skipped_redeemable_or_no_outcome": 36987,
- "under_min_value": 9175,
+ "rows": 46682,
+ "skipped_redeemable_or_no_outcome": 36986,
+ "under_min_value": 9184,
  "already_ended": 9,
  "ends_too_late": 106,
  "kept": 397,
@@ -96,7 +96,7 @@
    "price": 0.525,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 13128,
+   "total_value": 13173,
    "names": [
     "monkeymashingkeyboard",
     "hi774c"
