@@ -1,12 +1,12 @@
 {
- "at": "2026-11-25T08:28:54+00:00",
+ "at": "2026-11-25T08:31:54+00:00",
  "wallets_watched": 121,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 105,
- "rows": 46847,
+ "rows": 46848,
  "skipped_redeemable_or_no_outcome": 37421,
- "under_min_value": 8983,
+ "under_min_value": 8984,
  "already_ended": 9,
  "ends_too_late": 103,
  "kept": 331,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -105,22 +105,6 @@
    "event_slug": "nba-bkn-mil-2026-11-25"
   },
   {
-   "title": "Counter-Strike: Imperial vs FlyQuest (BO3) - PGL Major Singapore Stage 1",
-   "pick": "Imperial",
-   "price": 0.535,
-   "wallets": 3,
-   "opposing_wallets": 2,
-   "total_value": 376169,
-   "names": [
-    "Thunderous-Authoritarian-Snarl",
-    "fantasy7788",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
-   ],
-   "game_start": "2026-11-25T08:30+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "cs2-imp11-fly-2026-11-25"
-  },
-  {
    "title": "Packers vs. Rams: O/U 44.5",
    "pick": "Under",
    "price": 0.515,
@@ -134,37 +118,6 @@
    "game_start": "2026-11-26T01:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nfl-gb-la-2026-11-26"
-  },
-  {
-   "title": "Map Handicap: FLY (-1.5) vs Imperial (+1.5)",
-   "pick": "Imperial",
-   "price": 0.775,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 26436,
-   "names": [
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
-    "Thunderous-Authoritarian-Snarl"
-   ],
-   "game_start": "2026-11-25T08:30+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "cs2-imp11-fly-2026-11-25"
-  },
-  {
-   "title": "Counter-Strike: Imperial vs FlyQuest - Map 1 Winner",
-   "pick": "FlyQuest",
-   "price": 0.505,
-   "wallets": 3,
-   "opposing_wallets": 2,
-   "total_value": 16329,
-   "names": [
-    "CORGII",
-    "JabJabich",
-    "lllllllIlll"
-   ],
-   "game_start": "2026-11-25T08:30+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "cs2-imp11-fly-2026-11-25"
   }
  ]
 }
