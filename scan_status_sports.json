@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T02:31:50+00:00",
+ "at": "2026-11-25T02:34:49+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 2,
- "wallets_with_rows": 118,
- "rows": 27200,
- "skipped_redeemable_or_no_outcome": 24674,
- "under_min_value": 2433,
+ "wallets_with_rows": 119,
+ "rows": 27196,
+ "skipped_redeemable_or_no_outcome": 24706,
+ "under_min_value": 2400,
  "already_ended": 8,
  "ends_too_late": 48,
- "kept": 37,
+ "kept": 34,
  "wallets_needing_extra_pages": 14,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -59,6 +59,21 @@
   "redeemable": true
  },
  "leans_not_alerts": [
+  {
+   "title": "Will FC Barcelona win on 2026-11-25?",
+   "pick": "Yes",
+   "price": 0.905,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 23352,
+   "names": [
+    "0F62",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-25T17:45+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "ucl-sf-fcb-2026-11-25"
+  },
   {
    "title": "Packers vs. Rams: O/U 44.5",
    "pick": "Under",
