@@ -1,12 +1,12 @@
 {
- "at": "2026-11-25T04:55:53+00:00",
+ "at": "2026-11-25T04:58:54+00:00",
  "wallets_watched": 124,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 109,
- "rows": 46976,
- "skipped_redeemable_or_no_outcome": 37608,
- "under_min_value": 8925,
+ "rows": 46974,
+ "skipped_redeemable_or_no_outcome": 37607,
+ "under_min_value": 8924,
  "already_ended": 9,
  "ends_too_late": 102,
  "kept": 332,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
