@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T22:53:50+00:00",
+ "at": "2026-11-25T22:56:50+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -81,10 +81,10 @@
   {
    "title": "Nets vs. Bucks",
    "pick": "Bucks",
-   "price": 0.525,
+   "price": 0.515,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 29758,
+   "total_value": 29191,
    "names": [
     "monkeymashingkeyboard",
     "hi774c"
