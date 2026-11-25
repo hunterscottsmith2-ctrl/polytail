@@ -1,17 +1,17 @@
 {
- "at": "2026-11-25T00:07:38+00:00",
- "wallets_watched": 119,
+ "at": "2026-11-25T00:10:39+00:00",
+ "wallets_watched": 122,
  "signals": 0,
- "most_wallets_on_one_side": 4,
- "wallets_with_rows": 102,
- "rows": 37349,
- "skipped_redeemable_or_no_outcome": 28240,
- "under_min_value": 8648,
- "already_ended": 15,
- "ends_too_late": 113,
- "kept": 333,
- "wallets_needing_extra_pages": 21,
- "wallets_over_3000_rows": 4,
+ "most_wallets_on_one_side": 3,
+ "wallets_with_rows": 107,
+ "rows": 43872,
+ "skipped_redeemable_or_no_outcome": 34494,
+ "under_min_value": 8970,
+ "already_ended": 11,
+ "ends_too_late": 99,
+ "kept": 298,
+ "wallets_needing_extra_pages": 26,
+ "wallets_over_3000_rows": 5,
  "sample_keys": [
   "archived",
   "avg_price",
@@ -58,5 +58,21 @@
   "end_date": "2026-07-12",
   "redeemable": true
  },
- "leans_not_alerts": []
+ "leans_not_alerts": [
+  {
+   "title": "Counter-Strike: 9z vs DENDELE CS (BO3) - PGL Major Singapore Stage 1",
+   "pick": "DENDELE CS",
+   "price": 0.495,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 7948,
+   "names": [
+    "CORGII",
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
+   ],
+   "game_start": "2026-11-25T08:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "cs2-9z-dendel-2026-11-25"
+  }
+ ]
 }
