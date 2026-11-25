@@ -1,12 +1,12 @@
 {
- "at": "2026-11-25T22:02:58+00:00",
+ "at": "2026-11-25T22:05:58+00:00",
  "wallets_watched": 134,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 114,
- "rows": 26846,
- "skipped_redeemable_or_no_outcome": 24031,
- "under_min_value": 2681,
+ "rows": 26854,
+ "skipped_redeemable_or_no_outcome": 24030,
+ "under_min_value": 2690,
  "already_ended": 6,
  "ends_too_late": 45,
  "kept": 83,
@@ -62,10 +62,10 @@
   {
    "title": "Timberwolves vs. Thunder",
    "pick": "Thunder",
-   "price": 0.545,
+   "price": 0.555,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 35760,
+   "total_value": 38571,
    "names": [
     "monkeymashingkeyboard",
     "0x0c154c190E293B7e5F8D453b5F690C4dC9599A45-1775083003603"
