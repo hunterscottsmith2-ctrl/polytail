@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T08:13:55+00:00",
+ "at": "2026-11-25T08:16:55+00:00",
  "wallets_watched": 121,
  "signals": 0,
- "most_wallets_on_one_side": 4,
+ "most_wallets_on_one_side": 3,
  "wallets_with_rows": 105,
- "rows": 46841,
- "skipped_redeemable_or_no_outcome": 37428,
- "under_min_value": 8970,
+ "rows": 46844,
+ "skipped_redeemable_or_no_outcome": 37427,
+ "under_min_value": 8976,
  "already_ended": 9,
  "ends_too_late": 103,
- "kept": 331,
+ "kept": 329,
  "wallets_needing_extra_pages": 27,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -105,6 +105,22 @@
    "event_slug": "nba-bkn-mil-2026-11-25"
   },
   {
+   "title": "Counter-Strike: Imperial vs FlyQuest (BO3) - PGL Major Singapore Stage 1",
+   "pick": "Imperial",
+   "price": 0.545,
+   "wallets": 3,
+   "opposing_wallets": 2,
+   "total_value": 352097,
+   "names": [
+    "Thunderous-Authoritarian-Snarl",
+    "fantasy7788",
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
+   ],
+   "game_start": "2026-11-25T08:30+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "cs2-imp11-fly-2026-11-25"
+  },
+  {
    "title": "Packers vs. Rams: O/U 44.5",
    "pick": "Under",
    "price": 0.515,
@@ -122,16 +138,16 @@
   {
    "title": "Counter-Strike: Imperial vs FlyQuest - Map 1 Winner",
    "pick": "FlyQuest",
-   "price": 0.505,
+   "price": 0.495,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 15066,
+   "total_value": 16006,
    "names": [
     "CORGII",
-    "lllllllIlll",
-    "JabJabich"
+    "JabJabich",
+    "lllllllIlll"
    ],
-   "game_start": "2026-11-25T08:15+00:00",
+   "game_start": "2026-11-25T08:30+00:00",
    "end_date": "2026-11-25",
    "event_slug": "cs2-imp11-fly-2026-11-25"
   }
