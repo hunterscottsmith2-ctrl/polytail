@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T02:49:50+00:00",
+ "at": "2026-11-25T02:52:51+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 119,
- "rows": 27199,
- "skipped_redeemable_or_no_outcome": 24732,
- "under_min_value": 2372,
+ "rows": 27198,
+ "skipped_redeemable_or_no_outcome": 24731,
+ "under_min_value": 2373,
  "already_ended": 8,
- "ends_too_late": 48,
- "kept": 39,
+ "ends_too_late": 46,
+ "kept": 40,
  "wallets_needing_extra_pages": 14,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -84,6 +84,21 @@
    "names": [
     "TMingchan",
     "monkeymashingkeyboard"
+   ],
+   "game_start": "2026-11-25T03:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "nba-dal-den-2026-11-24"
+  },
+  {
+   "title": "Mavericks vs. Nuggets",
+   "pick": "Nuggets",
+   "price": 0.715,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 118308,
+   "names": [
+    "milkteaboba",
+    "hi774c"
    ],
    "game_start": "2026-11-25T03:00+00:00",
    "end_date": "2026-11-25",
