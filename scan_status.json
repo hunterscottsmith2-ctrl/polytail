@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T23:05:50+00:00",
+ "at": "2026-11-25T23:08:50+00:00",
  "wallets_watched": 123,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 107,
- "rows": 46635,
- "skipped_redeemable_or_no_outcome": 37045,
- "under_min_value": 9112,
+ "rows": 46634,
+ "skipped_redeemable_or_no_outcome": 37044,
+ "under_min_value": 9114,
  "already_ended": 9,
  "ends_too_late": 106,
- "kept": 363,
+ "kept": 361,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -126,7 +126,7 @@
    "price": 0.515,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 62498,
+   "total_value": 62607,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "CORGII"
