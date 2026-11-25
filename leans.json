@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T22:59:50+00:00",
+ "at": "2026-11-25T23:02:49+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.555,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 50857,
+   "total_value": 52425,
    "names": [
     "justwins",
     "ChonkVision"
@@ -23,7 +23,7 @@
    "price": 0.475,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 20895,
+   "total_value": 20940,
    "names": [
     "CORGII",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
@@ -38,7 +38,7 @@
    "price": 0.515,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 9951,
+   "total_value": 10031,
    "names": [
     "justwins",
     "hi774c"
