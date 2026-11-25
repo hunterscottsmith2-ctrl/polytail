@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T09:47:14+00:00",
+ "at": "2026-11-25T09:50:15+00:00",
  "wallets_watched": 121,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 106,
- "rows": 46884,
+ "rows": 46882,
  "skipped_redeemable_or_no_outcome": 37450,
- "under_min_value": 8997,
+ "under_min_value": 8993,
  "already_ended": 9,
  "ends_too_late": 102,
- "kept": 326,
+ "kept": 328,
  "wallets_needing_extra_pages": 27,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -77,10 +77,10 @@
   {
    "title": "Will FK Shakhtar Donetsk win on 2026-11-25?",
    "pick": "No",
-   "price": 0.665,
+   "price": 0.655,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 5983,
+   "total_value": 5893,
    "names": [
     "hi774c",
     "darkumbreon88"
