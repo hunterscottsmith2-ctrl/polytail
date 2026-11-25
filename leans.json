@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T21:47:50+00:00",
+ "at": "2026-11-25T21:50:51+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -17,6 +17,21 @@
    "game_start": "2026-11-26T01:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nfl-gb-la-2026-11-26"
+  },
+  {
+   "title": "Sharks vs. Ducks",
+   "pick": "Ducks",
+   "price": 0.555,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 50714,
+   "names": [
+    "justwins",
+    "ChonkVision"
+   ],
+   "game_start": "2026-11-26T03:00+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "nhl-sj-ana-2026-11-25"
   },
   {
    "title": "Cavaliers vs. Knicks: O/U 218.5",
