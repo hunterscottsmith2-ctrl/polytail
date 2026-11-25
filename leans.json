@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T21:20:49+00:00",
+ "at": "2026-11-25T21:23:50+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -23,7 +23,7 @@
    "price": 0.485,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 44420,
+   "total_value": 44432,
    "names": [
     "monkeymashingkeyboard",
     "hi774c"
