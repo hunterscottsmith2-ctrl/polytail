@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T07:49:55+00:00",
+ "at": "2026-11-25T07:52:54+00:00",
  "wallets_watched": 122,
  "signals": 1,
  "most_wallets_on_one_side": 6,
  "wallets_with_rows": 106,
- "rows": 47041,
- "skipped_redeemable_or_no_outcome": 37646,
- "under_min_value": 8958,
+ "rows": 47042,
+ "skipped_redeemable_or_no_outcome": 37637,
+ "under_min_value": 8967,
  "already_ended": 9,
  "ends_too_late": 103,
- "kept": 325,
+ "kept": 326,
  "wallets_needing_extra_pages": 27,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -65,7 +65,7 @@
    "price": 0.505,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 37706,
+   "total_value": 39233,
    "names": [
     "lllllllIlll",
     "CORGII",
@@ -81,7 +81,7 @@
    "price": 0.825,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 27689,
+   "total_value": 28362,
    "names": [
     "lllllllIlll",
     "JabJabich"
@@ -104,21 +104,6 @@
    "game_start": "2026-11-26T01:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nba-bkn-mil-2026-11-25"
-  },
-  {
-   "title": "Counter-Strike: Imperial vs FlyQuest (BO3) - PGL Major Singapore Stage 1",
-   "pick": "Imperial",
-   "price": 0.545,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 142019,
-   "names": [
-    "Thunderous-Authoritarian-Snarl",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
-   ],
-   "game_start": "2026-11-25T08:00+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "cs2-imp11-fly-2026-11-25"
   },
   {
    "title": "Packers vs. Rams: O/U 44.5",
