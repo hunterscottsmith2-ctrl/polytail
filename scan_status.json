@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T23:29:50+00:00",
+ "at": "2026-11-25T23:32:49+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 106,
- "rows": 46633,
- "skipped_redeemable_or_no_outcome": 37057,
- "under_min_value": 9098,
+ "rows": 46615,
+ "skipped_redeemable_or_no_outcome": 37042,
+ "under_min_value": 9094,
  "already_ended": 9,
  "ends_too_late": 106,
- "kept": 363,
+ "kept": 364,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -92,10 +92,10 @@
   {
    "title": "Cavaliers vs. Knicks: O/U 218.5",
    "pick": "Over",
-   "price": 0.525,
+   "price": 0.535,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 10322,
+   "total_value": 10519,
    "names": [
     "justwins",
     "hi774c"
