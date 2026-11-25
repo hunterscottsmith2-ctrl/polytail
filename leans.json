@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T10:47:16+00:00",
+ "at": "2026-11-25T10:50:16+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -31,22 +31,6 @@
    "game_start": "2026-11-26T01:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nba-bkn-mil-2026-11-25"
-  },
-  {
-   "title": "Counter-Strike: NIP vs Liquid (BO3) - PGL Major Singapore Stage 1",
-   "pick": "Liquid",
-   "price": 0.515,
-   "wallets": 3,
-   "opposing_wallets": 2,
-   "total_value": 401357,
-   "names": [
-    "fantasy7788",
-    "CORGII",
-    "ChonkVision"
-   ],
-   "game_start": "2026-11-25T10:50+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "cs2-nip-tl1-2026-11-25"
   },
   {
    "title": "Packers vs. Rams: O/U 44.5",
