@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T09:59:15+00:00",
+ "at": "2026-11-25T10:02:14+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -31,21 +31,6 @@
    "game_start": "2026-11-26T01:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nba-bkn-mil-2026-11-25"
-  },
-  {
-   "title": "Counter-Strike: GOSH vs Chinggis Warriors (BO3) - PGL Major Singapore Stage 1",
-   "pick": "GOSH",
-   "price": 0.815,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 48393,
-   "names": [
-    "JabJabich",
-    "lllllllIlll"
-   ],
-   "game_start": "2026-11-25T10:00+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "cs2-gosh-cw-2026-11-25"
   },
   {
    "title": "Packers vs. Rams: O/U 44.5",

@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T09:59:15+00:00",
+ "at": "2026-11-25T10:02:14+00:00",
  "wallets_watched": 121,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 106,
- "rows": 46895,
- "skipped_redeemable_or_no_outcome": 37447,
- "under_min_value": 9007,
+ "rows": 46897,
+ "skipped_redeemable_or_no_outcome": 37443,
+ "under_min_value": 9008,
  "already_ended": 9,
  "ends_too_late": 102,
- "kept": 330,
+ "kept": 335,
  "wallets_needing_extra_pages": 27,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -88,21 +88,6 @@
    "game_start": "2026-11-26T01:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nba-bkn-mil-2026-11-25"
-  },
-  {
-   "title": "Counter-Strike: GOSH vs Chinggis Warriors (BO3) - PGL Major Singapore Stage 1",
-   "pick": "GOSH",
-   "price": 0.815,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 48393,
-   "names": [
-    "JabJabich",
-    "lllllllIlll"
-   ],
-   "game_start": "2026-11-25T10:00+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "cs2-gosh-cw-2026-11-25"
   },
   {
    "title": "Packers vs. Rams: O/U 44.5",
