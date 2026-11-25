@@ -1,12 +1,12 @@
 {
- "at": "2026-11-25T08:35:03+00:00",
+ "at": "2026-11-25T08:38:03+00:00",
  "wallets_watched": 134,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 114,
- "rows": 26542,
+ "rows": 26541,
  "skipped_redeemable_or_no_outcome": 24145,
- "under_min_value": 2305,
+ "under_min_value": 2304,
  "already_ended": 6,
  "ends_too_late": 45,
  "kept": 41,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": []
