@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T04:50:00+00:00",
+ "at": "2026-11-25T04:53:00+00:00",
  "wallets_watched": 135,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 117,
- "rows": 26643,
- "skipped_redeemable_or_no_outcome": 24259,
- "under_min_value": 2296,
+ "rows": 26644,
+ "skipped_redeemable_or_no_outcome": 24258,
+ "under_min_value": 2294,
  "already_ended": 6,
  "ends_too_late": 45,
- "kept": 37,
+ "kept": 41,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -73,21 +73,6 @@
    "game_start": "2026-11-25T17:45+00:00",
    "end_date": "2026-11-25",
    "event_slug": "ucl-sf-fcb-2026-11-25"
-  },
-  {
-   "title": "Packers vs. Rams: O/U 44.5",
-   "pick": "Under",
-   "price": 0.515,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 31692,
-   "names": [
-    "bands1",
-    "hi774c"
-   ],
-   "game_start": "2026-11-26T01:00+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "nfl-gb-la-2026-11-26"
   }
  ]
 }
