@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T19:56:48+00:00",
+ "at": "2026-11-25T19:59:48+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 118,
- "rows": 26847,
- "skipped_redeemable_or_no_outcome": 24211,
- "under_min_value": 2517,
+ "rows": 26855,
+ "skipped_redeemable_or_no_outcome": 24207,
+ "under_min_value": 2527,
  "already_ended": 6,
  "ends_too_late": 45,
- "kept": 68,
+ "kept": 70,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -60,12 +60,27 @@
  },
  "leans_not_alerts": [
   {
+   "title": "Sporting CP vs. Manchester United FC: O/U 0.5",
+   "pick": "Over",
+   "price": 0.961,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 17669,
+   "names": [
+    "thetesterguy",
+    "0F62"
+   ],
+   "game_start": "2026-11-25T20:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "ucl-spo-mnu-2026-11-25-more-markets"
+  },
+  {
    "title": "Will FC Bayern M\u00fcnchen win on 2026-11-25?",
    "pick": "No",
-   "price": 0.415,
+   "price": 0.405,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 159307,
+   "total_value": 155468,
    "names": [
     "nb1985",
     "forecastication4"
