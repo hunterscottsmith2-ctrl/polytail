@@ -1,12 +1,12 @@
 {
- "at": "2026-11-25T23:53:50+00:00",
+ "at": "2026-11-25T23:56:50+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 106,
- "rows": 46599,
- "skipped_redeemable_or_no_outcome": 37033,
- "under_min_value": 9089,
+ "rows": 46600,
+ "skipped_redeemable_or_no_outcome": 37037,
+ "under_min_value": 9086,
  "already_ended": 9,
  "ends_too_late": 106,
  "kept": 362,
@@ -92,10 +92,10 @@
   {
    "title": "Cavaliers vs. Knicks: O/U 218.5",
    "pick": "Over",
-   "price": 0.535,
+   "price": 0.545,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 10519,
+   "total_value": 10716,
    "names": [
     "justwins",
     "hi774c"
@@ -110,7 +110,7 @@
    "price": 0.435,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 94676,
+   "total_value": 94769,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
     "Moneymethod",
