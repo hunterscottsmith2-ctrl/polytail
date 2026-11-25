@@ -1,14 +1,14 @@
 {
- "at": "2026-11-25T16:53:46+00:00",
+ "at": "2026-11-25T16:56:44+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Will FC Bayern M\u00fcnchen win on 2026-11-25?",
    "pick": "No",
-   "price": 0.415,
+   "price": 0.405,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 67660,
+   "total_value": 66030,
    "names": [
     "nb1985",
     "forecastication4"
