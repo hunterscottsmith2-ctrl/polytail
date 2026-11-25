@@ -1,12 +1,12 @@
 {
- "at": "2026-11-25T08:05:02+00:00",
+ "at": "2026-11-25T08:08:04+00:00",
  "wallets_watched": 134,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 114,
- "rows": 26529,
- "skipped_redeemable_or_no_outcome": 24137,
- "under_min_value": 2302,
+ "rows": 26531,
+ "skipped_redeemable_or_no_outcome": 24141,
+ "under_min_value": 2300,
  "already_ended": 6,
  "ends_too_late": 45,
  "kept": 39,
@@ -73,6 +73,21 @@
    "game_start": "2026-11-25T08:15+00:00",
    "end_date": "2026-11-25",
    "event_slug": "cs2-imp11-fly-2026-11-25"
+  },
+  {
+   "title": "Counter-Strike: 9z vs DENDELE CS (BO3) - PGL Major Singapore Stage 1",
+   "pick": "DENDELE CS",
+   "price": 0.515,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 72995,
+   "names": [
+    "fantasy7788",
+    "shekelmeister"
+   ],
+   "game_start": "2026-11-25T08:10+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "cs2-9z-dendel-2026-11-25"
   }
  ]
 }

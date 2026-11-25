@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T08:05:02+00:00",
+ "at": "2026-11-25T08:08:04+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -16,6 +16,21 @@
    "game_start": "2026-11-25T08:15+00:00",
    "end_date": "2026-11-25",
    "event_slug": "cs2-imp11-fly-2026-11-25"
+  },
+  {
+   "title": "Counter-Strike: 9z vs DENDELE CS (BO3) - PGL Major Singapore Stage 1",
+   "pick": "DENDELE CS",
+   "price": 0.515,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 72995,
+   "names": [
+    "fantasy7788",
+    "shekelmeister"
+   ],
+   "game_start": "2026-11-25T08:10+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "cs2-9z-dendel-2026-11-25"
   }
  ]
 }
