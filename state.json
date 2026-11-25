@@ -2,6 +2,7 @@
  "alerted": {
   "0x0bcae9a4f1521c3612e20720aab6074c19bc34714518dcc66a4beac6f75633c1|1": {
    "first_seen": "2026-11-25T07:43+00:00",
+   "gone_at": 1795593715.2748852,
    "outcome": "DENDELE CS",
    "title": "Counter-Strike: 9z vs DENDELE CS (BO3) - PGL Major Singapore Stage 1",
    "wallets": 3
