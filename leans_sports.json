@@ -1,17 +1,18 @@
 {
- "at": "2026-11-25T00:55:49+00:00",
+ "at": "2026-11-25T00:58:50+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Celtics vs. Wizards: O/U 219.5",
    "pick": "Under",
    "price": 0.505,
-   "wallets": 3,
+   "wallets": 4,
    "opposing_wallets": 0,
-   "total_value": 39345,
+   "total_value": 79745,
    "names": [
-    "bands1",
+    "Ruma-C",
     "TMingchan",
+    "bands1",
     "tian888"
    ],
    "game_start": "2026-11-25T01:00+00:00",
