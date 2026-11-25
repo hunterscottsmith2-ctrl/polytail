@@ -1,12 +1,12 @@
 {
- "at": "2026-11-25T07:40:54+00:00",
+ "at": "2026-11-25T07:43:55+00:00",
  "wallets_watched": 122,
- "signals": 0,
+ "signals": 1,
  "most_wallets_on_one_side": 6,
  "wallets_with_rows": 106,
- "rows": 47025,
+ "rows": 47032,
  "skipped_redeemable_or_no_outcome": 37646,
- "under_min_value": 8942,
+ "under_min_value": 8949,
  "already_ended": 9,
  "ends_too_late": 103,
  "kept": 325,
@@ -60,12 +60,28 @@
  },
  "leans_not_alerts": [
   {
+   "title": "Counter-Strike: 9z vs DENDELE CS (BO3) - PGL Major Singapore Stage 1",
+   "pick": "DENDELE CS",
+   "price": 0.505,
+   "wallets": 3,
+   "opposing_wallets": 0,
+   "total_value": 35879,
+   "names": [
+    "lllllllIlll",
+    "CORGII",
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
+   ],
+   "game_start": "2026-11-25T08:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "cs2-9z-dendel-2026-11-25"
+  },
+  {
    "title": "Counter-Strike: GOSH vs Chinggis Warriors (BO3) - PGL Major Singapore Stage 1",
    "pick": "GOSH",
    "price": 0.825,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 27685,
+   "total_value": 27689,
    "names": [
     "lllllllIlll",
     "JabJabich"
@@ -73,21 +89,6 @@
    "game_start": "2026-11-25T10:30+00:00",
    "end_date": "2026-11-25",
    "event_slug": "cs2-gosh-cw-2026-11-25"
-  },
-  {
-   "title": "Counter-Strike: 9z vs DENDELE CS (BO3) - PGL Major Singapore Stage 1",
-   "pick": "DENDELE CS",
-   "price": 0.505,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 15188,
-   "names": [
-    "CORGII",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
-   ],
-   "game_start": "2026-11-25T08:00+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "cs2-9z-dendel-2026-11-25"
   },
   {
    "title": "Nets vs. Bucks",
