@@ -1,12 +1,12 @@
 {
- "at": "2026-11-25T20:38:49+00:00",
+ "at": "2026-11-25T20:41:47+00:00",
  "wallets_watched": 135,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 116,
- "rows": 26876,
+ "rows": 26881,
  "skipped_redeemable_or_no_outcome": 24200,
- "under_min_value": 2552,
+ "under_min_value": 2557,
  "already_ended": 6,
  "ends_too_late": 45,
  "kept": 73,
@@ -65,7 +65,7 @@
    "price": 0.485,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 51896,
+   "total_value": 52038,
    "names": [
     "monkeymashingkeyboard",
     "EdZachary"
