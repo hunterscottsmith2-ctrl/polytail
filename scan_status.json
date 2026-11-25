@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T05:34:53+00:00",
+ "at": "2026-11-25T05:37:53+00:00",
  "wallets_watched": 123,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 108,
- "rows": 43990,
- "skipped_redeemable_or_no_outcome": 34631,
- "under_min_value": 8915,
+ "rows": 43992,
+ "skipped_redeemable_or_no_outcome": 34629,
+ "under_min_value": 8918,
  "already_ended": 8,
  "ends_too_late": 105,
- "kept": 331,
+ "kept": 332,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 5,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -80,7 +80,7 @@
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 11234,
+   "total_value": 11507,
    "names": [
     "CORGII",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
@@ -95,7 +95,7 @@
    "price": 0.515,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 3358,
+   "total_value": 3359,
    "names": [
     "monkeymashingkeyboard",
     "hi774c"
@@ -103,6 +103,22 @@
    "game_start": "2026-11-26T01:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nba-bkn-mil-2026-11-25"
+  },
+  {
+   "title": "Counter-Strike: Wildcard vs Lynn Vision (BO1) - PGL Major Singapore Stage 1",
+   "pick": "Lynn Vision",
+   "price": 0.515,
+   "wallets": 3,
+   "opposing_wallets": 2,
+   "total_value": 116775,
+   "names": [
+    "Thunderous-Authoritarian-Snarl",
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
+    "ChonkVision"
+   ],
+   "game_start": "2026-11-25T07:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "cs2-wc1-lvg-2026-11-25"
   },
   {
    "title": "Packers vs. Rams: O/U 44.5",

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T05:34:53+00:00",
+ "at": "2026-11-25T05:37:53+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -23,7 +23,7 @@
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 11234,
+   "total_value": 11507,
    "names": [
     "CORGII",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
@@ -38,7 +38,7 @@
    "price": 0.515,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 3358,
+   "total_value": 3359,
    "names": [
     "monkeymashingkeyboard",
     "hi774c"
@@ -46,6 +46,22 @@
    "game_start": "2026-11-26T01:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nba-bkn-mil-2026-11-25"
+  },
+  {
+   "title": "Counter-Strike: Wildcard vs Lynn Vision (BO1) - PGL Major Singapore Stage 1",
+   "pick": "Lynn Vision",
+   "price": 0.515,
+   "wallets": 3,
+   "opposing_wallets": 2,
+   "total_value": 116775,
+   "names": [
+    "Thunderous-Authoritarian-Snarl",
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
+    "ChonkVision"
+   ],
+   "game_start": "2026-11-25T07:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "cs2-wc1-lvg-2026-11-25"
   },
   {
    "title": "Packers vs. Rams: O/U 44.5",
