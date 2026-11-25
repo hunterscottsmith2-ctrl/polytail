@@ -1,7 +1,23 @@
 {
- "at": "2026-11-25T21:32:50+00:00",
+ "at": "2026-11-25T21:35:50+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Packers vs. Rams",
+   "pick": "Packers",
+   "price": 0.435,
+   "wallets": 3,
+   "opposing_wallets": 1,
+   "total_value": 77929,
+   "names": [
+    "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
+    "Moneymethod",
+    "hi774c"
+   ],
+   "game_start": "2026-11-26T01:00+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "nfl-gb-la-2026-11-26"
+  },
   {
    "title": "Heat vs. 76ers",
    "pick": "76ers",
@@ -16,21 +32,6 @@
    "game_start": "2026-11-25T22:00+00:00",
    "end_date": "2026-11-25",
    "event_slug": "nba-mia-phi-2026-11-25"
-  },
-  {
-   "title": "Packers vs. Rams",
-   "pick": "Packers",
-   "price": 0.435,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 42197,
-   "names": [
-    "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
-    "hi774c"
-   ],
-   "game_start": "2026-11-26T01:00+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "nfl-gb-la-2026-11-26"
   },
   {
    "title": "Nets vs. Bucks",
