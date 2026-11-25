@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T08:55:55+00:00",
+ "at": "2026-11-25T08:58:55+00:00",
  "wallets_watched": 121,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 105,
- "rows": 46861,
- "skipped_redeemable_or_no_outcome": 37422,
- "under_min_value": 8994,
+ "rows": 46859,
+ "skipped_redeemable_or_no_outcome": 37423,
+ "under_min_value": 8992,
  "already_ended": 9,
  "ends_too_late": 103,
- "kept": 333,
+ "kept": 332,
  "wallets_needing_extra_pages": 27,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
