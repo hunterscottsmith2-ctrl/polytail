@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T00:49:40+00:00",
+ "at": "2026-11-25T00:52:40+00:00",
  "wallets_watched": 123,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 108,
- "rows": 46881,
- "skipped_redeemable_or_no_outcome": 37451,
+ "rows": 46879,
+ "skipped_redeemable_or_no_outcome": 37450,
  "under_min_value": 8999,
  "already_ended": 13,
  "ends_too_late": 99,
- "kept": 319,
+ "kept": 318,
  "wallets_needing_extra_pages": 27,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,21 +51,36 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
+  {
+   "title": "Celtics vs. Wizards: O/U 218.5",
+   "pick": "Under",
+   "price": 0.475,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 16625,
+   "names": [
+    "bands1",
+    "hi774c"
+   ],
+   "game_start": "2026-11-25T01:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "nba-bos-was-2026-11-24"
+  },
   {
    "title": "Counter-Strike: 9z vs DENDELE CS (BO3) - PGL Major Singapore Stage 1",
    "pick": "DENDELE CS",
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 8296,
+   "total_value": 8973,
    "names": [
     "CORGII",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
