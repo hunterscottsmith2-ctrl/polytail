@@ -1,13 +1,13 @@
 {
- "at": "2026-11-24T23:58:47+00:00",
+ "at": "2026-11-25T00:01:46+00:00",
  "wallets_watched": 135,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 117,
- "rows": 27478,
+ "rows": 27482,
  "skipped_redeemable_or_no_outcome": 24933,
- "under_min_value": 2462,
- "already_ended": 8,
+ "under_min_value": 2465,
+ "already_ended": 9,
  "ends_too_late": 46,
  "kept": 29,
  "wallets_needing_extra_pages": 14,
@@ -51,29 +51,14 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Pistons vs. Magic",
-   "pick": "Magic",
-   "price": 0.575,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 38774,
-   "names": [
-    "shekelmeister",
-    "hi774c"
-   ],
-   "game_start": "2026-11-25T00:00+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "nba-det-orl-2026-11-24"
-  },
   {
    "title": "Packers vs. Rams: O/U 44.5",
    "pick": "Under",
