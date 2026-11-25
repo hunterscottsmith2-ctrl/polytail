@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T02:46:51+00:00",
+ "at": "2026-11-25T02:49:50+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 119,
- "rows": 27197,
- "skipped_redeemable_or_no_outcome": 24721,
- "under_min_value": 2384,
+ "rows": 27199,
+ "skipped_redeemable_or_no_outcome": 24732,
+ "under_min_value": 2372,
  "already_ended": 8,
  "ends_too_late": 48,
- "kept": 36,
+ "kept": 39,
  "wallets_needing_extra_pages": 14,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -73,6 +73,21 @@
    "game_start": "2026-11-25T17:45+00:00",
    "end_date": "2026-11-25",
    "event_slug": "ucl-sf-fcb-2026-11-25"
+  },
+  {
+   "title": "Mavericks vs. Nuggets: O/U 235.5",
+   "pick": "Under",
+   "price": 0.525,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 18375,
+   "names": [
+    "TMingchan",
+    "monkeymashingkeyboard"
+   ],
+   "game_start": "2026-11-25T03:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "nba-dal-den-2026-11-24"
   },
   {
    "title": "Packers vs. Rams: O/U 44.5",
