@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T23:50:50+00:00",
+ "at": "2026-11-25T23:53:50+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -53,7 +53,7 @@
    "price": 0.435,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 94645,
+   "total_value": 94676,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
     "Moneymethod",
@@ -69,7 +69,7 @@
    "price": 0.515,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 62884,
+   "total_value": 62913,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "CORGII"
