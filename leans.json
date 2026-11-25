@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T07:55:55+00:00",
+ "at": "2026-11-25T07:58:55+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.505,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 44894,
+   "total_value": 60576,
    "names": [
     "lllllllIlll",
     "CORGII",
@@ -32,6 +32,21 @@
    "game_start": "2026-11-25T10:30+00:00",
    "end_date": "2026-11-25",
    "event_slug": "cs2-gosh-cw-2026-11-25"
+  },
+  {
+   "title": "Will FK Shakhtar Donetsk win on 2026-11-25?",
+   "pick": "No",
+   "price": 0.665,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 5983,
+   "names": [
+    "hi774c",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-25T20:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "ucl-shd-fen-2026-11-25"
   },
   {
    "title": "Nets vs. Bucks",

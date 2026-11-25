@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T07:55:55+00:00",
+ "at": "2026-11-25T07:58:55+00:00",
  "wallets_watched": 122,
  "signals": 1,
  "most_wallets_on_one_side": 6,
  "wallets_with_rows": 106,
- "rows": 47043,
- "skipped_redeemable_or_no_outcome": 37636,
- "under_min_value": 8968,
+ "rows": 47049,
+ "skipped_redeemable_or_no_outcome": 37635,
+ "under_min_value": 8971,
  "already_ended": 9,
  "ends_too_late": 103,
- "kept": 327,
+ "kept": 331,
  "wallets_needing_extra_pages": 27,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -65,7 +65,7 @@
    "price": 0.505,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 44894,
+   "total_value": 60576,
    "names": [
     "lllllllIlll",
     "CORGII",
@@ -89,6 +89,21 @@
    "game_start": "2026-11-25T10:30+00:00",
    "end_date": "2026-11-25",
    "event_slug": "cs2-gosh-cw-2026-11-25"
+  },
+  {
+   "title": "Will FK Shakhtar Donetsk win on 2026-11-25?",
+   "pick": "No",
+   "price": 0.665,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 5983,
+   "names": [
+    "hi774c",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-25T20:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "ucl-shd-fen-2026-11-25"
   },
   {
    "title": "Nets vs. Bucks",
