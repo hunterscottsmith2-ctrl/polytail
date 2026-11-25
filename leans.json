@@ -1,24 +1,7 @@
 {
- "at": "2026-11-25T08:07:55+00:00",
+ "at": "2026-11-25T08:10:55+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
-  {
-   "title": "Counter-Strike: 9z vs DENDELE CS (BO3) - PGL Major Singapore Stage 1",
-   "pick": "DENDELE CS",
-   "price": 0.515,
-   "wallets": 4,
-   "opposing_wallets": 0,
-   "total_value": 143987,
-   "names": [
-    "fantasy7788",
-    "lllllllIlll",
-    "CORGII",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
-   ],
-   "game_start": "2026-11-25T08:10+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "cs2-9z-dendel-2026-11-25"
-  },
   {
    "title": "Counter-Strike: GOSH vs Chinggis Warriors (BO3) - PGL Major Singapore Stage 1",
    "pick": "GOSH",
@@ -78,6 +61,22 @@
    "game_start": "2026-11-26T01:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nfl-gb-la-2026-11-26"
+  },
+  {
+   "title": "Counter-Strike: Imperial vs FlyQuest - Map 1 Winner",
+   "pick": "FlyQuest",
+   "price": 0.505,
+   "wallets": 3,
+   "opposing_wallets": 2,
+   "total_value": 15066,
+   "names": [
+    "CORGII",
+    "lllllllIlll",
+    "JabJabich"
+   ],
+   "game_start": "2026-11-25T08:15+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "cs2-imp11-fly-2026-11-25"
   }
  ]
 }

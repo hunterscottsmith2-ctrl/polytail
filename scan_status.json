@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T08:07:55+00:00",
+ "at": "2026-11-25T08:10:55+00:00",
  "wallets_watched": 122,
- "signals": 1,
+ "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 106,
- "rows": 47045,
- "skipped_redeemable_or_no_outcome": 37640,
+ "rows": 47051,
+ "skipped_redeemable_or_no_outcome": 37642,
  "under_min_value": 8966,
  "already_ended": 9,
  "ends_too_late": 103,
- "kept": 327,
+ "kept": 331,
  "wallets_needing_extra_pages": 27,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,31 +51,14 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Counter-Strike: 9z vs DENDELE CS (BO3) - PGL Major Singapore Stage 1",
-   "pick": "DENDELE CS",
-   "price": 0.515,
-   "wallets": 4,
-   "opposing_wallets": 0,
-   "total_value": 143987,
-   "names": [
-    "fantasy7788",
-    "lllllllIlll",
-    "CORGII",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
-   ],
-   "game_start": "2026-11-25T08:10+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "cs2-9z-dendel-2026-11-25"
-  },
   {
    "title": "Counter-Strike: GOSH vs Chinggis Warriors (BO3) - PGL Major Singapore Stage 1",
    "pick": "GOSH",
@@ -135,6 +118,22 @@
    "game_start": "2026-11-26T01:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nfl-gb-la-2026-11-26"
+  },
+  {
+   "title": "Counter-Strike: Imperial vs FlyQuest - Map 1 Winner",
+   "pick": "FlyQuest",
+   "price": 0.505,
+   "wallets": 3,
+   "opposing_wallets": 2,
+   "total_value": 15066,
+   "names": [
+    "CORGII",
+    "lllllllIlll",
+    "JabJabich"
+   ],
+   "game_start": "2026-11-25T08:15+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "cs2-imp11-fly-2026-11-25"
   }
  ]
 }
