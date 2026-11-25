@@ -1,12 +1,12 @@
 {
- "at": "2026-11-25T07:28:55+00:00",
+ "at": "2026-11-25T07:31:55+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 6,
  "wallets_with_rows": 106,
- "rows": 47018,
+ "rows": 47024,
  "skipped_redeemable_or_no_outcome": 37648,
- "under_min_value": 8936,
+ "under_min_value": 8942,
  "already_ended": 9,
  "ends_too_late": 103,
  "kept": 322,
@@ -65,7 +65,7 @@
    "price": 0.825,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 27582,
+   "total_value": 27623,
    "names": [
     "lllllllIlll",
     "JabJabich"
