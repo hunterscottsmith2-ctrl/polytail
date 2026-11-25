@@ -1,11 +1,11 @@
 {
- "at": "2026-11-25T02:52:51+00:00",
+ "at": "2026-11-25T02:55:51+00:00",
  "wallets_watched": 136,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 119,
- "rows": 27198,
- "skipped_redeemable_or_no_outcome": 24731,
+ "rows": 27197,
+ "skipped_redeemable_or_no_outcome": 24730,
  "under_min_value": 2373,
  "already_ended": 8,
  "ends_too_late": 46,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -95,7 +95,7 @@
    "price": 0.715,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 118308,
+   "total_value": 122696,
    "names": [
     "milkteaboba",
     "hi774c"
