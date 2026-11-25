@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T14:59:26+00:00",
+ "at": "2026-11-25T15:02:54+00:00",
  "wallets_watched": 135,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 114,
- "rows": 26764,
+ "rows": 26769,
  "skipped_redeemable_or_no_outcome": 24257,
- "under_min_value": 2413,
+ "under_min_value": 2416,
  "already_ended": 6,
  "ends_too_late": 45,
- "kept": 43,
+ "kept": 45,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -58,5 +58,21 @@
   "end_date": "2026-06-13",
   "redeemable": true
  },
- "leans_not_alerts": []
+ "leans_not_alerts": [
+  {
+   "title": "Will FC Bayern M\u00fcnchen win on 2026-11-25?",
+   "pick": "No",
+   "price": 0.395,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 35550,
+   "names": [
+    "nb1985",
+    "forecastication4"
+   ],
+   "game_start": "2026-11-25T20:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "ucl-lil-bay-2026-11-25"
+  }
+ ]
 }
