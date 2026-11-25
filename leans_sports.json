@@ -1,15 +1,16 @@
 {
- "at": "2026-11-25T21:50:59+00:00",
+ "at": "2026-11-25T21:53:59+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Heat vs. 76ers",
    "pick": "76ers",
-   "price": 0.495,
-   "wallets": 2,
+   "price": 0.505,
+   "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 53186,
+   "total_value": 251960,
    "names": [
+    "fantasy7788",
     "monkeymashingkeyboard",
     "EdZachary"
    ],

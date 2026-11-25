@@ -1,5 +1,11 @@
 {
  "alerted": {
+  "0xa6e19be478ccdf8163422cada2772f1ea98b9f5f1b824e75a96f6aab59fe4c63|1": {
+   "first_seen": "2026-11-25T21:53+00:00",
+   "outcome": "76ers",
+   "title": "Heat vs. 76ers",
+   "wallets": 3
+  },
   "0xba02accd1ec7e114cd94100cc9607f1a00a7c1305a525068e9fbb822b80a6ecd|0": {
    "first_seen": "2026-11-25T21:35+00:00",
    "outcome": "Packers",
@@ -7,5 +13,12 @@
    "wallets": 3
   }
  },
- "recheck": []
+ "recheck": [
+  {
+   "alerted_at": "2026-11-25T21:53:51+00:00",
+   "key": "0xa6e19be478ccdf8163422cada2772f1ea98b9f5f1b824e75a96f6aab59fe4c63|1",
+   "token": "43496384572136368015648963145473996186882550068563172532538497511819394500857",
+   "ts": 1795643631.8681903
+  }
+ ]
 }
