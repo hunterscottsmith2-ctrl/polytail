@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T21:38:51+00:00",
+ "at": "2026-11-25T21:41:51+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -17,6 +17,21 @@
    "game_start": "2026-11-26T01:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nfl-gb-la-2026-11-26"
+  },
+  {
+   "title": "Cavaliers vs. Knicks: O/U 218.5",
+   "pick": "Over",
+   "price": 0.515,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 3260,
+   "names": [
+    "hi774c",
+    "justwins"
+   ],
+   "game_start": "2026-11-26T00:30+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "nba-cle-nyk-2026-11-25"
   },
   {
    "title": "Heat vs. 76ers",
@@ -39,7 +54,7 @@
    "price": 0.525,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 13173,
+   "total_value": 13218,
    "names": [
     "monkeymashingkeyboard",
     "hi774c"
