@@ -1,37 +1,7 @@
 {
- "at": "2026-11-25T19:59:39+00:00",
+ "at": "2026-11-25T20:02:39+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
-  {
-   "title": "Will FK Shakhtar Donetsk win on 2026-11-25?",
-   "pick": "No",
-   "price": 0.655,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 7285,
-   "names": [
-    "hi774c",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-25T20:00+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "ucl-shd-fen-2026-11-25"
-  },
-  {
-   "title": "Will Liverpool FC win on 2026-11-25?",
-   "pick": "Yes",
-   "price": 0.555,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 6966,
-   "names": [
-    "darkumbreon88",
-    "hi774c"
-   ],
-   "game_start": "2026-11-25T20:00+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "ucl-bru-liv-2026-11-25"
-  },
   {
    "title": "Suns vs. Rockets",
    "pick": "Rockets",
@@ -68,7 +38,7 @@
    "price": 0.525,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 13034,
+   "total_value": 13035,
    "names": [
     "monkeymashingkeyboard",
     "hi774c"
