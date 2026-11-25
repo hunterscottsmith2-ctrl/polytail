@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T09:35:16+00:00",
+ "at": "2026-11-25T09:38:15+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,10 +8,10 @@
    "price": 0.825,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 28362,
+   "total_value": 48987,
    "names": [
-    "lllllllIlll",
-    "JabJabich"
+    "JabJabich",
+    "lllllllIlll"
    ],
    "game_start": "2026-11-25T10:30+00:00",
    "end_date": "2026-11-25",
