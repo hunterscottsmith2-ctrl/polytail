@@ -1,7 +1,37 @@
 {
- "at": "2026-11-25T00:46:50+00:00",
+ "at": "2026-11-25T00:49:49+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Celtics vs. Wizards: O/U 218.5",
+   "pick": "Under",
+   "price": 0.495,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 24750,
+   "names": [
+    "bands1",
+    "TMingchan"
+   ],
+   "game_start": "2026-11-25T01:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "nba-bos-was-2026-11-24"
+  },
+  {
+   "title": "Celtics vs. Wizards: O/U 219.5",
+   "pick": "Under",
+   "price": 0.515,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 20600,
+   "names": [
+    "TMingchan",
+    "bands1"
+   ],
+   "game_start": "2026-11-25T01:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "nba-bos-was-2026-11-24"
+  },
   {
    "title": "Packers vs. Rams: O/U 44.5",
    "pick": "Under",
