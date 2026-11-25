@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T10:41:24+00:00",
+ "at": "2026-11-25T10:44:25+00:00",
  "wallets_watched": 134,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 114,
- "rows": 26570,
+ "rows": 26574,
  "skipped_redeemable_or_no_outcome": 24116,
- "under_min_value": 2356,
+ "under_min_value": 2359,
  "already_ended": 6,
  "ends_too_late": 45,
- "kept": 47,
+ "kept": 48,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Counter-Strike: NIP vs Liquid (BO3) - PGL Major Singapore Stage 1",
    "pick": "Liquid",
-   "price": 0.525,
+   "price": 0.515,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 321574,
+   "total_value": 315448,
    "names": [
     "fantasy7788",
     "luckycat888888"
