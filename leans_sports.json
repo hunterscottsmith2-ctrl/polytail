@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T02:58:53+00:00",
+ "at": "2026-11-25T03:01:52+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -16,36 +16,6 @@
    "game_start": "2026-11-25T17:45+00:00",
    "end_date": "2026-11-25",
    "event_slug": "ucl-sf-fcb-2026-11-25"
-  },
-  {
-   "title": "Mavericks vs. Nuggets: O/U 235.5",
-   "pick": "Under",
-   "price": 0.525,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 18375,
-   "names": [
-    "TMingchan",
-    "monkeymashingkeyboard"
-   ],
-   "game_start": "2026-11-25T03:00+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "nba-dal-den-2026-11-24"
-  },
-  {
-   "title": "Mavericks vs. Nuggets",
-   "pick": "Nuggets",
-   "price": 0.715,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 129999,
-   "names": [
-    "milkteaboba",
-    "hi774c"
-   ],
-   "game_start": "2026-11-25T03:00+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "nba-dal-den-2026-11-24"
   },
   {
    "title": "Packers vs. Rams: O/U 44.5",
