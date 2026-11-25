@@ -1,12 +1,12 @@
 {
- "at": "2026-11-25T08:17:04+00:00",
+ "at": "2026-11-25T08:20:04+00:00",
  "wallets_watched": 134,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 114,
  "rows": 26538,
- "skipped_redeemable_or_no_outcome": 24141,
- "under_min_value": 2307,
+ "skipped_redeemable_or_no_outcome": 24140,
+ "under_min_value": 2308,
  "already_ended": 6,
  "ends_too_late": 45,
  "kept": 39,
@@ -51,12 +51,28 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
- "leans_not_alerts": []
+ "leans_not_alerts": [
+  {
+   "title": "Counter-Strike: Imperial vs FlyQuest (BO3) - PGL Major Singapore Stage 1",
+   "pick": "FlyQuest",
+   "price": 0.455,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 39043,
+   "names": [
+    "shekelmeister",
+    "luckycat888888"
+   ],
+   "game_start": "2026-11-25T08:30+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "cs2-imp11-fly-2026-11-25"
+  }
+ ]
 }
