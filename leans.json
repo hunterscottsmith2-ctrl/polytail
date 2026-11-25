@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T22:05:50+00:00",
+ "at": "2026-11-25T22:08:50+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -24,7 +24,7 @@
    "price": 0.555,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 50714,
+   "total_value": 50820,
    "names": [
     "justwins",
     "ChonkVision"
