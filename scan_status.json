@@ -1,12 +1,12 @@
 {
- "at": "2026-11-25T14:02:18+00:00",
+ "at": "2026-11-25T14:05:17+00:00",
  "wallets_watched": 121,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 105,
- "rows": 46424,
- "skipped_redeemable_or_no_outcome": 36992,
- "under_min_value": 8994,
+ "rows": 46427,
+ "skipped_redeemable_or_no_outcome": 36993,
+ "under_min_value": 8996,
  "already_ended": 9,
  "ends_too_late": 108,
  "kept": 321,
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -92,10 +92,10 @@
   {
    "title": "Packers vs. Rams: O/U 44.5",
    "pick": "Under",
-   "price": 0.515,
+   "price": 0.525,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 31692,
+   "total_value": 32308,
    "names": [
     "bands1",
     "hi774c"
