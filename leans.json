@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T17:05:36+00:00",
+ "at": "2026-11-25T17:08:36+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -26,21 +26,6 @@
    "total_value": 42197,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
-    "hi774c"
-   ],
-   "game_start": "2026-11-26T01:00+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "nfl-gb-la-2026-11-26"
-  },
-  {
-   "title": "Packers vs. Rams: O/U 44.5",
-   "pick": "Under",
-   "price": 0.525,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 32308,
-   "names": [
-    "bands1",
     "hi774c"
    ],
    "game_start": "2026-11-26T01:00+00:00",
