@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T21:59:50+00:00",
+ "at": "2026-11-25T22:02:50+00:00",
  "wallets_watched": 123,
- "signals": 2,
+ "signals": 1,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 108,
  "rows": 46694,
  "skipped_redeemable_or_no_outcome": 36988,
- "under_min_value": 9187,
+ "under_min_value": 9188,
  "already_ended": 9,
  "ends_too_late": 106,
- "kept": 404,
+ "kept": 403,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -59,22 +59,6 @@
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Heat vs. 76ers",
-   "pick": "76ers",
-   "price": 0.505,
-   "wallets": 3,
-   "opposing_wallets": 1,
-   "total_value": 339022,
-   "names": [
-    "fantasy7788",
-    "monkeymashingkeyboard",
-    "hi774c"
-   ],
-   "game_start": "2026-11-25T22:00+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "nba-mia-phi-2026-11-25"
-  },
   {
    "title": "Packers vs. Rams",
    "pick": "Packers",
@@ -127,7 +111,7 @@
    "price": 0.525,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 13218,
+   "total_value": 29758,
    "names": [
     "monkeymashingkeyboard",
     "hi774c"

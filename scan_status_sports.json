@@ -1,12 +1,12 @@
 {
- "at": "2026-11-25T21:59:58+00:00",
+ "at": "2026-11-25T22:02:58+00:00",
  "wallets_watched": 134,
- "signals": 1,
+ "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 114,
- "rows": 26849,
- "skipped_redeemable_or_no_outcome": 24032,
- "under_min_value": 2683,
+ "rows": 26846,
+ "skipped_redeemable_or_no_outcome": 24031,
+ "under_min_value": 2681,
  "already_ended": 6,
  "ends_too_late": 45,
  "kept": 83,
@@ -51,30 +51,14 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Heat vs. 76ers",
-   "pick": "76ers",
-   "price": 0.505,
-   "wallets": 3,
-   "opposing_wallets": 0,
-   "total_value": 347018,
-   "names": [
-    "fantasy7788",
-    "monkeymashingkeyboard",
-    "EdZachary"
-   ],
-   "game_start": "2026-11-25T22:00+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "nba-mia-phi-2026-11-25"
-  },
   {
    "title": "Timberwolves vs. Thunder",
    "pick": "Thunder",

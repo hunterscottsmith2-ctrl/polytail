@@ -2,6 +2,7 @@
  "alerted": {
   "0xa6e19be478ccdf8163422cada2772f1ea98b9f5f1b824e75a96f6aab59fe4c63|1": {
    "first_seen": "2026-11-25T21:53+00:00",
+   "gone_at": 1795644170.8380759,
    "outcome": "76ers",
    "title": "Heat vs. 76ers",
    "wallets": 3

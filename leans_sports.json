@@ -1,23 +1,7 @@
 {
- "at": "2026-11-25T21:59:58+00:00",
+ "at": "2026-11-25T22:02:58+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
-  {
-   "title": "Heat vs. 76ers",
-   "pick": "76ers",
-   "price": 0.505,
-   "wallets": 3,
-   "opposing_wallets": 0,
-   "total_value": 347018,
-   "names": [
-    "fantasy7788",
-    "monkeymashingkeyboard",
-    "EdZachary"
-   ],
-   "game_start": "2026-11-25T22:00+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "nba-mia-phi-2026-11-25"
-  },
   {
    "title": "Timberwolves vs. Thunder",
    "pick": "Thunder",
