@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T05:49:54+00:00",
+ "at": "2026-11-25T05:52:53+00:00",
  "wallets_watched": 123,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 107,
- "rows": 44000,
- "skipped_redeemable_or_no_outcome": 34641,
- "under_min_value": 8914,
+ "rows": 43996,
+ "skipped_redeemable_or_no_outcome": 34657,
+ "under_min_value": 8907,
  "already_ended": 8,
  "ends_too_late": 105,
- "kept": 332,
+ "kept": 319,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 5,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -80,7 +80,7 @@
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 11779,
+   "total_value": 11996,
    "names": [
     "CORGII",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
@@ -110,7 +110,7 @@
    "price": 0.515,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 116775,
+   "total_value": 117179,
    "names": [
     "Thunderous-Authoritarian-Snarl",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
