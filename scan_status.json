@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T17:41:37+00:00",
+ "at": "2026-11-25T17:44:37+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 106,
- "rows": 46442,
+ "rows": 46441,
  "skipped_redeemable_or_no_outcome": 36944,
- "under_min_value": 9026,
+ "under_min_value": 9024,
  "already_ended": 9,
  "ends_too_late": 107,
- "kept": 356,
+ "kept": 357,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,14 +51,29 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
+  {
+   "title": "Will SK Slavia Praha win on 2026-11-25?",
+   "pick": "No",
+   "price": 0.645,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 70778,
+   "names": [
+    "S-Works",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-25T17:45+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "ucl-slp-vil-2026-11-25"
+  },
   {
    "title": "Will FK Shakhtar Donetsk win on 2026-11-25?",
    "pick": "No",

@@ -1,7 +1,22 @@
 {
- "at": "2026-11-25T17:41:37+00:00",
+ "at": "2026-11-25T17:44:37+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Will SK Slavia Praha win on 2026-11-25?",
+   "pick": "No",
+   "price": 0.645,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 70778,
+   "names": [
+    "S-Works",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-25T17:45+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "ucl-slp-vil-2026-11-25"
+  },
   {
    "title": "Will FK Shakhtar Donetsk win on 2026-11-25?",
    "pick": "No",
