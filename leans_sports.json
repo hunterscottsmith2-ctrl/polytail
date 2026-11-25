@@ -1,7 +1,22 @@
 {
- "at": "2026-11-25T03:07:51+00:00",
+ "at": "2026-11-25T03:10:51+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Counter-Strike: Wildcard vs Lynn Vision (BO1) - PGL Major Singapore Stage 1",
+   "pick": "Lynn Vision",
+   "price": 0.505,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 27892,
+   "names": [
+    "shekelmeister",
+    "ChonkVision"
+   ],
+   "game_start": "2026-11-25T07:00+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "cs2-wc1-lvg-2026-11-25"
+  },
   {
    "title": "Will FC Barcelona win on 2026-11-25?",
    "pick": "Yes",
