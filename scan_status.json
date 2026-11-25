@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T15:14:36+00:00",
+ "at": "2026-11-25T15:17:37+00:00",
  "wallets_watched": 121,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 105,
  "rows": 46466,
- "skipped_redeemable_or_no_outcome": 36979,
+ "skipped_redeemable_or_no_outcome": 36978,
  "under_min_value": 9042,
  "already_ended": 9,
  "ends_too_late": 108,
- "kept": 328,
+ "kept": 329,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
