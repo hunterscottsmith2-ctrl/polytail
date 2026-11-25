@@ -1,12 +1,12 @@
 {
- "at": "2026-11-25T06:04:54+00:00",
+ "at": "2026-11-25T06:07:54+00:00",
  "wallets_watched": 123,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 107,
- "rows": 43997,
- "skipped_redeemable_or_no_outcome": 34697,
- "under_min_value": 8867,
+ "rows": 43980,
+ "skipped_redeemable_or_no_outcome": 34678,
+ "under_min_value": 8869,
  "already_ended": 8,
  "ends_too_late": 104,
  "kept": 321,
@@ -51,36 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Will FC Barcelona win on 2026-11-25?",
-   "pick": "Yes",
-   "price": 0.905,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 38602,
-   "names": [
-    "0F62",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-25T17:45+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "ucl-sf-fcb-2026-11-25"
-  },
   {
    "title": "Counter-Strike: GOSH vs Chinggis Warriors (BO3) - PGL Major Singapore Stage 1",
    "pick": "GOSH",
    "price": 0.825,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 24608,
+   "total_value": 24768,
    "names": [
     "lllllllIlll",
     "JabJabich"
@@ -88,6 +73,21 @@
    "game_start": "2026-11-25T10:30+00:00",
    "end_date": "2026-11-25",
    "event_slug": "cs2-gosh-cw-2026-11-25"
+  },
+  {
+   "title": "Will FC Barcelona win on 2026-11-25?",
+   "pick": "Yes",
+   "price": 0.905,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 21927,
+   "names": [
+    "0F62",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-25T17:45+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "ucl-sf-fcb-2026-11-25"
   },
   {
    "title": "Counter-Strike: 9z vs DENDELE CS (BO3) - PGL Major Singapore Stage 1",
