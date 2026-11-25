@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T06:52:54+00:00",
+ "at": "2026-11-25T06:55:55+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 106,
- "rows": 44000,
+ "rows": 43999,
  "skipped_redeemable_or_no_outcome": 34657,
- "under_min_value": 8910,
+ "under_min_value": 8911,
  "already_ended": 8,
  "ends_too_late": 104,
- "kept": 321,
+ "kept": 319,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 5,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -73,21 +73,6 @@
    "game_start": "2026-11-25T10:30+00:00",
    "end_date": "2026-11-25",
    "event_slug": "cs2-gosh-cw-2026-11-25"
-  },
-  {
-   "title": "Will FC Barcelona win on 2026-11-25?",
-   "pick": "Yes",
-   "price": 0.905,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 21927,
-   "names": [
-    "0F62",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-25T17:45+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "ucl-sf-fcb-2026-11-25"
   },
   {
    "title": "Counter-Strike: 9z vs DENDELE CS (BO3) - PGL Major Singapore Stage 1",

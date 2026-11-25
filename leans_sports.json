@@ -1,21 +1,5 @@
 {
- "at": "2026-11-25T06:53:02+00:00",
+ "at": "2026-11-25T06:56:02+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": [
-  {
-   "title": "Will FC Barcelona win on 2026-11-25?",
-   "pick": "Yes",
-   "price": 0.905,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 21927,
-   "names": [
-    "0F62",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-25T17:45+00:00",
-   "end_date": "2026-11-25",
-   "event_slug": "ucl-sf-fcb-2026-11-25"
-  }
- ]
+ "leans": []
 }
