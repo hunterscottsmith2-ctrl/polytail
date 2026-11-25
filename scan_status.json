@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T19:32:39+00:00",
+ "at": "2026-11-25T19:35:39+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 107,
- "rows": 46554,
- "skipped_redeemable_or_no_outcome": 36963,
- "under_min_value": 9093,
+ "rows": 46546,
+ "skipped_redeemable_or_no_outcome": 36961,
+ "under_min_value": 9089,
  "already_ended": 9,
  "ends_too_late": 106,
- "kept": 383,
+ "kept": 381,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -62,10 +62,10 @@
   {
    "title": "Will FK Shakhtar Donetsk win on 2026-11-25?",
    "pick": "No",
-   "price": 0.625,
+   "price": 0.615,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 6568,
+   "total_value": 6840,
    "names": [
     "hi774c",
     "darkumbreon88"
