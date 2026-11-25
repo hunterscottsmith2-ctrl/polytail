@@ -1,15 +1,15 @@
 {
- "at": "2026-11-25T10:35:15+00:00",
+ "at": "2026-11-25T10:38:16+00:00",
  "wallets_watched": 121,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 106,
  "rows": 46918,
- "skipped_redeemable_or_no_outcome": 37443,
- "under_min_value": 9033,
+ "skipped_redeemable_or_no_outcome": 37442,
+ "under_min_value": 9031,
  "already_ended": 9,
  "ends_too_late": 102,
- "kept": 331,
+ "kept": 334,
  "wallets_needing_extra_pages": 27,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -88,6 +88,22 @@
    "game_start": "2026-11-26T01:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nba-bkn-mil-2026-11-25"
+  },
+  {
+   "title": "Counter-Strike: NIP vs Liquid (BO3) - PGL Major Singapore Stage 1",
+   "pick": "Liquid",
+   "price": 0.515,
+   "wallets": 3,
+   "opposing_wallets": 2,
+   "total_value": 342751,
+   "names": [
+    "fantasy7788",
+    "CORGII",
+    "ChonkVision"
+   ],
+   "game_start": "2026-11-25T10:50+00:00",
+   "end_date": "2026-11-25",
+   "event_slug": "cs2-nip-tl1-2026-11-25"
   },
   {
    "title": "Packers vs. Rams: O/U 44.5",
