@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T05:57:04+00:00",
+ "at": "2026-11-26T06:00:06+00:00",
  "wallets_watched": 122,
  "signals": 0,
- "most_wallets_on_one_side": 3,
+ "most_wallets_on_one_side": 4,
  "wallets_with_rows": 106,
- "rows": 43520,
- "skipped_redeemable_or_no_outcome": 34302,
- "under_min_value": 8779,
+ "rows": 43523,
+ "skipped_redeemable_or_no_outcome": 34315,
+ "under_min_value": 8773,
  "already_ended": 8,
  "ends_too_late": 115,
- "kept": 316,
+ "kept": 312,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,30 +51,14 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Counter-Strike: M80 vs Eternal Fire (BO3) - PGL Major Singapore Stage 1",
-   "pick": "Eternal Fire",
-   "price": 0.555,
-   "wallets": 3,
-   "opposing_wallets": 1,
-   "total_value": 109454,
-   "names": [
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
-    "lllllllIlll",
-    "CORGII"
-   ],
-   "game_start": "2026-11-26T06:00+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "cs2-m80-ef1-2026-11-26"
-  },
   {
    "title": "Map Handicap: PV (-1.5) vs Lynn Vision (+1.5)",
    "pick": "Lynn Vision",
@@ -91,27 +75,12 @@
    "event_slug": "cs2-lvg-pv-2026-11-26"
   },
   {
-   "title": "Counter-Strike: Heroic vs FaZe (BO3) - PGL Major Singapore Stage 1",
-   "pick": "FaZe",
-   "price": 0.465,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 43229,
-   "names": [
-    "CORGII",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
-   ],
-   "game_start": "2026-11-26T06:00+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "cs2-hero-faze-2026-11-26"
-  },
-  {
    "title": "Counter-Strike: Imperial vs Liquid (BO3) - PGL Major Singapore Stage 1",
    "pick": "Liquid",
    "price": 0.645,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 36103,
+   "total_value": 36108,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "lllllllIlll"

@@ -1,23 +1,7 @@
 {
- "at": "2026-11-26T05:57:04+00:00",
+ "at": "2026-11-26T06:00:06+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
-  {
-   "title": "Counter-Strike: M80 vs Eternal Fire (BO3) - PGL Major Singapore Stage 1",
-   "pick": "Eternal Fire",
-   "price": 0.555,
-   "wallets": 3,
-   "opposing_wallets": 1,
-   "total_value": 109454,
-   "names": [
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
-    "lllllllIlll",
-    "CORGII"
-   ],
-   "game_start": "2026-11-26T06:00+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "cs2-m80-ef1-2026-11-26"
-  },
   {
    "title": "Map Handicap: PV (-1.5) vs Lynn Vision (+1.5)",
    "pick": "Lynn Vision",
@@ -34,27 +18,12 @@
    "event_slug": "cs2-lvg-pv-2026-11-26"
   },
   {
-   "title": "Counter-Strike: Heroic vs FaZe (BO3) - PGL Major Singapore Stage 1",
-   "pick": "FaZe",
-   "price": 0.465,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 43229,
-   "names": [
-    "CORGII",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
-   ],
-   "game_start": "2026-11-26T06:00+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "cs2-hero-faze-2026-11-26"
-  },
-  {
    "title": "Counter-Strike: Imperial vs Liquid (BO3) - PGL Major Singapore Stage 1",
    "pick": "Liquid",
    "price": 0.645,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 36103,
+   "total_value": 36108,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "lllllllIlll"
