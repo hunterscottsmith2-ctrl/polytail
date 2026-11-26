@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T01:23:55+00:00",
+ "at": "2026-11-26T01:26:56+00:00",
  "wallets_watched": 130,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 111,
  "rows": 26750,
  "skipped_redeemable_or_no_outcome": 24099,
- "under_min_value": 2526,
+ "under_min_value": 2524,
  "already_ended": 6,
  "ends_too_late": 39,
- "kept": 80,
+ "kept": 82,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Suns vs. Rockets: O/U 222.5",
    "pick": "Under",
-   "price": 0.485,
+   "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 18221,
+   "total_value": 18596,
    "names": [
     "TMingchan",
     "tian888"
