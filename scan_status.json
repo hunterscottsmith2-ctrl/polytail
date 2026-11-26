@@ -1,12 +1,12 @@
 {
- "at": "2026-11-26T17:42:29+00:00",
+ "at": "2026-11-26T17:45:29+00:00",
  "wallets_watched": 119,
  "signals": 1,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 103,
- "rows": 42993,
- "skipped_redeemable_or_no_outcome": 33415,
- "under_min_value": 9120,
+ "rows": 43000,
+ "skipped_redeemable_or_no_outcome": 33414,
+ "under_min_value": 9128,
  "already_ended": 7,
  "ends_too_late": 113,
  "kept": 338,
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -76,21 +76,6 @@
    "game_start": "2026-11-26T18:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nfl-chi-det-2026-11-26"
-  },
-  {
-   "title": "Will RC Celta de Vigo win on 2026-11-26?",
-   "pick": "No",
-   "price": 0.755,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 5649,
-   "names": [
-    "darkumbreon88",
-    "hi774c"
-   ],
-   "game_start": "2026-11-26T17:45+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "uel-cel1-bou-2026-11-26"
   },
   {
    "title": "Chiefs vs. Bills",
