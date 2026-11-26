@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T15:03:35+00:00",
+ "at": "2026-11-26T15:06:36+00:00",
  "wallets_watched": 128,
  "signals": 0,
  "most_wallets_on_one_side": 3,
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -67,7 +67,7 @@
    "price": 0.515,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 82925,
+   "total_value": 82951,
    "names": [
     "EdZachary",
     "bands1"
