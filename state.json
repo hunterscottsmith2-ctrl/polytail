@@ -1,12 +1,5 @@
 {
  "alerted": {
-  "0x7bbebb476e6202c227e23d1d97da1b400f42c2a8a1a26fc8296e8d2073e77fde|1": {
-   "first_seen": "2026-11-26T10:39+00:00",
-   "gone_at": 1795692073.6174898,
-   "outcome": "Liquid",
-   "title": "Counter-Strike: Imperial vs Liquid (BO3) - PGL Major Singapore Stage 1",
-   "wallets": 3
-  },
   "0xb5af1a1657125484fef6159ea091da17942ffc17b551439aa8b8b0cd4180c2a8|0": {
    "first_seen": "2026-11-26T17:21+00:00",
    "gone_at": 1795715490.0514798,
