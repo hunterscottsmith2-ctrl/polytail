@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T05:54:04+00:00",
+ "at": "2026-11-26T05:57:04+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 106,
- "rows": 43526,
- "skipped_redeemable_or_no_outcome": 34296,
- "under_min_value": 8788,
+ "rows": 43520,
+ "skipped_redeemable_or_no_outcome": 34302,
+ "under_min_value": 8779,
  "already_ended": 8,
  "ends_too_late": 115,
- "kept": 319,
+ "kept": 316,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Counter-Strike: M80 vs Eternal Fire (BO3) - PGL Major Singapore Stage 1",
    "pick": "Eternal Fire",
-   "price": 0.545,
+   "price": 0.555,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 107482,
+   "total_value": 109454,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "lllllllIlll",
@@ -111,7 +111,7 @@
    "price": 0.645,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 36012,
+   "total_value": 36103,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "lllllllIlll"
