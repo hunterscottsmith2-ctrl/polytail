@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T03:24:03+00:00",
+ "at": "2026-11-26T03:27:05+00:00",
  "wallets_watched": 121,
  "signals": 0,
- "most_wallets_on_one_side": 6,
+ "most_wallets_on_one_side": 5,
  "wallets_with_rows": 104,
- "rows": 43498,
- "skipped_redeemable_or_no_outcome": 34235,
- "under_min_value": 8776,
+ "rows": 43487,
+ "skipped_redeemable_or_no_outcome": 34242,
+ "under_min_value": 8765,
  "already_ended": 8,
  "ends_too_late": 116,
- "kept": 363,
+ "kept": 356,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -96,7 +96,7 @@
    "price": 0.515,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 4267,
+   "total_value": 4383,
    "names": [
     "shekelmeister",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
