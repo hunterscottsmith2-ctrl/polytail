@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T08:51:12+00:00",
+ "at": "2026-11-26T08:54:13+00:00",
  "wallets_watched": 120,
  "signals": 0,
- "most_wallets_on_one_side": 4,
+ "most_wallets_on_one_side": 3,
  "wallets_with_rows": 103,
- "rows": 43328,
- "skipped_redeemable_or_no_outcome": 34069,
- "under_min_value": 8818,
+ "rows": 43330,
+ "skipped_redeemable_or_no_outcome": 34080,
+ "under_min_value": 8816,
  "already_ended": 7,
  "ends_too_late": 113,
- "kept": 321,
+ "kept": 314,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -65,7 +65,7 @@
    "price": 0.425,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 69548,
+   "total_value": 76830,
    "names": [
     "lllllllIlll",
     "CORGII"
@@ -77,10 +77,10 @@
   {
    "title": "Counter-Strike: Lynn Vision vs PVISION (BO3) - PGL Major Singapore Stage 1",
    "pick": "Lynn Vision",
-   "price": 0.195,
+   "price": 0.205,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 38870,
+   "total_value": 40863,
    "names": [
     "lllllllIlll",
     "CORGII"
@@ -92,10 +92,10 @@
   {
    "title": "Map Handicap: PV (-1.5) vs Lynn Vision (+1.5)",
    "pick": "Lynn Vision",
-   "price": 0.42,
+   "price": 0.415,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 14272,
+   "total_value": 14102,
    "names": [
     "BrotherObama",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
@@ -110,7 +110,7 @@
    "price": 0.655,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 70152,
+   "total_value": 70358,
    "names": [
     "lllllllIlll",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"

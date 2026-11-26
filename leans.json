@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T08:51:12+00:00",
+ "at": "2026-11-26T08:54:13+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.425,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 69548,
+   "total_value": 76830,
    "names": [
     "lllllllIlll",
     "CORGII"
@@ -20,10 +20,10 @@
   {
    "title": "Counter-Strike: Lynn Vision vs PVISION (BO3) - PGL Major Singapore Stage 1",
    "pick": "Lynn Vision",
-   "price": 0.195,
+   "price": 0.205,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 38870,
+   "total_value": 40863,
    "names": [
     "lllllllIlll",
     "CORGII"
@@ -35,10 +35,10 @@
   {
    "title": "Map Handicap: PV (-1.5) vs Lynn Vision (+1.5)",
    "pick": "Lynn Vision",
-   "price": 0.42,
+   "price": 0.415,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 14272,
+   "total_value": 14102,
    "names": [
     "BrotherObama",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
@@ -53,7 +53,7 @@
    "price": 0.655,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 70152,
+   "total_value": 70358,
    "names": [
     "lllllllIlll",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
