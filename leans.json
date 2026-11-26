@@ -1,7 +1,23 @@
 {
- "at": "2026-11-26T01:08:50+00:00",
+ "at": "2026-11-26T01:11:50+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Counter-Strike: M80 vs Eternal Fire (BO3) - PGL Major Singapore Stage 1",
+   "pick": "Eternal Fire",
+   "price": 0.525,
+   "wallets": 3,
+   "opposing_wallets": 1,
+   "total_value": 99278,
+   "names": [
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
+    "lllllllIlll",
+    "CORGII"
+   ],
+   "game_start": "2026-11-26T06:00+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "cs2-m80-ef1-2026-11-26"
+  },
   {
    "title": "Counter-Strike: Heroic vs FaZe (BO3) - PGL Major Singapore Stage 1",
    "pick": "FaZe",
@@ -31,21 +47,6 @@
    "game_start": "2026-11-26T11:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "cs2-imp11-tl1-2026-11-26"
-  },
-  {
-   "title": "Counter-Strike: M80 vs Eternal Fire (BO3) - PGL Major Singapore Stage 1",
-   "pick": "Eternal Fire",
-   "price": 0.515,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 63445,
-   "names": [
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
-    "CORGII"
-   ],
-   "game_start": "2026-11-26T06:00+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "cs2-m80-ef1-2026-11-26"
   },
   {
    "title": "Sharks vs. Ducks",
