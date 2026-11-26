@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T07:00:05+00:00",
+ "at": "2026-11-26T07:03:04+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 106,
- "rows": 43545,
- "skipped_redeemable_or_no_outcome": 34319,
- "under_min_value": 8778,
+ "rows": 43548,
+ "skipped_redeemable_or_no_outcome": 34322,
+ "under_min_value": 8775,
  "already_ended": 8,
  "ends_too_late": 115,
- "kept": 325,
+ "kept": 328,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -60,12 +60,27 @@
  },
  "leans_not_alerts": [
   {
+   "title": "Counter-Strike: Lynn Vision vs PVISION (BO3) - PGL Major Singapore Stage 1",
+   "pick": "Lynn Vision",
+   "price": 0.235,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 17547,
+   "names": [
+    "shekelmeister",
+    "lllllllIlll"
+   ],
+   "game_start": "2026-11-26T08:30+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "cs2-lvg-pv-2026-11-26"
+  },
+  {
    "title": "Map Handicap: PV (-1.5) vs Lynn Vision (+1.5)",
    "pick": "Lynn Vision",
    "price": 0.515,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 6005,
+   "total_value": 6137,
    "names": [
     "shekelmeister",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
@@ -80,7 +95,7 @@
    "price": 0.655,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 67567,
+   "total_value": 67573,
    "names": [
     "lllllllIlll",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
