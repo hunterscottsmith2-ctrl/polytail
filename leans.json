@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T02:57:03+00:00",
+ "at": "2026-11-26T03:00:05+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -32,21 +32,6 @@
    "game_start": "2026-11-26T11:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "cs2-imp11-tl1-2026-11-26"
-  },
-  {
-   "title": "Sharks vs. Ducks",
-   "pick": "Ducks",
-   "price": 0.545,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 74120,
-   "names": [
-    "justwins",
-    "ChonkVision"
-   ],
-   "game_start": "2026-11-26T03:00+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "nhl-sj-ana-2026-11-25"
   },
   {
    "title": "Counter-Strike: Heroic vs FaZe (BO3) - PGL Major Singapore Stage 1",
