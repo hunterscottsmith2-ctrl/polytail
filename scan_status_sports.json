@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T16:51:36+00:00",
+ "at": "2026-11-26T16:54:36+00:00",
  "wallets_watched": 128,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 108,
  "rows": 26192,
- "skipped_redeemable_or_no_outcome": 23811,
+ "skipped_redeemable_or_no_outcome": 23810,
  "under_min_value": 2310,
  "already_ended": 5,
  "ends_too_late": 29,
- "kept": 37,
+ "kept": 38,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -64,10 +64,10 @@
   {
    "title": "Bears vs. Lions",
    "pick": "Bears",
-   "price": 0.505,
+   "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 106050,
+   "total_value": 103950,
    "names": [
     "EdZachary",
     "bands1"

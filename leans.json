@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T16:51:28+00:00",
+ "at": "2026-11-26T16:54:29+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -16,6 +16,21 @@
    "game_start": "2026-11-26T17:45+00:00",
    "end_date": "2026-11-26",
    "event_slug": "uel-cel1-bou-2026-11-26"
+  },
+  {
+   "title": "Bears vs. Lions",
+   "pick": "Bears",
+   "price": 0.495,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 31867,
+   "names": [
+    "bands1",
+    "hi774c"
+   ],
+   "game_start": "2026-11-26T18:00+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "nfl-chi-det-2026-11-26"
   },
   {
    "title": "Chiefs vs. Bills",
