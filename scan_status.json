@@ -1,12 +1,12 @@
 {
- "at": "2026-11-26T08:42:13+00:00",
+ "at": "2026-11-26T08:45:12+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 5,
  "wallets_with_rows": 103,
- "rows": 43321,
- "skipped_redeemable_or_no_outcome": 34080,
- "under_min_value": 8803,
+ "rows": 43311,
+ "skipped_redeemable_or_no_outcome": 34073,
+ "under_min_value": 8800,
  "already_ended": 7,
  "ends_too_late": 112,
  "kept": 319,
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Map Handicap: PV (-1.5) vs Lynn Vision (+1.5)",
    "pick": "Lynn Vision",
-   "price": 0.46,
+   "price": 0.41,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 15631,
+   "total_value": 13932,
    "names": [
     "BrotherObama",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
@@ -80,7 +80,7 @@
    "price": 0.655,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 68842,
+   "total_value": 70152,
    "names": [
     "lllllllIlll",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
