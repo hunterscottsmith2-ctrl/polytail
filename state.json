@@ -1,5 +1,11 @@
 {
  "alerted": {
+  "0x3f7bc5349ea9961614e2fc1437ce37df5655ef6a68e0cbfbe853229a9fe7c540|0": {
+   "first_seen": "2026-11-26T00:53+00:00",
+   "outcome": "Clippers",
+   "title": "Clippers vs. Grizzlies",
+   "wallets": 3
+  },
   "0xa6e19be478ccdf8163422cada2772f1ea98b9f5f1b824e75a96f6aab59fe4c63|1": {
    "first_seen": "2026-11-25T21:53+00:00",
    "gone_at": 1795644170.8380759,
@@ -15,5 +21,12 @@
    "wallets": 3
   }
  },
- "recheck": []
+ "recheck": [
+  {
+   "alerted_at": "2026-11-26T00:53:50+00:00",
+   "key": "0x3f7bc5349ea9961614e2fc1437ce37df5655ef6a68e0cbfbe853229a9fe7c540|0",
+   "token": "94012687372591186907755987213318659912246075048344225088841747414322478837708",
+   "ts": 1795654430.5509484
+  }
+ ]
 }
