@@ -2,6 +2,7 @@
  "alerted": {
   "0x3f7bc5349ea9961614e2fc1437ce37df5655ef6a68e0cbfbe853229a9fe7c540|0": {
    "first_seen": "2026-11-26T00:53+00:00",
+   "gone_at": 1795654969.8923364,
    "outcome": "Clippers",
    "title": "Clippers vs. Grizzlies",
    "wallets": 3
