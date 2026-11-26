@@ -1,21 +1,5 @@
 {
- "at": "2026-11-26T19:57:38+00:00",
+ "at": "2026-11-26T20:00:37+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": [
-  {
-   "title": "Spread: TSG 1899 Hoffenheim (-1.5)",
-   "pick": "TSG 1899 Hoffenheim",
-   "price": 0.565,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 7800,
-   "names": [
-    "ChonkVision",
-    "1l2ihj34li12u34"
-   ],
-   "game_start": "2026-11-26T20:00+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "uel-hof-stu1-2026-11-26-more-markets"
-  }
- ]
+ "leans": []
 }
