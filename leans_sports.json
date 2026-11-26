@@ -1,5 +1,21 @@
 {
- "at": "2026-11-26T00:56:58+00:00",
+ "at": "2026-11-26T00:59:57+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": []
+ "leans": [
+  {
+   "title": "Nets vs. Bucks",
+   "pick": "Bucks",
+   "price": 0.525,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 59727,
+   "names": [
+    "monkeymashingkeyboard",
+    "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188"
+   ],
+   "game_start": "2026-11-26T01:00+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "nba-bkn-mil-2026-11-25"
+  }
+ ]
 }

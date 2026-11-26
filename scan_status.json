@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T00:56:50+00:00",
+ "at": "2026-11-26T00:59:50+00:00",
  "wallets_watched": 122,
  "signals": 1,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 107,
- "rows": 43574,
+ "rows": 43579,
  "skipped_redeemable_or_no_outcome": 34214,
- "under_min_value": 8860,
- "already_ended": 10,
+ "under_min_value": 8861,
+ "already_ended": 11,
  "ends_too_late": 106,
- "kept": 384,
+ "kept": 387,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,21 +51,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Clippers vs. Grizzlies",
    "pick": "Clippers",
-   "price": 0.275,
+   "price": 0.285,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 10616,
+   "total_value": 11002,
    "names": [
     "shekelmeister",
     "darkumbreon88",
@@ -119,21 +119,6 @@
    "game_start": "2026-11-26T03:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nhl-sj-ana-2026-11-25"
-  },
-  {
-   "title": "Nets vs. Bucks",
-   "pick": "Bucks",
-   "price": 0.515,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 40521,
-   "names": [
-    "monkeymashingkeyboard",
-    "hi774c"
-   ],
-   "game_start": "2026-11-26T01:00+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "nba-bkn-mil-2026-11-25"
   }
  ]
 }
