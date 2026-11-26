@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T07:09:05+00:00",
- "wallets_watched": 122,
+ "at": "2026-11-26T07:12:05+00:00",
+ "wallets_watched": 121,
  "signals": 0,
- "most_wallets_on_one_side": 4,
- "wallets_with_rows": 106,
- "rows": 43556,
- "skipped_redeemable_or_no_outcome": 34322,
- "under_min_value": 8782,
+ "most_wallets_on_one_side": 3,
+ "wallets_with_rows": 105,
+ "rows": 43543,
+ "skipped_redeemable_or_no_outcome": 34331,
+ "under_min_value": 8767,
  "already_ended": 8,
  "ends_too_late": 115,
- "kept": 329,
+ "kept": 322,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,58 +51,28 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Counter-Strike: Lynn Vision vs PVISION (BO3) - PGL Major Singapore Stage 1",
    "pick": "Lynn Vision",
-   "price": 0.235,
+   "price": 0.225,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 16894,
-   "names": [
-    "shekelmeister",
-    "lllllllIlll"
-   ],
-   "game_start": "2026-11-26T08:30+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "cs2-lvg-pv-2026-11-26"
-  },
-  {
-   "title": "Map Handicap: PV (-1.5) vs Lynn Vision (+1.5)",
-   "pick": "Lynn Vision",
-   "price": 0.515,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 8443,
-   "names": [
-    "shekelmeister",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
-   ],
-   "game_start": "2026-11-26T08:30+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "cs2-lvg-pv-2026-11-26"
-  },
-  {
-   "title": "Counter-Strike: Imperial vs Liquid (BO3) - PGL Major Singapore Stage 1",
-   "pick": "Liquid",
-   "price": 0.655,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 67573,
+   "total_value": 42845,
    "names": [
     "lllllllIlll",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
+    "shekelmeister"
    ],
-   "game_start": "2026-11-26T11:00+00:00",
+   "game_start": "2026-11-26T08:30+00:00",
    "end_date": "2026-11-26",
-   "event_slug": "cs2-imp11-tl1-2026-11-26"
+   "event_slug": "cs2-lvg-pv-2026-11-26"
   }
  ]
 }
