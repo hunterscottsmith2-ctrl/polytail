@@ -1,22 +1,7 @@
 {
- "at": "2026-11-26T00:08:49+00:00",
+ "at": "2026-11-26T00:11:49+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
-  {
-   "title": "Sharks vs. Ducks",
-   "pick": "Ducks",
-   "price": 0.555,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 52489,
-   "names": [
-    "justwins",
-    "ChonkVision"
-   ],
-   "game_start": "2026-11-26T03:00+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "nhl-sj-ana-2026-11-25"
-  },
   {
    "title": "Counter-Strike: Heroic vs FaZe (BO3) - PGL Major Singapore Stage 1",
    "pick": "FaZe",
@@ -35,10 +20,10 @@
   {
    "title": "Cavaliers vs. Knicks: O/U 218.5",
    "pick": "Over",
-   "price": 0.545,
+   "price": 0.535,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 10716,
+   "total_value": 10519,
    "names": [
     "justwins",
     "hi774c"
@@ -53,7 +38,7 @@
    "price": 0.435,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 95377,
+   "total_value": 95380,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
     "Moneymethod",
@@ -77,6 +62,21 @@
    "game_start": "2026-11-26T06:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "cs2-m80-ef1-2026-11-26"
+  },
+  {
+   "title": "Sharks vs. Ducks",
+   "pick": "Ducks",
+   "price": 0.555,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 52489,
+   "names": [
+    "justwins",
+    "ChonkVision"
+   ],
+   "game_start": "2026-11-26T03:00+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "nhl-sj-ana-2026-11-25"
   },
   {
    "title": "Nets vs. Bucks",

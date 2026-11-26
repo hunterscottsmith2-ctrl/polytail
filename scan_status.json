@@ -1,16 +1,16 @@
 {
- "at": "2026-11-26T00:08:49+00:00",
+ "at": "2026-11-26T00:11:49+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 106,
- "rows": 46606,
- "skipped_redeemable_or_no_outcome": 37038,
- "under_min_value": 9091,
- "already_ended": 16,
+ "rows": 43570,
+ "skipped_redeemable_or_no_outcome": 34191,
+ "under_min_value": 8897,
+ "already_ended": 15,
  "ends_too_late": 106,
- "kept": 355,
- "wallets_needing_extra_pages": 26,
+ "kept": 361,
+ "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
   "archived",
@@ -51,29 +51,14 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Sharks vs. Ducks",
-   "pick": "Ducks",
-   "price": 0.555,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 52489,
-   "names": [
-    "justwins",
-    "ChonkVision"
-   ],
-   "game_start": "2026-11-26T03:00+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "nhl-sj-ana-2026-11-25"
-  },
   {
    "title": "Counter-Strike: Heroic vs FaZe (BO3) - PGL Major Singapore Stage 1",
    "pick": "FaZe",
@@ -92,10 +77,10 @@
   {
    "title": "Cavaliers vs. Knicks: O/U 218.5",
    "pick": "Over",
-   "price": 0.545,
+   "price": 0.535,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 10716,
+   "total_value": 10519,
    "names": [
     "justwins",
     "hi774c"
@@ -110,7 +95,7 @@
    "price": 0.435,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 95377,
+   "total_value": 95380,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
     "Moneymethod",
@@ -134,6 +119,21 @@
    "game_start": "2026-11-26T06:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "cs2-m80-ef1-2026-11-26"
+  },
+  {
+   "title": "Sharks vs. Ducks",
+   "pick": "Ducks",
+   "price": 0.555,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 52489,
+   "names": [
+    "justwins",
+    "ChonkVision"
+   ],
+   "game_start": "2026-11-26T03:00+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "nhl-sj-ana-2026-11-25"
   },
   {
    "title": "Nets vs. Bucks",
