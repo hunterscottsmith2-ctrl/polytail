@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T00:32:49+00:00",
+ "at": "2026-11-26T00:35:51+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -16,22 +16,6 @@
    "game_start": "2026-11-26T06:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "cs2-hero-faze-2026-11-26"
-  },
-  {
-   "title": "Packers vs. Rams",
-   "pick": "Packers",
-   "price": 0.435,
-   "wallets": 3,
-   "opposing_wallets": 2,
-   "total_value": 105065,
-   "names": [
-    "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
-    "Moneymethod",
-    "hi774c"
-   ],
-   "game_start": "2026-11-26T01:00+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "nfl-gb-la-2026-11-26"
   },
   {
    "title": "Counter-Strike: M80 vs Eternal Fire (BO3) - PGL Major Singapore Stage 1",
