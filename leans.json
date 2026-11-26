@@ -1,14 +1,14 @@
 {
- "at": "2026-11-26T05:45:04+00:00",
+ "at": "2026-11-26T05:48:03+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Counter-Strike: M80 vs Eternal Fire (BO3) - PGL Major Singapore Stage 1",
    "pick": "Eternal Fire",
-   "price": 0.525,
+   "price": 0.535,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 103404,
+   "total_value": 105510,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "lllllllIlll",
@@ -54,7 +54,7 @@
    "price": 0.645,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 34766,
+   "total_value": 34968,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "lllllllIlll"
