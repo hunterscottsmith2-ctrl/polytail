@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T16:30:36+00:00",
+ "at": "2026-11-26T16:33:36+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -35,10 +35,10 @@
   {
    "title": "Chiefs vs. Bills",
    "pick": "Chiefs",
-   "price": 0.405,
+   "price": 0.395,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 19131,
+   "total_value": 18658,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
     "monkeymashingkeyboard"
