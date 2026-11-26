@@ -1,21 +1,5 @@
 {
- "at": "2026-11-26T01:26:56+00:00",
+ "at": "2026-11-26T01:29:55+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": [
-  {
-   "title": "Suns vs. Rockets: O/U 222.5",
-   "pick": "Under",
-   "price": 0.495,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 18596,
-   "names": [
-    "TMingchan",
-    "tian888"
-   ],
-   "game_start": "2026-11-26T01:30+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "nba-phx-hou-2026-11-25"
-  }
- ]
+ "leans": []
 }
