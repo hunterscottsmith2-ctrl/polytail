@@ -2,6 +2,7 @@
  "alerted": {
   "0xb5af1a1657125484fef6159ea091da17942ffc17b551439aa8b8b0cd4180c2a8|0": {
    "first_seen": "2026-11-26T17:21+00:00",
+   "gone_at": 1795715497.21622,
    "outcome": "Bears",
    "title": "Bears vs. Lions",
    "wallets": 3
