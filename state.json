@@ -7,6 +7,12 @@
    "title": "Clippers vs. Grizzlies",
    "wallets": 3
   },
+  "0x7bbebb476e6202c227e23d1d97da1b400f42c2a8a1a26fc8296e8d2073e77fde|1": {
+   "first_seen": "2026-11-26T10:39+00:00",
+   "outcome": "Liquid",
+   "title": "Counter-Strike: Imperial vs Liquid (BO3) - PGL Major Singapore Stage 1",
+   "wallets": 3
+  },
   "0xc609a9f272d33865de26427612ee82caee3b499f3fe74cdd3fc3867a5307ad41|1": {
    "first_seen": "2026-11-26T01:11+00:00",
    "gone_at": 1795662724.601203,
@@ -15,5 +21,12 @@
    "wallets": 3
   }
  },
- "recheck": []
+ "recheck": [
+  {
+   "alerted_at": "2026-11-26T10:39:17+00:00",
+   "key": "0x7bbebb476e6202c227e23d1d97da1b400f42c2a8a1a26fc8296e8d2073e77fde|1",
+   "token": "1205899445103093454123445301004237183692983580452598177537744332983594654842",
+   "ts": 1795689557.271143
+  }
+ ]
 }
