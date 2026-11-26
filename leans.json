@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T17:00:29+00:00",
+ "at": "2026-11-26T17:03:29+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -23,7 +23,7 @@
    "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 31867,
+   "total_value": 31911,
    "names": [
     "bands1",
     "hi774c"
