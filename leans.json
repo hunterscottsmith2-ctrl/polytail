@@ -1,14 +1,14 @@
 {
- "at": "2026-11-26T18:06:29+00:00",
+ "at": "2026-11-26T18:09:29+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Spread: Cowboys (-8.5)",
    "pick": "Cowboys",
-   "price": 0.505,
+   "price": 0.495,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 45450,
+   "total_value": 44550,
    "names": [
     "BrotherObama",
     "monkeymashingkeyboard"
