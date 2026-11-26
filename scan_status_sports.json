@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T00:26:56+00:00",
+ "at": "2026-11-26T00:29:56+00:00",
  "wallets_watched": 132,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 113,
- "rows": 29775,
+ "rows": 29776,
  "skipped_redeemable_or_no_outcome": 27079,
- "under_min_value": 2585,
+ "under_min_value": 2587,
  "already_ended": 12,
  "ends_too_late": 40,
- "kept": 59,
+ "kept": 58,
  "wallets_needing_extra_pages": 14,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -73,6 +73,21 @@
    "game_start": "2026-11-26T00:30+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nba-min-okc-2026-11-25"
+  },
+  {
+   "title": "Cavaliers vs. Knicks",
+   "pick": "Knicks",
+   "price": 0.635,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 29871,
+   "names": [
+    "chubbytoro",
+    "hi774c"
+   ],
+   "game_start": "2026-11-26T00:30+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "nba-cle-nyk-2026-11-25"
   }
  ]
 }
