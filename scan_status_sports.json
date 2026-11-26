@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T17:57:37+00:00",
+ "at": "2026-11-26T18:00:37+00:00",
  "wallets_watched": 128,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 109,
- "rows": 26210,
+ "rows": 26209,
  "skipped_redeemable_or_no_outcome": 23789,
  "under_min_value": 2341,
  "already_ended": 5,
- "ends_too_late": 29,
- "kept": 46,
+ "ends_too_late": 27,
+ "kept": 47,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -53,30 +53,14 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Bears vs. Lions",
-   "pick": "Bears",
-   "price": 0.505,
-   "wallets": 3,
-   "opposing_wallets": 2,
-   "total_value": 169790,
-   "names": [
-    "EdZachary",
-    "Moneymethod",
-    "bands1"
-   ],
-   "game_start": "2026-11-26T18:00+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "nfl-chi-det-2026-11-26"
-  },
   {
    "title": "Chiefs vs. Bills",
    "pick": "Chiefs",
