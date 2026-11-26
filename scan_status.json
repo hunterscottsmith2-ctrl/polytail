@@ -1,12 +1,12 @@
 {
- "at": "2026-11-26T16:54:29+00:00",
+ "at": "2026-11-26T16:57:29+00:00",
  "wallets_watched": 119,
  "signals": 0,
  "most_wallets_on_one_side": 3,
- "wallets_with_rows": 102,
- "rows": 42945,
- "skipped_redeemable_or_no_outcome": 33416,
- "under_min_value": 9076,
+ "wallets_with_rows": 103,
+ "rows": 42947,
+ "skipped_redeemable_or_no_outcome": 33417,
+ "under_min_value": 9077,
  "already_ended": 7,
  "ends_too_late": 113,
  "kept": 333,
@@ -53,21 +53,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will RC Celta de Vigo win on 2026-11-26?",
    "pick": "No",
-   "price": 0.745,
+   "price": 0.755,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 5575,
+   "total_value": 5649,
    "names": [
     "darkumbreon88",
     "hi774c"

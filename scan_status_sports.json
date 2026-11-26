@@ -1,9 +1,9 @@
 {
- "at": "2026-11-26T16:54:36+00:00",
+ "at": "2026-11-26T16:57:37+00:00",
  "wallets_watched": 128,
  "signals": 0,
  "most_wallets_on_one_side": 3,
- "wallets_with_rows": 108,
+ "wallets_with_rows": 109,
  "rows": 26192,
  "skipped_redeemable_or_no_outcome": 23810,
  "under_min_value": 2310,
