@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T19:06:29+00:00",
- "wallets_watched": 119,
+ "at": "2026-11-26T19:09:28+00:00",
+ "wallets_watched": 117,
  "signals": 0,
- "most_wallets_on_one_side": 5,
- "wallets_with_rows": 103,
- "rows": 43068,
- "skipped_redeemable_or_no_outcome": 33406,
- "under_min_value": 9178,
+ "most_wallets_on_one_side": 4,
+ "wallets_with_rows": 101,
+ "rows": 42725,
+ "skipped_redeemable_or_no_outcome": 33064,
+ "under_min_value": 9181,
  "already_ended": 7,
  "ends_too_late": 112,
- "kept": 365,
+ "kept": 361,
  "wallets_needing_extra_pages": 23,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,29 +53,14 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Spread: Cowboys (-8.5)",
-   "pick": "Cowboys",
-   "price": 0.495,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 44550,
-   "names": [
-    "BrotherObama",
-    "monkeymashingkeyboard"
-   ],
-   "game_start": "2026-11-26T21:30+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "nfl-phi-dal-2026-11-26"
-  },
   {
    "title": "Chiefs vs. Bills",
    "pick": "Chiefs",

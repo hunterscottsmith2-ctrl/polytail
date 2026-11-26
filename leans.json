@@ -1,22 +1,7 @@
 {
- "at": "2026-11-26T19:06:29+00:00",
+ "at": "2026-11-26T19:09:28+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
-  {
-   "title": "Spread: Cowboys (-8.5)",
-   "pick": "Cowboys",
-   "price": 0.495,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 44550,
-   "names": [
-    "BrotherObama",
-    "monkeymashingkeyboard"
-   ],
-   "game_start": "2026-11-26T21:30+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "nfl-phi-dal-2026-11-26"
-  },
   {
    "title": "Chiefs vs. Bills",
    "pick": "Chiefs",
