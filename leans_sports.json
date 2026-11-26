@@ -1,36 +1,5 @@
 {
- "at": "2026-11-26T00:29:56+00:00",
+ "at": "2026-11-26T00:32:56+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": [
-  {
-   "title": "Timberwolves vs. Thunder",
-   "pick": "Thunder",
-   "price": 0.555,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 69730,
-   "names": [
-    "monkeymashingkeyboard",
-    "0x0c154c190E293B7e5F8D453b5F690C4dC9599A45-1775083003603"
-   ],
-   "game_start": "2026-11-26T00:30+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "nba-min-okc-2026-11-25"
-  },
-  {
-   "title": "Cavaliers vs. Knicks",
-   "pick": "Knicks",
-   "price": 0.635,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 29871,
-   "names": [
-    "chubbytoro",
-    "hi774c"
-   ],
-   "game_start": "2026-11-26T00:30+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "nba-cle-nyk-2026-11-25"
-  }
- ]
+ "leans": []
 }

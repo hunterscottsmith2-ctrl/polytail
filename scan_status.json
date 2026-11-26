@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T00:29:49+00:00",
+ "at": "2026-11-26T00:32:49+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 4,
@@ -75,27 +75,12 @@
    "event_slug": "cs2-hero-faze-2026-11-26"
   },
   {
-   "title": "Cavaliers vs. Knicks: O/U 218.5",
-   "pick": "Over",
-   "price": 0.54,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 10617,
-   "names": [
-    "justwins",
-    "hi774c"
-   ],
-   "game_start": "2026-11-26T00:30+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "nba-cle-nyk-2026-11-25"
-  },
-  {
    "title": "Packers vs. Rams",
    "pick": "Packers",
    "price": 0.435,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 105035,
+   "total_value": 105065,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
     "Moneymethod",
