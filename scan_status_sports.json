@@ -1,12 +1,12 @@
 {
- "at": "2026-11-26T19:33:37+00:00",
+ "at": "2026-11-26T19:36:37+00:00",
  "wallets_watched": 128,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 110,
- "rows": 26278,
- "skipped_redeemable_or_no_outcome": 23784,
- "under_min_value": 2403,
+ "rows": 26281,
+ "skipped_redeemable_or_no_outcome": 23783,
+ "under_min_value": 2407,
  "already_ended": 5,
  "ends_too_late": 27,
  "kept": 59,
@@ -64,10 +64,10 @@
   {
    "title": "Will Crystal Palace FC win on 2026-11-26?",
    "pick": "Yes",
-   "price": 0.505,
+   "price": 0.525,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 173591,
+   "total_value": 226390,
    "names": [
     "plonker2026",
     "nb1985"
