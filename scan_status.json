@@ -1,12 +1,12 @@
 {
- "at": "2026-11-26T11:18:15+00:00",
+ "at": "2026-11-26T11:21:13+00:00",
  "wallets_watched": 120,
- "signals": 1,
+ "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 103,
- "rows": 42968,
- "skipped_redeemable_or_no_outcome": 33586,
- "under_min_value": 8944,
+ "rows": 42972,
+ "skipped_redeemable_or_no_outcome": 33582,
+ "under_min_value": 8952,
  "already_ended": 8,
  "ends_too_late": 113,
  "kept": 317,
@@ -51,29 +51,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
- "leans_not_alerts": [
-  {
-   "title": "Counter-Strike: Imperial vs Liquid (BO3) - PGL Major Singapore Stage 1",
-   "pick": "Liquid",
-   "price": 0.655,
-   "wallets": 3,
-   "opposing_wallets": 0,
-   "total_value": 121697,
-   "names": [
-    "lllllllIlll",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-26T11:20+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "cs2-imp11-tl1-2026-11-26"
-  }
- ]
+ "leans_not_alerts": []
 }

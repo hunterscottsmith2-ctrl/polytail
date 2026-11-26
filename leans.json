@@ -1,22 +1,5 @@
 {
- "at": "2026-11-26T11:18:15+00:00",
+ "at": "2026-11-26T11:21:13+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": [
-  {
-   "title": "Counter-Strike: Imperial vs Liquid (BO3) - PGL Major Singapore Stage 1",
-   "pick": "Liquid",
-   "price": 0.655,
-   "wallets": 3,
-   "opposing_wallets": 0,
-   "total_value": 121697,
-   "names": [
-    "lllllllIlll",
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-26T11:20+00:00",
-   "end_date": "2026-11-26",
-   "event_slug": "cs2-imp11-tl1-2026-11-26"
-  }
- ]
+ "leans": []
 }
