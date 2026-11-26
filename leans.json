@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T03:21:04+00:00",
+ "at": "2026-11-26T03:24:03+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.525,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 101113,
+   "total_value": 101124,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "lllllllIlll",
@@ -24,7 +24,7 @@
    "price": 0.645,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 14386,
+   "total_value": 17318,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "lllllllIlll"
