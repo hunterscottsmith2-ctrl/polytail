@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T23:59:50+00:00",
+ "at": "2026-11-26T00:02:50+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -53,7 +53,7 @@
    "price": 0.435,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 94795,
+   "total_value": 94890,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
     "Moneymethod",
