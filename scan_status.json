@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T01:17:49+00:00",
+ "at": "2026-11-26T01:20:50+00:00",
  "wallets_watched": 122,
  "signals": 1,
- "most_wallets_on_one_side": 4,
+ "most_wallets_on_one_side": 5,
  "wallets_with_rows": 107,
  "rows": 43578,
- "skipped_redeemable_or_no_outcome": 34195,
+ "skipped_redeemable_or_no_outcome": 34194,
  "under_min_value": 8871,
  "already_ended": 11,
  "ends_too_late": 108,
- "kept": 393,
+ "kept": 394,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -65,7 +65,7 @@
    "price": 0.525,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 99278,
+   "total_value": 99283,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "lllllllIlll",
