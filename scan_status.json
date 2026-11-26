@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T08:39:12+00:00",
+ "at": "2026-11-26T08:42:13+00:00",
  "wallets_watched": 120,
  "signals": 0,
  "most_wallets_on_one_side": 5,
  "wallets_with_rows": 103,
- "rows": 43318,
- "skipped_redeemable_or_no_outcome": 34087,
- "under_min_value": 8792,
+ "rows": 43321,
+ "skipped_redeemable_or_no_outcome": 34080,
+ "under_min_value": 8803,
  "already_ended": 7,
  "ends_too_late": 112,
- "kept": 320,
+ "kept": 319,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,24 +51,24 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Map Handicap: PV (-1.5) vs Lynn Vision (+1.5)",
    "pick": "Lynn Vision",
-   "price": 0.36,
+   "price": 0.46,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 2518,
+   "total_value": 15631,
    "names": [
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
-    "BrotherObama"
+    "BrotherObama",
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
    ],
    "game_start": "2026-11-26T09:00+00:00",
    "end_date": "2026-11-26",
@@ -80,7 +80,7 @@
    "price": 0.655,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 68514,
+   "total_value": 68842,
    "names": [
     "lllllllIlll",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"

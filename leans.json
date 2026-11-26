@@ -1,17 +1,17 @@
 {
- "at": "2026-11-26T08:39:12+00:00",
+ "at": "2026-11-26T08:42:13+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Map Handicap: PV (-1.5) vs Lynn Vision (+1.5)",
    "pick": "Lynn Vision",
-   "price": 0.36,
+   "price": 0.46,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 2518,
+   "total_value": 15631,
    "names": [
-    "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
-    "BrotherObama"
+    "BrotherObama",
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
    ],
    "game_start": "2026-11-26T09:00+00:00",
    "end_date": "2026-11-26",
@@ -23,7 +23,7 @@
    "price": 0.655,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 68514,
+   "total_value": 68842,
    "names": [
     "lllllllIlll",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
