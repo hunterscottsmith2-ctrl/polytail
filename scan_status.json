@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T00:20:49+00:00",
+ "at": "2026-11-26T00:23:49+00:00",
  "wallets_watched": 122,
  "signals": 0,
  "most_wallets_on_one_side": 4,
- "wallets_with_rows": 106,
- "rows": 43571,
+ "wallets_with_rows": 107,
+ "rows": 43573,
  "skipped_redeemable_or_no_outcome": 34189,
  "under_min_value": 8896,
- "already_ended": 15,
+ "already_ended": 16,
  "ends_too_late": 106,
- "kept": 365,
+ "kept": 366,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -65,7 +65,7 @@
    "price": 0.475,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 23130,
+   "total_value": 23134,
    "names": [
     "CORGII",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
@@ -77,10 +77,10 @@
   {
    "title": "Cavaliers vs. Knicks: O/U 218.5",
    "pick": "Over",
-   "price": 0.535,
+   "price": 0.545,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 10519,
+   "total_value": 10716,
    "names": [
     "justwins",
     "hi774c"
@@ -95,7 +95,7 @@
    "price": 0.435,
    "wallets": 3,
    "opposing_wallets": 2,
-   "total_value": 96746,
+   "total_value": 96818,
    "names": [
     "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
     "Moneymethod",
@@ -111,7 +111,7 @@
    "price": 0.515,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 62930,
+   "total_value": 62942,
    "names": [
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F",
     "CORGII"
