@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T11:24:19+00:00",
+ "at": "2026-11-26T11:27:19+00:00",
  "wallets_watched": 128,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 109,
- "rows": 26164,
+ "rows": 26167,
  "skipped_redeemable_or_no_outcome": 23842,
  "under_min_value": 2250,
  "already_ended": 5,
  "ends_too_late": 31,
- "kept": 36,
+ "kept": 39,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -88,6 +88,21 @@
    "game_start": "2026-11-26T18:00+00:00",
    "end_date": "2026-11-26",
    "event_slug": "nfl-chi-det-2026-11-26"
+  },
+  {
+   "title": "Chiefs vs. Bills",
+   "pick": "Chiefs",
+   "price": 0.405,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 19131,
+   "names": [
+    "0xBc43c8bfBC4d77c2FC9011adaD38Ba43b88996d3-1765231687816",
+    "monkeymashingkeyboard"
+   ],
+   "game_start": "2026-11-27T01:20+00:00",
+   "end_date": "2026-11-27",
+   "event_slug": "nfl-kc-buf-2026-11-27"
   }
  ]
 }
