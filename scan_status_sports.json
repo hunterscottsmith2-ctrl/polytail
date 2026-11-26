@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T08:24:18+00:00",
+ "at": "2026-11-26T08:27:19+00:00",
  "wallets_watched": 128,
  "signals": 0,
- "most_wallets_on_one_side": 2,
+ "most_wallets_on_one_side": 3,
  "wallets_with_rows": 108,
- "rows": 26151,
+ "rows": 26153,
  "skipped_redeemable_or_no_outcome": 23827,
- "under_min_value": 2266,
+ "under_min_value": 2263,
  "already_ended": 5,
  "ends_too_late": 31,
- "kept": 22,
+ "kept": 27,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -58,5 +58,36 @@
   "end_date": "2026-07-12",
   "redeemable": true
  },
- "leans_not_alerts": []
+ "leans_not_alerts": [
+  {
+   "title": "Bears vs. Lions",
+   "pick": "Bears",
+   "price": 0.515,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 82400,
+   "names": [
+    "EdZachary",
+    "bands1"
+   ],
+   "game_start": "2026-11-26T18:00+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "nfl-chi-det-2026-11-26"
+  },
+  {
+   "title": "Spread: Bears (-2.5)",
+   "pick": "Bears",
+   "price": 0.455,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 28796,
+   "names": [
+    "EdZachary",
+    "bands1"
+   ],
+   "game_start": "2026-11-26T18:00+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "nfl-chi-det-2026-11-26"
+  }
+ ]
 }

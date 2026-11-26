@@ -1,5 +1,36 @@
 {
- "at": "2026-11-26T08:24:18+00:00",
+ "at": "2026-11-26T08:27:19+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": []
+ "leans": [
+  {
+   "title": "Bears vs. Lions",
+   "pick": "Bears",
+   "price": 0.515,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 82400,
+   "names": [
+    "EdZachary",
+    "bands1"
+   ],
+   "game_start": "2026-11-26T18:00+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "nfl-chi-det-2026-11-26"
+  },
+  {
+   "title": "Spread: Bears (-2.5)",
+   "pick": "Bears",
+   "price": 0.455,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 28796,
+   "names": [
+    "EdZachary",
+    "bands1"
+   ],
+   "game_start": "2026-11-26T18:00+00:00",
+   "end_date": "2026-11-26",
+   "event_slug": "nfl-chi-det-2026-11-26"
+  }
+ ]
 }
