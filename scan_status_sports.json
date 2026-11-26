@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T19:18:36+00:00",
+ "at": "2026-11-26T19:21:36+00:00",
  "wallets_watched": 128,
  "signals": 0,
  "most_wallets_on_one_side": 4,
- "wallets_with_rows": 109,
- "rows": 26261,
- "skipped_redeemable_or_no_outcome": 23779,
- "under_min_value": 2393,
+ "wallets_with_rows": 110,
+ "rows": 26267,
+ "skipped_redeemable_or_no_outcome": 23787,
+ "under_min_value": 2389,
  "already_ended": 5,
  "ends_too_late": 27,
- "kept": 57,
+ "kept": 59,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -67,7 +67,7 @@
    "price": 0.505,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 122902,
+   "total_value": 123025,
    "names": [
     "plonker2026",
     "nb1985"
