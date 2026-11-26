@@ -1,15 +1,15 @@
 {
- "at": "2026-11-26T02:42:05+00:00",
+ "at": "2026-11-26T02:45:06+00:00",
  "wallets_watched": 122,
  "signals": 1,
  "most_wallets_on_one_side": 5,
  "wallets_with_rows": 107,
- "rows": 43587,
- "skipped_redeemable_or_no_outcome": 34193,
- "under_min_value": 8886,
+ "rows": 43599,
+ "skipped_redeemable_or_no_outcome": 34202,
+ "under_min_value": 8891,
  "already_ended": 11,
  "ends_too_late": 115,
- "kept": 382,
+ "kept": 380,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -51,11 +51,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -96,7 +96,7 @@
    "price": 0.555,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 52507,
+   "total_value": 58734,
    "names": [
     "justwins",
     "ChonkVision"
