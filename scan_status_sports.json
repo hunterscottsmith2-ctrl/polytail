@@ -1,12 +1,12 @@
 {
- "at": "2026-11-27T17:58:26+00:00",
+ "at": "2026-11-27T18:01:27+00:00",
  "wallets_watched": 126,
- "signals": 1,
+ "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 107,
- "rows": 26800,
+ "rows": 26802,
  "skipped_redeemable_or_no_outcome": 24388,
- "under_min_value": 2315,
+ "under_min_value": 2317,
  "already_ended": 5,
  "ends_too_late": 26,
  "kept": 66,
@@ -53,29 +53,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
- "leans_not_alerts": [
-  {
-   "title": "Utah vs. Predators: O/U 6.5",
-   "pick": "Under",
-   "price": 0.495,
-   "wallets": 3,
-   "opposing_wallets": 0,
-   "total_value": 48645,
-   "names": [
-    "taylorsversion",
-    "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
-    "hi774c"
-   ],
-   "game_start": "2026-11-27T18:00+00:00",
-   "end_date": "2026-11-27",
-   "event_slug": "nhl-utah-nsh-2026-11-27"
-  }
- ]
+ "leans_not_alerts": []
 }

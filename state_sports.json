@@ -2,6 +2,7 @@
  "alerted": {
   "0x6d550ef6f1fb46c1a3c9375675f7f09c6136cd16432aa5e72f4be7d678ad10df|1": {
    "first_seen": "2026-11-27T17:52+00:00",
+   "gone_at": 1795802487.8568206,
    "outcome": "Under",
    "title": "Utah vs. Predators: O/U 6.5",
    "wallets": 3

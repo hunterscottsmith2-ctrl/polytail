@@ -1,12 +1,12 @@
 {
- "at": "2026-11-27T17:58:20+00:00",
+ "at": "2026-11-27T18:01:21+00:00",
  "wallets_watched": 116,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 100,
- "rows": 46868,
+ "rows": 46874,
  "skipped_redeemable_or_no_outcome": 37209,
- "under_min_value": 9134,
+ "under_min_value": 9140,
  "already_ended": 10,
  "ends_too_late": 134,
  "kept": 381,
@@ -53,21 +53,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
    "pick": "No",
-   "price": 0.872,
+   "price": 0.871,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 128914,
+   "total_value": 128766,
    "names": [
     "feeder-or-predator",
     "328.400.fund"
@@ -97,7 +97,7 @@
    "price": 0.565,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 15580,
+   "total_value": 17275,
    "names": [
     "feeder-or-predator",
     "arjennnnn"
