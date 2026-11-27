@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T17:13:22+00:00",
+ "at": "2026-11-27T17:16:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.89,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 131722,
+   "total_value": 131616,
    "names": [
     "feeder-or-predator",
     "328.400.fund"
@@ -50,10 +50,10 @@
   {
    "title": "Will Chelsea FC win on 2026-11-27?",
    "pick": "No",
-   "price": 0.675,
+   "price": 0.665,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 7122,
+   "total_value": 7016,
    "names": [
     "bands1",
     "hi774c"
