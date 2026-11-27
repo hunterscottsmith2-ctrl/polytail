@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T16:40:21+00:00",
+ "at": "2026-11-27T16:43:21+00:00",
  "wallets_watched": 117,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 100,
- "rows": 49050,
- "skipped_redeemable_or_no_outcome": 39012,
- "under_min_value": 9530,
+ "rows": 49058,
+ "skipped_redeemable_or_no_outcome": 39013,
+ "under_min_value": 9536,
  "already_ended": 10,
  "ends_too_late": 134,
- "kept": 364,
+ "kept": 365,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -80,10 +80,10 @@
   {
    "title": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
    "pick": "No",
-   "price": 0.875,
+   "price": 0.878,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 129358,
+   "total_value": 129875,
    "names": [
     "feeder-or-predator",
     "328.400.fund"
@@ -128,7 +128,7 @@
    "price": 0.675,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 5747,
+   "total_value": 5757,
    "names": [
     "bands1",
     "hi774c"
