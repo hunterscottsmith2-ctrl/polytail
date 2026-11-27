@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T23:25:40+00:00",
+ "at": "2026-11-27T23:28:40+00:00",
  "wallets_watched": 127,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 107,
  "rows": 27474,
  "skipped_redeemable_or_no_outcome": 25069,
- "under_min_value": 2312,
+ "under_min_value": 2311,
  "already_ended": 5,
  "ends_too_late": 28,
- "kept": 60,
+ "kept": 61,
  "wallets_needing_extra_pages": 14,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
