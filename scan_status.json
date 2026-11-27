@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T10:07:12+00:00",
+ "at": "2026-11-27T10:10:10+00:00",
  "wallets_watched": 117,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 101,
- "rows": 46633,
- "skipped_redeemable_or_no_outcome": 37038,
+ "rows": 46635,
+ "skipped_redeemable_or_no_outcome": 37037,
  "under_min_value": 9116,
  "already_ended": 10,
  "ends_too_late": 134,
- "kept": 335,
+ "kept": 338,
  "wallets_needing_extra_pages": 25,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -80,10 +80,10 @@
   {
    "title": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
    "pick": "No",
-   "price": 0.855,
+   "price": 0.859,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 126473,
+   "total_value": 126991,
    "names": [
     "feeder-or-predator",
     "328.400.fund"
