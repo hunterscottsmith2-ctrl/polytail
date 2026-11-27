@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T05:27:53+00:00",
+ "at": "2026-11-27T05:30:52+00:00",
  "wallets_watched": 118,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 103,
- "rows": 46542,
+ "rows": 46541,
  "skipped_redeemable_or_no_outcome": 37097,
- "under_min_value": 8969,
+ "under_min_value": 8967,
  "already_ended": 10,
  "ends_too_late": 134,
- "kept": 332,
+ "kept": 333,
  "wallets_needing_extra_pages": 25,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,21 +53,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Counter-Strike: Lynn Vision vs Heroic (BO3) - PGL Major Singapore Stage 1",
    "pick": "Lynn Vision",
-   "price": 0.235,
+   "price": 0.225,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 141653,
+   "total_value": 135625,
    "names": [
     "fantasy7788",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
@@ -94,10 +94,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.607,
+   "price": 0.606,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 14176,
+   "total_value": 14165,
    "names": [
     "dromedaryy",
     "arjennnnn"

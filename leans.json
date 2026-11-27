@@ -1,14 +1,14 @@
 {
- "at": "2026-11-27T05:27:53+00:00",
+ "at": "2026-11-27T05:30:52+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Counter-Strike: Lynn Vision vs Heroic (BO3) - PGL Major Singapore Stage 1",
    "pick": "Lynn Vision",
-   "price": 0.235,
+   "price": 0.225,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 141653,
+   "total_value": 135625,
    "names": [
     "fantasy7788",
     "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
@@ -35,10 +35,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.607,
+   "price": 0.606,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 14176,
+   "total_value": 14165,
    "names": [
     "dromedaryy",
     "arjennnnn"
