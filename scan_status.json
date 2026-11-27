@@ -1,12 +1,12 @@
 {
- "at": "2026-11-27T22:58:33+00:00",
+ "at": "2026-11-27T23:01:33+00:00",
  "wallets_watched": 115,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 99,
- "rows": 46948,
- "skipped_redeemable_or_no_outcome": 37339,
- "under_min_value": 9088,
+ "rows": 46944,
+ "skipped_redeemable_or_no_outcome": 37342,
+ "under_min_value": 9081,
  "already_ended": 10,
  "ends_too_late": 131,
  "kept": 380,
@@ -53,21 +53,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
    "pick": "No",
-   "price": 0.863,
+   "price": 0.862,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 131903,
+   "total_value": 131750,
    "names": [
     "feeder-or-predator",
     "328.400.fund",
@@ -140,10 +140,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.562,
+   "price": 0.561,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 47437,
+   "total_value": 47395,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -151,6 +151,21 @@
    "game_start": null,
    "end_date": "2026-11-29",
    "event_slug": "taipei-mayor-election-winner-20260813125857100"
+  },
+  {
+   "title": "76ers vs. Pacers",
+   "pick": "Pacers",
+   "price": 0.395,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 19341,
+   "names": [
+    "bands1",
+    "hi774c"
+   ],
+   "game_start": "2026-11-28T00:30+00:00",
+   "end_date": "2026-11-28",
+   "event_slug": "nba-phi-ind-2026-11-27"
   },
   {
    "title": "Spread: Suns (-1.5)",
@@ -166,21 +181,6 @@
    "game_start": "2026-11-28T02:00+00:00",
    "end_date": "2026-11-28",
    "event_slug": "nba-dal-phx-2026-11-27"
-  },
-  {
-   "title": "76ers vs. Pacers",
-   "pick": "Pacers",
-   "price": 0.395,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 15919,
-   "names": [
-    "bands1",
-    "hi774c"
-   ],
-   "game_start": "2026-11-28T00:30+00:00",
-   "end_date": "2026-11-28",
-   "event_slug": "nba-phi-ind-2026-11-27"
   }
  ]
 }
