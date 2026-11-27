@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T04:57:53+00:00",
+ "at": "2026-11-27T05:00:53+00:00",
  "wallets_watched": 117,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 102,
- "rows": 46317,
+ "rows": 46318,
  "skipped_redeemable_or_no_outcome": 37102,
- "under_min_value": 8791,
+ "under_min_value": 8788,
  "already_ended": 10,
  "ends_too_late": 120,
- "kept": 294,
+ "kept": 298,
  "wallets_needing_extra_pages": 25,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,21 +53,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.605,
+   "price": 0.602,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 14141,
+   "total_value": 14071,
    "names": [
     "dromedaryy",
     "arjennnnn"
