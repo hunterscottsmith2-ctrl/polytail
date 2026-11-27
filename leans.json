@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T17:37:20+00:00",
+ "at": "2026-11-27T17:40:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.874,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 129284,
+   "total_value": 129210,
    "names": [
     "feeder-or-predator",
     "328.400.fund"
