@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T19:52:32+00:00",
+ "at": "2026-11-27T19:55:33+00:00",
  "wallets_watched": 116,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 100,
- "rows": 46922,
- "skipped_redeemable_or_no_outcome": 37268,
- "under_min_value": 9096,
+ "rows": 46917,
+ "skipped_redeemable_or_no_outcome": 37262,
+ "under_min_value": 9100,
  "already_ended": 10,
  "ends_too_late": 135,
- "kept": 413,
+ "kept": 410,
  "wallets_needing_extra_pages": 25,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,21 +53,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
    "pick": "No",
-   "price": 0.854,
+   "price": 0.855,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 130519,
+   "total_value": 130748,
    "names": [
     "feeder-or-predator",
     "328.400.fund",
@@ -78,30 +78,16 @@
    "event_slug": "2026-taipei-mayoral-election-margin-of-victory-20261103233704870"
   },
   {
-   "title": "Will Puma Shen win the next Taipei Mayor election?",
-   "pick": "No",
-   "price": 0.538,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 38822,
-   "names": [
-    "arjennnnn",
-    "feeder-or-predator"
-   ],
-   "game_start": null,
-   "end_date": "2026-11-29",
-   "event_slug": "taipei-mayor-election-winner-20260813125857100"
-  },
-  {
    "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
    "pick": "Yes",
-   "price": 0.54,
-   "wallets": 2,
+   "price": 0.555,
+   "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 34188,
+   "total_value": 39041,
    "names": [
     "arjennnnn",
-    "feeder-or-predator"
+    "feeder-or-predator",
+    "dromedaryy"
    ],
    "game_start": null,
    "end_date": "2026-11-29",
@@ -166,6 +152,21 @@
    "game_start": "2026-11-27T20:00+00:00",
    "end_date": "2026-11-27",
    "event_slug": "epl-not-che-2026-11-27-more-markets"
+  },
+  {
+   "title": "Will Puma Shen win the next Taipei Mayor election?",
+   "pick": "No",
+   "price": 0.554,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 42911,
+   "names": [
+    "arjennnnn",
+    "feeder-or-predator"
+   ],
+   "game_start": null,
+   "end_date": "2026-11-29",
+   "event_slug": "taipei-mayor-election-winner-20260813125857100"
   },
   {
    "title": "Spread: Suns (-1.5)",
