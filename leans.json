@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T17:49:21+00:00",
+ "at": "2026-11-27T17:52:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -20,10 +20,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.568,
+   "price": 0.569,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 23333,
+   "total_value": 23374,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
