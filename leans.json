@@ -1,14 +1,14 @@
 {
- "at": "2026-11-27T16:31:21+00:00",
+ "at": "2026-11-27T16:34:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.625,
+   "price": 0.624,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 27625,
+   "total_value": 27603,
    "names": [
     "arjennnnn",
     "dromedaryy",
@@ -36,10 +36,10 @@
   {
    "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
    "pick": "Yes",
-   "price": 0.625,
+   "price": 0.615,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 35860,
+   "total_value": 35287,
    "names": [
     "dromedaryy",
     "arjennnnn"
@@ -69,7 +69,7 @@
    "price": 0.675,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 4937,
+   "total_value": 5681,
    "names": [
     "bands1",
     "hi774c"

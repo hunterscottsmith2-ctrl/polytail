@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T16:31:21+00:00",
+ "at": "2026-11-27T16:34:21+00:00",
  "wallets_watched": 117,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 100,
- "rows": 49044,
- "skipped_redeemable_or_no_outcome": 39012,
- "under_min_value": 9522,
+ "rows": 49048,
+ "skipped_redeemable_or_no_outcome": 39014,
+ "under_min_value": 9526,
  "already_ended": 10,
  "ends_too_late": 134,
- "kept": 366,
+ "kept": 364,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,21 +53,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.625,
+   "price": 0.624,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 27625,
+   "total_value": 27603,
    "names": [
     "arjennnnn",
     "dromedaryy",
@@ -95,10 +95,10 @@
   {
    "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
    "pick": "Yes",
-   "price": 0.625,
+   "price": 0.615,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 35860,
+   "total_value": 35287,
    "names": [
     "dromedaryy",
     "arjennnnn"
@@ -128,7 +128,7 @@
    "price": 0.675,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 4937,
+   "total_value": 5681,
    "names": [
     "bands1",
     "hi774c"
