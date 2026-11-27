@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T19:49:33+00:00",
+ "at": "2026-11-27T19:52:32+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -21,10 +21,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.543,
+   "price": 0.538,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 39146,
+   "total_value": 38822,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -36,10 +36,10 @@
   {
    "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
    "pick": "Yes",
-   "price": 0.535,
+   "price": 0.54,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 33871,
+   "total_value": 34188,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -96,10 +96,10 @@
   {
    "title": "Nottingham Forest FC vs. Chelsea FC: O/U 2.5",
    "pick": "Under",
-   "price": 0.465,
+   "price": 0.455,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 50090,
+   "total_value": 49013,
    "names": [
     "1l2ihj34li12u34",
     "hi774c"
