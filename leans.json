@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T23:19:32+00:00",
+ "at": "2026-11-27T23:22:32+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -21,10 +21,10 @@
   {
    "title": "Heat vs. Knicks",
    "pick": "Knicks",
-   "price": 0.565,
+   "price": 0.585,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 73580,
+   "total_value": 76184,
    "names": [
     "Moneymethod",
     "hi774c"
