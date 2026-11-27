@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T20:07:32+00:00",
+ "at": "2026-11-27T20:10:34+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -39,7 +39,7 @@
    "price": 0.535,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 15682,
+   "total_value": 20235,
    "names": [
     "monkeymashingkeyboard",
     "hi774c"
@@ -69,7 +69,7 @@
    "price": 0.556,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 43066,
+   "total_value": 43027,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
