@@ -1,14 +1,14 @@
 {
- "at": "2026-11-27T15:49:21+00:00",
+ "at": "2026-11-27T15:52:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.616,
+   "price": 0.621,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 22891,
+   "total_value": 23494,
    "names": [
     "dromedaryy",
     "arjennnnn",
@@ -32,6 +32,21 @@
    "game_start": null,
    "end_date": "2026-11-29",
    "event_slug": "2026-taipei-mayoral-election-margin-of-victory-20261103233704870"
+  },
+  {
+   "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
+   "pick": "Yes",
+   "price": 0.625,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 33297,
+   "names": [
+    "dromedaryy",
+    "arjennnnn"
+   ],
+   "game_start": null,
+   "end_date": "2026-11-29",
+   "event_slug": "taipei-mayor-election-winner-20260813125857100"
   },
   {
    "title": "Spread: Celtics (-9.5)",
