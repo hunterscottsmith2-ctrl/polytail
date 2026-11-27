@@ -1,12 +1,12 @@
 {
- "at": "2026-11-27T08:01:10+00:00",
+ "at": "2026-11-27T08:04:11+00:00",
  "wallets_watched": 117,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 101,
- "rows": 46588,
- "skipped_redeemable_or_no_outcome": 37053,
- "under_min_value": 9053,
+ "rows": 46590,
+ "skipped_redeemable_or_no_outcome": 37052,
+ "under_min_value": 9056,
  "already_ended": 10,
  "ends_too_late": 134,
  "kept": 338,
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -106,6 +106,21 @@
    "game_start": "2026-11-28T01:00+00:00",
    "end_date": "2026-11-28",
    "event_slug": "nba-atl-bos-2026-11-27"
+  },
+  {
+   "title": "Counter-Strike: Imperial vs Wildcard (BO3) - PGL Major Singapore Stage 1",
+   "pick": "Wildcard",
+   "price": 0.385,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 79550,
+   "names": [
+    "lllllllIlll",
+    "Thunderous-Authoritarian-Snarl"
+   ],
+   "game_start": "2026-11-27T08:30+00:00",
+   "end_date": "2026-11-27",
+   "event_slug": "cs2-imp11-wc1-2026-11-27"
   }
  ]
 }
