@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T08:04:11+00:00",
+ "at": "2026-11-27T08:07:11+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -21,10 +21,10 @@
   {
    "title": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
    "pick": "No",
-   "price": 0.861,
+   "price": 0.862,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 122388,
+   "total_value": 122459,
    "names": [
     "feeder-or-predator",
     "328.400.fund"
@@ -51,10 +51,10 @@
   {
    "title": "Counter-Strike: Imperial vs Wildcard (BO3) - PGL Major Singapore Stage 1",
    "pick": "Wildcard",
-   "price": 0.385,
+   "price": 0.375,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 79550,
+   "total_value": 78261,
    "names": [
     "lllllllIlll",
     "Thunderous-Authoritarian-Snarl"
