@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T14:13:21+00:00",
+ "at": "2026-11-27T14:16:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.599,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 16255,
+   "total_value": 16257,
    "names": [
     "dromedaryy",
     "feeder-or-predator",
