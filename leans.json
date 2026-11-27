@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T17:34:21+00:00",
+ "at": "2026-11-27T17:37:20+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -20,10 +20,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.572,
+   "price": 0.558,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 23518,
+   "total_value": 22963,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -33,27 +33,12 @@
    "event_slug": "taipei-mayor-election-winner-20260813125857100"
   },
   {
-   "title": "Utah vs. Predators: O/U 6.5",
-   "pick": "Under",
-   "price": 0.475,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 17188,
-   "names": [
-    "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
-    "hi774c"
-   ],
-   "game_start": "2026-11-27T18:00+00:00",
-   "end_date": "2026-11-27",
-   "event_slug": "nhl-utah-nsh-2026-11-27"
-  },
-  {
    "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
    "pick": "Yes",
-   "price": 0.575,
+   "price": 0.565,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 15742,
+   "total_value": 15468,
    "names": [
     "feeder-or-predator",
     "arjennnnn"
