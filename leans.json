@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T17:25:21+00:00",
+ "at": "2026-11-27T17:28:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -20,10 +20,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.582,
+   "price": 0.57,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 19273,
+   "total_value": 18815,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -46,6 +46,21 @@
    "game_start": "2026-11-27T18:00+00:00",
    "end_date": "2026-11-27",
    "event_slug": "nhl-utah-nsh-2026-11-27"
+  },
+  {
+   "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
+   "pick": "Yes",
+   "price": 0.575,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 15742,
+   "names": [
+    "feeder-or-predator",
+    "arjennnnn"
+   ],
+   "game_start": null,
+   "end_date": "2026-11-29",
+   "event_slug": "taipei-mayor-election-winner-20260813125857100"
   },
   {
    "title": "Spread: Celtics (-9.5)",
@@ -80,10 +95,10 @@
   {
    "title": "Spread: Wisconsin (-8.5)",
    "pick": "Wisconsin",
-   "price": 0.495,
+   "price": 0.505,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 78115,
+   "total_value": 79693,
    "names": [
     "Mikal25",
     "darkumbreon88"
