@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T16:13:22+00:00",
+ "at": "2026-11-27T16:16:21+00:00",
  "wallets_watched": 117,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 100,
  "rows": 49023,
  "skipped_redeemable_or_no_outcome": 38920,
- "under_min_value": 9605,
+ "under_min_value": 9602,
  "already_ended": 10,
  "ends_too_late": 132,
- "kept": 356,
+ "kept": 359,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -67,10 +67,10 @@
    "price": 0.621,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 26914,
+   "total_value": 27448,
    "names": [
-    "dromedaryy",
     "arjennnnn",
+    "dromedaryy",
     "feeder-or-predator"
    ],
    "game_start": null,
