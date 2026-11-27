@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T23:43:40+00:00",
+ "at": "2026-11-27T23:46:39+00:00",
  "wallets_watched": 127,
  "signals": 1,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 107,
  "rows": 27481,
- "skipped_redeemable_or_no_outcome": 25072,
- "under_min_value": 2307,
+ "skipped_redeemable_or_no_outcome": 25068,
+ "under_min_value": 2310,
  "already_ended": 5,
  "ends_too_late": 28,
- "kept": 69,
+ "kept": 70,
  "wallets_needing_extra_pages": 14,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -53,21 +53,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Heat vs. Knicks",
    "pick": "Knicks",
-   "price": 0.595,
+   "price": 0.575,
    "wallets": 4,
    "opposing_wallets": 2,
-   "total_value": 422004,
+   "total_value": 561835,
    "names": [
     "chubbytoro",
     "Eugycom",

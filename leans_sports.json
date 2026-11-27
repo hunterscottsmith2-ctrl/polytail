@@ -1,14 +1,14 @@
 {
- "at": "2026-11-27T23:43:40+00:00",
+ "at": "2026-11-27T23:46:39+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Heat vs. Knicks",
    "pick": "Knicks",
-   "price": 0.595,
+   "price": 0.575,
    "wallets": 4,
    "opposing_wallets": 2,
-   "total_value": 422004,
+   "total_value": 561835,
    "names": [
     "chubbytoro",
     "Eugycom",
