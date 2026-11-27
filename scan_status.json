@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T14:52:22+00:00",
+ "at": "2026-11-27T14:55:22+00:00",
  "wallets_watched": 118,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 101,
- "rows": 49006,
- "skipped_redeemable_or_no_outcome": 38869,
+ "rows": 49009,
+ "skipped_redeemable_or_no_outcome": 38871,
  "under_min_value": 9643,
  "already_ended": 10,
  "ends_too_late": 132,
- "kept": 352,
+ "kept": 353,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,21 +53,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.605,
+   "price": 0.618,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 16433,
+   "total_value": 16773,
    "names": [
     "dromedaryy",
     "feeder-or-predator",
@@ -80,10 +80,10 @@
   {
    "title": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
    "pick": "No",
-   "price": 0.87,
+   "price": 0.878,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 128618,
+   "total_value": 129949,
    "names": [
     "feeder-or-predator",
     "328.400.fund"
