@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T15:04:21+00:00",
+ "at": "2026-11-27T15:07:22+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -39,10 +39,10 @@
    "price": 0.545,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 2830,
+   "total_value": 4100,
    "names": [
-    "hi774c",
-    "monkeymashingkeyboard"
+    "monkeymashingkeyboard",
+    "hi774c"
    ],
    "game_start": "2026-11-28T01:00+00:00",
    "end_date": "2026-11-28",

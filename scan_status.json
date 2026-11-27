@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T15:04:21+00:00",
+ "at": "2026-11-27T15:07:22+00:00",
  "wallets_watched": 118,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 101,
- "rows": 49004,
- "skipped_redeemable_or_no_outcome": 38875,
- "under_min_value": 9637,
+ "rows": 49000,
+ "skipped_redeemable_or_no_outcome": 38876,
+ "under_min_value": 9631,
  "already_ended": 10,
  "ends_too_late": 132,
- "kept": 350,
+ "kept": 351,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -98,10 +98,10 @@
    "price": 0.545,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 2830,
+   "total_value": 4100,
    "names": [
-    "hi774c",
-    "monkeymashingkeyboard"
+    "monkeymashingkeyboard",
+    "hi774c"
    ],
    "game_start": "2026-11-28T01:00+00:00",
    "end_date": "2026-11-28",
