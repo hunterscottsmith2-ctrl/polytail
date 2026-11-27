@@ -1,12 +1,12 @@
 {
- "at": "2026-11-27T00:27:39+00:00",
+ "at": "2026-11-27T00:30:39+00:00",
  "wallets_watched": 117,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 102,
- "rows": 46489,
- "skipped_redeemable_or_no_outcome": 37046,
- "under_min_value": 8955,
+ "rows": 46496,
+ "skipped_redeemable_or_no_outcome": 37047,
+ "under_min_value": 8961,
  "already_ended": 27,
  "ends_too_late": 133,
  "kept": 328,
@@ -75,21 +75,6 @@
    "game_start": null,
    "end_date": "2026-11-29",
    "event_slug": "taipei-mayor-election-winner-20260813125857100"
-  },
-  {
-   "title": "Chiefs vs. Bills",
-   "pick": "Bills",
-   "price": 0.605,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 65787,
-   "names": [
-    "Kch-Temp",
-    "Moneymethod"
-   ],
-   "game_start": "2026-11-27T01:20+00:00",
-   "end_date": "2026-11-27",
-   "event_slug": "nfl-kc-buf-2026-11-27"
   }
  ]
 }
