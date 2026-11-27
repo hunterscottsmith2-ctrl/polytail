@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T14:43:23+00:00",
+ "at": "2026-11-27T14:46:22+00:00",
  "wallets_watched": 118,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 101,
- "rows": 49002,
- "skipped_redeemable_or_no_outcome": 38870,
- "under_min_value": 9638,
+ "rows": 49009,
+ "skipped_redeemable_or_no_outcome": 38871,
+ "under_min_value": 9643,
  "already_ended": 10,
  "ends_too_late": 132,
- "kept": 352,
+ "kept": 353,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,21 +53,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.623,
+   "price": 0.61,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 16909,
+   "total_value": 16556,
    "names": [
     "dromedaryy",
     "feeder-or-predator",
