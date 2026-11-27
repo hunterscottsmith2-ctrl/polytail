@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T05:54:52+00:00",
+ "at": "2026-11-27T05:57:52+00:00",
  "wallets_watched": 118,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 103,
  "rows": 46540,
- "skipped_redeemable_or_no_outcome": 37065,
- "under_min_value": 8999,
+ "skipped_redeemable_or_no_outcome": 37066,
+ "under_min_value": 8996,
  "already_ended": 10,
  "ends_too_late": 133,
- "kept": 333,
+ "kept": 335,
  "wallets_needing_extra_pages": 25,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -94,10 +94,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.596,
+   "price": 0.594,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 13919,
+   "total_value": 13873,
    "names": [
     "dromedaryy",
     "arjennnnn"
@@ -105,6 +105,21 @@
    "game_start": null,
    "end_date": "2026-11-29",
    "event_slug": "taipei-mayor-election-winner-20260813125857100"
+  },
+  {
+   "title": "Spread: Celtics (-9.5)",
+   "pick": "Hawks",
+   "price": 0.525,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 2546,
+   "names": [
+    "hi774c",
+    "monkeymashingkeyboard"
+   ],
+   "game_start": "2026-11-28T01:00+00:00",
+   "end_date": "2026-11-28",
+   "event_slug": "nba-atl-bos-2026-11-27"
   }
  ]
 }
