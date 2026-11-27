@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T21:22:32+00:00",
+ "at": "2026-11-27T21:25:32+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.858,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 131215,
+   "total_value": 131139,
    "names": [
     "feeder-or-predator",
     "328.400.fund",
@@ -17,6 +17,21 @@
    "game_start": null,
    "end_date": "2026-11-29",
    "event_slug": "2026-taipei-mayoral-election-margin-of-victory-20261103233704870"
+  },
+  {
+   "title": "Heat vs. Knicks",
+   "pick": "Knicks",
+   "price": 0.585,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 76184,
+   "names": [
+    "Moneymethod",
+    "hi774c"
+   ],
+   "game_start": "2026-11-28T00:00+00:00",
+   "end_date": "2026-11-28",
+   "event_slug": "nba-mia-nyk-2026-11-27"
   },
   {
    "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
