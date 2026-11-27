@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T20:01:33+00:00",
+ "at": "2026-11-27T20:04:33+00:00",
  "wallets_watched": 116,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 100,
- "rows": 46913,
+ "rows": 46914,
  "skipped_redeemable_or_no_outcome": 37261,
- "under_min_value": 9098,
+ "under_min_value": 9099,
  "already_ended": 10,
- "ends_too_late": 134,
- "kept": 410,
+ "ends_too_late": 132,
+ "kept": 412,
  "wallets_needing_extra_pages": 25,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -129,7 +129,7 @@
    "price": 0.556,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 43066,
+   "total_value": 43027,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
