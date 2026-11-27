@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T23:40:40+00:00",
+ "at": "2026-11-27T23:43:40+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,11 +8,11 @@
    "price": 0.595,
    "wallets": 4,
    "opposing_wallets": 2,
-   "total_value": 324463,
+   "total_value": 422004,
    "names": [
     "chubbytoro",
-    "Moneymethod",
     "Eugycom",
+    "Moneymethod",
     "hi774c"
    ],
    "game_start": "2026-11-28T00:00+00:00",
