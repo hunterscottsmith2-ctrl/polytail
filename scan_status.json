@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T17:19:21+00:00",
+ "at": "2026-11-27T17:22:21+00:00",
  "wallets_watched": 116,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 100,
  "rows": 46841,
- "skipped_redeemable_or_no_outcome": 37243,
- "under_min_value": 9087,
+ "skipped_redeemable_or_no_outcome": 37242,
+ "under_min_value": 9085,
  "already_ended": 10,
  "ends_too_late": 133,
- "kept": 368,
+ "kept": 371,
  "wallets_needing_extra_pages": 25,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,21 +53,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
    "pick": "No",
-   "price": 0.873,
+   "price": 0.874,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 129136,
+   "total_value": 129210,
    "names": [
     "feeder-or-predator",
     "328.400.fund"
@@ -79,10 +79,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.601,
+   "price": 0.585,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 19902,
+   "total_value": 19356,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -90,6 +90,21 @@
    "game_start": null,
    "end_date": "2026-11-29",
    "event_slug": "taipei-mayor-election-winner-20260813125857100"
+  },
+  {
+   "title": "Utah vs. Predators: O/U 6.5",
+   "pick": "Under",
+   "price": 0.465,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 16922,
+   "names": [
+    "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
+    "hi774c"
+   ],
+   "game_start": "2026-11-27T18:00+00:00",
+   "end_date": "2026-11-27",
+   "event_slug": "nhl-utah-nsh-2026-11-27"
   },
   {
    "title": "Spread: Celtics (-9.5)",

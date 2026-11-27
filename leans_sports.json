@@ -1,5 +1,21 @@
 {
- "at": "2026-11-27T17:19:27+00:00",
+ "at": "2026-11-27T17:22:28+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": []
+ "leans": [
+  {
+   "title": "Utah vs. Predators: O/U 6.5",
+   "pick": "Under",
+   "price": 0.475,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 40079,
+   "names": [
+    "taylorsversion",
+    "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188"
+   ],
+   "game_start": "2026-11-27T18:00+00:00",
+   "end_date": "2026-11-27",
+   "event_slug": "nhl-utah-nsh-2026-11-27"
+  }
+ ]
 }
