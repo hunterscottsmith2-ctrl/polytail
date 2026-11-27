@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T16:22:23+00:00",
+ "at": "2026-11-27T16:25:21+00:00",
  "wallets_watched": 117,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 100,
- "rows": 49040,
- "skipped_redeemable_or_no_outcome": 38975,
- "under_min_value": 9562,
+ "rows": 49043,
+ "skipped_redeemable_or_no_outcome": 39014,
+ "under_min_value": 9524,
  "already_ended": 10,
  "ends_too_late": 133,
- "kept": 360,
+ "kept": 362,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -80,10 +80,10 @@
   {
    "title": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
    "pick": "No",
-   "price": 0.881,
+   "price": 0.877,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 130393,
+   "total_value": 129728,
    "names": [
     "feeder-or-predator",
     "328.400.fund"
@@ -136,6 +136,21 @@
    "game_start": "2026-11-27T17:00+00:00",
    "end_date": "2026-11-27",
    "event_slug": "cfb-toledo-ohio-2026-11-27"
+  },
+  {
+   "title": "Will Chelsea FC win on 2026-11-27?",
+   "pick": "No",
+   "price": 0.675,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 4029,
+   "names": [
+    "hi774c",
+    "bands1"
+   ],
+   "game_start": "2026-11-27T20:00+00:00",
+   "end_date": "2026-11-27",
+   "event_slug": "epl-not-che-2026-11-27"
   }
  ]
 }
