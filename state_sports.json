@@ -1,5 +1,11 @@
 {
  "alerted": {
+  "0x6556ae7178bfbdb828806ee82d09f965a2c1bb680bc7befad9a1ab9e7dbe5a3c|1": {
+   "first_seen": "2026-11-27T23:31+00:00",
+   "outcome": "Knicks",
+   "title": "Heat vs. Knicks",
+   "wallets": 4
+  },
   "0x6d550ef6f1fb46c1a3c9375675f7f09c6136cd16432aa5e72f4be7d678ad10df|1": {
    "first_seen": "2026-11-27T17:52+00:00",
    "gone_at": 1795802487.8568206,
@@ -8,5 +14,12 @@
    "wallets": 3
   }
  },
- "recheck": []
+ "recheck": [
+  {
+   "alerted_at": "2026-11-27T23:31:40+00:00",
+   "key": "0x6556ae7178bfbdb828806ee82d09f965a2c1bb680bc7befad9a1ab9e7dbe5a3c|1",
+   "token": "56777755955813573907212329650071176242816346542369873563531433021995700128208",
+   "ts": 1795822301.1300526
+  }
+ ]
 }

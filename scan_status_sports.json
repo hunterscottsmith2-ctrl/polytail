@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T23:28:40+00:00",
+ "at": "2026-11-27T23:31:40+00:00",
  "wallets_watched": 127,
- "signals": 0,
- "most_wallets_on_one_side": 2,
+ "signals": 1,
+ "most_wallets_on_one_side": 4,
  "wallets_with_rows": 107,
- "rows": 27474,
+ "rows": 27475,
  "skipped_redeemable_or_no_outcome": 25069,
  "under_min_value": 2311,
  "already_ended": 5,
  "ends_too_late": 28,
- "kept": 61,
+ "kept": 62,
  "wallets_needing_extra_pages": 14,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -53,14 +53,31 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
+  {
+   "title": "Heat vs. Knicks",
+   "pick": "Knicks",
+   "price": 0.595,
+   "wallets": 4,
+   "opposing_wallets": 2,
+   "total_value": 324463,
+   "names": [
+    "chubbytoro",
+    "Moneymethod",
+    "Eugycom",
+    "hi774c"
+   ],
+   "game_start": "2026-11-28T00:00+00:00",
+   "end_date": "2026-11-28",
+   "event_slug": "nba-mia-nyk-2026-11-27"
+  },
   {
    "title": "Spread: Suns (-1.5)",
    "pick": "Suns",
