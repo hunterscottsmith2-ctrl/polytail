@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T16:25:21+00:00",
+ "at": "2026-11-27T16:28:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -64,6 +64,21 @@
    "event_slug": "nba-atl-bos-2026-11-27"
   },
   {
+   "title": "Will Chelsea FC win on 2026-11-27?",
+   "pick": "No",
+   "price": 0.675,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 4894,
+   "names": [
+    "bands1",
+    "hi774c"
+   ],
+   "game_start": "2026-11-27T20:00+00:00",
+   "end_date": "2026-11-27",
+   "event_slug": "epl-not-che-2026-11-27"
+  },
+  {
    "title": "Spread: Toledo (-3.5)",
    "pick": "Toledo",
    "price": 0.505,
@@ -77,21 +92,6 @@
    "game_start": "2026-11-27T17:00+00:00",
    "end_date": "2026-11-27",
    "event_slug": "cfb-toledo-ohio-2026-11-27"
-  },
-  {
-   "title": "Will Chelsea FC win on 2026-11-27?",
-   "pick": "No",
-   "price": 0.675,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 4029,
-   "names": [
-    "hi774c",
-    "bands1"
-   ],
-   "game_start": "2026-11-27T20:00+00:00",
-   "end_date": "2026-11-27",
-   "event_slug": "epl-not-che-2026-11-27"
   }
  ]
 }
