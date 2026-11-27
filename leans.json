@@ -1,7 +1,22 @@
 {
- "at": "2026-11-27T00:09:39+00:00",
+ "at": "2026-11-27T00:12:39+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Will Puma Shen win the next Taipei Mayor election?",
+   "pick": "No",
+   "price": 0.607,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 14176,
+   "names": [
+    "dromedaryy",
+    "arjennnnn"
+   ],
+   "game_start": null,
+   "end_date": "2026-11-29",
+   "event_slug": "taipei-mayor-election-winner-20260813125857100"
+  },
   {
    "title": "Chiefs vs. Bills",
    "pick": "Bills",

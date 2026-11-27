@@ -1,16 +1,16 @@
 {
- "at": "2026-11-27T00:09:39+00:00",
+ "at": "2026-11-27T00:12:39+00:00",
  "wallets_watched": 117,
  "signals": 0,
  "most_wallets_on_one_side": 3,
- "wallets_with_rows": 100,
- "rows": 43288,
- "skipped_redeemable_or_no_outcome": 33741,
- "under_min_value": 9081,
- "already_ended": 25,
- "ends_too_late": 125,
- "kept": 316,
- "wallets_needing_extra_pages": 23,
+ "wallets_with_rows": 101,
+ "rows": 46438,
+ "skipped_redeemable_or_no_outcome": 37038,
+ "under_min_value": 8913,
+ "already_ended": 28,
+ "ends_too_late": 133,
+ "kept": 326,
+ "wallets_needing_extra_pages": 25,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
   "archived",
@@ -53,14 +53,29 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
+  {
+   "title": "Will Puma Shen win the next Taipei Mayor election?",
+   "pick": "No",
+   "price": 0.607,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 14176,
+   "names": [
+    "dromedaryy",
+    "arjennnnn"
+   ],
+   "game_start": null,
+   "end_date": "2026-11-29",
+   "event_slug": "taipei-mayor-election-winner-20260813125857100"
+  },
   {
    "title": "Chiefs vs. Bills",
    "pick": "Bills",
