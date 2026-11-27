@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T20:04:33+00:00",
+ "at": "2026-11-27T20:07:32+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -8,7 +8,7 @@
    "price": 0.855,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 130748,
+   "total_value": 130756,
    "names": [
     "feeder-or-predator",
     "328.400.fund",
@@ -21,14 +21,13 @@
   {
    "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
    "pick": "Yes",
-   "price": 0.555,
-   "wallets": 3,
+   "price": 0.565,
+   "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 39041,
+   "total_value": 36084,
    "names": [
     "arjennnnn",
-    "feeder-or-predator",
-    "dromedaryy"
+    "feeder-or-predator"
    ],
    "game_start": null,
    "end_date": "2026-11-29",
@@ -70,7 +69,7 @@
    "price": 0.556,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 43027,
+   "total_value": 43066,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
