@@ -1,21 +1,5 @@
 {
- "at": "2026-11-27T05:57:59+00:00",
+ "at": "2026-11-27T06:01:00+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": [
-  {
-   "title": "Map Handicap: HERO (-1.5) vs Lynn Vision (+1.5)",
-   "pick": "Lynn Vision",
-   "price": 0.525,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 193951,
-   "names": [
-    "fantasy7788",
-    "luckycat888888"
-   ],
-   "game_start": "2026-11-27T06:00+00:00",
-   "end_date": "2026-11-27",
-   "event_slug": "cs2-lvg-hero-2026-11-27"
-  }
- ]
+ "leans": []
 }
