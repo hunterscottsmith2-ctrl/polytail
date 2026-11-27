@@ -1,5 +1,21 @@
 {
- "at": "2026-11-27T18:19:27+00:00",
+ "at": "2026-11-27T18:22:26+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
- "leans": []
+ "leans": [
+  {
+   "title": "76ers vs. Pacers",
+   "pick": "76ers",
+   "price": 0.605,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 18393,
+   "names": [
+    "Mikal25",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-28T00:30+00:00",
+   "end_date": "2026-11-28",
+   "event_slug": "nba-phi-ind-2026-11-27"
+  }
+ ]
 }

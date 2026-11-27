@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T18:19:27+00:00",
+ "at": "2026-11-27T18:22:26+00:00",
  "wallets_watched": 126,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 107,
- "rows": 26804,
+ "rows": 26807,
  "skipped_redeemable_or_no_outcome": 24387,
- "under_min_value": 2318,
+ "under_min_value": 2320,
  "already_ended": 5,
  "ends_too_late": 26,
- "kept": 68,
+ "kept": 69,
  "wallets_needing_extra_pages": 13,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -60,5 +60,21 @@
   "end_date": "2026-07-12",
   "redeemable": true
  },
- "leans_not_alerts": []
+ "leans_not_alerts": [
+  {
+   "title": "76ers vs. Pacers",
+   "pick": "76ers",
+   "price": 0.605,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 18393,
+   "names": [
+    "Mikal25",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-28T00:30+00:00",
+   "end_date": "2026-11-28",
+   "event_slug": "nba-phi-ind-2026-11-27"
+  }
+ ]
 }
