@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T22:43:39+00:00",
+ "at": "2026-11-27T22:46:39+00:00",
  "wallets_watched": 126,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 106,
- "rows": 27483,
- "skipped_redeemable_or_no_outcome": 25031,
+ "rows": 27484,
+ "skipped_redeemable_or_no_outcome": 25028,
  "under_min_value": 2359,
  "already_ended": 5,
- "ends_too_late": 24,
- "kept": 64,
+ "ends_too_late": 25,
+ "kept": 67,
  "wallets_needing_extra_pages": 14,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -62,21 +62,6 @@
  },
  "leans_not_alerts": [
   {
-   "title": "76ers vs. Pacers",
-   "pick": "76ers",
-   "price": 0.595,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 18089,
-   "names": [
-    "Mikal25",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-28T00:30+00:00",
-   "end_date": "2026-11-28",
-   "event_slug": "nba-phi-ind-2026-11-27"
-  },
-  {
    "title": "Spread: Suns (-1.5)",
    "pick": "Suns",
    "price": 0.545,
@@ -90,6 +75,21 @@
    "game_start": "2026-11-28T02:00+00:00",
    "end_date": "2026-11-28",
    "event_slug": "nba-dal-phx-2026-11-27"
+  },
+  {
+   "title": "76ers vs. Pacers",
+   "pick": "76ers",
+   "price": 0.605,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 18393,
+   "names": [
+    "Mikal25",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-28T00:30+00:00",
+   "end_date": "2026-11-28",
+   "event_slug": "nba-phi-ind-2026-11-27"
   }
  ]
 }
