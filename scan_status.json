@@ -1,12 +1,12 @@
 {
- "at": "2026-11-27T19:43:33+00:00",
+ "at": "2026-11-27T19:46:32+00:00",
  "wallets_watched": 116,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 100,
- "rows": 46915,
+ "rows": 46919,
  "skipped_redeemable_or_no_outcome": 37271,
- "under_min_value": 9088,
+ "under_min_value": 9092,
  "already_ended": 10,
  "ends_too_late": 135,
  "kept": 411,
@@ -53,21 +53,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
    "pick": "No",
-   "price": 0.86,
+   "price": 0.854,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 131513,
+   "total_value": 130519,
    "names": [
     "feeder-or-predator",
     "328.400.fund",
@@ -80,10 +80,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.558,
+   "price": 0.543,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 40144,
+   "total_value": 39101,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -98,7 +98,7 @@
    "price": 0.535,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 33871,
+   "total_value": 34042,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -106,6 +106,21 @@
    "game_start": null,
    "end_date": "2026-11-29",
    "event_slug": "taipei-mayor-election-winner-20260813125857100"
+  },
+  {
+   "title": "Spread: Celtics (-9.5)",
+   "pick": "Hawks",
+   "price": 0.535,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 15682,
+   "names": [
+    "monkeymashingkeyboard",
+    "hi774c"
+   ],
+   "game_start": "2026-11-28T01:00+00:00",
+   "end_date": "2026-11-28",
+   "event_slug": "nba-atl-bos-2026-11-27"
   },
   {
    "title": "Will Chelsea FC win on 2026-11-27?",
@@ -121,21 +136,6 @@
    "game_start": "2026-11-27T20:00+00:00",
    "end_date": "2026-11-27",
    "event_slug": "epl-not-che-2026-11-27"
-  },
-  {
-   "title": "Spread: Celtics (-9.5)",
-   "pick": "Hawks",
-   "price": 0.535,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 12548,
-   "names": [
-    "monkeymashingkeyboard",
-    "hi774c"
-   ],
-   "game_start": "2026-11-28T01:00+00:00",
-   "end_date": "2026-11-28",
-   "event_slug": "nba-atl-bos-2026-11-27"
   },
   {
    "title": "Spread: Wisconsin (-8.5)",
