@@ -1,12 +1,12 @@
 {
- "at": "2026-11-27T09:22:13+00:00",
+ "at": "2026-11-27T09:25:11+00:00",
  "wallets_watched": 117,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 101,
- "rows": 46611,
+ "rows": 46608,
  "skipped_redeemable_or_no_outcome": 37050,
- "under_min_value": 9080,
+ "under_min_value": 9077,
  "already_ended": 10,
  "ends_too_late": 134,
  "kept": 337,
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -80,10 +80,10 @@
   {
    "title": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
    "pick": "No",
-   "price": 0.863,
+   "price": 0.862,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 122601,
+   "total_value": 122459,
    "names": [
     "feeder-or-predator",
     "328.400.fund"
