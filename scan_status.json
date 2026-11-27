@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T15:10:22+00:00",
- "wallets_watched": 118,
+ "at": "2026-11-27T15:13:22+00:00",
+ "wallets_watched": 117,
  "signals": 0,
  "most_wallets_on_one_side": 3,
- "wallets_with_rows": 101,
- "rows": 49000,
- "skipped_redeemable_or_no_outcome": 38877,
- "under_min_value": 9629,
+ "wallets_with_rows": 100,
+ "rows": 48997,
+ "skipped_redeemable_or_no_outcome": 38875,
+ "under_min_value": 9630,
  "already_ended": 10,
- "ends_too_late": 132,
- "kept": 352,
+ "ends_too_late": 131,
+ "kept": 351,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
