@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T03:33:52+00:00",
+ "at": "2026-11-27T03:36:53+00:00",
  "wallets_watched": 116,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 101,
- "rows": 46215,
+ "rows": 46217,
  "skipped_redeemable_or_no_outcome": 37025,
- "under_min_value": 8757,
+ "under_min_value": 8758,
  "already_ended": 10,
  "ends_too_late": 122,
- "kept": 301,
+ "kept": 302,
  "wallets_needing_extra_pages": 25,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -67,7 +67,7 @@
    "price": 0.623,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 14562,
+   "total_value": 14550,
    "names": [
     "dromedaryy",
     "arjennnnn"
