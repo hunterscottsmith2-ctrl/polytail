@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T18:58:32+00:00",
+ "at": "2026-11-27T19:01:32+00:00",
  "wallets_watched": 116,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 100,
- "rows": 46887,
- "skipped_redeemable_or_no_outcome": 37213,
- "under_min_value": 9129,
+ "rows": 46895,
+ "skipped_redeemable_or_no_outcome": 37209,
+ "under_min_value": 9139,
  "already_ended": 10,
  "ends_too_late": 135,
- "kept": 400,
+ "kept": 402,
  "wallets_needing_extra_pages": 25,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -80,10 +80,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.585,
+   "price": 0.582,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 35621,
+   "total_value": 35438,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -98,7 +98,7 @@
    "price": 0.585,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 30602,
+   "total_value": 31052,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -128,7 +128,7 @@
    "price": 0.665,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 8259,
+   "total_value": 8471,
    "names": [
     "bands1",
     "hi774c"
@@ -151,6 +151,21 @@
    "game_start": "2026-11-28T00:30+00:00",
    "end_date": "2026-11-28",
    "event_slug": "cfb-minnst-wisc-2026-11-27"
+  },
+  {
+   "title": "Spread: Suns (-1.5)",
+   "pick": "Suns",
+   "price": 0.535,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 37059,
+   "names": [
+    "ropetard",
+    "monkeymashingkeyboard"
+   ],
+   "game_start": "2026-11-28T02:00+00:00",
+   "end_date": "2026-11-28",
+   "event_slug": "nba-dal-phx-2026-11-27"
   }
  ]
 }
