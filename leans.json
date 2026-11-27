@@ -1,14 +1,14 @@
 {
- "at": "2026-11-27T12:04:12+00:00",
+ "at": "2026-11-27T12:07:12+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.574,
+   "price": 0.575,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 15591,
+   "total_value": 15605,
    "names": [
     "dromedaryy",
     "feeder-or-predator",
@@ -47,6 +47,21 @@
    "game_start": "2026-11-28T01:00+00:00",
    "end_date": "2026-11-28",
    "event_slug": "nba-atl-bos-2026-11-27"
+  },
+  {
+   "title": "Counter-Strike: M80 vs 100 Thieves - Map 1 Winner",
+   "pick": "100 Thieves",
+   "price": 0.655,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 40847,
+   "names": [
+    "lllllllIlll",
+    "0xC9BFc7986767173b4f1c3FC9B2c6b255F"
+   ],
+   "game_start": "2026-11-27T12:10+00:00",
+   "end_date": "2026-11-27",
+   "event_slug": "cs2-m80-100t-2026-11-27"
   }
  ]
 }
