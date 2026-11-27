@@ -1,12 +1,12 @@
 {
- "at": "2026-11-27T01:57:53+00:00",
+ "at": "2026-11-27T02:00:53+00:00",
  "wallets_watched": 117,
  "signals": 0,
  "most_wallets_on_one_side": 5,
  "wallets_with_rows": 102,
  "rows": 46419,
- "skipped_redeemable_or_no_outcome": 36964,
- "under_min_value": 8979,
+ "skipped_redeemable_or_no_outcome": 36958,
+ "under_min_value": 8985,
  "already_ended": 13,
  "ends_too_late": 135,
  "kept": 328,
@@ -64,10 +64,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.599,
+   "price": 0.598,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 14001,
+   "total_value": 13978,
    "names": [
     "dromedaryy",
     "arjennnnn"
