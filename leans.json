@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T19:31:33+00:00",
+ "at": "2026-11-27T19:34:32+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -21,10 +21,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.566,
+   "price": 0.562,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 37323,
+   "total_value": 37092,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -36,10 +36,10 @@
   {
    "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
    "pick": "Yes",
-   "price": 0.565,
+   "price": 0.55,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 32381,
+   "total_value": 34821,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -92,6 +92,21 @@
    "game_start": "2026-11-28T00:30+00:00",
    "end_date": "2026-11-28",
    "event_slug": "cfb-minnst-wisc-2026-11-27"
+  },
+  {
+   "title": "Nottingham Forest FC vs. Chelsea FC: O/U 2.5",
+   "pick": "Under",
+   "price": 0.455,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 49013,
+   "names": [
+    "1l2ihj34li12u34",
+    "hi774c"
+   ],
+   "game_start": "2026-11-27T20:00+00:00",
+   "end_date": "2026-11-27",
+   "event_slug": "epl-not-che-2026-11-27-more-markets"
   },
   {
    "title": "Spread: Suns (-1.5)",
