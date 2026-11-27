@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T16:16:21+00:00",
+ "at": "2026-11-27T16:19:21+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -39,7 +39,7 @@
    "price": 0.625,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 33607,
+   "total_value": 35860,
    "names": [
     "dromedaryy",
     "arjennnnn"
@@ -62,6 +62,21 @@
    "game_start": "2026-11-28T01:00+00:00",
    "end_date": "2026-11-28",
    "event_slug": "nba-atl-bos-2026-11-27"
+  },
+  {
+   "title": "Spread: Toledo (-3.5)",
+   "pick": "Toledo",
+   "price": 0.505,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 4824,
+   "names": [
+    "Mikal25",
+    "monkeymashingkeyboard"
+   ],
+   "game_start": "2026-11-27T17:00+00:00",
+   "end_date": "2026-11-27",
+   "event_slug": "cfb-toledo-ohio-2026-11-27"
   }
  ]
 }
