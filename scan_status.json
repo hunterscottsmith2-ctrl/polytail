@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T20:13:32+00:00",
+ "at": "2026-11-27T20:16:33+00:00",
  "wallets_watched": 117,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 101,
- "rows": 49270,
+ "rows": 49274,
  "skipped_redeemable_or_no_outcome": 39079,
- "under_min_value": 9642,
+ "under_min_value": 9640,
  "already_ended": 10,
  "ends_too_late": 132,
- "kept": 407,
+ "kept": 413,
  "wallets_needing_extra_pages": 26,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -125,10 +125,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.556,
+   "price": 0.559,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 43027,
+   "total_value": 43924,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
