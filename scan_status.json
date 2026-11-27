@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T23:55:32+00:00",
+ "at": "2026-11-27T23:58:33+00:00",
  "wallets_watched": 115,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 99,
- "rows": 46932,
- "skipped_redeemable_or_no_outcome": 37425,
- "under_min_value": 8987,
+ "rows": 46942,
+ "skipped_redeemable_or_no_outcome": 37424,
+ "under_min_value": 8996,
  "already_ended": 10,
  "ends_too_late": 133,
- "kept": 377,
+ "kept": 379,
  "wallets_needing_extra_pages": 25,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -80,10 +80,10 @@
   {
    "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
    "pick": "Yes",
-   "price": 0.56,
+   "price": 0.565,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 37033,
+   "total_value": 37363,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -110,10 +110,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.562,
+   "price": 0.565,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 47343,
+   "total_value": 47648,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
