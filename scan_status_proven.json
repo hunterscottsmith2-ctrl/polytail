@@ -1,12 +1,12 @@
 {
- "at": "2026-11-28T10:15:59+00:00",
+ "at": "2026-11-28T10:18:59+00:00",
  "wallets_watched": 37,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 33,
- "rows": 10096,
+ "rows": 10098,
  "skipped_redeemable_or_no_outcome": 9617,
- "under_min_value": 262,
+ "under_min_value": 264,
  "already_ended": 6,
  "ends_too_late": 48,
  "kept": 163,
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will AC Monza win on 2026-08-29?",
-  "outcome": "Yes",
-  "outcome_index": 0,
+  "title": "Counter-Strike: fnatic vs Liquid (BO3) - 1win Private Club #2 Playoffs",
+  "outcome": "Liquid",
+  "outcome_index": 1,
   "current_value": 0.0,
-  "end_date": "2026-08-29",
+  "end_date": "2026-10-19",
   "redeemable": true
  },
  "leans_not_alerts": []
