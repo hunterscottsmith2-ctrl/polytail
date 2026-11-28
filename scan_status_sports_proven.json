@@ -1,15 +1,15 @@
 {
- "at": "2026-11-28T10:52:03+00:00",
+ "at": "2026-11-28T10:55:03+00:00",
  "wallets_watched": 59,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 53,
  "rows": 12259,
- "skipped_redeemable_or_no_outcome": 12151,
- "under_min_value": 86,
+ "skipped_redeemable_or_no_outcome": 12150,
+ "under_min_value": 88,
  "already_ended": 0,
  "ends_too_late": 6,
- "kept": 16,
+ "kept": 15,
  "wallets_needing_extra_pages": 6,
  "wallets_over_3000_rows": 2,
  "sample_keys": [
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will AC Monza win on 2026-08-29?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-08-29",
   "redeemable": true
  },
  "leans_not_alerts": []
