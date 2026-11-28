@@ -1,14 +1,14 @@
 {
- "at": "2026-11-28T00:19:39+00:00",
+ "at": "2026-11-28T00:22:40+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
    "title": "Spread: Suns (-1.5)",
    "pick": "Suns",
-   "price": 0.545,
+   "price": 0.585,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 17055,
+   "total_value": 18306,
    "names": [
     "monkeymashingkeyboard",
     "ropetard"
