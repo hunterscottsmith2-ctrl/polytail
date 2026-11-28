@@ -1,17 +1,17 @@
 {
- "at": "2026-11-28T10:01:11+00:00",
- "wallets_watched": 57,
+ "at": "2026-11-28T10:04:17+00:00",
+ "wallets_watched": 56,
  "signals": 0,
  "most_wallets_on_one_side": 1,
- "wallets_with_rows": 44,
- "rows": 3346,
- "skipped_redeemable_or_no_outcome": 3301,
- "under_min_value": 31,
+ "wallets_with_rows": 43,
+ "rows": 6621,
+ "skipped_redeemable_or_no_outcome": 6409,
+ "under_min_value": 201,
  "already_ended": 0,
- "ends_too_late": 13,
+ "ends_too_late": 10,
  "kept": 1,
- "wallets_needing_extra_pages": 2,
- "wallets_over_3000_rows": 0,
+ "wallets_needing_extra_pages": 3,
+ "wallets_over_3000_rows": 1,
  "sample_keys": [
   "archived",
   "avg_price",
@@ -53,12 +53,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Will Donald Trump win the 2028 Republican presidential nomination?",
   "outcome": "Yes",
   "outcome_index": 0,
-  "current_value": 0.0,
-  "end_date": "2026-06-30",
-  "redeemable": true
+  "current_value": 870.2794,
+  "end_date": "2028-11-08",
+  "redeemable": false
  },
  "leans_not_alerts": []
 }
