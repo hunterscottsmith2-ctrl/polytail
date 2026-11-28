@@ -1,15 +1,15 @@
 {
- "at": "2026-11-28T00:58:42+00:00",
+ "at": "2026-11-28T01:01:42+00:00",
  "wallets_watched": 114,
- "signals": 1,
+ "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 99,
  "rows": 44776,
- "skipped_redeemable_or_no_outcome": 35252,
- "under_min_value": 8981,
- "already_ended": 17,
+ "skipped_redeemable_or_no_outcome": 35251,
+ "under_min_value": 8982,
+ "already_ended": 16,
  "ends_too_late": 132,
- "kept": 394,
+ "kept": 395,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,30 +53,14 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Spread: Celtics (-9.5)",
-   "pick": "Hawks",
-   "price": 0.515,
-   "wallets": 3,
-   "opposing_wallets": 0,
-   "total_value": 260869,
-   "names": [
-    "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
-    "monkeymashingkeyboard",
-    "hi774c"
-   ],
-   "game_start": "2026-11-28T01:00+00:00",
-   "end_date": "2026-11-28",
-   "event_slug": "nba-atl-bos-2026-11-27"
-  },
   {
    "title": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
    "pick": "No",
@@ -92,36 +76,6 @@
    "game_start": null,
    "end_date": "2026-11-29",
    "event_slug": "2026-taipei-mayoral-election-margin-of-victory-20261103233704870"
-  },
-  {
-   "title": "Spread: Celtics (-8.5)",
-   "pick": "Hawks",
-   "price": 0.475,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 123503,
-   "names": [
-    "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
-    "monkeymashingkeyboard"
-   ],
-   "game_start": "2026-11-28T01:00+00:00",
-   "end_date": "2026-11-28",
-   "event_slug": "nba-atl-bos-2026-11-27"
-  },
-  {
-   "title": "Penguins vs. Sabres",
-   "pick": "Penguins",
-   "price": 0.465,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 97811,
-   "names": [
-    "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
-    "chubbytoro"
-   ],
-   "game_start": "2026-11-28T01:00+00:00",
-   "end_date": "2026-11-28",
-   "event_slug": "nhl-pit-buf-2026-11-27"
   },
   {
    "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
@@ -156,10 +110,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.559,
+   "price": 0.56,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 47184,
+   "total_value": 47268,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -167,21 +121,6 @@
    "game_start": null,
    "end_date": "2026-11-29",
    "event_slug": "taipei-mayor-election-winner-20260813125857100"
-  },
-  {
-   "title": "Will Inter Miami CF win on 2026-11-27?",
-   "pick": "Yes",
-   "price": 0.365,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 6504,
-   "names": [
-    "darkumbreon88",
-    "hi774c"
-   ],
-   "game_start": "2026-11-28T01:00+00:00",
-   "end_date": "2026-11-28",
-   "event_slug": "mls-clb-mia-2026-11-27"
   }
  ]
 }
