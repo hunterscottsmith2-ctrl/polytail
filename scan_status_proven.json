@@ -1,12 +1,12 @@
 {
- "at": "2026-11-28T12:58:10+00:00",
+ "at": "2026-11-28T13:01:10+00:00",
  "wallets_watched": 37,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 33,
- "rows": 10127,
+ "rows": 10130,
  "skipped_redeemable_or_no_outcome": 9622,
- "under_min_value": 285,
+ "under_min_value": 288,
  "already_ended": 6,
  "ends_too_late": 48,
  "kept": 166,
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will England win the 2026 FIFA World Cup?",
+  "title": "Will AC Monza win on 2026-08-29?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-20",
+  "end_date": "2026-08-29",
   "redeemable": true
  },
  "leans_not_alerts": []
