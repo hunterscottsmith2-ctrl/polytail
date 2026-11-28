@@ -1,5 +1,5 @@
 {
- "at": "2026-11-28T01:06:51+00:00",
+ "at": "2026-11-28T01:09:45+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 1,
@@ -53,12 +53,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Spread: Celtics (-9.5)",
-  "outcome": "Hawks",
+  "title": "Will France win on 2026-06-16?",
+  "outcome": "No",
   "outcome_index": 1,
-  "current_value": 236513.9017,
-  "end_date": "2026-11-28",
-  "redeemable": false
+  "current_value": 0.0,
+  "end_date": "2026-06-16",
+  "redeemable": true
  },
  "leans_not_alerts": []
 }
