@@ -1,12 +1,12 @@
 {
- "at": "2026-11-28T00:46:41+00:00",
+ "at": "2026-11-28T00:49:40+00:00",
  "wallets_watched": 114,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 99,
- "rows": 44771,
- "skipped_redeemable_or_no_outcome": 35256,
- "under_min_value": 8976,
+ "rows": 44770,
+ "skipped_redeemable_or_no_outcome": 35254,
+ "under_min_value": 8977,
  "already_ended": 17,
  "ends_too_late": 132,
  "kept": 390,
@@ -53,21 +53,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
    "pick": "No",
-   "price": 0.88,
+   "price": 0.876,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 134580,
+   "total_value": 134044,
    "names": [
     "feeder-or-predator",
     "328.400.fund",
@@ -76,6 +76,21 @@
    "game_start": null,
    "end_date": "2026-11-29",
    "event_slug": "2026-taipei-mayoral-election-margin-of-victory-20261103233704870"
+  },
+  {
+   "title": "Penguins vs. Sabres",
+   "pick": "Penguins",
+   "price": 0.465,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 97811,
+   "names": [
+    "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
+    "chubbytoro"
+   ],
+   "game_start": "2026-11-28T01:00+00:00",
+   "end_date": "2026-11-28",
+   "event_slug": "nhl-pit-buf-2026-11-27"
   },
   {
    "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
@@ -113,7 +128,7 @@
    "price": 0.585,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 18306,
+   "total_value": 18274,
    "names": [
     "monkeymashingkeyboard",
     "ropetard"
@@ -125,10 +140,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.555,
+   "price": 0.554,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 46794,
+   "total_value": 46730,
    "names": [
     "arjennnnn",
     "feeder-or-predator"

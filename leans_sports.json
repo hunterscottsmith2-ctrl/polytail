@@ -1,7 +1,22 @@
 {
- "at": "2026-11-28T00:46:47+00:00",
+ "at": "2026-11-28T00:49:46+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
+  {
+   "title": "Penguins vs. Sabres",
+   "pick": "Penguins",
+   "price": 0.465,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 97811,
+   "names": [
+    "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
+    "chubbytoro"
+   ],
+   "game_start": "2026-11-28T01:00+00:00",
+   "end_date": "2026-11-28",
+   "event_slug": "nhl-pit-buf-2026-11-27"
+  },
   {
    "title": "Mavericks vs. Suns",
    "pick": "Suns",
@@ -23,7 +38,7 @@
    "price": 0.585,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 18306,
+   "total_value": 18274,
    "names": [
     "monkeymashingkeyboard",
     "ropetard"
