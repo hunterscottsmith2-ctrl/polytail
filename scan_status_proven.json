@@ -1,5 +1,5 @@
 {
- "at": "2026-11-28T01:36:44+00:00",
+ "at": "2026-11-28T01:39:44+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
@@ -53,12 +53,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Counter-Strike: THUNDER dOWNUNDER vs BIG (BO1) - IEM Cologne Major Stage 1",
-  "outcome": "THUNDER dOWNUNDER",
-  "outcome_index": 0,
-  "current_value": 0.0,
-  "end_date": "2026-06-03",
-  "redeemable": true
+  "title": "Spread: Celtics (-9.5)",
+  "outcome": "Hawks",
+  "outcome_index": 1,
+  "current_value": 146413.3677,
+  "end_date": "2026-11-28",
+  "redeemable": false
  },
  "leans_not_alerts": []
 }
