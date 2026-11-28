@@ -1,5 +1,5 @@
 {
- "at": "2026-11-28T00:01:40+00:00",
+ "at": "2026-11-28T00:04:40+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -20,10 +20,10 @@
   {
    "title": "76ers vs. Pacers",
    "pick": "76ers",
-   "price": 0.625,
+   "price": 0.615,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 19001,
+   "total_value": 18697,
    "names": [
     "Mikal25",
     "darkumbreon88"

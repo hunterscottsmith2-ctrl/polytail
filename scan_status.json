@@ -1,15 +1,15 @@
 {
- "at": "2026-11-28T00:01:32+00:00",
+ "at": "2026-11-28T00:04:33+00:00",
  "wallets_watched": 115,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 99,
- "rows": 46938,
- "skipped_redeemable_or_no_outcome": 37424,
+ "rows": 46941,
+ "skipped_redeemable_or_no_outcome": 37427,
  "under_min_value": 8994,
- "already_ended": 23,
+ "already_ended": 22,
  "ends_too_late": 133,
- "kept": 364,
+ "kept": 365,
  "wallets_needing_extra_pages": 25,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,21 +53,21 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will Sweden win on 2026-06-25?",
+  "title": "Will United States vs. Paraguay end in a draw?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-25",
+  "end_date": "2026-06-13",
   "redeemable": true
  },
  "leans_not_alerts": [
   {
    "title": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
    "pick": "No",
-   "price": 0.865,
+   "price": 0.864,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 132286,
+   "total_value": 132133,
    "names": [
     "feeder-or-predator",
     "328.400.fund",
@@ -121,21 +121,6 @@
    "game_start": null,
    "end_date": "2026-11-29",
    "event_slug": "taipei-mayor-election-winner-20260813125857100"
-  },
-  {
-   "title": "76ers vs. Pacers",
-   "pick": "Pacers",
-   "price": 0.375,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 25862,
-   "names": [
-    "bands1",
-    "hi774c"
-   ],
-   "game_start": "2026-11-28T00:30+00:00",
-   "end_date": "2026-11-28",
-   "event_slug": "nba-phi-ind-2026-11-27"
   },
   {
    "title": "Spread: Suns (-1.5)",
