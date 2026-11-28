@@ -1,5 +1,5 @@
 {
- "at": "2026-11-28T09:51:58+00:00",
+ "at": "2026-11-28T09:54:58+00:00",
  "wallets_watched": 37,
  "signals": 0,
  "most_wallets_on_one_side": 2,
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Counter-Strike: fnatic vs Liquid (BO3) - 1win Private Club #2 Playoffs",
-  "outcome": "Liquid",
-  "outcome_index": 1,
+  "title": "Counter-Strike: THUNDER dOWNUNDER vs BIG (BO1) - IEM Cologne Major Stage 1",
+  "outcome": "THUNDER dOWNUNDER",
+  "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-10-19",
+  "end_date": "2026-06-03",
   "redeemable": true
  },
  "leans_not_alerts": []
