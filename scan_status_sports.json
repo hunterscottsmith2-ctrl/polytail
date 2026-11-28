@@ -1,15 +1,15 @@
 {
- "at": "2026-11-28T00:10:39+00:00",
+ "at": "2026-11-28T00:13:40+00:00",
  "wallets_watched": 124,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 104,
- "rows": 29511,
- "skipped_redeemable_or_no_outcome": 27088,
+ "rows": 29514,
+ "skipped_redeemable_or_no_outcome": 27090,
  "under_min_value": 2316,
- "already_ended": 12,
+ "already_ended": 11,
  "ends_too_late": 30,
- "kept": 65,
+ "kept": 67,
  "wallets_needing_extra_pages": 14,
  "wallets_over_3000_rows": 4,
  "sample_keys": [
@@ -75,6 +75,21 @@
    "game_start": "2026-11-28T02:00+00:00",
    "end_date": "2026-11-28",
    "event_slug": "nba-dal-phx-2026-11-27"
+  },
+  {
+   "title": "76ers vs. Pacers: O/U 228.5",
+   "pick": "Under",
+   "price": 0.475,
+   "wallets": 2,
+   "opposing_wallets": 0,
+   "total_value": 15986,
+   "names": [
+    "TMingchan",
+    "JoeyAroyyOO"
+   ],
+   "game_start": "2026-11-28T00:30+00:00",
+   "end_date": "2026-11-28",
+   "event_slug": "nba-phi-ind-2026-11-27"
   },
   {
    "title": "Spread: Texas (-10.5)",
