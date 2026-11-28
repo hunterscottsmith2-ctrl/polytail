@@ -1,15 +1,15 @@
 {
- "at": "2026-11-28T06:09:44+00:00",
+ "at": "2026-11-28T06:12:44+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
- "rows": 6542,
+ "rows": 6544,
  "skipped_redeemable_or_no_outcome": 6199,
  "under_min_value": 189,
  "already_ended": 17,
  "ends_too_late": 46,
- "kept": 91,
+ "kept": 93,
  "wallets_needing_extra_pages": 4,
  "wallets_over_3000_rows": 0,
  "sample_keys": [
@@ -60,5 +60,21 @@
   "end_date": "2026-06-03",
   "redeemable": true
  },
- "leans_not_alerts": []
+ "leans_not_alerts": [
+  {
+   "title": "Counter-Strike: THE ONE vs Eternal Fire (BO1) - PGL Major Singapore Stage 2",
+   "pick": "Eternal Fire",
+   "price": 0.475,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 20012,
+   "names": [
+    "shekelmeister",
+    "jtwyslljy"
+   ],
+   "game_start": "2026-11-28T06:15+00:00",
+   "end_date": "2026-11-28",
+   "event_slug": "cs2-one6-ef1-2026-11-28"
+  }
+ ]
 }
