@@ -1,11 +1,11 @@
 {
- "at": "2026-11-28T11:30:59+00:00",
+ "at": "2026-11-28T11:33:59+00:00",
  "wallets_watched": 37,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 33,
- "rows": 10117,
- "skipped_redeemable_or_no_outcome": 9617,
+ "rows": 10118,
+ "skipped_redeemable_or_no_outcome": 9618,
  "under_min_value": 284,
  "already_ended": 6,
  "ends_too_late": 48,
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
-  "outcome": "Yes",
-  "outcome_index": 0,
+  "title": "Counter-Strike: fnatic vs Liquid (BO3) - 1win Private Club #2 Playoffs",
+  "outcome": "Liquid",
+  "outcome_index": 1,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-10-19",
   "redeemable": true
  },
  "leans_not_alerts": []
