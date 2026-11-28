@@ -1,5 +1,5 @@
 {
- "at": "2026-11-28T10:28:02+00:00",
+ "at": "2026-11-28T10:31:03+00:00",
  "wallets_watched": 59,
  "signals": 0,
  "most_wallets_on_one_side": 2,
@@ -53,28 +53,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will AC Monza win on 2026-08-29?",
+  "title": "Will England win the 2026 FIFA World Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-08-29",
+  "end_date": "2026-07-20",
   "redeemable": true
  },
- "leans_not_alerts": [
-  {
-   "title": "Counter-Strike: THE ONE vs TheMongolz (BO1) - PGL Major Singapore Stage 2",
-   "pick": "TheMongolz",
-   "price": 0.565,
-   "wallets": 2,
-   "opposing_wallets": 1,
-   "total_value": 39396,
-   "names": [
-    "shekelmeister",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-28T10:30+00:00",
-   "end_date": "2026-11-28",
-   "event_slug": "cs2-one6-mglz-2026-11-28"
-  }
- ]
+ "leans_not_alerts": []
 }
