@@ -1,5 +1,5 @@
 {
- "at": "2026-11-28T00:07:39+00:00",
+ "at": "2026-11-28T00:10:39+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -16,6 +16,21 @@
    "game_start": "2026-11-28T02:00+00:00",
    "end_date": "2026-11-28",
    "event_slug": "nba-dal-phx-2026-11-27"
+  },
+  {
+   "title": "Spread: Texas (-10.5)",
+   "pick": "Texas",
+   "price": 0.465,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 145755,
+   "names": [
+    "Mikal25",
+    "hi774c"
+   ],
+   "game_start": "2026-11-28T00:30+00:00",
+   "end_date": "2026-11-28",
+   "event_slug": "cfb-tx-txam-2026-11-27"
   },
   {
    "title": "76ers vs. Pacers",

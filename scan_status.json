@@ -1,16 +1,16 @@
 {
- "at": "2026-11-28T00:07:33+00:00",
- "wallets_watched": 115,
+ "at": "2026-11-28T00:10:32+00:00",
+ "wallets_watched": 113,
  "signals": 0,
  "most_wallets_on_one_side": 3,
- "wallets_with_rows": 99,
- "rows": 46948,
- "skipped_redeemable_or_no_outcome": 37425,
- "under_min_value": 8999,
- "already_ended": 21,
- "ends_too_late": 133,
- "kept": 370,
- "wallets_needing_extra_pages": 25,
+ "wallets_with_rows": 98,
+ "rows": 44598,
+ "skipped_redeemable_or_no_outcome": 35090,
+ "under_min_value": 8991,
+ "already_ended": 19,
+ "ends_too_late": 132,
+ "kept": 366,
+ "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
   "archived",
@@ -64,10 +64,10 @@
   {
    "title": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
    "pick": "No",
-   "price": 0.863,
+   "price": 0.865,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 131980,
+   "total_value": 132209,
    "names": [
     "feeder-or-predator",
     "328.400.fund",
@@ -108,12 +108,27 @@
    "event_slug": "nba-atl-bos-2026-11-27"
   },
   {
-   "title": "Will Puma Shen win the next Taipei Mayor election?",
-   "pick": "No",
-   "price": 0.56,
+   "title": "Spread: Wisconsin (-8.5)",
+   "pick": "Wisconsin",
+   "price": 0.505,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 47310,
+   "total_value": 79693,
+   "names": [
+    "Mikal25",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-28T00:30+00:00",
+   "end_date": "2026-11-28",
+   "event_slug": "cfb-minnst-wisc-2026-11-27"
+  },
+  {
+   "title": "Will Puma Shen win the next Taipei Mayor election?",
+   "pick": "No",
+   "price": 0.564,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 47606,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -140,10 +155,10 @@
   {
    "title": "Will Inter Miami CF win on 2026-11-27?",
    "pick": "Yes",
-   "price": 0.345,
+   "price": 0.355,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 6147,
+   "total_value": 6326,
    "names": [
     "darkumbreon88",
     "hi774c"
