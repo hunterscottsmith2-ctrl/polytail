@@ -1,15 +1,15 @@
 {
- "at": "2026-11-28T02:24:44+00:00",
+ "at": "2026-11-28T02:27:44+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
  "rows": 6551,
  "skipped_redeemable_or_no_outcome": 6185,
- "under_min_value": 194,
+ "under_min_value": 193,
  "already_ended": 17,
  "ends_too_late": 46,
- "kept": 109,
+ "kept": 110,
  "wallets_needing_extra_pages": 4,
  "wallets_over_3000_rows": 0,
  "sample_keys": [
@@ -56,7 +56,7 @@
   "title": "Spread: Celtics (-9.5)",
   "outcome": "Hawks",
   "outcome_index": 1,
-  "current_value": 202726.2015,
+  "current_value": 153170.9078,
   "end_date": "2026-11-28",
   "redeemable": false
  },
