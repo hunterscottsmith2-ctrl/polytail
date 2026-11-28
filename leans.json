@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T23:58:33+00:00",
+ "at": "2026-11-28T00:01:32+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -66,10 +66,10 @@
   {
    "title": "76ers vs. Pacers",
    "pick": "Pacers",
-   "price": 0.405,
+   "price": 0.375,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 19830,
+   "total_value": 25862,
    "names": [
     "bands1",
     "hi774c"

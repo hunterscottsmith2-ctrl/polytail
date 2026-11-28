@@ -1,24 +1,7 @@
 {
- "at": "2026-11-27T23:58:40+00:00",
+ "at": "2026-11-28T00:01:40+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
-  {
-   "title": "Heat vs. Knicks",
-   "pick": "Knicks",
-   "price": 0.575,
-   "wallets": 4,
-   "opposing_wallets": 2,
-   "total_value": 640339,
-   "names": [
-    "chubbytoro",
-    "Eugycom",
-    "Moneymethod",
-    "hi774c"
-   ],
-   "game_start": "2026-11-28T00:00+00:00",
-   "end_date": "2026-11-28",
-   "event_slug": "nba-mia-nyk-2026-11-27"
-  },
   {
    "title": "Spread: Suns (-1.5)",
    "pick": "Suns",
@@ -37,10 +20,10 @@
   {
    "title": "76ers vs. Pacers",
    "pick": "76ers",
-   "price": 0.595,
+   "price": 0.625,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 18089,
+   "total_value": 19001,
    "names": [
     "Mikal25",
     "darkumbreon88"

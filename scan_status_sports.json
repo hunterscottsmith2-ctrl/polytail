@@ -1,15 +1,15 @@
 {
- "at": "2026-11-27T23:58:40+00:00",
+ "at": "2026-11-28T00:01:40+00:00",
  "wallets_watched": 127,
- "signals": 1,
+ "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 107,
  "rows": 27478,
- "skipped_redeemable_or_no_outcome": 25068,
- "under_min_value": 2310,
- "already_ended": 5,
+ "skipped_redeemable_or_no_outcome": 25069,
+ "under_min_value": 2309,
+ "already_ended": 15,
  "ends_too_late": 28,
- "kept": 67,
+ "kept": 57,
  "wallets_needing_extra_pages": 14,
  "wallets_over_3000_rows": 3,
  "sample_keys": [
@@ -53,31 +53,14 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
+  "title": "Lionel Messi: 1+ goals",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-30",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
  "leans_not_alerts": [
-  {
-   "title": "Heat vs. Knicks",
-   "pick": "Knicks",
-   "price": 0.575,
-   "wallets": 4,
-   "opposing_wallets": 2,
-   "total_value": 640339,
-   "names": [
-    "chubbytoro",
-    "Eugycom",
-    "Moneymethod",
-    "hi774c"
-   ],
-   "game_start": "2026-11-28T00:00+00:00",
-   "end_date": "2026-11-28",
-   "event_slug": "nba-mia-nyk-2026-11-27"
-  },
   {
    "title": "Spread: Suns (-1.5)",
    "pick": "Suns",
@@ -96,10 +79,10 @@
   {
    "title": "76ers vs. Pacers",
    "pick": "76ers",
-   "price": 0.595,
+   "price": 0.625,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 18089,
+   "total_value": 19001,
    "names": [
     "Mikal25",
     "darkumbreon88"

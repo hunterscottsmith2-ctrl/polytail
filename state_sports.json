@@ -2,6 +2,7 @@
  "alerted": {
   "0x6556ae7178bfbdb828806ee82d09f965a2c1bb680bc7befad9a1ab9e7dbe5a3c|1": {
    "first_seen": "2026-11-27T23:31+00:00",
+   "gone_at": 1795824100.0764163,
    "outcome": "Knicks",
    "title": "Heat vs. Knicks",
    "wallets": 4
