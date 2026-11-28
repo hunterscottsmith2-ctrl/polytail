@@ -28,13 +28,13 @@ from common import (american, book_quote, get_json, log_books, log_fill, market_
 # Four independent tests run from this file (each has its own log/state/settings):
 #   main          (default)  — PROFIT FLOOR: all markets, leaderboard pool, $10K+ all-time profit only
 #   sports                   — SPORTS PROFIT FLOOR: game markets only, sports leaderboards, pre-kickoff
-#   proven                   — PROVEN: all markets, only the backtest's proven-winner list (wallets.json)
-#   sports_proven            — SPORTS PROVEN: game markets only, same proven-winner list
+#   proven                   — PROVEN: all markets, only the backtest's proven-winner list (wallets_proven.json)
+#   sports_proven            — SPORTS PROVEN: game markets only, sports proven winners (wallets_sports_proven.json)
 PROFILE = os.environ.get("POLYTAIL_PROFILE", "main")
 SUFFIX = "" if PROFILE == "main" else f"_{PROFILE}"
 IS_SPORTS = PROFILE.startswith("sports")
 IS_PROVEN = PROFILE.endswith("proven")
-PROFILE_LABELS = {"main": "💰 PROFIT FLOOR: ", "sports": "SPORTS PROFIT FLOOR: ",
+PROFILE_LABELS = {"main": "💰 PROFIT FLOOR: ", "sports": "💰 SPORTS PROFIT FLOOR: ",
                   "proven": "✅ PROVEN: ", "sports_proven": "✅ SPORTS PROVEN: "}
 
 # ---------------------------------------------------------------- settings
@@ -46,7 +46,7 @@ SETTINGS = {
     # Only watch leaderboard wallets with at least this much ALL-TIME profit (None = no floor).
     # Wallets whose all-time profit can't be confirmed are left out too.
     "MIN_ALL_TIME_PNL": None,
-    # If the proven list (wallets.json) is missing or stale, fall back to the leaderboard?
+    # If the proven list is missing or stale, fall back to the leaderboard?
     # The proven tests set this False so they never quietly watch unproven wallets.
     "LEADERBOARD_FALLBACK": True,
     # Watchlist = same pool the backtest tested: profit AND volume boards.
@@ -80,7 +80,7 @@ SETTINGS = {
 STATE_FILE = os.environ.get("POLYTAIL_STATE", f"state{SUFFIX}.json")
 LOG_FILE = os.environ.get("POLYTAIL_LOG", "signals_log.csv" if not SUFFIX else f"signals{SUFFIX}.csv")
 SETTINGS_FILE = os.environ.get("POLYTAIL_SETTINGS", f"settings{SUFFIX}.json")
-WALLETS_FILE = os.environ.get("POLYTAIL_WALLETS", "wallets.json" if IS_PROVEN else f"wallets{SUFFIX}.json")
+WALLETS_FILE = os.environ.get("POLYTAIL_WALLETS", f"wallets{SUFFIX}.json")   # proven: wallets_proven.json
 POOL_FILE = f"wallets{SUFFIX}_pool.json"   # non-bot wallets, written by backtest.py
 FILLS_FILE = os.environ.get("POLYTAIL_FILLS", f"fills{SUFFIX}.csv")
 BOOKS_FILE = os.environ.get("POLYTAIL_BOOKS", f"books{SUFFIX}.csv")   # sportsbook prices per alert
@@ -484,7 +484,7 @@ def main():
     source = "backtest-scored wallets.json"
     if not wallets and cfg["USE_SCORED_WALLETS"] and not cfg["LEADERBOARD_FALLBACK"]:
         print(f"{WALLETS_FILE} is missing or stale — this test only watches proven wallets. "
-              "Exiting without changes (re-run the backtest with update_live_wallets to refresh).")
+              "Exiting without changes (the Saturday backtest refreshes it).")
         return
     if not wallets:
         wallets, source = leaderboard_wallets(cfg), "leaderboard"

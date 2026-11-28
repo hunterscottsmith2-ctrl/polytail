@@ -71,6 +71,12 @@ OUT_DIR = os.environ.get("POLYTAIL_RESULTS", "results" if not SPORTS else "resul
 SHARP_FILE = "wallets_sharp.json" if not SPORTS else "wallets_sports_sharp.json"
 POOL_FILE = "wallets_pool.json" if not SPORTS else "wallets_sports_pool.json"   # read by tracker.py
 WALLETS_FILE = "wallets.json" if not SPORTS else "wallets_sports.json"   # scored watchlist, read by tracker.py
+# Live lists the PROVEN and PROFIT FLOOR alerts read. Refreshed every run (scheduled runs
+# too, BT_REFRESH_LIVE=1) so they never go stale; a run that finds too few wallets keeps the old list.
+LIVE_POOL_FILE = POOL_FILE
+LIVE_PROVEN_FILE = "wallets_proven.json" if not SPORTS else "wallets_sports_proven.json"
+REFRESH_LIVE = os.environ.get("BT_REFRESH_LIVE", "1") == "1"
+MIN_LIVE_POOL, MIN_LIVE_PROVEN = 50, 10
 # Report-only (the weekly scheduled run): write the new wallet lists to results/.../proposed/
 # for review instead of replacing the live ones, so the running paper test keeps the same wallets.
 REPORT_ONLY = os.environ.get("BT_REPORT_ONLY", "0") == "1"
@@ -666,6 +672,15 @@ def main():
                                                           if live_hedge[w] <= MAX_HEDGE_RATE)}, f, indent=0)
     log(f"{POOL_FILE}: {sum(h <= MAX_HEDGE_RATE for h in live_hedge.values())} wallets after "
         f"removing {sum(h > MAX_HEDGE_RATE for h in live_hedge.values())} hedgers")
+    live_refresh = []   # lines for the Telegram summary
+    if REFRESH_LIVE and POOL_FILE != LIVE_POOL_FILE:
+        one_sided = sorted(w for w in trades_by_wallet if live_hedge[w] <= MAX_HEDGE_RATE)
+        if len(one_sided) >= MIN_LIVE_POOL:
+            with open(LIVE_POOL_FILE, "w") as f:
+                json.dump({"generated_at": now, "wallets": one_sided}, f, indent=0)
+            live_refresh.append(f"💰 PROFIT FLOOR bot filter refreshed: {len(one_sided)} wallets")
+        else:
+            live_refresh.append(f"⚠️ PROFIT FLOOR bot filter NOT refreshed (only {len(one_sided)} wallets found)")
     with open(SHARP_FILE, "w") as f:
         json.dump({"generated_at": now, "beat_pool_in_backtest": sharp_helps,
                    "proven_beat_pool_in_backtest": proven_helps,
@@ -683,6 +698,23 @@ def main():
                                 "hedge_rate": round(live_hedge[w], 3)} for w in keep]},
                   f, indent=1)
     log(f"Wrote {SHARP_FILE} with {len(keep)} sharp wallets (not active)")
+
+    # ✅ PROVEN tests' watchlist: proven winners re-scored on everything through today.
+    # Written every run (not only when scoring beat the pool) so the proven test stays current.
+    proven_live = {w: score_wallet(tr, res, now) for w, tr in trades_by_wallet.items()}
+    proven_live = {w: s for w, s in proven_live.items() if passes(s)}
+    if REFRESH_LIVE or not REPORT_ONLY:
+        if len(proven_live) >= MIN_LIVE_PROVEN:
+            with open(LIVE_PROVEN_FILE, "w") as f:
+                json.dump({"generated_at": now, "source": f"backtest proven winners ({CATEGORY})",
+                           "wallets": [{"wallet": w, "name": pool[w]["name"], "pnl": round(s["pnl"]),
+                                        "roi": round(s["roi"], 4), "markets": s["markets"],
+                                        "hedge_rate": round(s["hedge_rate"], 3)}
+                                       for w, s in sorted(proven_live.items(), key=lambda kv: -kv[1]["pnl"])]},
+                          f, indent=1)
+            live_refresh.append(f"✅ PROVEN list refreshed: {len(proven_live)} wallets")
+        else:
+            live_refresh.append(f"⚠️ PROVEN list NOT refreshed (only {len(proven_live)} wallets passed)")
 
     # Scored watchlist for the consensus bot: only when picking wallets by profit beat the
     # whole pool in this backtest. Re-scored on everything through today so recent form counts.
@@ -719,8 +751,11 @@ def main():
                       f"{r['win_rate']:.0%} wins, {pct(r['mean_roi'])}/bet")
     tg.append("✅ Proven winners beat the pool" if proven_helps else "Proven winners did not clearly beat the pool")
     tg.append(f"\nFull report: {OUT_DIR}/backtest_report.md in your repo")
+    if live_refresh:
+        tg.append("")
+        tg.extend(live_refresh)
     if REPORT_ONLY:
-        tg.append(f"Report only: live wallet lists NOT changed (new lists saved in {OUT_DIR}/proposed/)")
+        tg.append(f"Report only: other live wallet lists NOT changed (new lists saved in {OUT_DIR}/proposed/)")
     send_telegram("\n".join(tg))
     print(report)
 

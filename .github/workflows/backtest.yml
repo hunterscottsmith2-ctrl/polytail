@@ -1,8 +1,9 @@
 name: PolyTail backtest
 
 on:
-  # Weekly report-only run of both tests: Saturdays ~2:37am Eastern, so the report is in
-  # before Sunday's scorecard. It does NOT change the live wallet lists.
+  # Weekly run of both tests: Saturdays ~2:37am Eastern, so the report is in before Sunday's
+  # scorecard. It refreshes the live PROVEN lists and the bot filter (so they never go stale);
+  # other live wallet lists are only changed with update_live_wallets.
   schedule:
     - cron: "37 7 * * 6"
   workflow_dispatch:
@@ -63,6 +64,7 @@ jobs:
           BT_POOL_DEPTH: ${{ inputs.pool_depth || '100' }}
           BT_CATEGORY: ${{ matrix.category }}
           BT_REPORT_ONLY: ${{ inputs.update_live_wallets == true && '0' || '1' }}
+          BT_REFRESH_LIVE: "1"
         run: python backtest.py
 
       - name: Save results to the repo

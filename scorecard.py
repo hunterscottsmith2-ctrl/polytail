@@ -150,6 +150,9 @@ def summarize(graded):
             real = sum(num(g[col]) for g in priced) / (STAKE * len(priced))
             lines.append(f"At {label}: {real:+.1%} per bet over {len(priced)} bets"
                          f" (same bets at the alert's quoted price: {same:+.1%})")
+    if done and not any(g["profit_book"] != "" for g in done):
+        lines.append("Sportsbook (DraftKings/FanDuel) result: no sportsbook prices recorded yet"
+                     + ("" if os.environ.get("ODDS_API_KEY") else " — add an ODDS_API_KEY secret"))
     by_group = defaultdict(list)
     for g in graded:
         by_group[g["group"]].append(g)
