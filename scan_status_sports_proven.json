@@ -1,15 +1,15 @@
 {
- "at": "2026-11-28T10:19:03+00:00",
+ "at": "2026-11-28T10:22:03+00:00",
  "wallets_watched": 59,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 53,
- "rows": 12260,
- "skipped_redeemable_or_no_outcome": 12154,
+ "rows": 12257,
+ "skipped_redeemable_or_no_outcome": 12150,
  "under_min_value": 86,
  "already_ended": 0,
  "ends_too_late": 6,
- "kept": 14,
+ "kept": 15,
  "wallets_needing_extra_pages": 6,
  "wallets_over_3000_rows": 2,
  "sample_keys": [
@@ -60,5 +60,21 @@
   "end_date": "2026-07-20",
   "redeemable": true
  },
- "leans_not_alerts": []
+ "leans_not_alerts": [
+  {
+   "title": "Counter-Strike: THE ONE vs TheMongolz (BO1) - PGL Major Singapore Stage 2",
+   "pick": "TheMongolz",
+   "price": 0.565,
+   "wallets": 2,
+   "opposing_wallets": 1,
+   "total_value": 39396,
+   "names": [
+    "shekelmeister",
+    "darkumbreon88"
+   ],
+   "game_start": "2026-11-28T10:30+00:00",
+   "end_date": "2026-11-28",
+   "event_slug": "cs2-one6-mglz-2026-11-28"
+  }
+ ]
 }
