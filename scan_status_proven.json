@@ -1,12 +1,12 @@
 {
- "at": "2026-11-28T12:00:59+00:00",
+ "at": "2026-11-28T12:03:59+00:00",
  "wallets_watched": 37,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 33,
- "rows": 10122,
+ "rows": 10124,
  "skipped_redeemable_or_no_outcome": 9622,
- "under_min_value": 283,
+ "under_min_value": 285,
  "already_ended": 6,
  "ends_too_late": 48,
  "kept": 163,
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will France win on 2026-06-16?",
-  "outcome": "No",
-  "outcome_index": 1,
+  "title": "Counter-Strike: THUNDER dOWNUNDER vs BIG (BO1) - IEM Cologne Major Stage 1",
+  "outcome": "THUNDER dOWNUNDER",
+  "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-16",
+  "end_date": "2026-06-03",
   "redeemable": true
  },
  "leans_not_alerts": []
