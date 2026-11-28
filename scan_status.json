@@ -1,15 +1,15 @@
 {
- "at": "2026-11-28T12:43:21+00:00",
+ "at": "2026-11-28T12:46:20+00:00",
  "wallets_watched": 51,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 40,
  "rows": 9983,
  "skipped_redeemable_or_no_outcome": 8893,
- "under_min_value": 835,
+ "under_min_value": 834,
  "already_ended": 1,
  "ends_too_late": 18,
- "kept": 236,
+ "kept": 237,
  "wallets_needing_extra_pages": 5,
  "wallets_over_3000_rows": 2,
  "sample_keys": [
@@ -53,12 +53,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will Donald Trump win the 2028 Republican presidential nomination?",
   "outcome": "Yes",
   "outcome_index": 0,
-  "current_value": 0.0,
-  "end_date": "2026-06-13",
-  "redeemable": true
+  "current_value": 870.2794,
+  "end_date": "2028-11-08",
+  "redeemable": false
  },
  "leans_not_alerts": []
 }
