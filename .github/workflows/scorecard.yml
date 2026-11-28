@@ -18,11 +18,12 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Grade main alerts (current rules since Nov 22, 9:30 AM ET)
+      - name: Grade main alerts (profit floor test, since Nov 27, 8:30 PM ET)
         env:
+          SCORECARD_LABEL: "💰 PolyTail Profit Floor"
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          SCORECARD_SINCE: "2026-11-22T14:30:00Z"
+          SCORECARD_SINCE: "2026-11-28T01:30:00Z"
         run: python scorecard.py
 
       - name: Grade sports alerts
@@ -31,11 +32,34 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           POLYTAIL_LOG: signals_sports.csv
-          SCORECARD_LABEL: "🏈 PolyTail Sports"
+          SCORECARD_LABEL: "🏈 PolyTail Sports (profit floor)"
           SCORECARD_TAG: scorecard_sports
           SCORECARD_FEE_RATE: "0.03"
-          SCORECARD_SINCE: "2026-11-22T14:30:00Z"
+          SCORECARD_SINCE: "2026-11-28T01:30:00Z"
         run: python scorecard.py
+
+      - name: Grade proven-wallets test
+        if: always()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          POLYTAIL_LOG: signals_proven.csv
+          POLYTAIL_FILLS: fills_proven.csv
+          SCORECARD_LABEL: "✅ PolyTail Proven"
+          SCORECARD_TAG: scorecard_proven
+        run: '[ -f signals_proven.csv ] && python scorecard.py || true'
+
+      - name: Grade sports proven-wallets test
+        if: always()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          POLYTAIL_LOG: signals_sports_proven.csv
+          POLYTAIL_FILLS: fills_sports_proven.csv
+          SCORECARD_LABEL: "✅🏈 PolyTail Sports Proven"
+          SCORECARD_TAG: scorecard_sports_proven
+          SCORECARD_FEE_RATE: "0.03"
+        run: '[ -f signals_sports_proven.csv ] && python scorecard.py || true'
 
       - name: Grade early sharp-wallet test
         if: always()

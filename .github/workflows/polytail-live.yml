@@ -41,11 +41,17 @@ jobs:
           while [ "$(date +%s)" -lt "$end" ]; do
             started=$(date +%s)
             git pull --rebase -X theirs -q || true
-            timeout 150 python tracker.py || echo "main scan failed"
-            POLYTAIL_PROFILE=sports timeout 150 python tracker.py || echo "sports scan failed"
+            # Proven tests run first, so a bet that qualifies in both is texted with the PROVEN label.
+            POLYTAIL_PROFILE=proven timeout 150 python tracker.py || echo "proven scan failed"
+            POLYTAIL_PROFILE=sports_proven timeout 150 python tracker.py || echo "sports proven scan failed"
+            timeout 150 python tracker.py || echo "main (profit floor) scan failed"
+            POLYTAIL_PROFILE=sports timeout 150 python tracker.py || echo "sports (profit floor) scan failed"
             timeout 150 python early.py || echo "early scan failed"
             for f in state.json signals_log.csv state_sports.json signals_sports.csv \
                      state_early.json signals_early.csv \
+                     state_proven.json signals_proven.csv state_sports_proven.json signals_sports_proven.csv \
+                     fills_proven.csv fills_sports_proven.csv books_proven.csv books_sports_proven.csv \
+                     scan_status_proven.json scan_status_sports_proven.json leans_proven.json leans_sports_proven.json \
                      fills.csv fills_sports.csv fills_early.csv \
                      books.csv books_sports.csv books_early.csv \
                      scan_status.json scan_status_sports.json \

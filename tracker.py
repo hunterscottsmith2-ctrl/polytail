@@ -25,19 +25,30 @@ from common import get_pages
 from common import (american, book_quote, get_json, log_books, log_fill, market_info, money, num, queue_recheck, run_rechecks,
                     send_telegram)
 
-# Two independent tests run from this file:
-#   main   (default)               — all markets, overall leaderboards
-#   sports (POLYTAIL_PROFILE=sports) — game markets only, sports leaderboards,
-#                                     pre-kickoff only, its own log/state/settings
+# Four independent tests run from this file (each has its own log/state/settings):
+#   main          (default)  — PROFIT FLOOR: all markets, leaderboard pool, $10K+ all-time profit only
+#   sports                   — SPORTS PROFIT FLOOR: game markets only, sports leaderboards, pre-kickoff
+#   proven                   — PROVEN: all markets, only the backtest's proven-winner list (wallets.json)
+#   sports_proven            — SPORTS PROVEN: game markets only, same proven-winner list
 PROFILE = os.environ.get("POLYTAIL_PROFILE", "main")
 SUFFIX = "" if PROFILE == "main" else f"_{PROFILE}"
+IS_SPORTS = PROFILE.startswith("sports")
+IS_PROVEN = PROFILE.endswith("proven")
+PROFILE_LABELS = {"main": "💰 PROFIT FLOOR: ", "sports": "SPORTS PROFIT FLOOR: ",
+                  "proven": "✅ PROVEN: ", "sports_proven": "✅ SPORTS PROVEN: "}
 
 # ---------------------------------------------------------------- settings
 # Defaults. Any key in settings.json overrides these (handy after a backtest).
 SETTINGS = {
-    "CATEGORY": "sports" if PROFILE == "sports" else "overall",
-    "SPORTS_GAMES_ONLY": PROFILE == "sports",   # only moneyline/spread/total markets, pre-kickoff
-    "LABEL": "SPORTS: " if PROFILE == "sports" else "",   # sport emoji is added per alert
+    "CATEGORY": "sports" if IS_SPORTS else "overall",
+    "SPORTS_GAMES_ONLY": IS_SPORTS,   # only moneyline/spread/total markets, pre-kickoff
+    "LABEL": PROFILE_LABELS.get(PROFILE, ""),   # names the test in every alert; sport emoji added for sports
+    # Only watch leaderboard wallets with at least this much ALL-TIME profit (None = no floor).
+    # Wallets whose all-time profit can't be confirmed are left out too.
+    "MIN_ALL_TIME_PNL": None,
+    # If the proven list (wallets.json) is missing or stale, fall back to the leaderboard?
+    # The proven tests set this False so they never quietly watch unproven wallets.
+    "LEADERBOARD_FALLBACK": True,
     # Watchlist = same pool the backtest tested: profit AND volume boards.
     "LEADERBOARDS": [["ALL", "PNL"], ["MONTH", "PNL"], ["ALL", "VOLUME"], ["MONTH", "VOLUME"]],
     "LEADERBOARD_DEPTH": 100,
@@ -69,7 +80,7 @@ SETTINGS = {
 STATE_FILE = os.environ.get("POLYTAIL_STATE", f"state{SUFFIX}.json")
 LOG_FILE = os.environ.get("POLYTAIL_LOG", "signals_log.csv" if not SUFFIX else f"signals{SUFFIX}.csv")
 SETTINGS_FILE = os.environ.get("POLYTAIL_SETTINGS", f"settings{SUFFIX}.json")
-WALLETS_FILE = os.environ.get("POLYTAIL_WALLETS", f"wallets{SUFFIX}.json")
+WALLETS_FILE = os.environ.get("POLYTAIL_WALLETS", "wallets.json" if IS_PROVEN else f"wallets{SUFFIX}.json")
 POOL_FILE = f"wallets{SUFFIX}_pool.json"   # non-bot wallets, written by backtest.py
 FILLS_FILE = os.environ.get("POLYTAIL_FILLS", f"fills{SUFFIX}.csv")
 BOOKS_FILE = os.environ.get("POLYTAIL_BOOKS", f"books{SUFFIX}.csv")   # sportsbook prices per alert
@@ -105,8 +116,18 @@ def scored_wallets(cfg):
             for w in data.get("wallets", [])}
 
 
+def all_time_pnl(wallet, cfg):
+    """A wallet's all-time profit from the leaderboard, or None if it can't be confirmed."""
+    rows = get_json("/v2/leaderboard", {"category": cfg["CATEGORY"], "time_period": "all",
+                                        "sort_by": "PNL", "user": wallet, "limit": 1}) or []
+    for row in rows if isinstance(rows, list) else []:
+        if (row.get("user_id") or "").lower() == wallet:
+            return num(row.get("pnl"))
+    return None
+
+
 def leaderboard_wallets(cfg):
-    wallets = {}
+    wallets, all_time = {}, {}
     for period, board in cfg["LEADERBOARDS"]:
         rows = get_json("/v2/leaderboard", {
             "category": cfg["CATEGORY"], "time_period": period.lower(),
@@ -119,6 +140,8 @@ def leaderboard_wallets(cfg):
                 continue
             if vol > 0 and pnl / vol < cfg["MIN_PNL_TO_VOLUME"]:
                 continue
+            if period.upper() == "ALL":
+                all_time[w] = pnl
             if w not in wallets or pnl > wallets[w]["pnl"]:
                 wallets[w] = {"name": row.get("user_name") or w[:8], "pnl": pnl}
     # Drop the bot / market-maker wallets the backtest excluded, if it has told us which.
@@ -130,6 +153,21 @@ def leaderboard_wallets(cfg):
             wallets = {w: v for w, v in wallets.items() if w in ok}
     except (FileNotFoundError, json.JSONDecodeError):
         pass
+    floor = cfg["MIN_ALL_TIME_PNL"]
+    if floor is not None and wallets:
+        # Wallets seen only on the monthly boards: look up their all-time profit.
+        unknown = [w for w in wallets if w not in all_time]
+        if unknown:
+            from concurrent.futures import ThreadPoolExecutor
+            with ThreadPoolExecutor(max_workers=8) as ex:
+                for w, p in zip(unknown, ex.map(lambda w: all_time_pnl(w, cfg), unknown)):
+                    if p is not None:
+                        all_time[w] = p
+        before = len(wallets)
+        unconfirmed = sum(w not in all_time for w in wallets)
+        wallets = {w: v for w, v in wallets.items() if all_time.get(w, -1e18) >= floor}
+        print(f"All-time profit floor ${floor:,.0f}: kept {len(wallets)} of {before} wallets "
+              f"({unconfirmed} couldn't be confirmed and were left out)")
     return wallets
 
 
@@ -382,7 +420,7 @@ def sport_emoji(slug):
 
 def format_alert(s, is_upgrade):
     head = "📈 MORE TOP TRADERS JOINED" if is_upgrade else "🐋 TOP TRADERS AGREE"
-    label = f"{sport_emoji(s['event_slug'])} {LABEL}" if LABEL else ""
+    label = (f"{sport_emoji(s['event_slug'])} {LABEL}" if IS_SPORTS else LABEL) if LABEL else ""
     lines = [
         f"<b>{html.escape(label)}{head}</b>",
         f"<b>{html.escape(s['title'])}</b>",
@@ -418,10 +456,10 @@ LABEL = ""
 
 
 def other_profile_alerts():
-    """Keys the other test (main <-> sports) has already sent to Telegram, with wallet counts.
+    """Keys the other tests have already sent to Telegram, with wallet counts.
     Both tests watch overlapping wallets, so the same bet can qualify in each."""
     out = {}
-    for path in ("state.json", "state_sports.json"):
+    for path in ("state_proven.json", "state_sports_proven.json", "state.json", "state_sports.json"):
         if path == STATE_FILE:
             continue
         try:
@@ -444,6 +482,10 @@ def main():
 
     wallets = scored_wallets(cfg) if cfg["USE_SCORED_WALLETS"] else {}
     source = "backtest-scored wallets.json"
+    if not wallets and cfg["USE_SCORED_WALLETS"] and not cfg["LEADERBOARD_FALLBACK"]:
+        print(f"{WALLETS_FILE} is missing or stale — this test only watches proven wallets. "
+              "Exiting without changes (re-run the backtest with update_live_wallets to refresh).")
+        return
     if not wallets:
         wallets, source = leaderboard_wallets(cfg), "leaderboard"
     print(f"Watching {len(wallets)} wallets (from {source})")
