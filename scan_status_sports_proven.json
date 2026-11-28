@@ -1,15 +1,15 @@
 {
- "at": "2026-11-28T11:07:03+00:00",
+ "at": "2026-11-28T11:10:02+00:00",
  "wallets_watched": 59,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 53,
  "rows": 12262,
  "skipped_redeemable_or_no_outcome": 12150,
- "under_min_value": 90,
+ "under_min_value": 89,
  "already_ended": 0,
  "ends_too_late": 6,
- "kept": 16,
+ "kept": 17,
  "wallets_needing_extra_pages": 6,
  "wallets_over_3000_rows": 2,
  "sample_keys": [
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Counter-Strike: THUNDER dOWNUNDER vs BIG (BO1) - IEM Cologne Major Stage 1",
-  "outcome": "THUNDER dOWNUNDER",
+  "title": "Will England win the 2026 FIFA World Cup?",
+  "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-03",
+  "end_date": "2026-07-20",
   "redeemable": true
  },
  "leans_not_alerts": []
