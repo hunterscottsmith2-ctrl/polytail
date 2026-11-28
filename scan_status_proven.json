@@ -1,5 +1,5 @@
 {
- "at": "2026-11-28T04:48:44+00:00",
+ "at": "2026-11-28T04:51:44+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
@@ -53,12 +53,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will France win on 2026-06-16?",
-  "outcome": "No",
-  "outcome_index": 1,
-  "current_value": 0.0,
-  "end_date": "2026-06-16",
-  "redeemable": true
+  "title": "Pelicans vs. Clippers",
+  "outcome": "Pelicans",
+  "outcome_index": 0,
+  "current_value": 99244.264,
+  "end_date": "2026-11-28",
+  "redeemable": false
  },
  "leans_not_alerts": []
 }
