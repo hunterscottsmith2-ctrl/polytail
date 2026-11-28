@@ -1,12 +1,12 @@
 {
- "at": "2026-11-28T05:09:43+00:00",
+ "at": "2026-11-28T05:12:44+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
  "rows": 6546,
- "skipped_redeemable_or_no_outcome": 6197,
- "under_min_value": 195,
+ "skipped_redeemable_or_no_outcome": 6199,
+ "under_min_value": 193,
  "already_ended": 17,
  "ends_too_late": 46,
  "kept": 91,
@@ -53,12 +53,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
-  "outcome": "Yes",
+  "title": "Pelicans vs. Clippers",
+  "outcome": "Pelicans",
   "outcome_index": 0,
-  "current_value": 0.0,
-  "end_date": "2026-07-12",
-  "redeemable": true
+  "current_value": 103868.735,
+  "end_date": "2026-11-28",
+  "redeemable": false
  },
  "leans_not_alerts": []
 }
