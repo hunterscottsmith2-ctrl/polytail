@@ -1,12 +1,12 @@
 {
- "at": "2026-11-28T10:07:02+00:00",
+ "at": "2026-11-28T10:10:03+00:00",
  "wallets_watched": 59,
  "signals": 0,
  "most_wallets_on_one_side": 2,
  "wallets_with_rows": 53,
  "rows": 12263,
- "skipped_redeemable_or_no_outcome": 12158,
- "under_min_value": 84,
+ "skipped_redeemable_or_no_outcome": 12159,
+ "under_min_value": 83,
  "already_ended": 0,
  "ends_too_late": 6,
  "kept": 15,
@@ -53,28 +53,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will France win on 2026-06-16?",
-  "outcome": "No",
-  "outcome_index": 1,
+  "title": "Lionel Messi: 1+ goals",
+  "outcome": "Yes",
+  "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-16",
+  "end_date": "2026-07-12",
   "redeemable": true
  },
- "leans_not_alerts": [
-  {
-   "title": "Counter-Strike: Liquid vs Eternal Fire (BO1) - PGL Major Singapore Stage 2",
-   "pick": "Liquid",
-   "price": 0.555,
-   "wallets": 2,
-   "opposing_wallets": 0,
-   "total_value": 21755,
-   "names": [
-    "shekelmeister",
-    "darkumbreon88"
-   ],
-   "game_start": "2026-11-28T10:10+00:00",
-   "end_date": "2026-11-28",
-   "event_slug": "cs2-tl1-ef1-2026-11-28"
-  }
- ]
+ "leans_not_alerts": []
 }
