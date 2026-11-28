@@ -1,15 +1,15 @@
 {
- "at": "2026-11-28T00:34:47+00:00",
+ "at": "2026-11-28T00:37:41+00:00",
  "wallets_watched": 114,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 99,
- "rows": 44828,
+ "rows": 44831,
  "skipped_redeemable_or_no_outcome": 35310,
- "under_min_value": 8976,
+ "under_min_value": 8980,
  "already_ended": 19,
  "ends_too_late": 132,
- "kept": 391,
+ "kept": 390,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -64,10 +64,10 @@
   {
    "title": "Will Puma Shen win the 2026 Taipei Mayoral Election by 8% or more?",
    "pick": "No",
-   "price": 0.875,
+   "price": 0.876,
    "wallets": 3,
    "opposing_wallets": 0,
-   "total_value": 133744,
+   "total_value": 133968,
    "names": [
     "feeder-or-predator",
     "328.400.fund",
@@ -80,10 +80,10 @@
   {
    "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
    "pick": "Yes",
-   "price": 0.555,
+   "price": 0.565,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 36702,
+   "total_value": 37363,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -125,10 +125,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.55,
+   "price": 0.556,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 46424,
+   "total_value": 46941,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -140,10 +140,10 @@
   {
    "title": "Will Inter Miami CF win on 2026-11-27?",
    "pick": "Yes",
-   "price": 0.355,
+   "price": 0.365,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 6326,
+   "total_value": 6504,
    "names": [
     "darkumbreon88",
     "hi774c"
