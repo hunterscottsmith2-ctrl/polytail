@@ -1,12 +1,12 @@
 {
- "at": "2026-11-28T05:03:44+00:00",
+ "at": "2026-11-28T05:06:44+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 3,
  "wallets_with_rows": 55,
  "rows": 6546,
- "skipped_redeemable_or_no_outcome": 6196,
- "under_min_value": 196,
+ "skipped_redeemable_or_no_outcome": 6197,
+ "under_min_value": 195,
  "already_ended": 17,
  "ends_too_late": 46,
  "kept": 91,
@@ -53,12 +53,12 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Pelicans vs. Clippers",
-  "outcome": "Pelicans",
+  "title": "Counter-Strike: THUNDER dOWNUNDER vs BIG (BO1) - IEM Cologne Major Stage 1",
+  "outcome": "THUNDER dOWNUNDER",
   "outcome_index": 0,
-  "current_value": 103868.735,
-  "end_date": "2026-11-28",
-  "redeemable": false
+  "current_value": 0.0,
+  "end_date": "2026-06-03",
+  "redeemable": true
  },
  "leans_not_alerts": []
 }
