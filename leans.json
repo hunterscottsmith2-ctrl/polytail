@@ -1,5 +1,5 @@
 {
- "at": "2026-11-28T00:37:41+00:00",
+ "at": "2026-11-28T00:40:42+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -21,10 +21,10 @@
   {
    "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
    "pick": "Yes",
-   "price": 0.565,
+   "price": 0.56,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 37363,
+   "total_value": 37033,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -69,7 +69,7 @@
    "price": 0.556,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 46941,
+   "total_value": 46931,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -81,10 +81,10 @@
   {
    "title": "Will Inter Miami CF win on 2026-11-27?",
    "pick": "Yes",
-   "price": 0.365,
+   "price": 0.355,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 6504,
+   "total_value": 6326,
    "names": [
     "darkumbreon88",
     "hi774c"

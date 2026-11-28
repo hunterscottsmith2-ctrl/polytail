@@ -1,13 +1,13 @@
 {
- "at": "2026-11-28T00:37:41+00:00",
+ "at": "2026-11-28T00:40:42+00:00",
  "wallets_watched": 114,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 99,
- "rows": 44831,
- "skipped_redeemable_or_no_outcome": 35310,
- "under_min_value": 8980,
- "already_ended": 19,
+ "rows": 44767,
+ "skipped_redeemable_or_no_outcome": 35250,
+ "under_min_value": 8978,
+ "already_ended": 17,
  "ends_too_late": 132,
  "kept": 390,
  "wallets_needing_extra_pages": 24,
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Lionel Messi: 1+ goals",
+  "title": "Will Sweden win on 2026-06-25?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-07-12",
+  "end_date": "2026-06-25",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -80,10 +80,10 @@
   {
    "title": "Will Chiang Wan-an win the next Taipei Mayor election?",
    "pick": "Yes",
-   "price": 0.565,
+   "price": 0.56,
    "wallets": 2,
    "opposing_wallets": 0,
-   "total_value": 37363,
+   "total_value": 37033,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -128,7 +128,7 @@
    "price": 0.556,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 46941,
+   "total_value": 46931,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -140,10 +140,10 @@
   {
    "title": "Will Inter Miami CF win on 2026-11-27?",
    "pick": "Yes",
-   "price": 0.365,
+   "price": 0.355,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 6504,
+   "total_value": 6326,
    "names": [
     "darkumbreon88",
     "hi774c"
