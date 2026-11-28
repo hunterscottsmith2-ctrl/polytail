@@ -1,12 +1,4 @@
 {
- "alerted": {
-  "0x12916917c2e5056f3133837e03232e1ca6668080b4832e0c2df34e063b3dc5ee|1": {
-   "first_seen": "2026-11-28T00:52+00:00",
-   "gone_at": 1795827702.2930982,
-   "outcome": "Hawks",
-   "title": "Spread: Celtics (-9.5)",
-   "wallets": 3
-  }
- },
+ "alerted": {},
  "recheck": []
 }
