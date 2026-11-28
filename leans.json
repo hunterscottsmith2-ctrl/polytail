@@ -1,5 +1,5 @@
 {
- "at": "2026-11-28T00:13:32+00:00",
+ "at": "2026-11-28T00:16:31+00:00",
  "note": "2+ watched wallets agree; NOT alerts, not graded",
  "leans": [
   {
@@ -24,7 +24,7 @@
    "price": 0.505,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 84123,
+   "total_value": 84173,
    "names": [
     "Mikal25",
     "justwins",
@@ -67,10 +67,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.564,
+   "price": 0.562,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 47564,
+   "total_value": 47479,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -97,10 +97,10 @@
   {
    "title": "Will Inter Miami CF win on 2026-11-27?",
    "pick": "Yes",
-   "price": 0.355,
+   "price": 0.365,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 6326,
+   "total_value": 6504,
    "names": [
     "darkumbreon88",
     "hi774c"

@@ -1,15 +1,15 @@
 {
- "at": "2026-11-28T00:13:32+00:00",
+ "at": "2026-11-28T00:16:31+00:00",
  "wallets_watched": 114,
  "signals": 0,
  "most_wallets_on_one_side": 4,
  "wallets_with_rows": 99,
- "rows": 44821,
- "skipped_redeemable_or_no_outcome": 35313,
- "under_min_value": 8985,
+ "rows": 44824,
+ "skipped_redeemable_or_no_outcome": 35309,
+ "under_min_value": 8988,
  "already_ended": 20,
  "ends_too_late": 132,
- "kept": 371,
+ "kept": 375,
  "wallets_needing_extra_pages": 24,
  "wallets_over_3000_rows": 6,
  "sample_keys": [
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will United States vs. Paraguay end in a draw?",
+  "title": "Will the New York Islanders win the 2026 NHL Stanley Cup?",
   "outcome": "Yes",
   "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-13",
+  "end_date": "2026-06-30",
   "redeemable": true
  },
  "leans_not_alerts": [
@@ -83,7 +83,7 @@
    "price": 0.505,
    "wallets": 3,
    "opposing_wallets": 1,
-   "total_value": 84123,
+   "total_value": 84173,
    "names": [
     "Mikal25",
     "justwins",
@@ -126,10 +126,10 @@
   {
    "title": "Will Puma Shen win the next Taipei Mayor election?",
    "pick": "No",
-   "price": 0.564,
+   "price": 0.562,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 47564,
+   "total_value": 47479,
    "names": [
     "arjennnnn",
     "feeder-or-predator"
@@ -156,10 +156,10 @@
   {
    "title": "Will Inter Miami CF win on 2026-11-27?",
    "pick": "Yes",
-   "price": 0.355,
+   "price": 0.365,
    "wallets": 2,
    "opposing_wallets": 1,
-   "total_value": 6326,
+   "total_value": 6504,
    "names": [
     "darkumbreon88",
     "hi774c"
