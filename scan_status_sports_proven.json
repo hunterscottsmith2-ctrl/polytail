@@ -1,12 +1,12 @@
 {
- "at": "2026-11-28T09:12:58+00:00",
+ "at": "2026-11-28T09:15:57+00:00",
  "wallets_watched": 62,
  "signals": 0,
  "most_wallets_on_one_side": 1,
  "wallets_with_rows": 55,
- "rows": 6548,
+ "rows": 6549,
  "skipped_redeemable_or_no_outcome": 6209,
- "under_min_value": 252,
+ "under_min_value": 253,
  "already_ended": 13,
  "ends_too_late": 65,
  "kept": 9,
@@ -53,11 +53,11 @@
   "verified"
  ],
  "sample_row": {
-  "title": "Will France win on 2026-06-16?",
-  "outcome": "No",
-  "outcome_index": 1,
+  "title": "Baltimore Orioles vs. St. Louis Cardinals",
+  "outcome": "Baltimore Orioles",
+  "outcome_index": 0,
   "current_value": 0.0,
-  "end_date": "2026-06-16",
+  "end_date": "2026-09-03",
   "redeemable": true
  },
  "leans_not_alerts": []
